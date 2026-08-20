@@ -43,7 +43,7 @@ function openWhatsApp(jenisPesanan) {
 // 3. INTERACTIVE PORTFOLIO GALLERY (MODAL)
 // ----------------------------------------------------
 
-// Data individual untuk masing-masing portfolio (Anda bisa mengganti link gambar dummy dengan gambar asli nantinya)
+// Data individual untuk masing-masing portfolio
 const portfolioData = {
     1: {
         title: "Brew & Bloom Cafe",
@@ -229,3 +229,26 @@ document.addEventListener('keydown', (e) => {
         }
     }
 });
+
+// ----------------------------------------------------
+// 5. MOBILE MENU FUNCTIONS
+// ----------------------------------------------------
+function toggleMobileMenu() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    if (mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.remove('hidden');
+        mobileMenu.classList.add('flex');
+        menuIcon.innerText = 'close';
+    } else {
+        closeMobileMenu();
+    }
+}
+
+function closeMobileMenu() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    mobileMenu.classList.add('hidden');
+    mobileMenu.classList.remove('flex');
+    menuIcon.innerText = 'menu';
+}

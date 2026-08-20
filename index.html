@@ -5,7 +5,29 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>AURA GLOBAL - Digital Web Studio</title>
   
-  <!-- Google Fonts -->
+  <!-- SEO & Meta Tags untuk Google -->
+  <meta name="description" content="Aura Global adalah Digital Web Studio penyedia jasa pembuatan website profesional, modern, dan terjangkau untuk bisnis, cafe, dan UMKM mulai dari Rp250.000." />
+  <meta name="keywords" content="jasa pembuatan website, buat website murah, aura global, web studio indonesia" />
+  <meta name="author" content="Aura Global" />
+
+  <!-- Open Graph / Facebook (Sosial Media Sharing) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://auraglobal.my.id/" />
+  <meta property="og:title" content="AURA GLOBAL - Digital Web Studio" />
+  <meta property="og:description" content="Jasa pembuatan website profesional, modern, dan terjangkau untuk bisnis, cafe, dan UMKM mulai dari Rp250.000." />
+  <meta property="og:image" content="https://cdn.phototourl.com/free/2026-08-20-2597676d-4a65-4bc2-b8e1-049865d5f224.png" />
+
+  <!-- Twitter Card -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://auraglobal.my.id/" />
+  <meta property="twitter:title" content="AURA GLOBAL - Digital Web Studio" />
+  <meta property="twitter:description" content="Jasa pembuatan website profesional, modern, dan terjangkau untuk bisnis, cafe, dan UMKM mulai dari Rp250.000." />
+  <meta property="twitter:image" content="https://cdn.phototourl.com/free/2026-08-20-2597676d-4a65-4bc2-b8e1-049865d5f224.png" />
+
+  <!-- Favicon / Logo di Samping URL Browser -->
+  <link rel="icon" type="image/png" href="https://cdn.phototourl.com/free/2026-08-20-c9431592-f326-40af-a4d6-a85d5860df0b.png">
+  
+  <!-- Google Fonts & Material Symbols -->
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
   
@@ -65,19 +87,39 @@
         </div>
       </div>
 
+      <!-- Desktop Navigation -->
       <nav class="hidden lg:flex items-center gap-8">
-        <a class="font-label-md text-on-surface-variant hover:text-primary transition-colors cursor-pointer font-semibold" onclick="scrollToSection('home')">Home</a>
-        <a class="font-label-md text-on-surface-variant hover:text-primary transition-colors cursor-pointer font-semibold" onclick="scrollToSection('layanan')">Layanan</a>
-        <a class="font-label-md text-on-surface-variant hover:text-primary transition-colors cursor-pointer font-semibold" onclick="scrollToSection('portfolio')">Portfolio</a>
-        <a class="font-label-md text-on-surface-variant hover:text-primary transition-colors cursor-pointer font-semibold" onclick="scrollToSection('harga')">Harga</a>
+        <a href="#home" onclick="event.preventDefault(); scrollToSection('home')" class="font-label-md text-on-surface-variant hover:text-primary transition-colors font-semibold">Home</a>
+        <a href="#layanan" onclick="event.preventDefault(); scrollToSection('layanan')" class="font-label-md text-on-surface-variant hover:text-primary transition-colors font-semibold">Layanan</a>
+        <a href="#portfolio" onclick="event.preventDefault(); scrollToSection('portfolio')" class="font-label-md text-on-surface-variant hover:text-primary transition-colors font-semibold">Portfolio</a>
+        <a href="#harga" onclick="event.preventDefault(); scrollToSection('harga')" class="font-label-md text-on-surface-variant hover:text-primary transition-colors font-semibold">Harga</a>
+        <a href="#kontak" onclick="event.preventDefault(); scrollToSection('kontak')" class="font-label-md text-on-surface-variant hover:text-primary transition-colors font-semibold">Hubungi Kami</a>
       </nav>
+
       <div class="flex items-center gap-4">
         <button onclick="openWhatsApp('Konsultasi Umum')" class="hidden md:inline-flex bg-primary text-white font-button px-6 py-2.5 rounded-lg hover:bg-primary-container transition-all shadow-md hover:shadow-lg font-bold">
           Konsultasi Gratis &rarr;
         </button>
+        
+        <!-- Hamburger Menu Button (Mobile) -->
+        <button onclick="toggleMobileMenu()" class="lg:hidden text-on-surface hover:text-primary transition-colors p-2" aria-label="Toggle Menu">
+          <span id="menu-icon" class="material-symbols-outlined text-3xl">menu</span>
+        </button>
       </div>
     </div>
   </header>
+
+  <!-- MOBILE MENU DRAWER -->
+  <div id="mobile-menu" class="fixed top-20 left-0 w-full bg-surface border-b border-surface-variant z-40 hidden flex-col px-5 py-6 gap-4 shadow-lg lg:hidden transition-all duration-300">
+    <a href="#home" onclick="closeMobileMenu(); scrollToSection('home')" class="font-label-md text-on-surface-variant hover:text-primary transition-colors font-semibold py-2">Home</a>
+    <a href="#layanan" onclick="closeMobileMenu(); scrollToSection('layanan')" class="font-label-md text-on-surface-variant hover:text-primary transition-colors font-semibold py-2">Layanan</a>
+    <a href="#portfolio" onclick="closeMobileMenu(); scrollToSection('portfolio')" class="font-label-md text-on-surface-variant hover:text-primary transition-colors font-semibold py-2">Portfolio</a>
+    <a href="#harga" onclick="closeMobileMenu(); scrollToSection('harga')" class="font-label-md text-on-surface-variant hover:text-primary transition-colors font-semibold py-2">Harga</a>
+    <a href="#kontak" onclick="closeMobileMenu(); scrollToSection('kontak')" class="font-label-md text-on-surface-variant hover:text-primary transition-colors font-semibold py-2 font-bold">Hubungi Kami</a>
+    <button onclick="closeMobileMenu(); openWhatsApp('Konsultasi Umum')" class="w-full bg-primary text-white font-button py-3 rounded-xl hover:bg-primary-container transition-all font-bold mt-2">
+      Konsultasi Gratis &rarr;
+    </button>
+  </div>
 
   <main class="w-full pt-20">
     
@@ -235,7 +277,7 @@
           <!-- Portfolio 3 -->
           <div class="group cursor-pointer" onclick="openPortfolioModal(3)" aria-label="Lihat detail portofolio Klin Wash Laundry">
             <div class="relative rounded-3xl overflow-hidden mb-6 shadow-md group-hover:shadow-2xl transition-all aspect-[4/3] bg-surface-container">
-              <img src="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" alt="Laundry Mockup">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmY87LmpdSWmfYn6HijrfKcQia_4Zvrr1pjzk7xeyTKD4TAtj_B9z3Zd5tfKp3oN4sgVZezMEiuUqRq4_yyRxGs3TX9txyI7wu9ZYpbPu7xMTwF4QTUGy7wmv6nGpIU9grk0ubGbOa08aC6W2rhC5CyYgLJ_YQW18wXQ7MGHuHma4Zg6JzEFTtUJgSqhHgA1uCtLTmWbQQ4QoiUDKZ4qnPjWTPbE4l-5GewQFtutZxiEDkKftR3m5s" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" alt="Laundry Mockup">
               <div class="absolute inset-0 bg-primary/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <span class="bg-white text-primary font-bold px-6 py-3 rounded-full translate-y-4 group-hover:translate-y-0 transition-all duration-300 shadow-lg flex items-center gap-2">Lihat Detail <span class="material-symbols-outlined text-[20px]">visibility</span></span>
               </div>
@@ -252,7 +294,7 @@
           <!-- Portfolio 4 -->
           <div class="group cursor-pointer md:mt-24" onclick="openPortfolioModal(4)" aria-label="Lihat detail portofolio Rasa Nusantara">
              <div class="relative rounded-3xl overflow-hidden mb-6 shadow-md group-hover:shadow-2xl transition-all aspect-[4/3] bg-surface-container">
-              <img src="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" alt="Restaurant Mockup">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3vvj4j5vsUBeFiUEaTQ6V23oOLA7ttIkRS-V4qcrBnyx111uWvFj3pYYq0Z3pKCiYjcMDOIGH270-8PwP3tNxztg2v3Tq7nUF03ymrDEzADutE4pioWIA_l9iQY357yIsezzk2uMndxcU3Sfq7IGEgm6XLD_cyXwpqeG1or9zuJkPqExVrs4MkaOyZcLSfxqETCxJM6ETzQlcV3z38QG9Oy_PNzjPox4v0nJfEyB4L0mbCWLF2RJM" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" alt="Restaurant Mockup">
               <div class="absolute inset-0 bg-primary/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <span class="bg-white text-primary font-bold px-6 py-3 rounded-full translate-y-4 group-hover:translate-y-0 transition-all duration-300 shadow-lg flex items-center gap-2">Lihat Detail <span class="material-symbols-outlined text-[20px]">visibility</span></span>
               </div>
@@ -410,6 +452,178 @@
       </div>
     </section>
 
+    <!-- TESTIMONIALS SECTION -->
+    <section class="w-full py-32 px-5 lg:px-20 bg-surface-container">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <span class="text-primary font-bold tracking-widest uppercase mb-4 block">Testimoni</span>
+          <h2 class="text-4xl font-headline-lg font-bold text-on-surface">Apa kata mitra bisnis kami?</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-surface p-8 rounded-3xl shadow-sm border border-surface-variant flex flex-col justify-between">
+            <div>
+              <div class="flex gap-1 text-[#ffb800] mb-6">
+                <span class="material-symbols-outlined fill-current text-[20px] text-amber-500">star</span>
+                <span class="material-symbols-outlined fill-current text-[20px] text-amber-500">star</span>
+                <span class="material-symbols-outlined fill-current text-[20px] text-amber-500">star</span>
+                <span class="material-symbols-outlined fill-current text-[20px] text-amber-500">star</span>
+                <span class="material-symbols-outlined fill-current text-[20px] text-amber-500">star</span>
+              </div>
+              <p class="text-on-surface-variant italic mb-6">
+                "Website Brew & Bloom Cafe kami sangat membantu pelanggan untuk melihat menu harian dan memesan katering langsung ke WhatsApp. Desainnya sangat estetik dan modern."
+              </p>
+            </div>
+            <div class="flex items-center gap-4 border-t border-surface-variant pt-6">
+              <div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center font-bold text-primary">
+                AN
+              </div>
+              <div>
+                <h4 class="font-bold text-on-surface">Andi Nugroho</h4>
+                <span class="text-xs text-on-surface-variant">Owner, Brew & Bloom Cafe</span>
+              </div>
+            </div>
+          </div>
+          <div class="bg-surface p-8 rounded-3xl shadow-sm border border-surface-variant flex flex-col justify-between">
+            <div>
+              <div class="flex gap-1 text-[#ffb800] mb-6">
+                <span class="material-symbols-outlined fill-current text-[20px] text-amber-500">star</span>
+                <span class="material-symbols-outlined fill-current text-[20px] text-amber-500">star</span>
+                <span class="material-symbols-outlined fill-current text-[20px] text-amber-500">star</span>
+                <span class="material-symbols-outlined fill-current text-[20px] text-amber-500">star</span>
+                <span class="material-symbols-outlined fill-current text-[20px] text-amber-500">star</span>
+              </div>
+              <p class="text-on-surface-variant italic mb-6">
+                "Sangat puas dengan website dari Aura Global. Proses pengerjaan cepat dan hasilnya responsif sekali saat diakses dari HP. Omset barbershop kami naik berkat fitur booking WhatsApp."
+              </p>
+            </div>
+            <div class="flex items-center gap-4 border-t border-surface-variant pt-6">
+              <div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center font-bold text-primary">
+                BP
+              </div>
+              <div>
+                <h4 class="font-bold text-on-surface">Budi Pratama</h4>
+                <span class="text-xs text-on-surface-variant">Manager, Gentleman's Cut</span>
+              </div>
+            </div>
+          </div>
+          <div class="bg-surface p-8 rounded-3xl shadow-sm border border-surface-variant flex flex-col justify-between">
+            <div>
+              <div class="flex gap-1 text-[#ffb800] mb-6">
+                <span class="material-symbols-outlined fill-current text-[20px] text-amber-500">star</span>
+                <span class="material-symbols-outlined fill-current text-[20px] text-amber-500">star</span>
+                <span class="material-symbols-outlined fill-current text-[20px] text-amber-500">star</span>
+                <span class="material-symbols-outlined fill-current text-[20px] text-amber-500">star</span>
+                <span class="material-symbols-outlined fill-current text-[20px] text-amber-500">star</span>
+              </div>
+              <p class="text-on-surface-variant italic mb-6">
+                "Layanan yang luar biasa. Sekarang pelanggan laundry kami bisa cek estimasi harga layanan dan pesan jemputan dengan sangat mudah. Recommended web studio!"
+              </p>
+            </div>
+            <div class="flex items-center gap-4 border-t border-surface-variant pt-6">
+              <div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center font-bold text-primary">
+                SL
+              </div>
+              <div>
+                <h4 class="font-bold text-on-surface">Siti Larasati</h4>
+                <span class="text-xs text-on-surface-variant">Owner, Klin Wash Laundry</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="w-full py-32 px-5 lg:px-20 bg-surface">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+          <span class="text-primary font-bold tracking-widest uppercase mb-4 block">FAQ</span>
+          <h2 class="text-4xl font-headline-lg font-bold text-on-surface">Pertanyaan yang Sering Diajukan</h2>
+        </div>
+        <div class="space-y-4">
+          <details class="group bg-surface-container-low p-6 rounded-2xl cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex justify-between items-center font-bold text-lg text-on-surface">
+              <span>Berapa lama proses pembuatan websitenya?</span>
+              <span class="transition-transform group-open:rotate-180 material-symbols-outlined text-primary">expand_more</span>
+            </summary>
+            <p class="mt-4 text-on-surface-variant leading-relaxed">
+              Durasi pengerjaan bervariasi tergantung paket yang dipilih. Untuk Paket Lite biasanya memakan waktu 1-3 hari kerja, sedangkan Paket Business dengan fitur kustom membutuhkan waktu 7-14 hari kerja.
+            </p>
+          </details>
+          <details class="group bg-surface-container-low p-6 rounded-2xl cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex justify-between items-center font-bold text-lg text-on-surface">
+              <span>Apakah harga sudah termasuk domain dan hosting?</span>
+              <span class="transition-transform group-open:rotate-180 material-symbols-outlined text-primary">expand_more</span>
+            </summary>
+            <p class="mt-4 text-on-surface-variant leading-relaxed">
+              Ya, semua paket (kecuali Lite yang menggunakan subdomain/bawa domain sendiri) sudah termasuk gratis domain selama 1 tahun pertama dan hosting premium aktif sesuai spesifikasi paket masing-masing.
+            </p>
+          </details>
+          <details class="group bg-surface-container-low p-6 rounded-2xl cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex justify-between items-center font-bold text-lg text-on-surface">
+              <span>Apakah websitenya bisa saya edit sendiri nanti?</span>
+              <span class="transition-transform group-open:rotate-180 material-symbols-outlined text-primary">expand_more</span>
+            </summary>
+            <p class="mt-4 text-on-surface-variant leading-relaxed">
+              Tentu saja. Kami merancang website yang ramah pengguna. Setelah serah terima, kami akan memberikan panduan singkat bagi Anda untuk mengupdate teks, gambar, atau menambahkan produk/layanan baru secara mandiri.
+            </p>
+          </details>
+          <details class="group bg-surface-container-low p-6 rounded-2xl cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex justify-between items-center font-bold text-lg text-on-surface">
+              <span>Bagaimana dengan sistem revisinya?</span>
+              <span class="transition-transform group-open:rotate-180 material-symbols-outlined text-primary">expand_more</span>
+            </summary>
+            <p class="mt-4 text-on-surface-variant leading-relaxed">
+              Kami memberikan garansi revisi desain sebanyak 2 hingga 4 kali (tergantung paket) untuk memastikan tampilan akhir website benar-benar sesuai dengan konsep dan keinginan bisnis Anda.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- HUBUNGI KAMI / CONTACT SECTION -->
+    <section id="kontak" class="w-full py-32 px-5 lg:px-20 bg-surface-container-lowest relative overflow-hidden">
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-[400px] bg-primary/5 rounded-full blur-[100px] pointer-events-none"></div>
+      <div class="relative z-10 max-w-5xl mx-auto bg-surface border border-surface-variant p-8 md:p-16 rounded-[2.5rem] shadow-xl">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div>
+            <span class="text-primary font-bold tracking-widest uppercase mb-4 block">Kontak Kami</span>
+            <h2 class="text-4xl font-headline-lg font-bold text-on-surface mb-6">Siap berdiskusi untuk proyek Anda?</h2>
+            <p class="text-on-surface-variant mb-8 text-lg">
+              Isi formulir ini atau klik tombol WhatsApp untuk mulai berkonsultasi secara gratis dengan tim ahli kami.
+            </p>
+            <div class="space-y-4">
+              <div class="flex items-center gap-4 text-on-surface-variant font-medium">
+                <span class="material-symbols-outlined text-primary text-[24px]">mail</span>
+                info@auraglobal.my.id
+              </div>
+              <div class="flex items-center gap-4 text-on-surface-variant font-medium">
+                <span class="material-symbols-outlined text-primary text-[24px]">phone</span>
+                +62 858-6151-0159
+              </div>
+            </div>
+          </div>
+          <form onsubmit="event.preventDefault(); alert('Pesan berhasil terkirim! Tim kami akan segera menghubungi Anda.'); this.reset();" class="space-y-4">
+            <div>
+              <label class="block text-sm font-bold text-on-surface mb-2">Nama Lengkap</label>
+              <input type="text" required class="w-full px-4 py-3 rounded-xl border border-surface-variant bg-surface-container-low focus:outline-none focus:border-primary transition-colors text-sm" placeholder="Nama Anda">
+            </div>
+            <div>
+              <label class="block text-sm font-bold text-on-surface mb-2">Email</label>
+              <input type="email" required class="w-full px-4 py-3 rounded-xl border border-surface-variant bg-surface-container-low focus:outline-none focus:border-primary transition-colors text-sm" placeholder="email@contoh.com">
+            </div>
+            <div>
+              <label class="block text-sm font-bold text-on-surface mb-2">Pesan / Rencana Proyek</label>
+              <textarea required rows="4" class="w-full px-4 py-3 rounded-xl border border-surface-variant bg-surface-container-low focus:outline-none focus:border-primary transition-colors text-sm resize-none" placeholder="Ceritakan kebutuhan website Anda..."></textarea>
+            </div>
+            <button type="submit" class="w-full bg-primary hover:bg-primary-container text-white font-bold py-3.5 rounded-xl transition-all shadow-md hover:shadow-lg">
+              Kirim Pesan
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- INTERACTIVE PORTFOLIO MODAL / LIGHTBOX -->
@@ -425,7 +639,7 @@
         <span class="material-symbols-outlined text-2xl">close</span>
       </button>
 
-      <!-- Left Column: Image Gallery Slider (Restored to clean, balanced ratio view) -->
+      <!-- Left Column: Image Gallery Slider -->
       <div class="w-full lg:w-[55%] bg-surface-container-highest relative flex flex-col items-center justify-center group h-72 sm:h-96 lg:h-auto overflow-hidden">
         
         <!-- Image Element (with Swipe logic in JS) -->
@@ -499,13 +713,13 @@
         <p class="text-on-surface-variant mt-3 font-medium">Modern websites for modern businesses.</p>
       </div>
       <div class="flex flex-wrap gap-6 items-center justify-center md:justify-start">
-        <a href="#" class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors font-medium">
+        <a href="https://auraglobal.my.id" class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors font-medium">
           <span class="material-symbols-outlined">language</span>
-          www.auraglobal.com
+          auraglobal.my.id
         </a>
-        <a href="mailto:emailanda@gmail.com" class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors font-medium">
+        <a href="mailto:info@auraglobal.my.id" class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors font-medium">
           <span class="material-symbols-outlined">mail</span>
-          emailanda@gmail.com
+          info@auraglobal.my.id
         </a>
       </div>
       <span class="text-sm text-on-surface-variant font-medium text-center md:text-left">&copy; 2026 AURA GLOBAL. All rights reserved.</span>
