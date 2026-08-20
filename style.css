@@ -1,0 +1,44 @@
+/* style.css */
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    overscroll-behavior: none;
+  }
+}
+
+/* Sembunyikan scrollbar bawaan browser untuk UI yang lebih clean */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom Animation - Fade In Up */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+}
+
+/* Navbar Scroll Style */
+.scrolled-nav {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  background-color: rgba(252, 249, 248, 0.95) !important;
+}
+
+/* Mencegah background body di-scroll saat modal terbuka */
+body.modal-open {
+  overflow: hidden;
+}
