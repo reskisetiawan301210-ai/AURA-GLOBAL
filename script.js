@@ -31,7 +31,7 @@ window.addEventListener('scroll', () => {
 // 2. FUNGSI WHATSAPP
 // ----------------------------------------------------
 function openWhatsApp(jenisPesanan) {
-    const nomorWA = "6285795742648"; 
+    const nomorWA = "6285861510159"; 
     let pesan = `Halo AURA GLOBAL, saya tertarik untuk konsultasi mengenai pembuatan website.\n\nKetertarikan/Paket: ${jenisPesanan}`;
     const urlEncoded = encodeURIComponent(pesan);
     const linkWhatsApp = `https://api.whatsapp.com/send?phone=${nomorWA}&text=${urlEncoded}`;
