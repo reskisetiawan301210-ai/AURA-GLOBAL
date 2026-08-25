@@ -32,7 +32,7 @@ window.addEventListener('scroll', () => {
 // ----------------------------------------------------
 function openWhatsApp(jenisPesanan) {
     const nomorWA = "6285861510159"; 
-    let pesan = `Halo AURA GLOBAL, saya tertarik untuk konsultasi mengenai pembuatan website.\n\nKetertarikan/Paket: ${jenisPesanan}`;
+    let pesan = `Halo AURA GLOBAL, saya tertarik dengan ${jenisPesanan}. Saya ingin konsultasi mengenai website untuk bisnis saya.`;
     const urlEncoded = encodeURIComponent(pesan);
     const linkWhatsApp = `https://api.whatsapp.com/send?phone=${nomorWA}&text=${urlEncoded}`;
     window.open(linkWhatsApp, '_blank');
@@ -53,10 +53,7 @@ const portfolioData = {
         features: ["Responsive Design", "Menu / Catalog", "Gallery", "WhatsApp Integration", "Location Maps"],
         platform: "Responsive Web (Desktop, Tablet, Mobile)",
         images: [
-            "https://cdn.phototourl.com/free/2026-08-20-fa385ce3-95a1-492a-a1d8-4859817c10e6.png",
-            "https://dummyimage.com/1200x800/e4e0f5/5300b7&text=Image+2+-+Mobile+Homepage",
-            "https://dummyimage.com/1200x800/e4e0f5/5300b7&text=Image+3+-+Menu+Section",
-            "https://dummyimage.com/1200x800/e4e0f5/5300b7&text=Image+4+-+Contact+Section"
+            "https://cdn.phototourl.com/free/2026-08-20-fa385ce3-95a1-492a-a1d8-4859817c10e6.png"
         ],
         waRef: "Desain Brew & Bloom Cafe"
     },
@@ -68,9 +65,7 @@ const portfolioData = {
         features: ["Services & Pricing", "Stylist Profiles", "Booking / Contact", "Testimonials"],
         platform: "Responsive Web",
         images: [
-            "https://lh3.googleusercontent.com/aida-public/AB6AXuCQQO0tB_cRLPA8rIBUDWS4opmdNU5Cyn0qmZIJmkWrXComVBYUF-B2VRYbmCbaSfZdtXVJ3o0h0bF0D1_xOeJCAo2WTjSUiPXnMN9ACxm3lVIni9nMDaEe75TW5UHQXvqtggmWr4g5lvr7OrMZ1vH75ck4zZg0sQBC7CmWGaWHfFQVU-O4tUWatG65kCN5UqWBJGtNS8S8IZswYTPMipcNRQSUEbKWYuTpSLrgThHv_ni_ds5cal2f",
-            "https://dummyimage.com/1200x800/e4e0f5/5300b7&text=Image+2+-+Mobile+Homepage",
-            "https://dummyimage.com/1200x800/e4e0f5/5300b7&text=Image+3+-+Services"
+            "https://lh3.googleusercontent.com/aida-public/AB6AXuCQQO0tB_cRLPA8rIBUDWS4opmdNU5Cyn0qmZIJmkWrXComVBYUF-B2VRYbmCbaSfZdtXVJ3o0h0bF0D1_xOeJCAo2WTjSUiPXnMN9ACxm3lVIni9nMDaEe75TW5UHQXvqtggmWr4g5lvr7OrMZ1vH75ck4zZg0sQBC7CmWGaWHfFQVU-O4tUWatG65kCN5UqWBJGtNS8S8IZswYTPMipcNRQSUEbKWYuTpSLrgThHv_ni_ds5cal2f"
         ],
         waRef: "Desain Gentleman's Cut Barbershop"
     },
@@ -82,9 +77,7 @@ const portfolioData = {
         features: ["Responsive Design", "Pricing Table", "Pickup Service Info", "WhatsApp Contact"],
         platform: "Responsive Web",
         images: [
-            "https://lh3.googleusercontent.com/aida-public/AB6AXuBmY87LmpdSWmfYn6HijrfKcQia_4Zvrr1pjzk7xeyTKD4TAtj_B9z3Zd5tfKp3oN4sgVZezMEiuUqRq4_yyRxGs3TX9txyI7wu9ZYpbPu7xMTwF4QTUGy7wmv6nGpIU9grk0ubGbOa08aC6W2rhC5CyYgLJ_YQW18wXQ7MGHuHma4Zg6JzEFTtUJgSqhHgA1uCtLTmWbQQ4QoiUDKZ4qnPjWTPbE4l-5GewQFtutZxiEDkKftR3m5s",
-            "https://dummyimage.com/1200x800/e4e0f5/5300b7&text=Image+2+-+Pricing+Table",
-            "https://dummyimage.com/1200x800/e4e0f5/5300b7&text=Image+3+-+Mobile+View"
+            "https://lh3.googleusercontent.com/aida-public/AB6AXuBmY87LmpdSWmfYn6HijrfKcQia_4Zvrr1pjzk7xeyTKD4TAtj_B9z3Zd5tfKp3oN4sgVZezMEiuUqRq4_yyRxGs3TX9txyI7wu9ZYpbPu7xMTwF4QTUGy7wmv6nGpIU9grk0ubGbOa08aC6W2rhC5CyYgLJ_YQW18wXQ7MGHuHma4Zg6JzEFTtUJgSqhHgA1uCtLTmWbQQ4QoiUDKZ4qnPjWTPbE4l-5GewQFtutZxiEDkKftR3m5s"
         ],
         waRef: "Desain Klin Wash Laundry"
     },
@@ -96,10 +89,7 @@ const portfolioData = {
         features: ["Interactive Menu", "High-res Gallery", "Catering Contact", "Maps Integration"],
         platform: "Responsive Web",
         images: [
-            "https://lh3.googleusercontent.com/aida-public/AB6AXuC3vvj4j5vsUBeFiUEaTQ6V23oOLA7ttIkRS-V4qcrBnyx111uWvFj3pYYq0Z3pKCiYjcMDOIGH270-8PwP3tNxztg2v3Tq7nUF03ymrDEzADutE4pioWIA_l9iQY357yIsezzk2uMndxcU3Sfq7IGEgm6XLD_cyXwpqeG1or9zuJkPqExVrs4MkaOyZcLSfxqETCxJM6ETzQlcV3z38QG9Oy_PNzjPox4v0nJfEyB4L0mbCWLF2RJM",
-            "https://dummyimage.com/1200x800/e4e0f5/5300b7&text=Image+2+-+Menu+Details",
-            "https://dummyimage.com/1200x800/e4e0f5/5300b7&text=Image+3+-+Mobile+View",
-            "https://dummyimage.com/1200x800/e4e0f5/5300b7&text=Image+4+-+Reservation"
+            "https://lh3.googleusercontent.com/aida-public/AB6AXuC3vvj4j5vsUBeFiUEaTQ6V23oOLA7ttIkRS-V4qcrBnyx111uWvFj3pYYq0Z3pKCiYjcMDOIGH270-8PwP3tNxztg2v3Tq7nUF03ymrDEzADutE4pioWIA_l9iQY357yIsezzk2uMndxcU3Sfq7IGEgm6XLD_cyXwpqeG1or9zuJkPqExVrs4MkaOyZcLSfxqETCxJM6ETzQlcV3z38QG9Oy_PNzjPox4v0nJfEyB4L0mbCWLF2RJM"
         ],
         waRef: "Desain Rasa Nusantara"
     }
