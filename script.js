@@ -46,52 +46,43 @@ function openWhatsApp(jenisPesanan) {
 // Data individual untuk masing-masing portfolio
 const portfolioData = {
     1: {
-        title: "Brew & Bloom Cafe",
-        category: "Cafe & Restaurant",
-        description: "Website modern untuk bisnis cafe yang menampilkan visual produk secara estetis, informasi lokasi, galeri suasana, dan tombol pemesanan reservasi melalui WhatsApp.",
-        concept: ["Minimalist", "Modern", "Warm"],
-        features: ["Responsive Design", "Menu / Catalog", "Gallery", "WhatsApp Integration", "Location Maps"],
+        title: "Website Company Profile",
+        category: "Company Profile",
+        description: "Website profesional untuk memperkenalkan bisnis, layanan, dan informasi perusahaan.",
+        url: "https://danieh-konstruksi.vercel.app",
+        concept: ["Professional", "Corporate", "Trustworthy"],
+        features: ["Company Overview", "Services & Heavy Equipment Catalog", "Responsive Design", "WhatsApp Quick Contact", "Location & Inquiry"],
         platform: "Responsive Web (Desktop, Tablet, Mobile)",
         images: [
-            "https://cdn.phototourl.com/free/2026-08-20-fa385ce3-95a1-492a-a1d8-4859817c10e6.png"
+            "assets/portfolio-company.jpg"
         ],
-        waRef: "Desain Brew & Bloom Cafe"
+        waRef: "Website Company Profile"
     },
     2: {
-        title: "Gentleman's Cut",
-        category: "Barbershop",
-        description: "Website clean dan maskulin untuk barbershop. Dirancang untuk memudahkan pelanggan melihat layanan, daftar harga, galeri gaya rambut, dan fitur booking janji temu langsung.",
-        concept: ["Masculine", "Clean", "Premium"],
-        features: ["Services & Pricing", "Stylist Profiles", "Booking / Contact", "Testimonials"],
-        platform: "Responsive Web",
+        title: "Website Cafe & Resto",
+        category: "Cafe & Resto",
+        description: "Website elegan untuk menampilkan menu, informasi cafe, dan memudahkan pelanggan melakukan pemesanan.",
+        url: "https://noirecafe.vercel.app",
+        concept: ["Minimalist", "Modern", "Warm"],
+        features: ["Interactive Food & Drink Menu", "Atmosphere Gallery", "Table Reservation", "WhatsApp Order", "Location Maps"],
+        platform: "Responsive Web (Desktop, Tablet, Mobile)",
         images: [
-            "https://lh3.googleusercontent.com/aida-public/AB6AXuCQQO0tB_cRLPA8rIBUDWS4opmdNU5Cyn0qmZIJmkWrXComVBYUF-B2VRYbmCbaSfZdtXVJ3o0h0bF0D1_xOeJCAo2WTjSUiPXnMN9ACxm3lVIni9nMDaEe75TW5UHQXvqtggmWr4g5lvr7OrMZ1vH75ck4zZg0sQBC7CmWGaWHfFQVU-O4tUWatG65kCN5UqWBJGtNS8S8IZswYTPMipcNRQSUEbKWYuTpSLrgThHv_ni_ds5cal2f"
+            "assets/portfolio-cafe.jpg"
         ],
-        waRef: "Desain Gentleman's Cut Barbershop"
+        waRef: "Website Cafe & Resto"
     },
     3: {
-        title: "Klin Wash Laundry",
-        category: "Laundry Service",
-        description: "Website sederhana dan profesional untuk layanan laundry harian dan premium. Fokus pada penyampaian informasi yang jelas terkait harga, layanan antar-jemput, dan kontak.",
-        concept: ["Fresh", "Clean", "Trustworthy"],
-        features: ["Responsive Design", "Pricing Table", "Pickup Service Info", "WhatsApp Contact"],
-        platform: "Responsive Web",
+        title: "Website Rental Mobil",
+        category: "Car Rental & Travel",
+        description: "Website modern untuk menampilkan kendaraan, layanan rental, dan memudahkan pelanggan melakukan booking.",
+        url: "https://veloradrive.vercel.app",
+        concept: ["Modern", "Dynamic", "Premium"],
+        features: ["Vehicle Fleet Catalog", "Booking & Reservation System", "Transparent Pricing", "WhatsApp Fast Response", "Customer Reviews"],
+        platform: "Responsive Web (Desktop, Tablet, Mobile)",
         images: [
-            "https://lh3.googleusercontent.com/aida-public/AB6AXuBmY87LmpdSWmfYn6HijrfKcQia_4Zvrr1pjzk7xeyTKD4TAtj_B9z3Zd5tfKp3oN4sgVZezMEiuUqRq4_yyRxGs3TX9txyI7wu9ZYpbPu7xMTwF4QTUGy7wmv6nGpIU9grk0ubGbOa08aC6W2rhC5CyYgLJ_YQW18wXQ7MGHuHma4Zg6JzEFTtUJgSqhHgA1uCtLTmWbQQ4QoiUDKZ4qnPjWTPbE4l-5GewQFtutZxiEDkKftR3m5s"
+            "assets/portfolio-rental.jpg"
         ],
-        waRef: "Desain Klin Wash Laundry"
-    },
-    4: {
-        title: "Rasa Nusantara",
-        category: "Restoran / Catering",
-        description: "Katalog menu digital interaktif untuk restoran berkelas. Menampilkan visual makanan beresolusi tinggi, informasi outlet cabang, jam operasional, dan pemesanan layanan katering.",
-        concept: ["Elegant", "Cultural", "Appetizing"],
-        features: ["Interactive Menu", "High-res Gallery", "Catering Contact", "Maps Integration"],
-        platform: "Responsive Web",
-        images: [
-            "https://lh3.googleusercontent.com/aida-public/AB6AXuC3vvj4j5vsUBeFiUEaTQ6V23oOLA7ttIkRS-V4qcrBnyx111uWvFj3pYYq0Z3pKCiYjcMDOIGH270-8PwP3tNxztg2v3Tq7nUF03ymrDEzADutE4pioWIA_l9iQY357yIsezzk2uMndxcU3Sfq7IGEgm6XLD_cyXwpqeG1or9zuJkPqExVrs4MkaOyZcLSfxqETCxJM6ETzQlcV3z38QG9Oy_PNzjPox4v0nJfEyB4L0mbCWLF2RJM"
-        ],
-        waRef: "Desain Rasa Nusantara"
+        waRef: "Website Rental Mobil"
     }
 };
 
