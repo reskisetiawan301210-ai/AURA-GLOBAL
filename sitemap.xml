@@ -1,39 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Halaman Utama & Beranda -->
   <url>
     <loc>https://auraglobal.my.id/</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Halaman Khusus SEO Lokal Majalengka -->
+  <url>
+    <loc>https://auraglobal.my.id/jasa-pembuatan-website-majalengka/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Halaman Layanan & Solusi -->
   <url>
     <loc>https://auraglobal.my.id/layanan/</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.90</priority>
   </url>
+
+  <!-- Halaman Portofolio Proyek -->
   <url>
     <loc>https://auraglobal.my.id/portfolio/</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.90</priority>
   </url>
+
+  <!-- Halaman Paket Harga Transparan -->
   <url>
     <loc>https://auraglobal.my.id/harga/</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.90</priority>
   </url>
+
+  <!-- Hub Edukasi & Panduan SEO -->
+  <url>
+    <loc>https://auraglobal.my.id/panduan/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Artikel Edukasi 1: Biaya Website UMKM -->
+  <url>
+    <loc>https://auraglobal.my.id/panduan/berapa-harga-pembuatan-website-umkm/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Artikel Edukasi 2: Manfaat Website Bisnis Majalengka -->
+  <url>
+    <loc>https://auraglobal.my.id/panduan/manfaat-website-bisnis-lokal-majalengka/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Artikel Edukasi 3: Perbedaan Landing Page vs Company Profile -->
+  <url>
+    <loc>https://auraglobal.my.id/panduan/perbedaan-landing-page-dan-company-profile/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Artikel Edukasi 4: Cara Memilih Jasa Pembuatan Website -->
+  <url>
+    <loc>https://auraglobal.my.id/panduan/cara-memilih-jasa-pembuatan-website-bisnis/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Halaman Profil Studio & Prinsip Kerja -->
   <url>
     <loc>https://auraglobal.my.id/tentang/</loc>
     <lastmod>2026-10-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
   </url>
+
+  <!-- Halaman Saluran Kontak & Konsultasi -->
   <url>
     <loc>https://auraglobal.my.id/kontak/</loc>
     <lastmod>2026-10-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
   </url>
 </urlset>
