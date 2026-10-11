@@ -85,3 +85,4 @@ Setelah menambah data baru:
    node --check script.js
    ```
 2. Buka `index.html` di browser Anda untuk memastikan kartu dan modal tampil dengan rapi.
+

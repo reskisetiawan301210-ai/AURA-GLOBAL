@@ -152,3 +152,4 @@ function validatePortfolioData() {
 
 // Jalankan validasi
 validatePortfolioData();
+
