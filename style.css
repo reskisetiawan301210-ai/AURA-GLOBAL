@@ -386,7 +386,75 @@ body.modal-open {
 }
 
 /* --------------------------------------------------
-   12. PREFERS-REDUCED-MOTION
+   12. PAGE TRANSITIONS & SCROLL PROGRESS
+   -------------------------------------------------- */
+#scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, #5300B7, #7C3AED, #A855F7);
+  z-index: 9999;
+  pointer-events: none;
+  transition: width 0.08s ease-out;
+}
+
+.page-curtain-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: #0D0B18;
+  z-index: 10000;
+  pointer-events: none;
+  transform: translateY(100%);
+  transition: transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-curtain-overlay.is-active {
+  transform: translateY(0%);
+  pointer-events: auto;
+}
+
+.page-curtain-overlay.is-leaving {
+  transform: translateY(-100%);
+}
+
+/* --------------------------------------------------
+   13. STUDIO ARCHITECTURAL CANVAS (HERO GRAPHIC)
+   -------------------------------------------------- */
+@keyframes floatSubtleLayer1 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(0.4deg); }
+}
+
+@keyframes floatSubtleLayer2 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(-0.5deg); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.75; transform: scale(1.08); }
+}
+
+.studio-float-layer-1 {
+  animation: floatSubtleLayer1 6s ease-in-out infinite;
+}
+
+.studio-float-layer-2 {
+  animation: floatSubtleLayer2 7s ease-in-out infinite 0.5s;
+}
+
+.studio-glow-orb {
+  animation: pulseGlow 5s ease-in-out infinite;
+}
+
+/* --------------------------------------------------
+   14. PREFERS-REDUCED-MOTION
    -------------------------------------------------- */
 @media (prefers-reduced-motion: reduce) {
   *, ::before, ::after {
@@ -395,11 +463,19 @@ body.modal-open {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-  .orbit-ring-1, .orbit-ring-2, .orbit-ring-3, .marquee-track, .problem-card-float {
+  .orbit-ring-1, .orbit-ring-2, .orbit-ring-3, .marquee-track, .problem-card-float, .studio-float-layer-1, .studio-float-layer-2, .studio-glow-orb {
     animation: none !important;
   }
   .scrub-word {
     color: #0F0C20 !important;
+  }
+  .page-curtain-overlay {
+    transition: opacity 0.15s ease !important;
+    transform: none !important;
+  }
+  .page-curtain-overlay:not(.is-active) {
+    opacity: 0 !important;
+    display: none !important;
   }
 }
 

@@ -47,17 +47,22 @@
 </head>
 <body class="bg-white text-dark font-sans antialiased selection:bg-primary-light selection:text-primary min-h-screen flex flex-col justify-between">
 
+  <!-- SCROLL PROGRESS INDICATOR -->
+  <div id="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- SEAMLESS PAGE TRANSITION OVERLAY -->
+  <div id="page-curtain" class="page-curtain-overlay" aria-hidden="true">
+    <div class="flex items-center gap-3">
+      <img src="/assets/logo-icon.png" alt="" class="w-10 h-10 object-contain animate-pulse" />
+      <span class="text-white font-extrabold text-lg uppercase tracking-wider">AURA GLOBAL</span>
+    </div>
+  </div>
+
   <!-- HEADER / NAVBAR -->
   <header id="navbar" class="w-full bg-white/95 backdrop-blur-md border-b border-border-card">
     <div class="site-container h-20 flex items-center justify-between">
-      <a href="/" class="flex items-center gap-3.5 group cursor-pointer" aria-label="AURA GLOBAL Beranda">
-        <div class="w-9 h-9 rounded-full bg-primary-light border-2 border-primary flex items-center justify-center p-1.5 shadow-xs group-hover:scale-105 transition-transform">
-          <span class="w-3 h-3 rounded-full bg-primary"></span>
-        </div>
-        <div class="flex flex-col">
-          <span class="text-lg tracking-tight font-extrabold text-dark uppercase leading-none group-hover:text-primary transition-colors">AURA GLOBAL</span>
-          <span class="text-[9px] tracking-[0.2em] text-primary font-bold uppercase mt-1">Digital Web Studio</span>
-        </div>
+      <a href="/" class="flex items-center group cursor-pointer" aria-label="AURA GLOBAL Beranda">
+        <img src="/assets/logo-full.png" alt="AURA GLOBAL Digital Web Studio" class="h-8 sm:h-9 w-auto object-contain transition-transform group-hover:scale-102" />
       </a>
 
       <a href="/" class="inline-flex items-center gap-2 bg-surface-alt hover:bg-primary-light text-dark hover:text-primary font-bold text-xs px-5 py-2.5 rounded-full transition-colors border border-border-card">

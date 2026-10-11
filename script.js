@@ -1,7 +1,82 @@
-/**
- * script.js — AURA GLOBAL Digital Web Studio
- * Progressive enhancement for navigation, portfolio filtering, accessible lightbox modal, and WhatsApp conversion.
- */
+// ----------------------------------------------------
+// 0. SEAMLESS APP-LIKE PAGE TRANSITIONS & SCROLL PROGRESS
+// ----------------------------------------------------
+function initScrollProgress() {
+  const progressBar = document.getElementById("scroll-progress-bar");
+  if (!progressBar) return;
+
+  window.addEventListener("scroll", () => {
+    const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+    if (totalHeight > 0) {
+      const progress = (window.scrollY / totalHeight) * 100;
+      progressBar.style.width = `${Math.min(100, Math.max(0, progress))}%`;
+    }
+  }, { passive: true });
+}
+
+function initPageTransitions() {
+  const curtain = document.getElementById("page-curtain");
+  if (!curtain) return;
+
+  // On initial page load or restored from bfcache
+  curtain.classList.remove("is-active");
+  curtain.classList.add("is-leaving");
+  setTimeout(() => {
+    curtain.classList.remove("is-leaving");
+  }, 450);
+
+  window.addEventListener("pageshow", (event) => {
+    if (event.persisted) {
+      curtain.classList.remove("is-active");
+      curtain.classList.remove("is-leaving");
+    }
+  });
+
+  // Intercept internal page link clicks
+  const links = document.querySelectorAll("a[href]");
+  links.forEach(link => {
+    const href = link.getAttribute("href");
+    if (!href || href.startsWith("#") || href.startsWith("http") || href.startsWith("mailto:") || href.startsWith("tel:") || link.target === "_blank") {
+      return;
+    }
+
+    link.addEventListener("click", (e) => {
+      if (e.ctrlKey || e.metaKey || e.shiftKey) return;
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+      e.preventDefault();
+      curtain.classList.remove("is-leaving");
+      curtain.classList.add("is-active");
+
+      setTimeout(() => {
+        window.location.href = href;
+      }, 360);
+    });
+  });
+}
+
+function initScrollVelocityMarquee() {
+  const marqueeTrack = document.querySelector(".marquee-track");
+  if (!marqueeTrack) return;
+
+  let lastScrollY = window.scrollY;
+  let scrollTimeout = null;
+
+  window.addEventListener("scroll", () => {
+    const currentScrollY = window.scrollY;
+    const velocity = Math.abs(currentScrollY - lastScrollY);
+    lastScrollY = currentScrollY;
+
+    if (velocity > 15) {
+      marqueeTrack.style.animationDuration = "12s";
+    }
+
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(() => {
+      marqueeTrack.style.animationDuration = "26s";
+    }, 200);
+  }, { passive: true });
+}
 
 // ----------------------------------------------------
 // 1. SCROLL & NAVBAR DYNAMICS
@@ -471,9 +546,13 @@ function switchServiceTab(index, btnTarget) {
 // DOM READY INITIALIZATION
 // ----------------------------------------------------
 document.addEventListener("DOMContentLoaded", () => {
+  initScrollProgress();
+  initPageTransitions();
   initHeroWordSlider();
   initWordScrub();
   initOrbitCycle();
+  initScrollVelocityMarquee();
 });
+
 
 
