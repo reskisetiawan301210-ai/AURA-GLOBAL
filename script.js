@@ -1,6 +1,6 @@
 /**
  * script.js — AURA GLOBAL Digital Web Studio
- * Interactive behaviors, accessible modal, navigation, and conversion handlers.
+ * Progressive enhancement for navigation, portfolio filtering, accessible lightbox modal, and WhatsApp conversion.
  */
 
 // ----------------------------------------------------
@@ -61,147 +61,74 @@ function handleContactForm(event) {
   const urlEncoded = encodeURIComponent(waText);
   const link = `https://api.whatsapp.com/send?phone=${AURA_WA_NUMBER}&text=${urlEncoded}`;
 
-  // Tampilkan notifikasi konfirmasi di form
   const alertBox = document.getElementById("contactAlert");
   if (alertBox) {
     alertBox.classList.remove("hidden");
     alertBox.scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
 
-  // Buka WhatsApp di tab baru
   window.open(link, "_blank", "noopener,noreferrer");
 }
 
 // ----------------------------------------------------
-// 3. VERIFIED PORTFOLIO DATA & MODAL
+// 3. PORTFOLIO FILTER TABS (Editorial Filter)
 // ----------------------------------------------------
-const portfolioData = {
-  1: {
-    title: "Danih Konstruksi",
-    subtitle: "Website Profil Perusahaan & Sewa Alat Berat",
-    category: "Company Profile",
-    description: "Website profil perusahaan dan katalog alat berat profesional untuk PT/CV konstruksi. Dirancang untuk meningkatkan kredibilitas penawaran proyek, memamerkan armada alat berat, dan mempermudah calon klien menghubungi via WhatsApp.",
-    url: "https://danieh-konstruksi.vercel.app",
-    concept: ["Kredibel & Korporat", "Katalog Terstruktur", "Fokus Konversi WA"],
-    features: [
-      "Katalog Sewa Alat Berat Lengkap",
-      "Profil Perusahaan & Keunggulan Layanan",
-      "Panggilan Cepat via WhatsApp",
-      "Desain Responsif Mobile & Desktop",
-      "Formulir Permintaan Penawaran"
-    ],
-    platform: "Responsive Web (Vercel Live)",
-    image: "assets/portfolio-company.jpg",
-    waRef: "Website Company Profile (Referensi Danih Konstruksi)"
-  },
-  2: {
-    title: "Noiré Café",
-    subtitle: "Website Specialty Coffee & Restoran",
-    category: "Cafe & Dining",
-    description: "Website elegan bertema dark luxury untuk cafe & bistro artisan. Menampilkan pengalaman visual menu kopi dan hidangan, atmosfer tempat, jam operasional, serta integrasi tombol reservasi meja.",
-    url: "https://noirecafe.vercel.app",
-    concept: ["Dark Luxury Minimalist", "Interaktif", "Estetik Eksklusif"],
-    features: [
-      "Katalog Menu Makanan & Minuman Interaktif",
-      "Galeri Suasana & Ambience Cafe",
-      "Animasi Pembuka Logo Eksklusif",
-      "Tombol Reservasi Meja Cepat",
-      "Petunjuk Lokasi & Jam Buka Terang"
-    ],
-    platform: "Responsive Web (Vercel Live)",
-    image: "assets/portfolio-cafe.jpg",
-    waRef: "Website Cafe & Resto (Referensi Noiré Café)"
-  },
-  3: {
-    title: "Velora Drive",
-    subtitle: "Website Rental Mobil Eksekutif & Travel",
-    category: "Rental & Mobility",
-    description: "Website premium untuk jasa rental mobil eksekutif dan layanan private chauffeur. Menampilkan jajaran armada mobil berkelas, transparansi paket sewa, dan sistem reservasi instan.",
-    url: "https://veloradrive.vercel.app",
-    concept: ["Premium Mobility", "Transparan", "Modern & Cepat"],
-    features: [
-      "Katalog Armada Kendaraan Mewah",
-      "Daftar Tarif Sewa Harian & Mingguan",
-      "Layanan Private Chauffeur & Drop-off",
-      "Integrasi Booking Langsung ke WhatsApp",
-      "Jaminan Keamanan & Testimoni Pelanggan"
-    ],
-    platform: "Responsive Web (Vercel Live)",
-    image: "assets/portfolio-rental.jpg",
-    waRef: "Website Rental Mobil (Referensi Velora Drive)"
-  },
-  4: {
-    title: "Citumang Rafting",
-    subtitle: "Website Wisata Alam & Body Rafting Pangandaran",
-    category: "Pariwisata & Outdoor",
-    description: "Website paket wisata alam dan body rafting di Citumang Pangandaran. Menyajikan detail paket petualangan, jaminan keamanan pemandu berlisensi, galeri kegiatan, serta pemesanan tiket grup secara praktis.",
-    url: "https://citumangrafting.vercel.app",
-    concept: ["Segar & Menarik", "Transparansi Paket", "Booking Rombongan Cepat"],
-    features: [
-      "Pilihan Paket Wisata & Rincian Fasilitas",
-      "Informasi Pemandu & Standar Keamanan",
-      "Galeri Petualangan Body Rafting",
-      "Pemesanan Tiket Langsung via WhatsApp",
-      "Petunjuk Rute & Tanya-Jawab Wisatawan"
-    ],
-    platform: "Responsive Web (Vercel Live)",
-    image: "assets/portfolio-citumang.jpg",
-    waRef: "Website Pariwisata (Referensi Citumang Rafting)"
+let activeCategory = "all";
+
+function filterPortfolio(category, eventTarget) {
+  activeCategory = category;
+  
+  // Update active state tab buttons
+  const tabButtons = document.querySelectorAll(".portfolio-tab-btn");
+  tabButtons.forEach(btn => {
+    btn.classList.remove("text-primary", "border-primary", "font-bold");
+    btn.classList.add("text-body", "border-transparent", "font-semibold");
+  });
+
+  if (eventTarget) {
+    eventTarget.classList.remove("text-body", "border-transparent", "font-semibold");
+    eventTarget.classList.add("text-primary", "border-primary", "font-bold");
   }
-};
 
-let currentPortfolioId = null;
+  // Filter cards
+  const cards = document.querySelectorAll(".portfolio-card");
+  cards.forEach(card => {
+    const cardCat = card.getAttribute("data-category");
+    if (category === "all" || cardCat === category) {
+      card.style.display = "flex";
+      card.classList.add("animate-fade-in-up");
+    } else {
+      card.style.display = "none";
+      card.classList.remove("animate-fade-in-up");
+    }
+  });
+}
 
-function openPortfolioModal(id) {
-  const data = portfolioData[id];
-  if (!data) return;
+// ----------------------------------------------------
+// 4. ACCESSIBLE PORTFOLIO LIGHTBOX MODAL
+// ----------------------------------------------------
+let currentPortfolioIndex = 0;
+let lastFocusedElement = null;
 
-  currentPortfolioId = id;
+function getPublishedItems() {
+  if (typeof portfolioItems !== "undefined" && Array.isArray(portfolioItems)) {
+    return portfolioItems.filter(item => item.published !== false);
+  }
+  return [];
+}
+
+function openPortfolioModal(id, triggerElement) {
+  const items = getPublishedItems();
+  const index = items.findIndex(item => item.id === id);
+  if (index === -1) return;
+
+  currentPortfolioIndex = index;
+  lastFocusedElement = triggerElement || document.activeElement;
+
+  populateModalData(items[currentPortfolioIndex]);
 
   const modal = document.getElementById("portfolioModal");
   const modalContent = document.getElementById("modalContent");
-  const modalTitle = document.getElementById("modalTitle");
-  const modalSubtitle = document.getElementById("modalSubtitle");
-  const modalCategory = document.getElementById("modalCategory");
-  const modalDesc = document.getElementById("modalDesc");
-  const modalPlatform = document.getElementById("modalPlatform");
-  const modalLiveLink = document.getElementById("modalLiveLink");
-  const modalConcept = document.getElementById("modalConcept");
-  const modalFeatures = document.getElementById("modalFeatures");
-  const modalImg = document.getElementById("modalImg");
-  const modalCTA = document.getElementById("modalCTA");
-
-  if (modalTitle) modalTitle.innerText = data.title;
-  if (modalSubtitle) modalSubtitle.innerText = data.subtitle;
-  if (modalCategory) modalCategory.innerText = data.category;
-  if (modalDesc) modalDesc.innerText = data.description;
-  if (modalPlatform) modalPlatform.innerText = data.platform;
-
-  if (modalLiveLink) {
-    modalLiveLink.href = data.url;
-    modalLiveLink.innerText = data.url.replace("https://", "");
-  }
-
-  if (modalConcept) {
-    modalConcept.innerHTML = data.concept
-      .map(c => `<span class="bg-[#F3EEFC] text-[#5300B7] text-xs font-bold px-3 py-1 rounded-full border border-purple-100">${c}</span>`)
-      .join("");
-  }
-
-  if (modalFeatures) {
-    modalFeatures.innerHTML = data.features
-      .map(f => `<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-primary">check_circle</span> <span>${f}</span></li>`)
-      .join("");
-  }
-
-  if (modalImg) {
-    modalImg.src = data.image;
-    modalImg.alt = `${data.title} - Tampilan Website`;
-  }
-
-  if (modalCTA) {
-    modalCTA.setAttribute("onclick", `openWhatsApp('${data.waRef}')`);
-  }
 
   document.body.classList.add("modal-open");
   if (modal) {
@@ -211,6 +138,79 @@ function openPortfolioModal(id) {
     modalContent.classList.remove("scale-95");
     modalContent.classList.add("scale-100");
   }
+
+  // Focus close button inside modal
+  const closeBtn = document.getElementById("modalCloseBtn");
+  if (closeBtn) closeBtn.focus();
+}
+
+function populateModalData(data) {
+  if (!data) return;
+
+  const modalTitle = document.getElementById("modalTitle");
+  const modalSubtitle = document.getElementById("modalSubtitle");
+  const modalCategory = document.getElementById("modalCategory");
+  const modalDesc = document.getElementById("modalDesc");
+  const modalFeatures = document.getElementById("modalFeatures");
+  const modalTech = document.getElementById("modalTech");
+  const modalImg = document.getElementById("modalImg");
+  const modalCTA = document.getElementById("modalCTA");
+  const modalExternalLink = document.getElementById("modalExternalLink");
+  const modalCounter = document.getElementById("modalCounter");
+
+  if (modalTitle) modalTitle.innerText = data.title;
+  if (modalSubtitle) modalSubtitle.innerText = data.subtitle || data.category;
+  if (modalCategory) modalCategory.innerText = data.badge || "Proyek Website";
+  if (modalDesc) modalDesc.innerText = data.detailDescription || data.description;
+
+  const items = getPublishedItems();
+  if (modalCounter) {
+    modalCounter.innerText = `${currentPortfolioIndex + 1} / ${items.length}`;
+  }
+
+  if (modalFeatures && Array.isArray(data.features)) {
+    modalFeatures.innerHTML = data.features
+      .map(f => `<li class="flex items-center gap-2 text-xs text-body"><span class="material-symbols-outlined text-[16px] text-primary">check_circle</span> <span>${f}</span></li>`)
+      .join("");
+  }
+
+  if (modalTech && Array.isArray(data.tech)) {
+    modalTech.innerHTML = data.tech
+      .map(t => `<span class="bg-primary-light text-primary text-[11px] font-bold px-2.5 py-0.5 rounded-md border border-primary-border">${t}</span>`)
+      .join("");
+  }
+
+  if (modalImg) {
+    modalImg.src = data.image;
+    modalImg.alt = data.imageAlt || `${data.title} - Tampilan Website`;
+  }
+
+  // Handle external link button: ONLY show for proyek_asli with valid url
+  if (modalExternalLink) {
+    if (data.type === "proyek_asli" && data.url && data.url.startsWith("http")) {
+      modalExternalLink.href = data.url;
+      modalExternalLink.classList.remove("hidden");
+      modalExternalLink.classList.add("inline-flex");
+    } else {
+      modalExternalLink.classList.add("hidden");
+      modalExternalLink.classList.remove("inline-flex");
+    }
+  }
+
+  if (modalCTA) {
+    modalCTA.setAttribute("onclick", `openWhatsApp('${data.waRef || data.title}')`);
+  }
+}
+
+function navigateModal(direction) {
+  const items = getPublishedItems();
+  if (items.length === 0) return;
+
+  currentPortfolioIndex += direction;
+  if (currentPortfolioIndex >= items.length) currentPortfolioIndex = 0;
+  if (currentPortfolioIndex < 0) currentPortfolioIndex = items.length - 1;
+
+  populateModalData(items[currentPortfolioIndex]);
 }
 
 function closePortfolioModal() {
@@ -226,23 +226,52 @@ function closePortfolioModal() {
   setTimeout(() => {
     if (modal) modal.classList.add("pointer-events-none");
     document.body.classList.remove("modal-open");
+    if (lastFocusedElement && typeof lastFocusedElement.focus === "function") {
+      lastFocusedElement.focus();
+    }
   }, 250);
 }
 
 // ----------------------------------------------------
-// 4. KEYBOARD & ACCESSIBILITY
+// 5. KEYBOARD ACCESSIBILITY & SWIPE
 // ----------------------------------------------------
 document.addEventListener("keydown", (e) => {
   const modal = document.getElementById("portfolioModal");
   if (modal && !modal.classList.contains("opacity-0")) {
     if (e.key === "Escape") {
       closePortfolioModal();
+    } else if (e.key === "ArrowRight") {
+      navigateModal(1);
+    } else if (e.key === "ArrowLeft") {
+      navigateModal(-1);
     }
   }
 });
 
+// Touch swipe logic for modal
+let touchStartX = 0;
+let touchEndX = 0;
+const modalContainer = document.getElementById("portfolioModal");
+
+if (modalContainer) {
+  modalContainer.addEventListener("touchstart", (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+
+  modalContainer.addEventListener("touchend", (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    const swipeThreshold = 50;
+    if (touchEndX < touchStartX - swipeThreshold) {
+      navigateModal(1);
+    }
+    if (touchEndX > touchStartX + swipeThreshold) {
+      navigateModal(-1);
+    }
+  }, { passive: true });
+}
+
 // ----------------------------------------------------
-// 5. MOBILE DRAWER MENU
+// 6. MOBILE DRAWER MENU
 // ----------------------------------------------------
 function toggleMobileMenu() {
   const mobileMenu = document.getElementById("mobile-menu");

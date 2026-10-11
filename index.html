@@ -57,6 +57,7 @@
             "primary-light": "#F3EEFC",
             "primary-border": "#EBDDFF",
             "dark": "#0F0C20",
+            "dark-slate": "#151128",
             "body": "#4A455A",
             "muted": "#716C82",
             "surface-bg": "#FAFAFC",
@@ -184,7 +185,7 @@
 <body class="bg-surface-bg text-dark font-sans antialiased selection:bg-primary-light selection:text-primary">
 
   <!-- HEADER / NAVBAR -->
-  <header id="navbar" class="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-border-card transition-all duration-300">
+  <header id="navbar" class="fixed top-0 left-0 w-full z-50 bg-white/85 backdrop-blur-md border-b border-border-card transition-all duration-300">
     <div class="max-w-7xl mx-auto h-20 px-5 sm:px-8 flex items-center justify-between">
       
       <!-- LOGO BRAND IDENTITY -->
@@ -212,7 +213,7 @@
 
       <!-- CTA & MOBILE TOGGLE -->
       <div class="flex items-center gap-3">
-        <button onclick="openWhatsApp('konsultasi umum')" class="hidden sm:inline-flex items-center gap-2 bg-primary text-white font-bold text-sm px-5 py-2.5 rounded-xl hover:bg-primary-dark transition-all shadow-[0_4px_14px_rgba(83,0,183,0.25)] hover:shadow-[0_6px_20px_rgba(83,0,183,0.35)] hover:-translate-y-0.5">
+        <button onclick="openWhatsApp('konsultasi umum')" class="hidden sm:inline-flex items-center gap-2 bg-dark hover:bg-primary text-white font-bold text-sm px-5 py-2.5 rounded-xl transition-all shadow-md hover:-translate-y-0.5">
           <span>Konsultasi Gratis</span>
           <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
         </button>
@@ -228,7 +229,7 @@
   <!-- MOBILE DRAWER MENU -->
   <div id="mobile-menu" class="fixed top-20 left-0 w-full bg-white border-b border-border-card z-40 hidden flex-col px-6 py-6 gap-3 shadow-xl lg:hidden transition-all duration-300">
     <a href="#home" onclick="closeMobileMenu(); scrollToSection('home');" class="text-base font-bold text-dark hover:text-primary transition-colors py-2 border-b border-surface-alt">Beranda</a>
-    <a href="#keunggulan" onclick="closeMobileMenu(); scrollToSection('keunggulan');" class="text-base font-bold text-dark hover:text-primary transition-colors py-2 border-b border-surface-alt">Nilai & Keunggulan</a>
+    <a href="#keunggulan" onclick="closeMobileMenu(); scrollToSection('keunggulan');" class="text-base font-bold text-dark hover:text-primary transition-colors py-2 border-b border-surface-alt">Nilai &amp; Keunggulan</a>
     <a href="#portfolio" onclick="closeMobileMenu(); scrollToSection('portfolio');" class="text-base font-bold text-dark hover:text-primary transition-colors py-2 border-b border-surface-alt">Portofolio Live</a>
     <a href="#layanan" onclick="closeMobileMenu(); scrollToSection('layanan');" class="text-base font-bold text-dark hover:text-primary transition-colors py-2 border-b border-surface-alt">Layanan</a>
     <a href="#alur-kerja" onclick="closeMobileMenu(); scrollToSection('alur-kerja');" class="text-base font-bold text-dark hover:text-primary transition-colors py-2 border-b border-surface-alt">Alur Kerja</a>
@@ -244,23 +245,24 @@
   <main class="w-full pt-20">
     
     <!-- -----------------------------------------------------------------
-         HERO SECTION (TWO-COLUMN EDITORIAL DESIGN)
+         HERO SECTION (SINTESIS REFERENSI 1: STUDIO UNGU LEMBUT + VISUAL 3D)
          ----------------------------------------------------------------- -->
-    <section id="home" class="relative w-full pt-16 pb-16 lg:pt-28 lg:pb-24 px-5 sm:px-8 lg:px-12 overflow-hidden bg-surface-card hero-glow border-b border-border-card/60">
-      <!-- Ambient Glow Accents -->
-      <div class="absolute top-12 right-12 w-[480px] h-[480px] bg-primary/10 rounded-full blur-[120px] pointer-events-none -z-10 animate-pulse-subtle"></div>
-      <div class="absolute bottom-8 left-8 w-[320px] h-[320px] bg-primary/5 rounded-full blur-[90px] pointer-events-none -z-10"></div>
+    <section id="home" class="relative w-full pt-16 pb-16 lg:pt-24 lg:pb-24 px-5 sm:px-8 lg:px-12 overflow-hidden bg-surface-card hero-glow border-b border-border-card/60">
+      <!-- Soft ambient backdrop blobs -->
+      <div class="absolute top-10 right-10 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[130px] pointer-events-none -z-10 animate-pulse-subtle"></div>
+      <div class="absolute bottom-8 left-8 w-[340px] h-[340px] bg-primary/5 rounded-full blur-[90px] pointer-events-none -z-10"></div>
       
       <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
           
-          <!-- LEFT COLUMN: Headline, Positioning, CTAs, Highlights -->
+          <!-- LEFT COLUMN: Headline, Positioning, Dual CTAs, Highlights -->
           <div class="lg:col-span-6 flex flex-col items-start text-left">
             
-            <!-- Studio Status Pill -->
+            <!-- Small Studio Badge (Sesuai Referensi 1) -->
             <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-light text-primary border border-primary-border text-xs sm:text-sm font-bold mb-6 shadow-sm">
-              <span class="material-symbols-outlined text-[17px] text-primary">auto_awesome</span>
-              <span>Website Profesional untuk UMKM & Bisnis</span>
+              <span class="text-amber-500">✨</span>
+              <span>Website Profesional untuk UMKM &amp; Bisnis</span>
+              <span class="text-amber-500">✨</span>
             </div>
             
             <!-- Main Headline -->
@@ -275,13 +277,13 @@
               Saatnya bisnis Anda tampil lebih kredibel dan terpercaya di internet. Kami membangun website modern, berkecepatan tinggi, responsif di HP, dan terhubung langsung ke WhatsApp pelanggan Anda.
             </p>
             
-            <!-- Primary & Secondary CTAs -->
+            <!-- Dual CTAs (Sesuai Referensi 1: 1 Solid Gelap/Ungu + 1 Sekunder) -->
             <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-10 w-full sm:w-auto">
-              <button onclick="openWhatsApp('konsultasi umum')" class="inline-flex items-center justify-center gap-2 bg-primary text-white font-bold text-base px-7 py-3.5 rounded-xl hover:bg-primary-dark transition-all shadow-[0_6px_20px_rgba(83,0,183,0.3)] hover:-translate-y-0.5">
+              <button onclick="openWhatsApp('konsultasi umum')" class="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold text-base px-7 py-3.5 rounded-xl transition-all shadow-[0_6px_20px_rgba(83,0,183,0.3)] hover:-translate-y-0.5">
                 <span>Konsultasi Gratis</span>
                 <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
               </button>
-              <button onclick="scrollToSection('portfolio')" class="inline-flex items-center justify-center gap-2 bg-surface-alt text-dark font-bold text-base px-6 py-3.5 rounded-xl hover:bg-primary-light hover:text-primary transition-all border border-border-card">
+              <button onclick="scrollToSection('portfolio')" class="inline-flex items-center justify-center gap-2 bg-white text-dark font-bold text-base px-6 py-3.5 rounded-xl hover:bg-primary-light hover:text-primary transition-all border border-border-card shadow-xs">
                 <span>Lihat Portofolio</span>
                 <span class="material-symbols-outlined text-[18px]">visibility</span>
               </button>
@@ -342,7 +344,7 @@
 
         </div>
 
-        <!-- TRUST BAR / BUSINESS CATEGORIES -->
+        <!-- TRUST BAR / BUSINESS CATEGORIES (Alternatif Jujur untuk Row Logo Klien) -->
         <div class="mt-16 pt-8 border-t border-border-card/80 max-w-7xl mx-auto">
           <p class="text-center text-xs sm:text-sm font-bold text-muted uppercase tracking-wider mb-5">
             Solusi website tepat untuk berbagai jenis bisnis &amp; usaha
@@ -446,30 +448,50 @@
     </section>
 
     <!-- -----------------------------------------------------------------
-         PORTFOLIO SECTION (VERIFIED LIVE PROJECTS SHOWCASE)
+         PORTFOLIO SECTION (SINTESIS REFERENSI 2: EDITORIAL TABS & 2-COL MOCKUPS)
          ----------------------------------------------------------------- -->
     <section id="portfolio" class="w-full py-20 lg:py-28 px-5 sm:px-8 lg:px-12 bg-surface-card border-b border-border-card">
       <div class="max-w-7xl mx-auto">
         
-        <!-- Header -->
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
-          <div class="max-w-2xl">
-            <span class="text-primary font-bold text-xs sm:text-sm tracking-widest uppercase mb-3 block">Karya Terverifikasi</span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-dark leading-tight">
-              Eksplorasi Proyek Website yang Telah Kami Bangun
+        <!-- Editorial Header (Sesuai Referensi 2: Judul Kiri + Teks Naratif Kanan) -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-12 pb-8 border-b border-border-card/70">
+          <div class="lg:col-span-7">
+            <span class="text-primary font-bold text-xs sm:text-sm tracking-widest uppercase mb-3 block">Karya Terverifikasi &amp; Portofolio</span>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-dark leading-tight tracking-tight">
+              Bold Ideas, Stunning Results.
             </h2>
           </div>
-          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-light text-primary border border-primary-border text-xs sm:text-sm font-bold shrink-0 self-start md:self-auto">
-            <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-            <span>4 Proyek Terverifikasi Aktif</span>
+          <div class="lg:col-span-5">
+            <p class="text-sm sm:text-base text-body leading-relaxed">
+              Dari website profil perusahaan hingga destinasi wisata, setiap proyek kami rancang dengan fokus pada estetika berkelas, kecepatan akses, dan hasil konversi nyata.
+            </p>
           </div>
         </div>
 
-        <!-- 4-Card Portfolio Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+        <!-- Filter Tabs (Sesuai Referensi 2: Underlined Editorial Category Tabs) -->
+        <div class="flex items-center gap-6 sm:gap-8 overflow-x-auto pb-4 mb-10 border-b border-border-card/60" role="tablist" aria-label="Kategori Portofolio">
+          <button onclick="filterPortfolio('all', this)" class="portfolio-tab-btn text-primary border-primary font-bold text-sm sm:text-base whitespace-nowrap pb-2 focus:outline-none" role="tab" aria-selected="true">
+            Semua Proyek
+          </button>
+          <button onclick="filterPortfolio('company-profile', this)" class="portfolio-tab-btn text-body border-transparent font-semibold text-sm sm:text-base whitespace-nowrap pb-2 hover:text-primary transition-colors focus:outline-none" role="tab" aria-selected="false">
+            Company Profile
+          </button>
+          <button onclick="filterPortfolio('cafe-resto', this)" class="portfolio-tab-btn text-body border-transparent font-semibold text-sm sm:text-base whitespace-nowrap pb-2 hover:text-primary transition-colors focus:outline-none" role="tab" aria-selected="false">
+            Cafe &amp; Resto
+          </button>
+          <button onclick="filterPortfolio('rental-travel', this)" class="portfolio-tab-btn text-body border-transparent font-semibold text-sm sm:text-base whitespace-nowrap pb-2 hover:text-primary transition-colors focus:outline-none" role="tab" aria-selected="false">
+            Rental &amp; Travel
+          </button>
+          <button onclick="filterPortfolio('wisata-alam', this)" class="portfolio-tab-btn text-body border-transparent font-semibold text-sm sm:text-base whitespace-nowrap pb-2 hover:text-primary transition-colors focus:outline-none" role="tab" aria-selected="false">
+            Wisata Alam
+          </button>
+        </div>
+
+        <!-- 2-Column Editorial Portfolio Grid (Progressive Enhancement) -->
+        <div id="portfolioGrid" class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
           
-          <!-- Project 1: Danih Konstruksi -->
-          <article class="bg-surface-bg rounded-3xl p-5 sm:p-7 border border-border-card glow-card flex flex-col justify-between">
+          <!-- Card 1: Danih Konstruksi -->
+          <article class="portfolio-card bg-surface-bg rounded-3xl p-5 sm:p-7 border border-border-card glow-card flex flex-col justify-between" data-category="company-profile">
             <div>
               <!-- Browser Mockup Window -->
               <div class="rounded-2xl overflow-hidden mb-6 border border-border-card bg-white shadow-sm">
@@ -487,15 +509,15 @@
                   <span class="w-6"></span>
                 </div>
                 <!-- Image Container -->
-                <div class="aspect-[16/10] overflow-hidden bg-surface-alt group cursor-pointer" onclick="openPortfolioModal(1)">
+                <div class="aspect-[16/10] overflow-hidden bg-surface-alt group cursor-pointer" onclick="openPortfolioModal(1, this)">
                   <img src="assets/portfolio-company.jpg" alt="Website Danih Konstruksi - Profil Perusahaan & Sewa Alat Berat" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="1280" height="800" />
                 </div>
               </div>
 
-              <!-- Metadata -->
+              <!-- Metadata & Caption (Sesuai Referensi 2) -->
               <div class="flex items-center justify-between gap-3 mb-2">
                 <span class="text-xs font-bold uppercase tracking-wider text-primary bg-primary-light px-3 py-1 rounded-full border border-primary-border">Company Profile</span>
-                <span class="text-xs text-muted font-medium">PT / CV Konstruksi</span>
+                <span class="text-xs font-bold text-green-700 bg-green-50 px-2.5 py-0.5 rounded-md border border-green-200">Proyek Website</span>
               </div>
               <h3 class="text-2xl font-bold text-dark mb-2">Danih Konstruksi</h3>
               <p class="text-sm text-body leading-relaxed mb-6">
@@ -503,21 +525,21 @@
               </p>
             </div>
 
-            <!-- Actions -->
+            <!-- Actions (Tombol Kunjungi Website ↗ hanya untuk proyek asli) -->
             <div class="flex flex-col sm:flex-row items-center gap-3 pt-4 border-t border-border-card/80">
               <a href="https://danieh-konstruksi.vercel.app" target="_blank" rel="noopener noreferrer" class="w-full sm:flex-1 inline-flex items-center justify-center gap-2 bg-primary text-white font-bold text-sm py-3 px-4 rounded-xl hover:bg-primary-dark transition-colors shadow-sm">
-                <span>Buka Live Website</span>
-                <span class="material-symbols-outlined text-[17px]">open_in_new</span>
+                <span>Kunjungi Website</span>
+                <span class="material-symbols-outlined text-[17px]">arrow_outward</span>
               </a>
-              <button onclick="openPortfolioModal(1)" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-dark font-bold text-sm py-3 px-5 rounded-xl border border-border-card hover:bg-primary-light hover:text-primary transition-colors">
+              <button onclick="openPortfolioModal(1, this)" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-dark font-bold text-sm py-3 px-5 rounded-xl border border-border-card hover:bg-primary-light hover:text-primary transition-colors">
                 <span>Detail</span>
                 <span class="material-symbols-outlined text-[17px]">info</span>
               </button>
             </div>
           </article>
 
-          <!-- Project 2: Noiré Café -->
-          <article class="bg-surface-bg rounded-3xl p-5 sm:p-7 border border-border-card glow-card flex flex-col justify-between">
+          <!-- Card 2: Noiré Café -->
+          <article class="portfolio-card bg-surface-bg rounded-3xl p-5 sm:p-7 border border-border-card glow-card flex flex-col justify-between" data-category="cafe-resto">
             <div>
               <!-- Browser Mockup Window -->
               <div class="rounded-2xl overflow-hidden mb-6 border border-border-card bg-white shadow-sm">
@@ -535,37 +557,37 @@
                   <span class="w-6"></span>
                 </div>
                 <!-- Image Container -->
-                <div class="aspect-[16/10] overflow-hidden bg-surface-alt group cursor-pointer" onclick="openPortfolioModal(2)">
-                  <img src="assets/portfolio-cafe.jpg" alt="Website Noiré Café - Specialty Coffee & Culinary" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="1280" height="800" />
+                <div class="aspect-[16/10] overflow-hidden bg-surface-alt group cursor-pointer" onclick="openPortfolioModal(2, this)">
+                  <img src="assets/portfolio-cafe.jpg" alt="Website Noiré Café - Specialty Coffee & Culinary Experience" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="1280" height="800" />
                 </div>
               </div>
 
-              <!-- Metadata -->
+              <!-- Metadata & Caption -->
               <div class="flex items-center justify-between gap-3 mb-2">
                 <span class="text-xs font-bold uppercase tracking-wider text-primary bg-primary-light px-3 py-1 rounded-full border border-primary-border">Cafe &amp; Resto</span>
-                <span class="text-xs text-muted font-medium">Food &amp; Beverage</span>
+                <span class="text-xs font-bold text-green-700 bg-green-50 px-2.5 py-0.5 rounded-md border border-green-200">Proyek Website</span>
               </div>
               <h3 class="text-2xl font-bold text-dark mb-2">Noiré Café</h3>
               <p class="text-sm text-body leading-relaxed mb-6">
-                Website bergaya dark luxury modern untuk specialty coffee dan bistro. Menampilkan menu interaktif, atmosfer tempat, petunjuk arah maps, serta tombol pemesanan meja.
+                Website bergaya dark luxury modern untuk specialty coffee dan bistro. Menampilkan menu interaktif, atmosfer tempat, petunjuk arah maps, serta tombol reservasi meja.
               </p>
             </div>
 
             <!-- Actions -->
             <div class="flex flex-col sm:flex-row items-center gap-3 pt-4 border-t border-border-card/80">
               <a href="https://noirecafe.vercel.app" target="_blank" rel="noopener noreferrer" class="w-full sm:flex-1 inline-flex items-center justify-center gap-2 bg-primary text-white font-bold text-sm py-3 px-4 rounded-xl hover:bg-primary-dark transition-colors shadow-sm">
-                <span>Buka Live Website</span>
-                <span class="material-symbols-outlined text-[17px]">open_in_new</span>
+                <span>Kunjungi Website</span>
+                <span class="material-symbols-outlined text-[17px]">arrow_outward</span>
               </a>
-              <button onclick="openPortfolioModal(2)" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-dark font-bold text-sm py-3 px-5 rounded-xl border border-border-card hover:bg-primary-light hover:text-primary transition-colors">
+              <button onclick="openPortfolioModal(2, this)" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-dark font-bold text-sm py-3 px-5 rounded-xl border border-border-card hover:bg-primary-light hover:text-primary transition-colors">
                 <span>Detail</span>
                 <span class="material-symbols-outlined text-[17px]">info</span>
               </button>
             </div>
           </article>
 
-          <!-- Project 3: Velora Drive -->
-          <article class="bg-surface-bg rounded-3xl p-5 sm:p-7 border border-border-card glow-card flex flex-col justify-between">
+          <!-- Card 3: Velora Drive -->
+          <article class="portfolio-card bg-surface-bg rounded-3xl p-5 sm:p-7 border border-border-card glow-card flex flex-col justify-between" data-category="rental-travel">
             <div>
               <!-- Browser Mockup Window -->
               <div class="rounded-2xl overflow-hidden mb-6 border border-border-card bg-white shadow-sm">
@@ -583,15 +605,15 @@
                   <span class="w-6"></span>
                 </div>
                 <!-- Image Container -->
-                <div class="aspect-[16/10] overflow-hidden bg-surface-alt group cursor-pointer" onclick="openPortfolioModal(3)">
+                <div class="aspect-[16/10] overflow-hidden bg-surface-alt group cursor-pointer" onclick="openPortfolioModal(3, this)">
                   <img src="assets/portfolio-rental.jpg" alt="Website Velora Drive - Executive Mobility & Rental Mobil" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="1280" height="800" />
                 </div>
               </div>
 
-              <!-- Metadata -->
+              <!-- Metadata & Caption -->
               <div class="flex items-center justify-between gap-3 mb-2">
-                <span class="text-xs font-bold uppercase tracking-wider text-primary bg-primary-light px-3 py-1 rounded-full border border-primary-border">Rental &amp; Mobility</span>
-                <span class="text-xs text-muted font-medium">Rental &amp; Travel</span>
+                <span class="text-xs font-bold uppercase tracking-wider text-primary bg-primary-light px-3 py-1 rounded-full border border-primary-border">Rental &amp; Travel</span>
+                <span class="text-xs font-bold text-green-700 bg-green-50 px-2.5 py-0.5 rounded-md border border-green-200">Proyek Website</span>
               </div>
               <h3 class="text-2xl font-bold text-dark mb-2">Velora Drive</h3>
               <p class="text-sm text-body leading-relaxed mb-6">
@@ -602,18 +624,18 @@
             <!-- Actions -->
             <div class="flex flex-col sm:flex-row items-center gap-3 pt-4 border-t border-border-card/80">
               <a href="https://veloradrive.vercel.app" target="_blank" rel="noopener noreferrer" class="w-full sm:flex-1 inline-flex items-center justify-center gap-2 bg-primary text-white font-bold text-sm py-3 px-4 rounded-xl hover:bg-primary-dark transition-colors shadow-sm">
-                <span>Buka Live Website</span>
-                <span class="material-symbols-outlined text-[17px]">open_in_new</span>
+                <span>Kunjungi Website</span>
+                <span class="material-symbols-outlined text-[17px]">arrow_outward</span>
               </a>
-              <button onclick="openPortfolioModal(3)" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-dark font-bold text-sm py-3 px-5 rounded-xl border border-border-card hover:bg-primary-light hover:text-primary transition-colors">
+              <button onclick="openPortfolioModal(3, this)" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-dark font-bold text-sm py-3 px-5 rounded-xl border border-border-card hover:bg-primary-light hover:text-primary transition-colors">
                 <span>Detail</span>
                 <span class="material-symbols-outlined text-[17px]">info</span>
               </button>
             </div>
           </article>
 
-          <!-- Project 4: Citumang Rafting -->
-          <article class="bg-surface-bg rounded-3xl p-5 sm:p-7 border border-border-card glow-card flex flex-col justify-between">
+          <!-- Card 4: Citumang Rafting -->
+          <article class="portfolio-card bg-surface-bg rounded-3xl p-5 sm:p-7 border border-border-card glow-card flex flex-col justify-between" data-category="wisata-alam">
             <div>
               <!-- Browser Mockup Window -->
               <div class="rounded-2xl overflow-hidden mb-6 border border-border-card bg-white shadow-sm">
@@ -631,17 +653,17 @@
                   <span class="w-6"></span>
                 </div>
                 <!-- Image Container -->
-                <div class="aspect-[16/10] overflow-hidden bg-surface-alt group cursor-pointer" onclick="openPortfolioModal(4)">
+                <div class="aspect-[16/10] overflow-hidden bg-surface-alt group cursor-pointer" onclick="openPortfolioModal(4, this)">
                   <img src="assets/portfolio-citumang.jpg" alt="Website Citumang Rafting - Wisata Alam & Body Rafting Pangandaran" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="1280" height="800" />
                 </div>
               </div>
 
-              <!-- Metadata -->
+              <!-- Metadata & Caption -->
               <div class="flex items-center justify-between gap-3 mb-2">
-                <span class="text-xs font-bold uppercase tracking-wider text-primary bg-primary-light px-3 py-1 rounded-full border border-primary-border">Pariwisata &amp; Outdoor</span>
-                <span class="text-xs text-muted font-medium">Tour &amp; Adventure</span>
+                <span class="text-xs font-bold uppercase tracking-wider text-primary bg-primary-light px-3 py-1 rounded-full border border-primary-border">Wisata Alam</span>
+                <span class="text-xs font-bold text-green-700 bg-green-50 px-2.5 py-0.5 rounded-md border border-green-200">Proyek Website</span>
               </div>
-              <h3 class="text-2xl font-bold text-dark mb-2">Citumang Rafting Pangandaran</h3>
+              <h3 class="text-2xl font-bold text-dark mb-2">Citumang Rafting</h3>
               <p class="text-sm text-body leading-relaxed mb-6">
                 Website paket wisata body rafting di Citumang Pangandaran. Menyajikan rincian fasilitas pemandu, standar keamanan, galeri aktivitas, serta pemesanan tiket rombongan.
               </p>
@@ -650,10 +672,10 @@
             <!-- Actions -->
             <div class="flex flex-col sm:flex-row items-center gap-3 pt-4 border-t border-border-card/80">
               <a href="https://citumangrafting.vercel.app" target="_blank" rel="noopener noreferrer" class="w-full sm:flex-1 inline-flex items-center justify-center gap-2 bg-primary text-white font-bold text-sm py-3 px-4 rounded-xl hover:bg-primary-dark transition-colors shadow-sm">
-                <span>Buka Live Website</span>
-                <span class="material-symbols-outlined text-[17px]">open_in_new</span>
+                <span>Kunjungi Website</span>
+                <span class="material-symbols-outlined text-[17px]">arrow_outward</span>
               </a>
-              <button onclick="openPortfolioModal(4)" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-dark font-bold text-sm py-3 px-5 rounded-xl border border-border-card hover:bg-primary-light hover:text-primary transition-colors">
+              <button onclick="openPortfolioModal(4, this)" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-dark font-bold text-sm py-3 px-5 rounded-xl border border-border-card hover:bg-primary-light hover:text-primary transition-colors">
                 <span>Detail</span>
                 <span class="material-symbols-outlined text-[17px]">info</span>
               </button>
@@ -666,7 +688,7 @@
     </section>
 
     <!-- -----------------------------------------------------------------
-         SERVICES SECTION (LAYANAN SPESIFIK & REALISTIS)
+         SERVICES SECTION (SINTESIS REFERENSI 3: PURPLE ACCENTED CARDS)
          ----------------------------------------------------------------- -->
     <section id="layanan" class="w-full py-20 lg:py-28 px-5 sm:px-8 lg:px-12 bg-surface-bg border-b border-border-card">
       <div class="max-w-7xl mx-auto">
@@ -693,8 +715,12 @@
                 Website multi-halaman untuk memperkenalkan identitas bisnis, rekam jejak, legalitas, serta ragam layanan perusahaan secara terpercaya kepada calon klien dan mitra.
               </p>
             </div>
-            <div class="pt-4 border-t border-border-card/60 flex items-center justify-between text-xs font-semibold text-primary">
-              <span>Cocok untuk: PT, CV, Kontraktor, Agensi</span>
+            <div class="pt-4 border-t border-border-card/60 flex items-center justify-between">
+              <span class="text-xs font-semibold text-muted">Cocok untuk: PT, CV, Kontraktor</span>
+              <button onclick="openWhatsApp('Website Company Profile')" class="text-xs font-bold text-primary hover:underline inline-flex items-center gap-1">
+                <span>Konsultasi</span>
+                <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+              </button>
             </div>
           </div>
 
@@ -709,8 +735,12 @@
                 Solusi praktis untuk cafe, restoran, barbershop, laundry, dan klinik lokal agar mudah ditemukan di pencarian Google saat calon pelanggan berada di sekitar Anda.
               </p>
             </div>
-            <div class="pt-4 border-t border-border-card/60 flex items-center justify-between text-xs font-semibold text-primary">
-              <span>Cocok untuk: Kuliner, Retail, Jasa Lokal</span>
+            <div class="pt-4 border-t border-border-card/60 flex items-center justify-between">
+              <span class="text-xs font-semibold text-muted">Cocok untuk: Kuliner, Retail, Jasa</span>
+              <button onclick="openWhatsApp('Website UMKM & Bisnis Lokal')" class="text-xs font-bold text-primary hover:underline inline-flex items-center gap-1">
+                <span>Konsultasi</span>
+                <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+              </button>
             </div>
           </div>
 
@@ -722,11 +752,15 @@
               </div>
               <h3 class="text-xl font-bold text-dark mb-3">Katalog Produk &amp; Menu Digital</h3>
               <p class="text-sm text-body leading-relaxed mb-5">
-                Tampilkan etalase produk barang atau menu makanan secara interaktif tanpa repot sistem transaksi checkout yang rumit, terhubung langsung ke pemesanan WhatsApp.
+                Tampilkan etalase produk barang atau menu makanan secara interaktif tanpa repot sistem checkout yang rumit, terhubung langsung ke pemesanan WhatsApp.
               </p>
             </div>
-            <div class="pt-4 border-t border-border-card/60 flex items-center justify-between text-xs font-semibold text-primary">
-              <span>Cocok untuk: Resto, Bakery, Fashion, Rental</span>
+            <div class="pt-4 border-t border-border-card/60 flex items-center justify-between">
+              <span class="text-xs font-semibold text-muted">Cocok untuk: Resto, Bakery, Rental</span>
+              <button onclick="openWhatsApp('Katalog Produk & Menu Digital')" class="text-xs font-bold text-primary hover:underline inline-flex items-center gap-1">
+                <span>Konsultasi</span>
+                <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+              </button>
             </div>
           </div>
 
@@ -741,8 +775,12 @@
                 Halaman tunggal yang terfokus pada satu penawaran spesifik. Dirancang dengan alur psikologi copywriting kuat untuk memaksimalkan angka klik ke WhatsApp.
               </p>
             </div>
-            <div class="pt-4 border-t border-border-card/60 flex items-center justify-between text-xs font-semibold text-primary">
-              <span>Cocok untuk: Iklan Meta, Event, Produk Baru</span>
+            <div class="pt-4 border-t border-border-card/60 flex items-center justify-between">
+              <span class="text-xs font-semibold text-muted">Cocok untuk: Iklan Meta, Event, Promo</span>
+              <button onclick="openWhatsApp('Landing Page Promosi')" class="text-xs font-bold text-primary hover:underline inline-flex items-center gap-1">
+                <span>Konsultasi</span>
+                <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+              </button>
             </div>
           </div>
 
@@ -757,8 +795,12 @@
                 Punya website lama yang terasa kaku, lambat dimuat, atau berantakan saat dibuka di HP? Kami rombak total menjadi tampilan bersih, modern, dan berkecepatan tinggi.
               </p>
             </div>
-            <div class="pt-4 border-t border-border-card/60 flex items-center justify-between text-xs font-semibold text-primary">
-              <span>Cocok untuk: Bisnis dengan Web Usang</span>
+            <div class="pt-4 border-t border-border-card/60 flex items-center justify-between">
+              <span class="text-xs font-semibold text-muted">Cocok untuk: Bisnis Web Usang</span>
+              <button onclick="openWhatsApp('Redesign Website')" class="text-xs font-bold text-primary hover:underline inline-flex items-center gap-1">
+                <span>Konsultasi</span>
+                <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+              </button>
             </div>
           </div>
 
@@ -773,8 +815,12 @@
                 Penyelarasan tata letak, formulir pemesanan bertahap, atau fitur perhitungan khusus yang disesuaikan dengan alur operasional bisnis Anda.
               </p>
             </div>
-            <div class="pt-4 border-t border-border-card/60 flex items-center justify-between text-xs font-semibold text-primary">
-              <span>Cocok untuk: Kebutuhan Fitur Spesifik</span>
+            <div class="pt-4 border-t border-border-card/60 flex items-center justify-between">
+              <span class="text-xs font-semibold text-muted">Cocok untuk: Kebutuhan Unik</span>
+              <button onclick="openWhatsApp('Kustomisasi Khusus Bisnis')" class="text-xs font-bold text-primary hover:underline inline-flex items-center gap-1">
+                <span>Konsultasi</span>
+                <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+              </button>
             </div>
           </div>
 
@@ -783,7 +829,7 @@
     </section>
 
     <!-- -----------------------------------------------------------------
-         WORKFLOW & PAYMENT SECTION (TRANSPARAN TANPA ASUMSI)
+         WORKFLOW & PAYMENT SECTION
          ----------------------------------------------------------------- -->
     <section id="alur-kerja" class="w-full py-20 lg:py-28 px-5 sm:px-8 lg:px-12 bg-surface-card border-b border-border-card">
       <div class="max-w-7xl mx-auto">
@@ -876,7 +922,7 @@
     </section>
 
     <!-- -----------------------------------------------------------------
-         PRICING SECTION (PAKET HARGA TRANSPARAN DARI DATA PROYEK)
+         PRICING SECTION (SINTESIS REFERENSI 3: CLEAN PRICING CARDS)
          ----------------------------------------------------------------- -->
     <section id="harga" class="w-full py-20 lg:py-28 px-5 sm:px-8 lg:px-12 bg-surface-bg border-b border-border-card">
       <div class="max-w-7xl mx-auto">
@@ -1068,7 +1114,7 @@
     </section>
 
     <!-- -----------------------------------------------------------------
-         FAQ SECTION (JUJUR & MENJAWAB KERAGUAN CALON KLIEN)
+         FAQ SECTION
          ----------------------------------------------------------------- -->
     <section id="faq" class="w-full py-20 lg:py-28 px-5 sm:px-8 lg:px-12 bg-surface-card border-b border-border-card">
       <div class="max-w-4xl mx-auto">
@@ -1177,12 +1223,31 @@
     </section>
 
     <!-- -----------------------------------------------------------------
+         DARK / DEEP PURPLE PRE-FOOTER CTA BANNER (SINTESIS REFERENSI 2)
+         ----------------------------------------------------------------- -->
+    <section class="w-full py-16 lg:py-20 px-5 sm:px-8 lg:px-12 bg-dark-slate text-white relative overflow-hidden">
+      <!-- Glow ambient -->
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl h-[280px] bg-primary/25 rounded-full blur-[90px] pointer-events-none"></div>
+      
+      <div class="max-w-5xl mx-auto text-center relative z-10">
+        <span class="text-primary-border font-bold text-xs sm:text-sm tracking-widest uppercase mb-3 block">Mulai Bersama AURA GLOBAL</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-5 tracking-tight">
+          Create Something Extraordinary Together!
+        </h2>
+        <p class="text-sm sm:text-base text-gray-300 max-w-2xl mx-auto mb-8 leading-relaxed">
+          Jangan biarkan calon pelanggan ragu karena bisnis Anda belum memiliki website resmi. Wujudkan tampilan digital berkelas yang siap mendatangkan klien.
+        </p>
+        <button onclick="openWhatsApp('CTA Pre-Footer Banner')" class="inline-flex items-center justify-center gap-2.5 bg-primary hover:bg-primary-dark text-white font-bold text-base px-8 py-4 rounded-xl transition-all shadow-[0_8px_24px_rgba(83,0,183,0.4)] hover:-translate-y-0.5">
+          <span>Start Your Project Now</span>
+          <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------
          CONTACT SECTION (INTERACTIVE FORM + DIRECT WHATSAPP)
          ----------------------------------------------------------------- -->
-    <section id="kontak" class="w-full py-20 lg:py-28 px-5 sm:px-8 lg:px-12 bg-surface-bg relative overflow-hidden">
-      <!-- Soft ambient backdrop -->
-      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-[380px] bg-primary/5 rounded-full blur-[100px] pointer-events-none -z-10"></div>
-      
+    <section id="kontak" class="w-full py-20 lg:py-28 px-5 sm:px-8 lg:px-12 bg-surface-bg relative overflow-hidden border-b border-border-card">
       <div class="max-w-6xl mx-auto bg-surface-card border border-border-card p-7 sm:p-10 lg:p-14 rounded-3xl shadow-xl">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14">
           
@@ -1191,10 +1256,10 @@
             <div>
               <span class="text-primary font-bold text-xs sm:text-sm tracking-widest uppercase mb-3 block">Hubungi Kami</span>
               <h2 class="text-3xl sm:text-4xl font-extrabold text-dark leading-tight mb-5">
-                Siap Membawa Bisnis Anda Naik Kelas?
+                Siap Berdiskusi untuk Proyek Anda?
               </h2>
               <p class="text-sm sm:text-base text-body leading-relaxed mb-8">
-                Diskusikan rencana website Anda secara langsung. Tim kami siap membantu memberikan masukan visual dan estimasi pengerjaan.
+                Isi formulir ini atau langsung hubungi nomor WhatsApp kami untuk berkonsultasi secara gratis dengan tim kami.
               </p>
               
               <div class="space-y-4 mb-8">
@@ -1267,7 +1332,7 @@
                   <option value="Paket Basic (Rp350.000)">Paket Basic (Rp350.000) — Landing Page</option>
                   <option value="Paket Starter (Rp500.000)">Paket Starter (Rp500.000) — Multi Halaman</option>
                   <option value="Paket Professional (Rp800.000)" selected>Paket Professional (Rp800.000) — Paling Populer</option>
-                  <option value="Paket Premium (Rp1.200.000)">Paket Premium (Rp1.200.000) — Katalog Lengkap</option>
+                  <option value="Paket Premium (Rp1.200.000)">Paket Premium (Rp1.200.000) — Fitur Lengkap</option>
                   <option value="Konsultasi Kustom / Redesign">Konsultasi Kustom / Redesign Website</option>
                 </select>
               </div>
@@ -1291,23 +1356,36 @@
   </main>
 
   <!-- -----------------------------------------------------------------
-       INTERACTIVE ACCESSIBLE PORTFOLIO MODAL / LIGHTBOX
+       ACCESSIBLE PORTFOLIO LIGHTBOX MODAL
        ----------------------------------------------------------------- -->
   <div id="portfolioModal" class="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 opacity-0 pointer-events-none transition-opacity duration-300" aria-modal="true" role="dialog" aria-labelledby="modalTitle">
     <!-- Dark Backdrop -->
-    <div class="absolute inset-0 bg-dark/80 backdrop-blur-sm cursor-pointer" onclick="closePortfolioModal()" aria-label="Tutup Detail Portofolio"></div>
+    <div class="absolute inset-0 bg-dark/85 backdrop-blur-sm cursor-pointer" onclick="closePortfolioModal()" aria-label="Tutup Detail Portofolio"></div>
 
     <!-- Modal Box -->
     <div id="modalContent" class="relative bg-white w-full max-w-5xl max-h-[92vh] rounded-3xl shadow-2xl overflow-hidden flex flex-col lg:flex-row transform scale-95 transition-transform duration-300 z-10 border border-border-card">
       
       <!-- Close Button -->
-      <button onclick="closePortfolioModal()" class="absolute top-4 right-4 z-50 w-10 h-10 bg-white/90 hover:bg-primary hover:text-white text-dark rounded-full flex items-center justify-center shadow-md transition-all border border-border-card" aria-label="Tutup modal">
+      <button id="modalCloseBtn" onclick="closePortfolioModal()" class="absolute top-4 right-4 z-50 w-10 h-10 bg-white/90 hover:bg-primary hover:text-white text-dark rounded-full flex items-center justify-center shadow-md transition-all border border-border-card" aria-label="Tutup modal">
         <span class="material-symbols-outlined text-22px">close</span>
       </button>
 
-      <!-- Left Column: Image Preview -->
-      <div class="w-full lg:w-[52%] bg-surface-alt relative flex flex-col items-center justify-center h-64 sm:h-80 lg:h-auto overflow-hidden border-b lg:border-b-0 lg:border-r border-border-card">
+      <!-- Left Column: Image Preview with Navigation Controls -->
+      <div class="w-full lg:w-[52%] bg-surface-alt relative flex flex-col items-center justify-center h-64 sm:h-80 lg:h-auto overflow-hidden border-b lg:border-b-0 lg:border-r border-border-card group">
         <img id="modalImg" src="assets/portfolio-company.jpg" alt="Pratinjau Portofolio" class="w-full h-full object-cover transition-opacity duration-300" width="1280" height="800" />
+        
+        <!-- Prev/Next Navigation Controls -->
+        <button onclick="navigateModal(-1)" class="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/90 hover:bg-white text-primary flex items-center justify-center shadow-md transition-all" aria-label="Proyek Sebelumnya">
+          <span class="material-symbols-outlined text-[20px]">chevron_left</span>
+        </button>
+        <button onclick="navigateModal(1)" class="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/90 hover:bg-white text-primary flex items-center justify-center shadow-md transition-all" aria-label="Proyek Berikutnya">
+          <span class="material-symbols-outlined text-[20px]">chevron_right</span>
+        </button>
+        
+        <!-- Counter Badge -->
+        <div class="absolute bottom-3 left-1/2 -translate-x-1/2 bg-black/70 backdrop-blur text-white text-[11px] font-bold px-3 py-1 rounded-full shadow">
+          <span id="modalCounter">1 / 4</span>
+        </div>
       </div>
 
       <!-- Right Column: Project Specifications -->
@@ -1326,38 +1404,33 @@
           <div class="space-y-4 mb-6">
             <div>
               <h4 class="font-bold text-xs uppercase tracking-wider text-dark mb-2 flex items-center gap-1.5">
-                <span class="material-symbols-outlined text-primary text-[17px]">palette</span>
-                <span>Konsep Desain</span>
-              </h4>
-              <div id="modalConcept" class="flex flex-wrap gap-1.5"></div>
-            </div>
-
-            <div>
-              <h4 class="font-bold text-xs uppercase tracking-wider text-dark mb-2 flex items-center gap-1.5">
                 <span class="material-symbols-outlined text-primary text-[17px]">checklist</span>
-                <span>Fitur Utama</span>
+                <span>Fitur &amp; Kemampuan</span>
               </h4>
               <ul id="modalFeatures" class="space-y-1.5 text-xs text-body"></ul>
             </div>
 
             <div>
-              <h4 class="font-bold text-xs uppercase tracking-wider text-dark mb-1 flex items-center gap-1.5">
-                <span class="material-symbols-outlined text-primary text-[17px]">link</span>
-                <span>Live Website URL</span>
+              <h4 class="font-bold text-xs uppercase tracking-wider text-dark mb-1.5 flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-primary text-[17px]">code</span>
+                <span>Teknologi Web</span>
               </h4>
-              <a id="modalLiveLink" href="#" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-primary hover:underline break-all inline-flex items-center gap-1">
-                <span>Buka URL</span>
-                <span class="material-symbols-outlined text-[13px]">open_in_new</span>
-              </a>
+              <div id="modalTech" class="flex flex-wrap gap-1.5"></div>
             </div>
           </div>
         </div>
 
-        <!-- CTA in Modal -->
-        <button id="modalCTA" onclick="" class="w-full inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold text-sm py-3.5 px-6 rounded-xl transition-all shadow-md">
-          <span>Pesan Desain Serupa</span>
-          <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-        </button>
+        <!-- Actions in Modal -->
+        <div class="pt-4 border-t border-border-card space-y-2.5">
+          <a id="modalExternalLink" href="#" target="_blank" rel="noopener noreferrer" class="hidden w-full items-center justify-center gap-2 bg-surface-alt hover:bg-primary-light text-primary font-bold text-sm py-3 px-5 rounded-xl transition-all border border-primary-border">
+            <span>Kunjungi Website Langsung</span>
+            <span class="material-symbols-outlined text-[17px]">arrow_outward</span>
+          </a>
+          <button id="modalCTA" onclick="" class="w-full inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold text-sm py-3.5 px-6 rounded-xl transition-all shadow-md">
+            <span>Pesan Website Serupa</span>
+            <span class="material-symbols-outlined text-[18px]">chat</span>
+          </button>
+        </div>
       </div>
 
     </div>
@@ -1367,73 +1440,83 @@
        FLOATING WHATSAPP BUTTON (DESKTOP & MOBILE QUICK ACCESS)
        ----------------------------------------------------------------- -->
   <aside aria-label="Aksi Cepat WhatsApp">
-    <button onclick="openWhatsApp('konsultasi cepat floating button')" class="fixed bottom-6 right-6 z-40 floating-whatsapp-btn inline-flex items-center gap-2.5 bg-[#25D366] text-white px-4 py-3 sm:px-5 sm:py-3.5 rounded-full font-bold text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-green-600" aria-label="Konsultasi langsung via WhatsApp">
+    <button onclick="openWhatsApp('konsultasi cepat floating button')" class="fixed bottom-6 right-6 z-40 floating-whatsapp-btn inline-flex items-center gap-2.5 bg-[#25D366] text-white px-4 py-3 sm:px-5 sm:py-3.5 rounded-full font-bold text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-green-600" aria-label="Hubungi kami di WhatsApp">
       <span class="material-symbols-outlined text-[22px]">chat</span>
       <span class="hidden sm:inline">Konsultasi WhatsApp</span>
     </button>
   </aside>
 
   <!-- -----------------------------------------------------------------
-       FOOTER
+       FOOTER (SINTESIS REFERENSI 3: ROYAL PURPLE FULL BACKGROUND #5300B7)
        ----------------------------------------------------------------- -->
-  <footer class="w-full bg-white pt-16 pb-12 border-t border-border-card px-5 sm:px-8 lg:px-12">
+  <footer class="w-full bg-primary text-white pt-16 pb-12 border-t border-primary-dark px-5 sm:px-8 lg:px-12">
     <div class="max-w-7xl mx-auto">
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-border-card/60">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-white/15">
         
-        <!-- Brand identity -->
+        <!-- Kolom 1: Profil Studio -->
         <div class="md:col-span-5 flex flex-col items-start">
           <div class="flex items-center gap-3 mb-4">
-            <div class="w-9 h-9 rounded-xl bg-primary-light border border-primary-border flex items-center justify-center p-1.5 shadow-xs">
-              <img src="https://cdn.phototourl.com/free/2026-08-20-c9431592-f326-40af-a4d6-a85d5860df0b.png" alt="AURA GLOBAL Logo" class="w-full h-full object-contain" width="36" height="36" />
+            <div class="w-10 h-10 rounded-xl bg-white flex items-center justify-center p-1.5 shadow-sm">
+              <img src="https://cdn.phototourl.com/free/2026-08-20-c9431592-f326-40af-a4d6-a85d5860df0b.png" alt="AURA GLOBAL Logo" class="w-full h-full object-contain" width="40" height="40" />
             </div>
             <div class="flex flex-col">
-              <span class="text-xl tracking-tight font-extrabold text-dark uppercase leading-none">AURA GLOBAL</span>
-              <span class="text-[9px] tracking-[0.2em] text-primary font-bold uppercase mt-1">Digital Web Studio</span>
+              <span class="text-2xl tracking-tight font-extrabold text-white uppercase leading-none">AURA GLOBAL</span>
+              <span class="text-[10px] tracking-[0.2em] text-[#d6bbfb] font-bold uppercase mt-1">Digital Web Studio</span>
             </div>
           </div>
-          <p class="text-sm text-body leading-relaxed max-w-sm mb-6">
+          <p class="text-sm text-white/80 leading-relaxed max-w-sm mb-6">
             Studio digital spesialis pembuatan website profesional, cepat, dan responsif untuk membantu UMKM dan bisnis modern tumbuh meyakinkan di internet.
           </p>
-          <div class="flex items-center gap-3 text-xs font-semibold text-muted">
-            <span class="inline-flex items-center gap-1.5 text-green-700 bg-green-50 px-2.5 py-1 rounded-full border border-green-200">
-              <span class="w-2 h-2 rounded-full bg-green-500"></span>
-              Layanan Aktif &amp; Siap Terima Proyek
-            </span>
+          <div class="inline-flex items-center gap-2 text-xs font-bold text-white bg-white/10 px-3 py-1.5 rounded-full border border-white/20">
+            <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+            <span>Studio Aktif • Siap Terima Proyek Baru</span>
           </div>
         </div>
 
-        <!-- Quick Links -->
-        <div class="md:col-span-3">
-          <h3 class="text-xs font-bold uppercase tracking-wider text-dark mb-4">Navigasi Halaman</h3>
-          <ul class="space-y-2.5 text-sm text-body">
-            <li><a href="#home" onclick="event.preventDefault(); scrollToSection('home');" class="hover:text-primary transition-colors">Beranda</a></li>
-            <li><a href="#keunggulan" onclick="event.preventDefault(); scrollToSection('keunggulan');" class="hover:text-primary transition-colors">Nilai &amp; Keunggulan</a></li>
-            <li><a href="#portfolio" onclick="event.preventDefault(); scrollToSection('portfolio');" class="hover:text-primary transition-colors">Portofolio Live</a></li>
-            <li><a href="#layanan" onclick="event.preventDefault(); scrollToSection('layanan');" class="hover:text-primary transition-colors">Layanan Pembuatan Website</a></li>
-            <li><a href="#alur-kerja" onclick="event.preventDefault(); scrollToSection('alur-kerja');" class="hover:text-primary transition-colors">Alur Kerja &amp; Pembayaran</a></li>
-            <li><a href="#harga" onclick="event.preventDefault(); scrollToSection('harga');" class="hover:text-primary transition-colors">Paket Harga Transparan</a></li>
-            <li><a href="#faq" onclick="event.preventDefault(); scrollToSection('faq');" class="hover:text-primary transition-colors">Tanya Jawab (FAQ)</a></li>
+        <!-- Kolom 2: Navigasi Cepat -->
+        <div class="md:col-span-2">
+          <h3 class="text-xs font-bold uppercase tracking-wider text-[#d6bbfb] mb-4">Navigasi</h3>
+          <ul class="space-y-2.5 text-sm text-white/85">
+            <li><a href="#home" onclick="event.preventDefault(); scrollToSection('home');" class="hover:text-white transition-colors">Beranda</a></li>
+            <li><a href="#keunggulan" onclick="event.preventDefault(); scrollToSection('keunggulan');" class="hover:text-white transition-colors">Nilai Studio</a></li>
+            <li><a href="#portfolio" onclick="event.preventDefault(); scrollToSection('portfolio');" class="hover:text-white transition-colors">Portofolio</a></li>
+            <li><a href="#layanan" onclick="event.preventDefault(); scrollToSection('layanan');" class="hover:text-white transition-colors">Layanan</a></li>
+            <li><a href="#alur-kerja" onclick="event.preventDefault(); scrollToSection('alur-kerja');" class="hover:text-white transition-colors">Alur Kerja</a></li>
+            <li><a href="#harga" onclick="event.preventDefault(); scrollToSection('harga');" class="hover:text-white transition-colors">Paket Harga</a></li>
+            <li><a href="#faq" onclick="event.preventDefault(); scrollToSection('faq');" class="hover:text-white transition-colors">FAQ</a></li>
           </ul>
         </div>
 
-        <!-- Official Contacts -->
-        <div class="md:col-span-4">
-          <h3 class="text-xs font-bold uppercase tracking-wider text-dark mb-4">Kontak &amp; Informasi</h3>
-          <ul class="space-y-3 text-sm text-body">
+        <!-- Kolom 3: Layanan Spesifik -->
+        <div class="md:col-span-2">
+          <h3 class="text-xs font-bold uppercase tracking-wider text-[#d6bbfb] mb-4">Layanan</h3>
+          <ul class="space-y-2.5 text-sm text-white/85">
+            <li><span class="hover:text-white cursor-pointer" onclick="openWhatsApp('Website Company Profile')">Company Profile</span></li>
+            <li><span class="hover:text-white cursor-pointer" onclick="openWhatsApp('Website UMKM')">Website UMKM</span></li>
+            <li><span class="hover:text-white cursor-pointer" onclick="openWhatsApp('Katalog Produk')">Katalog Digital</span></li>
+            <li><span class="hover:text-white cursor-pointer" onclick="openWhatsApp('Landing Page')">Landing Page</span></li>
+            <li><span class="hover:text-white cursor-pointer" onclick="openWhatsApp('Redesign Website')">Redesign Web</span></li>
+          </ul>
+        </div>
+
+        <!-- Kolom 4: Kontak Resmi -->
+        <div class="md:col-span-3">
+          <h3 class="text-xs font-bold uppercase tracking-wider text-[#d6bbfb] mb-4">Kontak &amp; Informasi</h3>
+          <ul class="space-y-3 text-sm text-white/85">
             <li class="flex items-center gap-2.5">
-              <span class="material-symbols-outlined text-primary text-[19px]">chat</span>
-              <a href="https://api.whatsapp.com/send?phone=6285861510159" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors font-medium">+62 858-6151-0159</a>
+              <span class="material-symbols-outlined text-[#d6bbfb] text-[19px]">chat</span>
+              <a href="https://api.whatsapp.com/send?phone=6285861510159" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors font-medium">+62 858-6151-0159</a>
             </li>
             <li class="flex items-center gap-2.5">
-              <span class="material-symbols-outlined text-primary text-[19px]">mail</span>
-              <a href="mailto:info@auraglobal.my.id" class="hover:text-primary transition-colors font-medium">info@auraglobal.my.id</a>
+              <span class="material-symbols-outlined text-[#d6bbfb] text-[19px]">mail</span>
+              <a href="mailto:info@auraglobal.my.id" class="hover:text-white transition-colors font-medium">info@auraglobal.my.id</a>
             </li>
             <li class="flex items-center gap-2.5">
-              <span class="material-symbols-outlined text-primary text-[19px]">language</span>
-              <a href="https://auraglobal.my.id" class="hover:text-primary transition-colors font-medium">https://auraglobal.my.id</a>
+              <span class="material-symbols-outlined text-[#d6bbfb] text-[19px]">language</span>
+              <a href="https://auraglobal.my.id" class="hover:text-white transition-colors font-medium">https://auraglobal.my.id</a>
             </li>
           </ul>
-          <div class="mt-6 p-3.5 rounded-xl bg-surface-alt border border-border-card text-xs text-muted leading-relaxed">
+          <div class="mt-6 p-3.5 rounded-xl bg-white/10 border border-white/15 text-xs text-white/80 leading-relaxed">
             Paket website mulai dari <strong>Rp350.000</strong> sudah termasuk fasilitas domain &amp; hosting tahun pertama.
           </div>
         </div>
@@ -1441,13 +1524,15 @@
       </div>
 
       <!-- Copyright Bar -->
-      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted">
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/70">
         <span>&copy; 2026 AURA GLOBAL. Seluruh hak cipta dilindungi undang-undang.</span>
         <span>Digital Web Studio • Clean, Fast, High Conversion</span>
       </div>
     </div>
   </footer>
 
+  <!-- Centralized Portfolio Data Store -->
+  <script src="portfolio-data.js"></script>
   <!-- External JavaScript Logic -->
   <script src="script.js"></script>
 </body>

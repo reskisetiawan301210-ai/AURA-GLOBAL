@@ -1,121 +1,82 @@
 # PLAN REDESIGN TOTAL AURA GLOBAL (https://auraglobal.my.id/)
+*Berdasarkan Sintesis 3 Gambar Referensi Desain Resmi & Data Riil Proyek*
+
+---
 
 ## 1. Titik Pemulihan (Recovery Point)
-- **Git Branch Backup**: `backup-before-redesign` dibuat pada commit `c874c2d`.
-- **Status Git Awal**: Clean working tree.
-- **Strategi Rollback**: Jika diperlukan pemulihan, jalankan `git checkout backup-before-redesign` atau `git reset --hard c874c2d`.
+- **Branch Aktif**: `redesign/aura-global`
+- **Branch Backup**: `backup-before-redesign` (commit `c874c2d`)
+- **Commit Baseline**: `7ad627d`
+- **Strategi Rollback**: Jika diperlukan, dapat kembali ke branch backup atau commit baseline kapan saja:
+  ```bash
+  git checkout backup-before-redesign
+  # atau
+  git checkout main
+  ```
 
 ---
 
-## 2. Arah Visual & Konsep Komposisi
-- **Konsep**: *Boutique Digital Web Studio* bertaraf premium dengan palet dominan Putih Bersih (Off-White) & Aksen Royal Purple `#5300B7`.
-- **Karakter**: Bersih, berwibawa, modern, terpercaya, bukan sekadar landing page murah atau template generik.
-- **Komposisi Editorial**:
-  - Spacing lega berirama (kombinasi `py-20` hingga `py-32` dengan kontras background halus antar-section).
-  - Browser mockup realistis untuk portfolio showcase dengan badge & indikator status proyek.
-  - Micro-interactions halus (hover card elevation, subtle gradient glow, smooth transitions).
-  - Floating WhatsApp Quick Action di mobile & desktop tanpa mengganggu konten utama.
+## 2. Analisis & Sintesis 3 Gambar Referensi Desain
+
+### A. Referensi 1: Hero Studio Ungu Lembut
+- **Karakteristik Visual**: Latar lapang off-white / lavender lembut, headline display besar, badge kecil berakar studio di atas headline, dua CTA berdampingan (solid gelap/ungu + outline/sekunder), kartu melayang halus, dan gelombang transisi organik.
+- **Penerapan AURA GLOBAL**:
+  - Latar hero `hero-glow` dengan gradien radial lavender lembut `#F3EEFC` ke `#FAFAFC`.
+  - Badge: `✨ DIGITAL WEB STUDIO • PEMBUATAN WEBSITE BISNIS & UMKM ✨`.
+  - Headline editorial: *"Punya Usaha, Tapi Belum <span class="text-primary">Punya Website?</span>"*.
+  - Dual CTA: Tombol utama solid Royal Purple (`#5300B7`) untuk Konsultasi WhatsApp + Tombol sekunder untuk Jelajahi Portofolio.
+  - Mempertahankan visual karakter 3D memegang laptop (`assets/hero-illustration.png`) yang telah disetujui sebelumnya, diselaraskan dengan ambient glow ungu lembut.
+  - Trust bar: Menghindari logo fiktif; diganti dengan deretan kategori bisnis nyata yang dilayani studio.
+
+### B. Referensi 2: Portofolio Monokrom Editorial & Dark CTA Banner
+- **Karakteristik Visual**: Judul portofolio besar di kiri dengan teks pendamping di kanan, tab filter kategori bergaris bawah (*underlined tabs*), grid 2 kolom dengan mockup browser besar dan bersih, caption berisi nama proyek, kategori, dan tombol panah ↗, serta pita CTA gelap sebelum footer.
+- **Penerapan AURA GLOBAL**:
+  - Header Portofolio: Judul *"Karya Terverifikasi &amp; Portofolio"* di kiri dan deskripsi naratif di kanan.
+  - Tab Filter Kategori Interaktif: *Semua Proyek*, *Company Profile*, *Cafe &amp; Resto*, *Rental &amp; Travel*, *Wisata Alam*.
+  - Grid 2 Kolom Mockup Browser: Menampilkan 4 proyek live yang 100% terverifikasi aktif (Danih Konstruksi, Noiré Café, Velora Drive, Citumang Rafting) dengan status jujur `Proyek Website` dan tombol *"Kunjungi Website ↗"*.
+  - Lightbox Modal Interaktif: Zoom gambar, spesifikasi lengkap, navigasi keyboard (Esc/Panah), dan touch swipe.
+  - Dark / Deep Purple Pre-Footer CTA Banner: *"Create Something Extraordinary Together!"* yang disesuaikan dalam Bahasa Indonesia: *"Siap Membawa Bisnis Anda Tampil Lebih Profesional di Internet?"*.
+
+### C. Referensi 3: Layanan Kartu Ungu, Paket Harga, & Royal Purple Footer
+- **Karakteristik Visual**: Kartu layanan dengan ikon ungu dan link *"Konsultasi Layanan Ini &rarr;"*, kartu harga 3-4 kolom dengan daftar fitur bercentang, serta footer penuh warna ungu (`#5300B7`) multi-kolom yang megah dan berwibawa.
+- **Penerapan AURA GLOBAL**:
+  - Layanan: 6 kartu layanan spesifik dengan ikon ungu, deskripsi padat, dan pemicu WhatsApp instan.
+  - Harga: 4 paket transparan dari data riil proyek (Basic Rp350k, Starter Rp500k, Professional Rp800k [paling populer], Premium Rp1.2jt).
+  - Footer: Berlatar **Royal Purple Penuh (`#5300B7`)** dengan 4 kolom terstruktur (Profil & Status Studio, Navigasi Cepat, Layanan, Kontak Resmi WhatsApp/Email) dan kontras teks putih berstandar WCAG AAA.
 
 ---
 
-## 3. Sistem Desain (Design System Tokens)
+## 3. Inventarisasi & Klasifikasi Aset Portofolio (Section 7.1)
 
-### A. Palet Warna (Color Palette)
-- **Primary Brand**: `#5300B7` (Royal Purple - tombol utama, aksen penting, logo).
-- **Primary Container / Hover**: `#430094` (Darker royal purple untuk state hover).
-- **Primary Tint / Soft**: `#F3EEFC` / `#EBDEFF` (Latar badge, highlight tagar).
-- **Neutral Surface Lowest**: `#FFFFFF` (Kartu utama, kontras tinggi).
-- **Neutral Background**: `#FAFAFC` (Latar dasar nyaman di mata, bukan putih silau mentah).
-- **Neutral Surface Low**: `#F3F2F7` (Latar section kontras lembut).
-- **Neutral Border**: `#E6E1F0` / `rgba(83, 0, 183, 0.12)` (Garis halus berkarakter).
-- **Text Headings / Display**: `#0F0C20` (Gelap pekat berwibawa, WCAG AAA).
-- **Text Body / Secondary**: `#4A455A` (Abu-abu netral hangat, sangat mudah dibaca, WCAG AA).
-- **Text Muted**: `#726D82` (Keterangan sekunder, metadata).
-
-### B. Tipografi (Typography)
-- **Font Display / Headings**: `Plus Jakarta Sans`, font-weight 700 & 800, tracking-tight, fluid clamp font size.
-- **Font Body**: `Plus Jakarta Sans`, font-weight 400 & 500, line-height 1.6 - 1.75, batas lebar baris maks 65 karakter.
-- **Font Label / Monospace / Badges**: `Plus Jakarta Sans`, font-weight 600 - 700, uppercase letter-spacing 0.05em - 0.15em.
-
-### C. Elemen UI & Komponen
-- **Header & Navbar**:
-  - Sticky dengan blur glassmorphism (`backdrop-blur-md bg-white/85 border-b border-purple-100/60`).
-  - Brand identity: Logo icon + `AURA GLOBAL` + badge `DIGITAL WEB STUDIO`.
-  - Link navigasi dengan active/hover indicator ungu.
-  - CTA WhatsApp langsung di header.
-  - Mobile drawer menu terstruktur rapi.
-- **Tombol (Buttons)**:
-  - Primer: Solid `#5300B7` + hover lift effect + shadow halus.
-  - Sekunder: Soft purple `#F3EEFC` + border halus + text `#5300B7`.
-  - Outline: Border `#5300B7` + transparent background.
-  - Ukuran touch target min 44px di mobile.
-- **Kartu (Cards)**:
-  - Sudut rounded halus (`rounded-2xl` & `rounded-3xl`).
-  - Border tipis (`border border-[#E6E1F0]`).
-  - Subtle layered shadow (`shadow-[0_4px_20px_rgba(83,0,183,0.04)]` yang naik saat hover).
-- **Mockup Showcase Browser**:
-  - Top bar browser dengan 3 window control dots, URL bar clean, dan gambar 16:10 aspect ratio.
+| Nama File / Aset | Status | Kategori Bisnis | Live URL (Hanya Proyek Asli) | Keterangan Verifikasi |
+| :--- | :---: | :--- | :--- | :--- |
+| `assets/portfolio-company.jpg` | **PROYEK ASLI** | Company Profile | `https://danieh-konstruksi.vercel.app` | Terverifikasi aktif di Vercel. PT/CV Danih Konstruksi. |
+| `assets/portfolio-cafe.jpg` | **PROYEK ASLI** | Cafe & Resto | `https://noirecafe.vercel.app` | Terverifikasi aktif di Vercel. Noiré Café & Bistro. |
+| `assets/portfolio-rental.jpg` | **PROYEK ASLI** | Rental & Travel | `https://veloradrive.vercel.app` | Terverifikasi aktif di Vercel. Velora Drive Executive Mobility. |
+| `assets/portfolio-citumang.jpg` | **PROYEK ASLI** | Wisata & Outdoor | `https://citumangrafting.vercel.app` | Terverifikasi aktif di Vercel. Citumang Rafting Pangandaran. |
+| `assets/hero-illustration.png` | **ASET BRAND HERO** | Visual Studio | - | Karakter 3D dengan laptop dan preview website sesuai arahan user. |
+| Gambar Referensi Upload | **REFERENSI DESAIN** | Inovasi UI/UX | - | Acuan arah desain (bukan proyek nyata AURA GLOBAL, tidak diklaim sebagai karya klien). |
+| Logo Klien Eksternal | **NONAKTIF** | - | - | Belum ada logo klien terverifikasi; bagian logo dinonaktifkan sesuai Aturan Keras 7.4. |
 
 ---
 
-## 4. Struktur Halaman & Hierarki Konten (Berdasarkan Konten Riil)
-
-1. **Header & Navigation**: Logo AURA GLOBAL, nav links (Home, Layanan, Portofolio, Alur Kerja, Harga, FAQ, Kontak), tombol WhatsApp CTA.
-2. **Hero Section (Two-Column Editorial)**:
-   - Kiri: Badge status studio, headline tajam & berorientasi hasil, deskripsi solutif, CTA Konsultasi WhatsApp + CTA Lihat Portofolio, 3 pilar utama (Desain Custom, 100% Responsif, Integrasi WhatsApp).
-   - Kanan: Ilustrasi 3D karakter memegang laptop dengan preview website & subtle ambient purple glow.
-   - Bawah Hero: Trust bar kategori bisnis riil yang dilayani.
-3. **Nilai & Filosofi (Value Proposition)**:
-   - Statement terarah tentang transformasi digital bisnis.
-   - 4 pilar keunggulan AURA GLOBAL: Kredibilitas Profesional, Kemudahan Ditemukan, Informasi Terstruktur, Konversi WhatsApp Terarah.
-4. **Portofolio Terverifikasi (Featured Showcase)**:
-   - Menampilkan **4 proyek riil yang 100% terverifikasi aktif**:
-     1. **Danih Konstruksi** (`https://danieh-konstruksi.vercel.app`) - Company Profile & Sewa Alat Berat
-     2. **Noiré Café** (`https://noirecafe.vercel.app`) - Specialty Coffee & Culinary Experience
-     3. **Velora Drive** (`https://veloradrive.vercel.app`) - Executive Mobility & Rental Mobil
-     4. **Citumang Rafting** (`https://citumangrafting.vercel.app`) - Wisata Alam & Body Rafting Pangandaran
-   - Mockup browser responsif, deskripsi peranan & fitur, tombol "Lihat Live Demo" (buka tab baru `rel="noopener noreferrer"`), tombol "Detail Proyek" (modal interaktif).
-5. **Layanan Spesifik (Services Overview)**:
-   - Company Profile Website
-   - UMKM & Local Business Website
-   - Online Catalog & Menu Digital
-   - Landing Page Konversi
-   - Website Redesign & Modernisasi
-   - Custom Business Solution
-6. **Alur Kerja Transparan (Transparent Process)**:
-   - 6 langkah nyata:
-     1. Konsultasi Gratis & Identifikasi Kebutuhan
-     2. Perencanaan Konsep & Arah Desain
-     3. Persetujuan Konsep Desain
-     4. Pembayaran DP 50%
-     5. Pengembangan Website & Penyesuaian
-     6. Pelunasan 50% & Publikasi Online
-7. **Paket Harga Transparan (Transparent Pricing)**:
-   - Harga valid: Mulai dari Rp350.000
-   - Paket Basic: Rp350.000 (Landing Page ringkas, domain request klien, hosting modern, integrasi WA)
-   - Paket Starter: Rp500.000 (Multi-halaman dasar, domain request klien, hosting standard)
-   - Paket Professional: Rp800.000 (Desain kustomisasi penuh, domain request klien, hosting premium, SEO dasar) — *Most Popular*
-   - Paket Premium: Rp1.200.000 (Katalog produk interaktif, hosting prioritas, support eksklusif 1 bulan)
-   - Tombol pesan WhatsApp terisi otomatis per paket.
-8. **Pertanyaan yang Sering Diajukan (FAQ Komprehensif & Jujur)**:
-   - Memperbaiki duplikasi jawaban yang ada sebelumnya dengan 8 jawaban konkret mengenai biaya, DP 50%, domain/hosting, proses revisi, durasi pengerjaan, dan konsultasi.
-9. **Kontak & Konsultasi Langsung**:
-   - Info kontak riil: WhatsApp `+62 858-6151-0159`, email `info@auraglobal.my.id`, link domain `https://auraglobal.my.id`.
-   - Formulir pesan interaktif dengan opsi kirim langsung ke WhatsApp.
-10. **Footer Studio**: Identitas AURA GLOBAL, navigasi cepat, kontak, dan hak cipta.
-11. **Floating WhatsApp Button**: Tombol mengambang di kanan bawah yang nyaman digunakan di mobile tanpa menutupi konten.
-12. **Modal Portofolio Interaktif**: Lightbox detail spesifikasi proyek dengan kontrol swipe mobile & keyboard accessibility.
+## 4. Arsitektur Data Portofolio Terpusat (`portfolio-data.js`)
+Pemisahan data dan tampilan agar mudah dikelola oleh pemilik website:
+- File `portfolio-data.js` menyimpan array `portfolioItems` dengan skema:
+  - `id`, `title`, `slug`, `category`, `categoryKey`, `type` (`proyek_asli` / `konsep` / `draft`)
+  - `badge`, `description`, `detailDescription`, `features`, `tech`, `url`, `image`, `imageAlt`
+  - `published` (boolean), `featured` (boolean)
+- File `brand-logos.js` disiapkan untuk logo klien masa depan (dalam keadaan nonaktif/kosong).
+- Panduan pengelolaan lengkap didokumentasikan di `PORTFOLIO.md`.
 
 ---
 
-## 5. Technical SEO & AI Search Architecture
+## 5. Technical SEO & Schema Markup
 - Canonical URL: `https://auraglobal.my.id/`
-- Open Graph & Twitter Cards lengkap dengan `og:locale="id_ID"`, `og:site_name="AURA GLOBAL"`.
-- Favicon & Apple Touch Icon.
-- **JSON-LD Schema Markup Valid**:
-  - `Organization` & `ProfessionalService` (AURA GLOBAL, logo, url, contactPoint, priceRange).
-  - `WebSite` Schema.
-  - `FAQPage` Schema (8 tanya-jawab riil).
-  - `OfferCatalog` / `Service` Schema untuk paket pembuatan website.
-- Semantic HTML tags (`<header>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>`).
-- Target WCAG AA pada semua teks dan kontrol interaktif.
+- Valid JSON-LD `@graph`:
+  - `ProfessionalService` (AURA GLOBAL, WhatsApp, Email, URL, PriceRange Rp350k - Rp1.2jt)
+  - `WebSite` (AURA GLOBAL)
+  - `FAQPage` (8 tanya-jawab terverifikasi)
+- Open Graph & Twitter Cards lengkap dengan `og:locale="id_ID"` dan `og:image`.
+- Semantic HTML tags (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>`).
+- Aksesibilitas WCAG AA (kontras teks, focus visible, ARIA modal, alt text jujur).

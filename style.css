@@ -20,14 +20,14 @@
 }
 
 /* --------------------------------------------------
-   1. ACCESSIBILITY & FOCUS STYLES
+   1. ACCESSIBILITY & FOCUS RINGS
    -------------------------------------------------- */
 :focus-visible {
   outline: 2px solid #5300b7;
   outline-offset: 3px;
 }
 
-button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible {
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
   outline: 2px solid #5300b7;
   outline-offset: 2px;
 }
@@ -36,8 +36,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
    2. CUSTOM SCROLLBAR (PREMIUM PURPLE)
    -------------------------------------------------- */
 ::-webkit-scrollbar {
-  width: 9px;
-  height: 9px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -60,7 +60,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(24px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -69,7 +69,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 }
 
 .animate-fade-in-up {
-  animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 @keyframes floatSubtle {
@@ -88,11 +88,11 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 @keyframes pulseSubtle {
   0%, 100% {
     transform: scale(1);
-    opacity: 0.15;
+    opacity: 0.12;
   }
   50% {
     transform: scale(1.06);
-    opacity: 0.25;
+    opacity: 0.22;
   }
 }
 
@@ -114,29 +114,51 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
    5. HERO & SECTION GLOWS
    -------------------------------------------------- */
 .hero-glow {
-  background: radial-gradient(circle at 75% 40%, rgba(83, 0, 183, 0.09) 0%, rgba(235, 222, 255, 0.3) 35%, rgba(250, 250, 252, 0) 70%);
+  background: radial-gradient(circle at 75% 35%, rgba(83, 0, 183, 0.08) 0%, rgba(235, 222, 255, 0.35) 40%, rgba(250, 250, 252, 0) 70%);
 }
 
 .glow-card {
-  box-shadow: 0 10px 30px -10px rgba(83, 0, 183, 0.08);
+  box-shadow: 0 6px 24px -6px rgba(83, 0, 183, 0.06);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .glow-card:hover {
-  box-shadow: 0 20px 40px -12px rgba(83, 0, 183, 0.15);
+  box-shadow: 0 16px 36px -10px rgba(83, 0, 183, 0.14);
   transform: translateY(-4px);
 }
 
 /* --------------------------------------------------
-   6. MODAL & BODY UTILITIES
+   6. PORTFOLIO TABS (EDITORIAL UNDERLINE STYLE)
    -------------------------------------------------- */
-body.modal-open {
-  overflow: hidden;
-  padding-right: var(--scrollbar-width, 0px);
+.portfolio-tab-btn {
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+.portfolio-tab-btn::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.25s ease;
+}
+
+.portfolio-tab-btn.text-primary::after {
+  background-color: #5300b7;
 }
 
 /* --------------------------------------------------
-   7. FLOATING QUICK CTA BUTTON
+   7. MODAL & BODY UTILITIES
+   -------------------------------------------------- */
+body.modal-open {
+  overflow: hidden;
+}
+
+/* --------------------------------------------------
+   8. FLOATING QUICK CTA BUTTON
    -------------------------------------------------- */
 .floating-whatsapp-btn {
   box-shadow: 0 8px 28px -4px rgba(37, 211, 102, 0.45), 0 4px 12px -2px rgba(0, 0, 0, 0.12);
@@ -149,7 +171,7 @@ body.modal-open {
 }
 
 /* --------------------------------------------------
-   8. PREFERS-REDUCED-MOTION
+   9. PREFERS-REDUCED-MOTION
    -------------------------------------------------- */
 @media (prefers-reduced-motion: reduce) {
   *, ::before, ::after {
