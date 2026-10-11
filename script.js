@@ -301,3 +301,179 @@ function closeMobileMenu() {
   if (menuIconPath) menuIconPath.setAttribute("d", "M4 6h16M4 12h16M4 18h16");
 }
 
+// ----------------------------------------------------
+// 7. HERO WORD SLIDER (ROTATING KEYWORDS)
+// ----------------------------------------------------
+function initHeroWordSlider() {
+  const track = document.getElementById("heroWordTrack");
+  if (!track) return;
+
+  const words = track.querySelectorAll(".word-slider-item");
+  if (words.length <= 1) return;
+
+  let currentIndex = 0;
+  const total = words.length;
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % total;
+    track.style.transform = `translateY(-${currentIndex * 1.15}em)`;
+  }, 2400);
+}
+
+// ----------------------------------------------------
+// 8. WORD SCRUB REVEAL ON SCROLL
+// ----------------------------------------------------
+function initWordScrub() {
+  const manifesto = document.getElementById("manifestoText");
+  if (!manifesto) return;
+
+  // Split plain text into scrub spans if not already done
+  if (!manifesto.querySelector(".scrub-word")) {
+    const rawText = manifesto.textContent.trim();
+    const words = rawText.split(/\s+/);
+    manifesto.innerHTML = words.map(w => `<span class="scrub-word">${w}</span>`).join(" ");
+  }
+
+  const spans = manifesto.querySelectorAll(".scrub-word");
+  if (spans.length === 0) return;
+
+  function updateScrub() {
+    const rect = manifesto.getBoundingClientRect();
+    const windowH = window.innerHeight;
+    
+    // Calculate progress between entering 80% and exiting 20%
+    const startY = windowH * 0.85;
+    const endY = windowH * 0.25;
+    
+    const progress = Math.max(0, Math.min(1, (startY - rect.top) / (startY - endY)));
+    const activeCount = Math.floor(progress * spans.length);
+
+    spans.forEach((span, i) => {
+      if (i <= activeCount) {
+        span.classList.add("is-active");
+      } else {
+        span.classList.remove("is-active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", updateScrub, { passive: true });
+  updateScrub();
+}
+
+// ----------------------------------------------------
+// 9. CONCENTRIC ORBIT CAPABILITY CYCLER
+// ----------------------------------------------------
+const orbitData = [
+  {
+    title: "Arsitektur Semantik",
+    subtitle: "Pondasi Struktur Bersih",
+    desc: "Setiap elemen HTML5 dirancang berhierarki logis. Kode bebas tumpukan plugin pihak ketiga yang memperlambat situs, menjamin pengindeksan Google yang prima.",
+    icon: "code_blocks",
+    tag: "Fondasi 01"
+  },
+  {
+    title: "Performa Kilat",
+    subtitle: "Akses Instan di Smartphone",
+    desc: "Aset gambar teroptimasi presisi dan stylesheet minimalis memastikan website terbuka di bawah 2 detik pada jaringan 4G ponsel tanpa membuat pengunjung menunggu.",
+    icon: "bolt",
+    tag: "Fondasi 02"
+  },
+  {
+    title: "Konversi WhatsApp",
+    subtitle: "Percepatan Transaksi Nyata",
+    desc: "Tombol dan format pesan chat otomatis mengarahkan minat pengunjung menjadi prospek transaksi nyata yang langsung masuk ke nomor WhatsApp admin bisnis Anda.",
+    icon: "forum",
+    tag: "Fondasi 03"
+  }
+];
+
+let currentOrbitIndex = 0;
+
+function setOrbitPillar(index) {
+  currentOrbitIndex = index;
+  const titleEl = document.getElementById("orbitPillarTitle");
+  const subEl = document.getElementById("orbitPillarSubtitle");
+  const descEl = document.getElementById("orbitPillarDesc");
+  const tagEl = document.getElementById("orbitPillarTag");
+  const iconEl = document.getElementById("orbitCenterIcon");
+
+  if (!titleEl) return;
+
+  const data = orbitData[currentOrbitIndex];
+  
+  // Smooth fade transition
+  titleEl.style.opacity = "0";
+  if (descEl) descEl.style.opacity = "0";
+
+  setTimeout(() => {
+    titleEl.textContent = data.title;
+    if (subEl) subEl.textContent = data.subtitle;
+    if (descEl) descEl.textContent = data.desc;
+    if (tagEl) tagEl.textContent = data.tag;
+    if (iconEl) iconEl.textContent = data.icon;
+
+    titleEl.style.opacity = "1";
+    if (descEl) descEl.style.opacity = "1";
+  }, 200);
+
+  // Update button tabs state
+  const btns = document.querySelectorAll(".orbit-tab-btn");
+  btns.forEach((btn, i) => {
+    if (i === currentOrbitIndex) {
+      btn.classList.add("bg-white/20", "text-white", "font-bold");
+      btn.classList.remove("text-white/60");
+    } else {
+      btn.classList.remove("bg-white/20", "text-white", "font-bold");
+      btn.classList.add("text-white/60");
+    }
+  });
+}
+
+function initOrbitCycle() {
+  const panel = document.getElementById("orbitPanel");
+  if (!panel) return;
+
+  setInterval(() => {
+    const nextIndex = (currentOrbitIndex + 1) % orbitData.length;
+    setOrbitPillar(nextIndex);
+  }, 4000);
+}
+
+// ----------------------------------------------------
+// 10. INTERACTIVE SERVICE TABS (LAYANAN PAGE)
+// ----------------------------------------------------
+function switchServiceTab(index, btnTarget) {
+  const serviceCards = document.querySelectorAll(".service-detail-item");
+  serviceCards.forEach((card, i) => {
+    if (i === index) {
+      card.classList.remove("hidden");
+      card.classList.add("flex");
+    } else {
+      card.classList.add("hidden");
+      card.classList.remove("flex");
+    }
+  });
+
+  const tabBtns = document.querySelectorAll(".service-menu-tab");
+  tabBtns.forEach(btn => {
+    btn.classList.remove("bg-primary", "text-white");
+    btn.classList.add("bg-surface-bg", "text-dark");
+  });
+
+  if (btnTarget) {
+    btnTarget.classList.remove("bg-surface-bg", "text-dark");
+    btnTarget.classList.add("bg-primary", "text-white");
+  }
+}
+
+// ----------------------------------------------------
+// DOM READY INITIALIZATION
+// ----------------------------------------------------
+document.addEventListener("DOMContentLoaded", () => {
+  initHeroWordSlider();
+  initWordScrub();
+  initOrbitCycle();
+});
+
+
