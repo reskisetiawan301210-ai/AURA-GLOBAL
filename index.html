@@ -1,559 +1,1065 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
-  <meta name="google-site-verification" content="oViqkUbsxN28plHUDgn83kyeV_F-84FVXx8FrrPCD6U" />
   <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Jasa Pembuatan Website Profesional | AURA GLOBAL</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="oViqkUbsxN28plHUDgn83kyeV_F-84FVXx8FrrPCD6U" />
+  
+  <title>AURA GLOBAL — Jasa Pembuatan Website Profesional & Digital Web Studio</title>
   
   <!-- SEO & Primary Meta Tags -->
-  <meta name="description" content="AURA GLOBAL menyediakan jasa pembuatan website profesional untuk UMKM dan berbagai bisnis. Desain custom, responsif, dan terintegrasi WhatsApp mulai dari Rp350.000." />
-  <meta name="robots" content="index, follow" />
+  <meta name="description" content="AURA GLOBAL adalah digital web studio yang menyediakan jasa pembuatan website profesional untuk UMKM, bisnis lokal, dan perusahaan. Desain modern, cepat, responsif, dan terintegrasi WhatsApp mulai Rp350.000." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="author" content="AURA GLOBAL" />
   <link rel="canonical" href="https://auraglobal.my.id/" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://auraglobal.my.id/" />
-  <meta property="og:title" content="Jasa Pembuatan Website Profesional | AURA GLOBAL" />
-  <meta property="og:description" content="AURA GLOBAL menyediakan jasa pembuatan website profesional untuk UMKM dan berbagai bisnis. Desain custom, responsif, dan terintegrasi WhatsApp mulai dari Rp350.000." />
+  <meta property="og:title" content="AURA GLOBAL — Jasa Pembuatan Website Profesional & Digital Web Studio" />
+  <meta property="og:description" content="Membantu UMKM & bisnis lokal tampil profesional di internet. Website modern, cepat, responsif, dan terintegrasi WhatsApp mulai Rp350.000." />
   <meta property="og:image" content="https://cdn.phototourl.com/free/2026-08-20-2597676d-4a65-4bc2-b8e1-049865d5f224.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="AURA GLOBAL Digital Web Studio" />
+  <meta property="og:site_name" content="AURA GLOBAL" />
+  <meta property="og:locale" content="id_ID" />
 
-  <!-- Twitter Card -->
+  <!-- Twitter Cards -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://auraglobal.my.id/" />
-  <meta property="twitter:title" content="Jasa Pembuatan Website Profesional | AURA GLOBAL" />
-  <meta property="twitter:description" content="AURA GLOBAL menyediakan jasa pembuatan website profesional untuk UMKM dan berbagai bisnis. Desain custom, responsif, dan terintegrasi WhatsApp mulai dari Rp350.000." />
+  <meta property="twitter:title" content="AURA GLOBAL — Jasa Pembuatan Website Profesional & Digital Web Studio" />
+  <meta property="twitter:description" content="Membantu UMKM & bisnis lokal tampil profesional di internet. Website modern, cepat, responsif, dan terintegrasi WhatsApp mulai Rp350.000." />
   <meta property="twitter:image" content="https://cdn.phototourl.com/free/2026-08-20-2597676d-4a65-4bc2-b8e1-049865d5f224.png" />
 
-  <!-- Favicon / Logo di Samping URL Browser -->
-  <link rel="icon" type="image/png" href="https://cdn.phototourl.com/free/2026-08-20-c9431592-f326-40af-a4d6-a85d5860df0b.png">
+  <!-- Favicons & Icons -->
+  <link rel="icon" type="image/png" href="https://cdn.phototourl.com/free/2026-08-20-c9431592-f326-40af-a4d6-a85d5860df0b.png" />
+  <link rel="apple-touch-icon" href="https://cdn.phototourl.com/free/2026-08-20-c9431592-f326-40af-a4d6-a85d5860df0b.png" />
   
-  <!-- Google Fonts & Material Symbols -->
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Typography & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
   
-  <!-- External CSS -->
+  <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="style.css" />
   
-  <!-- Tailwind CSS -->
+  <!-- Tailwind CSS Engine & Custom Design System -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            "primary": "#5300b7",
-            "primary-container": "#6d28d9",
-            "primary-fixed": "#ebddff",
-            "on-primary-fixed-variant": "#5b00c5",
-            "secondary": "#5e5c6e",
-            "secondary-fixed": "#e4e0f5",
-            "on-secondary-fixed-variant": "#464555",
-            "background": "#fcf9f8",
-            "surface": "#fcf9f8",
-            "surface-variant": "#e5e2e1",
-            "surface-container-lowest": "#ffffff",
-            "surface-container-low": "#f6f3f2",
-            "surface-container": "#f0edec",
-            "on-background": "#1c1b1b",
-            "on-surface": "#1c1b1b",
-            "on-surface-variant": "#4a4455",
-            "tertiary-fixed": "#ffdbc8"
+            "primary": "#5300B7",
+            "primary-dark": "#430094",
+            "primary-light": "#F3EEFC",
+            "primary-border": "#EBDDFF",
+            "dark": "#0F0C20",
+            "body": "#4A455A",
+            "muted": "#716C82",
+            "surface-bg": "#FAFAFC",
+            "surface-card": "#FFFFFF",
+            "surface-alt": "#F3F2F8",
+            "border-card": "#E6E1F0"
           },
           fontFamily: {
-            "display-lg": ["Plus Jakarta Sans", "sans-serif"],
-            "headline-lg": ["Plus Jakarta Sans", "sans-serif"],
-            "headline-md": ["Plus Jakarta Sans", "sans-serif"],
-            "body-lg": ["Plus Jakarta Sans", "sans-serif"],
-            "body-md": ["Plus Jakarta Sans", "sans-serif"],
-            "label-md": ["Plus Jakarta Sans", "sans-serif"],
-            "button": ["Plus Jakarta Sans", "sans-serif"]
+            sans: ["Plus Jakarta Sans", "sans-serif"]
           }
         }
       }
     }
   </script>
+
+  <!-- Technical SEO: Valid JSON-LD Structured Data Schemas -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://auraglobal.my.id/#organization",
+        "name": "AURA GLOBAL",
+        "url": "https://auraglobal.my.id/",
+        "logo": "https://cdn.phototourl.com/free/2026-08-20-c9431592-f326-40af-a4d6-a85d5860df0b.png",
+        "image": "https://cdn.phototourl.com/free/2026-08-20-2597676d-4a65-4bc2-b8e1-049865d5f224.png",
+        "description": "Studio digital spesialis jasa pembuatan website profesional, company profile, katalog online, dan landing page untuk UMKM dan bisnis modern.",
+        "telephone": "+6285861510159",
+        "email": "info@auraglobal.my.id",
+        "priceRange": "Rp350.000 - Rp1.200.000",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "ID"
+        },
+        "sameAs": [
+          "https://auraglobal.my.id"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://auraglobal.my.id/#website",
+        "url": "https://auraglobal.my.id/",
+        "name": "AURA GLOBAL",
+        "description": "Jasa Pembuatan Website Profesional & Digital Web Studio",
+        "publisher": {
+          "@id": "https://auraglobal.my.id/#organization"
+        },
+        "inLanguage": "id-ID"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://auraglobal.my.id/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Bagaimana skema pembayaran di AURA GLOBAL?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Konsultasi dan pembahasan konsep dilakukan terlebih dahulu tanpa dipungut biaya. Setelah arah desain disepakati bersama, klien membayar DP sebesar 50% untuk memulai pengerjaan. Sisa 50% dilunasi setelah website selesai dan disetujui sebelum penyerahan akses final."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Apakah biaya sudah termasuk domain dan hosting?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ya, semua paket sudah mencakup fasilitas domain sesuai permohonan klien (menyesuaikan ketersediaan) dan infrastruktur hosting modern berkecepatan tinggi selama 1 tahun pertama."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Berapa lama proses pembuatan website?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Waktu pengerjaan umumnya berkisar antara 3 hingga 14 hari kerja, tergantung pada paket yang dipilih, kompleksitas fitur, dan kesiapan materi konten dari klien."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Apakah website yang dibuat ramah pengguna smartphone (responsif)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tentu. Setiap website yang kami buat dirancang secara mobile-first dan dioptimalkan agar tampil rapi, proporsional, serta cepat diakses dari HP, tablet, maupun layar desktop."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Bagaimana jika ada revisi desain?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kami mendiskusikan konsep dan arah visual sejak awal pengerjaan. Revisi akan disesuaikan secara proporsional hingga arah desain disepakati bersama sebelum tahap finalisasi."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Apakah ada biaya perpanjangan di tahun berikutnya?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ya, terdapat biaya perpanjangan tahunan wajar untuk domain dan pemeliharaan server/hosting agar website Anda tetap aktif online di tahun berikutnya."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Bisakah saya konsultasi terlebih dahulu sebelum memutuskan?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sangat bisa. Anda dapat berkonsultasi gratis melalui WhatsApp kami untuk mendiskusikan kebutuhan bisnis, jenis website yang cocok, dan referensi tampilan tanpa komitmen apapun."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Berapa harga paket pembuatan website di AURA GLOBAL?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Paket pembuatan website kami dimulai dari Rp350.000 untuk Landing Page Basic, Rp500.000 untuk Starter, Rp800.000 untuk Professional, dan Rp1.200.000 untuk paket Premium dengan fitur katalog interaktif."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
-<body class="bg-background font-body-md text-on-background scroll-smooth">
+<body class="bg-surface-bg text-dark font-sans antialiased selection:bg-primary-light selection:text-primary">
 
-  <!-- NAVBAR -->
-  <header id="navbar" class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-surface-variant transition-all duration-300">
-    <div class="h-20 w-full px-5 lg:px-20 flex items-center justify-between">
+  <!-- HEADER / NAVBAR -->
+  <header id="navbar" class="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-border-card transition-all duration-300">
+    <div class="max-w-7xl mx-auto h-20 px-5 sm:px-8 flex items-center justify-between">
       
-      <!-- LOGO BRAND -->
-      <div class="flex items-center gap-3 cursor-pointer" onclick="scrollToSection('home')">
-        <img src="https://cdn.phototourl.com/free/2026-08-20-c9431592-f326-40af-a4d6-a85d5860df0b.png" alt="AURA GLOBAL Logo" class="w-9 h-9 object-contain" />
-        <div class="flex flex-col justify-center">
-          <span class="font-headline-md text-xl tracking-tight text-on-surface font-extrabold uppercase leading-none">AURA GLOBAL</span>
-          <span class="text-[10px] tracking-[0.25em] text-primary font-bold uppercase mt-1">Digital Web Studio</span>
+      <!-- LOGO BRAND IDENTITY -->
+      <a href="#home" onclick="event.preventDefault(); scrollToSection('home');" class="flex items-center gap-3.5 group cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-xl p-1" aria-label="AURA GLOBAL Beranda">
+        <div class="w-10 h-10 rounded-xl bg-primary-light border border-primary-border flex items-center justify-center p-1.5 shadow-sm group-hover:scale-105 transition-transform">
+          <img src="https://cdn.phototourl.com/free/2026-08-20-c9431592-f326-40af-a4d6-a85d5860df0b.png" alt="AURA GLOBAL Logo" class="w-full h-full object-contain" width="40" height="40" />
         </div>
-      </div>
+        <div class="flex flex-col">
+          <span class="text-xl tracking-tight font-extrabold text-dark uppercase leading-none group-hover:text-primary transition-colors">AURA GLOBAL</span>
+          <span class="text-[10px] tracking-[0.2em] text-primary font-bold uppercase mt-1">Digital Web Studio</span>
+        </div>
+      </a>
 
-      <!-- Desktop Navigation -->
-      <nav class="hidden lg:flex items-center gap-8">
-        <a href="#home" onclick="event.preventDefault(); scrollToSection('home')" class="font-label-md text-on-surface-variant hover:text-primary transition-colors font-semibold">Home</a>
-        <a href="#layanan" onclick="event.preventDefault(); scrollToSection('layanan')" class="font-label-md text-on-surface-variant hover:text-primary transition-colors font-semibold">Layanan</a>
-        <a href="#portfolio" onclick="event.preventDefault(); scrollToSection('portfolio')" class="font-label-md text-on-surface-variant hover:text-primary transition-colors font-semibold">Portfolio</a>
-        <a href="#harga" onclick="event.preventDefault(); scrollToSection('harga')" class="font-label-md text-on-surface-variant hover:text-primary transition-colors font-semibold">Harga</a>
-        <a href="#kontak" onclick="event.preventDefault(); scrollToSection('kontak')" class="font-label-md text-on-surface-variant hover:text-primary transition-colors font-semibold">Hubungi Kami</a>
+      <!-- DESKTOP NAVIGATION -->
+      <nav class="hidden lg:flex items-center gap-7" aria-label="Navigasi Utama">
+        <a href="#home" onclick="event.preventDefault(); scrollToSection('home');" class="text-sm font-semibold text-body hover:text-primary transition-colors py-1">Beranda</a>
+        <a href="#keunggulan" onclick="event.preventDefault(); scrollToSection('keunggulan');" class="text-sm font-semibold text-body hover:text-primary transition-colors py-1">Nilai</a>
+        <a href="#portfolio" onclick="event.preventDefault(); scrollToSection('portfolio');" class="text-sm font-semibold text-body hover:text-primary transition-colors py-1">Portofolio</a>
+        <a href="#layanan" onclick="event.preventDefault(); scrollToSection('layanan');" class="text-sm font-semibold text-body hover:text-primary transition-colors py-1">Layanan</a>
+        <a href="#alur-kerja" onclick="event.preventDefault(); scrollToSection('alur-kerja');" class="text-sm font-semibold text-body hover:text-primary transition-colors py-1">Alur Kerja</a>
+        <a href="#harga" onclick="event.preventDefault(); scrollToSection('harga');" class="text-sm font-semibold text-body hover:text-primary transition-colors py-1">Harga</a>
+        <a href="#faq" onclick="event.preventDefault(); scrollToSection('faq');" class="text-sm font-semibold text-body hover:text-primary transition-colors py-1">FAQ</a>
+        <a href="#kontak" onclick="event.preventDefault(); scrollToSection('kontak');" class="text-sm font-semibold text-body hover:text-primary transition-colors py-1">Kontak</a>
       </nav>
 
-      <div class="flex items-center gap-4">
-        <button onclick="openWhatsApp('layanan pembuatan website')" class="hidden md:inline-flex bg-primary text-white font-button px-6 py-2.5 rounded-lg hover:bg-primary-container transition-all shadow-md hover:shadow-lg font-bold">
-          Konsultasi Gratis &rarr;
+      <!-- CTA & MOBILE TOGGLE -->
+      <div class="flex items-center gap-3">
+        <button onclick="openWhatsApp('konsultasi umum')" class="hidden sm:inline-flex items-center gap-2 bg-primary text-white font-bold text-sm px-5 py-2.5 rounded-xl hover:bg-primary-dark transition-all shadow-[0_4px_14px_rgba(83,0,183,0.25)] hover:shadow-[0_6px_20px_rgba(83,0,183,0.35)] hover:-translate-y-0.5">
+          <span>Konsultasi Gratis</span>
+          <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
         </button>
         
-        <!-- Hamburger Menu Button (Mobile) -->
-        <button onclick="toggleMobileMenu()" class="lg:hidden text-on-surface hover:text-primary transition-colors p-2" aria-label="Toggle Menu">
-          <span id="menu-icon" class="material-symbols-outlined text-3xl">menu</span>
+        <!-- Hamburger Menu Button -->
+        <button onclick="toggleMobileMenu()" class="lg:hidden text-dark hover:text-primary p-2 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-primary" aria-label="Buka menu navigasi">
+          <span id="menu-icon" class="material-symbols-outlined text-28px">menu</span>
         </button>
       </div>
     </div>
   </header>
 
-  <!-- MOBILE MENU DRAWER -->
-  <div id="mobile-menu" class="fixed top-20 left-0 w-full bg-surface border-b border-surface-variant z-40 hidden flex-col px-5 py-6 gap-4 shadow-lg lg:hidden transition-all duration-300">
-    <a href="#home" onclick="closeMobileMenu(); scrollToSection('home')" class="font-label-md text-on-surface-variant hover:text-primary transition-colors font-semibold py-2">Home</a>
-    <a href="#layanan" onclick="closeMobileMenu(); scrollToSection('layanan')" class="font-label-md text-on-surface-variant hover:text-primary transition-colors font-semibold py-2">Layanan</a>
-    <a href="#portfolio" onclick="closeMobileMenu(); scrollToSection('portfolio')" class="font-label-md text-on-surface-variant hover:text-primary transition-colors font-semibold py-2">Portfolio</a>
-    <a href="#harga" onclick="closeMobileMenu(); scrollToSection('harga')" class="font-label-md text-on-surface-variant hover:text-primary transition-colors font-semibold py-2">Harga</a>
-    <a href="#kontak" onclick="closeMobileMenu(); scrollToSection('kontak')" class="font-label-md text-on-surface-variant hover:text-primary transition-colors font-semibold py-2 font-bold">Hubungi Kami</a>
-    <button onclick="closeMobileMenu(); openWhatsApp('layanan pembuatan website')" class="w-full bg-primary text-white font-button py-3 rounded-xl hover:bg-primary-container transition-all font-bold mt-2">
-      Konsultasi Gratis &rarr;
+  <!-- MOBILE DRAWER MENU -->
+  <div id="mobile-menu" class="fixed top-20 left-0 w-full bg-white border-b border-border-card z-40 hidden flex-col px-6 py-6 gap-3 shadow-xl lg:hidden transition-all duration-300">
+    <a href="#home" onclick="closeMobileMenu(); scrollToSection('home');" class="text-base font-bold text-dark hover:text-primary transition-colors py-2 border-b border-surface-alt">Beranda</a>
+    <a href="#keunggulan" onclick="closeMobileMenu(); scrollToSection('keunggulan');" class="text-base font-bold text-dark hover:text-primary transition-colors py-2 border-b border-surface-alt">Nilai & Keunggulan</a>
+    <a href="#portfolio" onclick="closeMobileMenu(); scrollToSection('portfolio');" class="text-base font-bold text-dark hover:text-primary transition-colors py-2 border-b border-surface-alt">Portofolio Live</a>
+    <a href="#layanan" onclick="closeMobileMenu(); scrollToSection('layanan');" class="text-base font-bold text-dark hover:text-primary transition-colors py-2 border-b border-surface-alt">Layanan</a>
+    <a href="#alur-kerja" onclick="closeMobileMenu(); scrollToSection('alur-kerja');" class="text-base font-bold text-dark hover:text-primary transition-colors py-2 border-b border-surface-alt">Alur Kerja</a>
+    <a href="#harga" onclick="closeMobileMenu(); scrollToSection('harga');" class="text-base font-bold text-dark hover:text-primary transition-colors py-2 border-b border-surface-alt">Paket Harga</a>
+    <a href="#faq" onclick="closeMobileMenu(); scrollToSection('faq');" class="text-base font-bold text-dark hover:text-primary transition-colors py-2 border-b border-surface-alt">FAQ</a>
+    <a href="#kontak" onclick="closeMobileMenu(); scrollToSection('kontak');" class="text-base font-bold text-dark hover:text-primary transition-colors py-2 border-b border-surface-alt">Kontak Kami</a>
+    <button onclick="closeMobileMenu(); openWhatsApp('konsultasi umum');" class="w-full mt-3 inline-flex items-center justify-center gap-2 bg-primary text-white font-bold py-3.5 rounded-xl hover:bg-primary-dark transition-all shadow-md">
+      <span>Konsultasi WhatsApp</span>
+      <span class="material-symbols-outlined text-[18px]">chat</span>
     </button>
   </div>
 
   <main class="w-full pt-20">
     
-    <!-- HERO SECTION -->
-    <section id="home" class="relative w-full pt-28 pb-16 lg:pt-36 lg:pb-24 px-5 lg:px-20 overflow-hidden bg-surface-container-lowest hero-glow">
-      <!-- Ambient Glow Elements -->
-      <div class="absolute top-10 right-10 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[130px] pointer-events-none"></div>
-      <div class="absolute bottom-10 left-10 w-[350px] h-[350px] bg-primary/5 rounded-full blur-[100px] pointer-events-none"></div>
+    <!-- -----------------------------------------------------------------
+         HERO SECTION (TWO-COLUMN EDITORIAL DESIGN)
+         ----------------------------------------------------------------- -->
+    <section id="home" class="relative w-full pt-16 pb-16 lg:pt-28 lg:pb-24 px-5 sm:px-8 lg:px-12 overflow-hidden bg-surface-card hero-glow border-b border-border-card/60">
+      <!-- Ambient Glow Accents -->
+      <div class="absolute top-12 right-12 w-[480px] h-[480px] bg-primary/10 rounded-full blur-[120px] pointer-events-none -z-10 animate-pulse-subtle"></div>
+      <div class="absolute bottom-8 left-8 w-[320px] h-[320px] bg-primary/5 rounded-full blur-[90px] pointer-events-none -z-10"></div>
       
-      <div class="relative z-10 max-w-7xl mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
           
-          <!-- LEFT COLUMN: Headline, Description, CTAs, Features -->
+          <!-- LEFT COLUMN: Headline, Positioning, CTAs, Highlights -->
           <div class="lg:col-span-6 flex flex-col items-start text-left">
             
-            <!-- Badge -->
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#f3eefc] text-primary border border-primary/20 font-label-md mb-6 animate-fade-in-up font-bold shadow-sm" style="animation-delay: 0.1s;">
-              <span class="material-symbols-outlined text-[18px] text-primary">sell</span>
-              <span>Website Profesional Mulai dari Rp350.000</span>
+            <!-- Studio Status Pill -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-light text-primary border border-primary-border text-xs sm:text-sm font-bold mb-6 shadow-sm">
+              <span class="material-symbols-outlined text-[17px] text-primary">auto_awesome</span>
+              <span>Website Profesional untuk UMKM & Bisnis</span>
             </div>
             
-            <!-- Headline -->
-            <h1 class="text-4xl sm:text-5xl lg:text-[3.4rem] font-display-lg text-on-surface mb-6 font-extrabold animate-fade-in-up leading-[1.12] tracking-tight" style="animation-delay: 0.2s;">
-              Punya Usaha,<br/>
-              Tapi Belum<br/>
+            <!-- Main Headline -->
+            <h1 class="text-4xl sm:text-5xl lg:text-[3.5rem] text-dark font-extrabold leading-[1.12] tracking-tight mb-6">
+              Punya Usaha,<br />
+              Tapi Belum<br />
               <span class="text-primary">Punya Website?</span>
             </h1>
             
-            <!-- Description -->
-            <p class="text-base sm:text-lg lg:text-xl font-body-lg text-secondary mb-8 max-w-xl animate-fade-in-up leading-relaxed" style="animation-delay: 0.4s;">
-              Saatnya <strong class="text-on-surface font-bold">bisnis Anda</strong> tampil lebih profesional di internet dengan website modern, responsif, dan sesuai dengan kebutuhan bisnis Anda.
+            <!-- Value Subtitle -->
+            <p class="text-base sm:text-lg text-body mb-8 max-w-xl leading-relaxed">
+              Saatnya bisnis Anda tampil lebih kredibel dan terpercaya di internet. Kami membangun website modern, berkecepatan tinggi, responsif di HP, dan terhubung langsung ke WhatsApp pelanggan Anda.
             </p>
             
-            <!-- CTAs -->
-            <div class="flex flex-wrap items-center gap-4 mb-10 w-full sm:w-auto animate-fade-in-up" style="animation-delay: 0.6s;">
-              <button onclick="openWhatsApp('layanan pembuatan website')" class="w-full sm:w-auto inline-flex items-center justify-center bg-primary text-white font-button px-7 py-3.5 rounded-xl hover:bg-primary-container transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-bold text-base md:text-lg">
-                Konsultasi Gratis <span class="material-symbols-outlined ml-2 text-[20px]">arrow_forward</span>
+            <!-- Primary & Secondary CTAs -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-10 w-full sm:w-auto">
+              <button onclick="openWhatsApp('konsultasi umum')" class="inline-flex items-center justify-center gap-2 bg-primary text-white font-bold text-base px-7 py-3.5 rounded-xl hover:bg-primary-dark transition-all shadow-[0_6px_20px_rgba(83,0,183,0.3)] hover:-translate-y-0.5">
+                <span>Konsultasi Gratis</span>
+                <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
               </button>
-              <button onclick="scrollToSection('portfolio')" class="w-full sm:w-auto inline-flex items-center justify-center bg-secondary-fixed text-on-secondary-fixed-variant font-button px-7 py-3.5 rounded-xl hover:bg-[#d9d4ed] transition-all font-bold text-base md:text-lg">
-                Lihat Portfolio
+              <button onclick="scrollToSection('portfolio')" class="inline-flex items-center justify-center gap-2 bg-surface-alt text-dark font-bold text-base px-6 py-3.5 rounded-xl hover:bg-primary-light hover:text-primary transition-all border border-border-card">
+                <span>Lihat Portofolio</span>
+                <span class="material-symbols-outlined text-[18px]">visibility</span>
               </button>
             </div>
 
-            <!-- 3 Feature Highlight Bullets -->
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6 border-t border-surface-variant/70 w-full animate-fade-in-up" style="animation-delay: 0.8s;">
+            <!-- 3 Core Feature Highlights -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6 border-t border-border-card w-full">
               <div class="flex items-start gap-3">
-                <div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center shrink-0 text-primary">
-                  <span class="material-symbols-outlined text-[22px]">desktop_windows</span>
+                <div class="w-9 h-9 rounded-xl bg-primary-light flex items-center justify-center shrink-0 text-primary border border-primary-border">
+                  <span class="material-symbols-outlined text-[20px]">palette</span>
                 </div>
                 <div>
-                  <h4 class="font-bold text-on-surface text-sm leading-tight">Desain Custom</h4>
-                  <p class="text-xs text-secondary mt-0.5 leading-snug">Sesuai karakter bisnis Anda</p>
+                  <h3 class="font-bold text-dark text-sm leading-tight">Desain Custom</h3>
+                  <p class="text-xs text-muted mt-0.5 leading-snug">Sesuai karakter usaha</p>
                 </div>
               </div>
 
               <div class="flex items-start gap-3">
-                <div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center shrink-0 text-primary">
-                  <span class="material-symbols-outlined text-[22px]">stay_current_portrait</span>
+                <div class="w-9 h-9 rounded-xl bg-primary-light flex items-center justify-center shrink-0 text-primary border border-primary-border">
+                  <span class="material-symbols-outlined text-[20px]">devices</span>
                 </div>
                 <div>
-                  <h4 class="font-bold text-on-surface text-sm leading-tight">100% Responsif</h4>
-                  <p class="text-xs text-secondary mt-0.5 leading-snug">Optimal di semua perangkat</p>
+                  <h3 class="font-bold text-dark text-sm leading-tight">100% Responsif</h3>
+                  <p class="text-xs text-muted mt-0.5 leading-snug">Optimal di semua HP</p>
                 </div>
               </div>
 
               <div class="flex items-start gap-3">
-                <div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center shrink-0 text-primary">
-                  <span class="material-symbols-outlined text-[22px]">chat</span>
+                <div class="w-9 h-9 rounded-xl bg-primary-light flex items-center justify-center shrink-0 text-primary border border-primary-border">
+                  <span class="material-symbols-outlined text-[20px]">chat</span>
                 </div>
                 <div>
-                  <h4 class="font-bold text-on-surface text-sm leading-tight">Integrasi WhatsApp</h4>
-                  <p class="text-xs text-secondary mt-0.5 leading-snug">Mudah dihubungi pelanggan</p>
+                  <h3 class="font-bold text-dark text-sm leading-tight">WhatsApp Cepat</h3>
+                  <p class="text-xs text-muted mt-0.5 leading-snug">Mudah dihubungi klien</p>
                 </div>
               </div>
             </div>
 
           </div>
 
-          <!-- RIGHT COLUMN: 3D Character & Website Previews Artwork -->
-          <div class="lg:col-span-6 relative flex justify-center items-center animate-fade-in-up" style="animation-delay: 0.4s;">
-            <!-- Soft Purple Glow Behind Artwork -->
-            <div class="absolute w-[90%] h-[90%] bg-primary/20 rounded-full blur-[80px] pointer-events-none -z-10"></div>
+          <!-- RIGHT COLUMN: 3D Character & Laptop Artwork -->
+          <div class="lg:col-span-6 relative flex justify-center items-center">
+            <!-- Glow circle behind illustration -->
+            <div class="absolute w-[85%] h-[85%] bg-primary/15 rounded-full blur-[70px] pointer-events-none -z-10"></div>
             
-            <div class="relative w-full max-w-[620px] lg:max-w-none lg:scale-115 lg:origin-center transition-transform duration-300 animate-float-subtle">
-              <img src="assets/hero-illustration.png" alt="AURA GLOBAL Web Studio Illustration" class="w-full h-auto object-contain select-none" />
+            <div class="relative w-full max-w-[540px] animate-float-subtle">
+              <img 
+                src="assets/hero-illustration.png" 
+                alt="AURA GLOBAL Visual Web Studio - Karakter 3D dengan Laptop dan Preview Website" 
+                class="w-full h-auto object-contain select-none drop-shadow-xl" 
+                width="676" 
+                height="537"
+                loading="eager"
+                fetchpriority="high"
+              />
             </div>
           </div>
 
         </div>
 
-        <!-- TRUST BAR / CATEGORIES -->
-        <div class="relative z-10 mt-16 pt-10 border-t border-surface-variant/80 max-w-7xl mx-auto animate-fade-in-up" style="animation-delay: 1s;">
-          <p class="text-center text-xs md:text-sm font-semibold text-secondary uppercase tracking-wider mb-6">
-            Dipercaya oleh berbagai jenis bisnis
+        <!-- TRUST BAR / BUSINESS CATEGORIES -->
+        <div class="mt-16 pt-8 border-t border-border-card/80 max-w-7xl mx-auto">
+          <p class="text-center text-xs sm:text-sm font-bold text-muted uppercase tracking-wider mb-5">
+            Solusi website tepat untuk berbagai jenis bisnis &amp; usaha
           </p>
-          <div class="flex flex-wrap justify-center items-center gap-3 md:gap-4">
-            <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-low border border-surface-variant/70 text-on-surface text-xs md:text-sm font-semibold hover:border-primary/40 transition-colors shadow-sm">
-              <span class="material-symbols-outlined text-primary text-[18px]">local_cafe</span> Cafe & Resto
-            </div>
-            <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-low border border-surface-variant/70 text-on-surface text-xs md:text-sm font-semibold hover:border-primary/40 transition-colors shadow-sm">
-              <span class="material-symbols-outlined text-primary text-[18px]">shopping_bag</span> Toko Online
-            </div>
-            <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-low border border-surface-variant/70 text-on-surface text-xs md:text-sm font-semibold hover:border-primary/40 transition-colors shadow-sm">
-              <span class="material-symbols-outlined text-primary text-[18px]">content_cut</span> Barbershop
-            </div>
-            <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-low border border-surface-variant/70 text-on-surface text-xs md:text-sm font-semibold hover:border-primary/40 transition-colors shadow-sm">
-              <span class="material-symbols-outlined text-primary text-[18px]">domain</span> Perusahaan
-            </div>
-            <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-low border border-surface-variant/70 text-on-surface text-xs md:text-sm font-semibold hover:border-primary/40 transition-colors shadow-sm">
-              <span class="material-symbols-outlined text-primary text-[18px]">work</span> Jasa Profesional
-            </div>
-            <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-low border border-surface-variant/70 text-secondary text-xs md:text-sm font-semibold hover:border-primary/40 transition-colors shadow-sm">
-              <span class="material-symbols-outlined text-primary text-[18px]">more_horiz</span> Dan Banyak Lagi
-            </div>
+          <div class="flex flex-wrap justify-center items-center gap-2.5 sm:gap-3.5">
+            <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-alt border border-border-card text-dark text-xs sm:text-sm font-semibold shadow-xs">
+              <span class="material-symbols-outlined text-primary text-[18px]">local_cafe</span> Cafe &amp; Resto
+            </span>
+            <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-alt border border-border-card text-dark text-xs sm:text-sm font-semibold shadow-xs">
+              <span class="material-symbols-outlined text-primary text-[18px]">domain</span> Perusahaan &amp; Konstruksi
+            </span>
+            <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-alt border border-border-card text-dark text-xs sm:text-sm font-semibold shadow-xs">
+              <span class="material-symbols-outlined text-primary text-[18px]">directions_car</span> Rental &amp; Transportasi
+            </span>
+            <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-alt border border-border-card text-dark text-xs sm:text-sm font-semibold shadow-xs">
+              <span class="material-symbols-outlined text-primary text-[18px]">kayaking</span> Wisata Alam &amp; Tour
+            </span>
+            <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-alt border border-border-card text-dark text-xs sm:text-sm font-semibold shadow-xs">
+              <span class="material-symbols-outlined text-primary text-[18px]">storefront</span> Toko Online &amp; Katalog
+            </span>
+            <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-alt border border-border-card text-muted text-xs sm:text-sm font-semibold shadow-xs">
+              <span class="material-symbols-outlined text-primary text-[18px]">add_circle</span> Dan Banyak Lagi
+            </span>
           </div>
         </div>
 
       </div>
     </section>
 
-    <!-- INTRO TEXT -->
-    <section class="w-full py-24 md:py-32 px-5 lg:px-20 bg-surface">
-      <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-4xl md:text-5xl font-headline-lg font-bold text-on-surface mb-8">
-          Website yang dirancang untuk membantu bisnis <span class="text-primary italic">tampil lebih profesional.</span>
-        </h2>
-        <p class="text-lg font-body-lg text-on-surface-variant leading-relaxed">
-          Mulai dari tampilan sederhana hingga website bisnis yang lebih lengkap, kami membuat website yang mudah digunakan, responsive, dan sesuai kebutuhan.
-        </p>
-      </div>
-    </section>
-
-    <!-- KEUNTUNGAN SECTION -->
-    <section class="w-full py-24 px-5 lg:px-20 bg-surface-container-low">
-      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="bg-surface-container-lowest p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group cursor-default">
-          <div class="w-16 h-16 rounded-2xl bg-secondary-fixed flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-            <span class="material-symbols-outlined text-primary group-hover:text-white text-3xl transition-colors">business_center</span>
-          </div>
-          <h3 class="font-headline-md text-2xl font-bold text-on-surface mb-4">Lebih Profesional</h3>
-          <p class="text-on-surface-variant">Tingkatkan kredibilitas bisnis Anda dengan tampilan digital yang meyakinkan.</p>
-        </div>
-        <div class="bg-surface-container-lowest p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group cursor-default">
-          <div class="w-16 h-16 rounded-2xl bg-secondary-fixed flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-            <span class="material-symbols-outlined text-primary group-hover:text-white text-3xl transition-colors">search</span>
-          </div>
-          <h3 class="font-headline-md text-2xl font-bold text-on-surface mb-4">Mudah Ditemukan</h3>
-          <p class="text-on-surface-variant">Bantu calon pelanggan menemukan layanan Anda saat mereka mencari di internet.</p>
-        </div>
-        <div class="bg-surface-container-lowest p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group cursor-default">
-          <div class="w-16 h-16 rounded-2xl bg-secondary-fixed flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-            <span class="material-symbols-outlined text-primary group-hover:text-white text-3xl transition-colors">dashboard</span>
-          </div>
-          <h3 class="font-headline-md text-2xl font-bold text-on-surface mb-4">Informasi Teratur</h3>
-          <p class="text-on-surface-variant">Sajikan detail layanan, harga, dan portofolio dengan rapi agar mudah dipahami.</p>
-        </div>
-        <div class="bg-surface-container-lowest p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group cursor-default">
-          <div class="w-16 h-16 rounded-2xl bg-secondary-fixed flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-            <span class="material-symbols-outlined text-primary group-hover:text-white text-3xl transition-colors">chat</span>
-          </div>
-          <h3 class="font-headline-md text-2xl font-bold text-on-surface mb-4">Mudah Dihubungi</h3>
-          <p class="text-on-surface-variant">Integrasi langsung ke WhatsApp mempermudah terjadinya transaksi.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- PORTFOLIO SECTION -->
-    <section id="portfolio" class="w-full py-28 lg:py-32 px-5 lg:px-20 bg-surface-container-lowest">
+    <!-- -----------------------------------------------------------------
+         VALUE PROPOSITION / KEUNGGULAN SECTION
+         ----------------------------------------------------------------- -->
+    <section id="keunggulan" class="w-full py-20 lg:py-28 px-5 sm:px-8 lg:px-12 bg-surface-bg border-b border-border-card">
       <div class="max-w-7xl mx-auto">
+        <div class="max-w-3xl mx-auto text-center mb-16">
+          <span class="text-primary font-bold text-xs sm:text-sm tracking-widest uppercase mb-3 block">Nilai &amp; Keunggulan</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-dark leading-tight mb-4">
+            Mengapa Bisnis Anda Membutuhkan Website Profesional?
+          </h2>
+          <p class="text-base text-body leading-relaxed">
+            Website bukan sekadar kartu nama digital, melainkan pusat reputasi bisnis Anda di mata calon pelanggan dan mitra usaha.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Card 1 -->
+          <div class="bg-surface-card p-7 rounded-2xl border border-border-card glow-card flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-xl bg-primary-light flex items-center justify-center mb-5 text-primary border border-primary-border">
+                <span class="material-symbols-outlined text-3xl">verified</span>
+              </div>
+              <h3 class="text-xl font-bold text-dark mb-2.5">Kredibilitas Tinggi</h3>
+              <p class="text-sm text-body leading-relaxed">
+                Calon pembeli mencari bukti keaslian bisnis di internet sebelum bertransaksi. Website resmi menciptakan kepercayaan instan.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-surface-card p-7 rounded-2xl border border-border-card glow-card flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-xl bg-primary-light flex items-center justify-center mb-5 text-primary border border-primary-border">
+                <span class="material-symbols-outlined text-3xl">devices</span>
+              </div>
+              <h3 class="text-xl font-bold text-dark mb-2.5">Optimal di Smartphone</h3>
+              <p class="text-sm text-body leading-relaxed">
+                Lebih dari 80% pelanggan mengakses via smartphone. Kami memastikan tata letak proporsional, ringan, dan cepat dimuat.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-surface-card p-7 rounded-2xl border border-border-card glow-card flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-xl bg-primary-light flex items-center justify-center mb-5 text-primary border border-primary-border">
+                <span class="material-symbols-outlined text-3xl">format_list_bulleted</span>
+              </div>
+              <h3 class="text-xl font-bold text-dark mb-2.5">Informasi Teratur</h3>
+              <p class="text-sm text-body leading-relaxed">
+                Sajikan katalog produk, daftar harga, dan keunggulan layanan secara rapi agar calon klien tidak bingung saat membaca penawaran.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bg-surface-card p-7 rounded-2xl border border-border-card glow-card flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-xl bg-primary-light flex items-center justify-center mb-5 text-primary border border-primary-border">
+                <span class="material-symbols-outlined text-3xl">chat</span>
+              </div>
+              <h3 class="text-xl font-bold text-dark mb-2.5">Konversi WhatsApp</h3>
+              <p class="text-sm text-body leading-relaxed">
+                Tombol pesan yang terhubung langsung ke WhatsApp memudahkan komunikasi cepat hingga penutupan transaksi (closing).
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------
+         PORTFOLIO SECTION (VERIFIED LIVE PROJECTS SHOWCASE)
+         ----------------------------------------------------------------- -->
+    <section id="portfolio" class="w-full py-20 lg:py-28 px-5 sm:px-8 lg:px-12 bg-surface-card border-b border-border-card">
+      <div class="max-w-7xl mx-auto">
+        
+        <!-- Header -->
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
           <div class="max-w-2xl">
-            <span class="font-bold text-primary uppercase tracking-widest block mb-3 text-sm">Selected Projects</span>
-            <h2 class="text-3xl sm:text-4xl font-headline-lg font-bold text-on-surface">Lihat bagaimana website mengubah tampilan bisnis.</h2>
+            <span class="text-primary font-bold text-xs sm:text-sm tracking-widest uppercase mb-3 block">Karya Terverifikasi</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-dark leading-tight">
+              Eksplorasi Proyek Website yang Telah Kami Bangun
+            </h2>
           </div>
-          <span class="inline-block self-start md:self-auto bg-[#f3eefc] text-primary border border-primary/20 px-5 py-2 rounded-full font-bold text-sm tracking-wide">Website Showcase</span>
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-light text-primary border border-primary-border text-xs sm:text-sm font-bold shrink-0 self-start md:self-auto">
+            <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+            <span>4 Proyek Terverifikasi Aktif</span>
+          </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- 4-Card Portfolio Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
           
-          <!-- Portfolio 1: Website Company Profile -->
-          <div class="bg-surface-container-low rounded-3xl p-5 sm:p-6 border border-surface-variant/70 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+          <!-- Project 1: Danih Konstruksi -->
+          <article class="bg-surface-bg rounded-3xl p-5 sm:p-7 border border-border-card glow-card flex flex-col justify-between">
             <div>
-              <div class="relative rounded-2xl overflow-hidden mb-5 aspect-[16/10] bg-surface-container border border-surface-variant/40 shadow-inner">
-                <img src="assets/portfolio-company.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" alt="Website Company Profile Preview">
-                <a href="https://danieh-konstruksi.vercel.app" target="_blank" rel="noopener noreferrer" class="absolute inset-0 bg-primary/25 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <span class="bg-white text-primary font-bold px-5 py-2.5 rounded-full shadow-lg flex items-center gap-2 text-sm transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                    Buka Website <span class="material-symbols-outlined text-[18px]">open_in_new</span>
-                  </span>
-                </a>
+              <!-- Browser Mockup Window -->
+              <div class="rounded-2xl overflow-hidden mb-6 border border-border-card bg-white shadow-sm">
+                <!-- Top Browser Bar -->
+                <div class="bg-surface-alt px-4 py-2.5 border-b border-border-card flex items-center justify-between">
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-red-400 inline-block"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-amber-400 inline-block"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-green-400 inline-block"></span>
+                  </div>
+                  <div class="bg-white px-3 py-1 rounded-md text-[11px] text-muted font-medium border border-border-card/60 flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[13px] text-green-600">lock</span>
+                    <span>danieh-konstruksi.vercel.app</span>
+                  </div>
+                  <span class="w-6"></span>
+                </div>
+                <!-- Image Container -->
+                <div class="aspect-[16/10] overflow-hidden bg-surface-alt group cursor-pointer" onclick="openPortfolioModal(1)">
+                  <img src="assets/portfolio-company.jpg" alt="Website Danih Konstruksi - Profil Perusahaan & Sewa Alat Berat" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="1280" height="800" />
+                </div>
               </div>
-              <div class="flex items-start justify-between gap-3 mb-2.5">
-                <h3 class="text-xl font-bold text-on-surface group-hover:text-primary transition-colors leading-tight">Website Company Profile</h3>
-                <span class="bg-[#f3eefc] text-primary text-xs font-bold px-3 py-1 rounded-full shrink-0 border border-primary/15">Company Profile</span>
-              </div>
-              <p class="text-secondary text-sm leading-relaxed mb-6">Website profesional untuk memperkenalkan bisnis, layanan, dan informasi perusahaan.</p>
-            </div>
-            <a href="https://danieh-konstruksi.vercel.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl bg-white text-primary font-bold text-sm border border-primary/25 hover:bg-primary hover:text-white transition-all duration-300 shadow-sm">
-              Lihat Website <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-            </a>
-          </div>
 
-          <!-- Portfolio 2: Website Cafe & Resto -->
-          <div class="bg-surface-container-low rounded-3xl p-5 sm:p-6 border border-surface-variant/70 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
-            <div>
-              <div class="relative rounded-2xl overflow-hidden mb-5 aspect-[16/10] bg-surface-container border border-surface-variant/40 shadow-inner">
-                <img src="assets/portfolio-cafe.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" alt="Website Cafe & Resto Preview">
-                <a href="https://noirecafe.vercel.app" target="_blank" rel="noopener noreferrer" class="absolute inset-0 bg-primary/25 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <span class="bg-white text-primary font-bold px-5 py-2.5 rounded-full shadow-lg flex items-center gap-2 text-sm transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                    Buka Website <span class="material-symbols-outlined text-[18px]">open_in_new</span>
-                  </span>
-                </a>
+              <!-- Metadata -->
+              <div class="flex items-center justify-between gap-3 mb-2">
+                <span class="text-xs font-bold uppercase tracking-wider text-primary bg-primary-light px-3 py-1 rounded-full border border-primary-border">Company Profile</span>
+                <span class="text-xs text-muted font-medium">PT / CV Konstruksi</span>
               </div>
-              <div class="flex items-start justify-between gap-3 mb-2.5">
-                <h3 class="text-xl font-bold text-on-surface group-hover:text-primary transition-colors leading-tight">Website Cafe & Resto</h3>
-                <span class="bg-[#f3eefc] text-primary text-xs font-bold px-3 py-1 rounded-full shrink-0 border border-primary/15">Cafe & Resto</span>
-              </div>
-              <p class="text-secondary text-sm leading-relaxed mb-6">Website elegan untuk menampilkan menu, informasi cafe, dan memudahkan pelanggan melakukan pemesanan.</p>
+              <h3 class="text-2xl font-bold text-dark mb-2">Danih Konstruksi</h3>
+              <p class="text-sm text-body leading-relaxed mb-6">
+                Website profil korporat dan katalog penyewaan alat berat. Didesain untuk memperkuat penawaran tender proyek serta mempermudah komunikasi instan calon klien via WhatsApp.
+              </p>
             </div>
-            <a href="https://noirecafe.vercel.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl bg-white text-primary font-bold text-sm border border-primary/25 hover:bg-primary hover:text-white transition-all duration-300 shadow-sm">
-              Lihat Website <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-            </a>
-          </div>
 
-          <!-- Portfolio 3: Website Rental Mobil -->
-          <div class="bg-surface-container-low rounded-3xl p-5 sm:p-6 border border-surface-variant/70 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
-            <div>
-              <div class="relative rounded-2xl overflow-hidden mb-5 aspect-[16/10] bg-surface-container border border-surface-variant/40 shadow-inner">
-                <img src="assets/portfolio-rental.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" alt="Website Rental Mobil Preview">
-                <a href="https://veloradrive.vercel.app" target="_blank" rel="noopener noreferrer" class="absolute inset-0 bg-primary/25 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <span class="bg-white text-primary font-bold px-5 py-2.5 rounded-full shadow-lg flex items-center gap-2 text-sm transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                    Buka Website <span class="material-symbols-outlined text-[18px]">open_in_new</span>
-                  </span>
-                </a>
-              </div>
-              <div class="flex items-start justify-between gap-3 mb-2.5">
-                <h3 class="text-xl font-bold text-on-surface group-hover:text-primary transition-colors leading-tight">Website Rental Mobil</h3>
-                <span class="bg-[#f3eefc] text-primary text-xs font-bold px-3 py-1 rounded-full shrink-0 border border-primary/15">Car Rental & Travel</span>
-              </div>
-              <p class="text-secondary text-sm leading-relaxed mb-6">Website modern untuk menampilkan kendaraan, layanan rental, dan memudahkan pelanggan melakukan booking.</p>
+            <!-- Actions -->
+            <div class="flex flex-col sm:flex-row items-center gap-3 pt-4 border-t border-border-card/80">
+              <a href="https://danieh-konstruksi.vercel.app" target="_blank" rel="noopener noreferrer" class="w-full sm:flex-1 inline-flex items-center justify-center gap-2 bg-primary text-white font-bold text-sm py-3 px-4 rounded-xl hover:bg-primary-dark transition-colors shadow-sm">
+                <span>Buka Live Website</span>
+                <span class="material-symbols-outlined text-[17px]">open_in_new</span>
+              </a>
+              <button onclick="openPortfolioModal(1)" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-dark font-bold text-sm py-3 px-5 rounded-xl border border-border-card hover:bg-primary-light hover:text-primary transition-colors">
+                <span>Detail</span>
+                <span class="material-symbols-outlined text-[17px]">info</span>
+              </button>
             </div>
-            <a href="https://veloradrive.vercel.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl bg-white text-primary font-bold text-sm border border-primary/25 hover:bg-primary hover:text-white transition-all duration-300 shadow-sm">
-              Lihat Website <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-            </a>
-          </div>
+          </article>
+
+          <!-- Project 2: Noiré Café -->
+          <article class="bg-surface-bg rounded-3xl p-5 sm:p-7 border border-border-card glow-card flex flex-col justify-between">
+            <div>
+              <!-- Browser Mockup Window -->
+              <div class="rounded-2xl overflow-hidden mb-6 border border-border-card bg-white shadow-sm">
+                <!-- Top Browser Bar -->
+                <div class="bg-surface-alt px-4 py-2.5 border-b border-border-card flex items-center justify-between">
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-red-400 inline-block"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-amber-400 inline-block"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-green-400 inline-block"></span>
+                  </div>
+                  <div class="bg-white px-3 py-1 rounded-md text-[11px] text-muted font-medium border border-border-card/60 flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[13px] text-green-600">lock</span>
+                    <span>noirecafe.vercel.app</span>
+                  </div>
+                  <span class="w-6"></span>
+                </div>
+                <!-- Image Container -->
+                <div class="aspect-[16/10] overflow-hidden bg-surface-alt group cursor-pointer" onclick="openPortfolioModal(2)">
+                  <img src="assets/portfolio-cafe.jpg" alt="Website Noiré Café - Specialty Coffee & Culinary" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="1280" height="800" />
+                </div>
+              </div>
+
+              <!-- Metadata -->
+              <div class="flex items-center justify-between gap-3 mb-2">
+                <span class="text-xs font-bold uppercase tracking-wider text-primary bg-primary-light px-3 py-1 rounded-full border border-primary-border">Cafe &amp; Resto</span>
+                <span class="text-xs text-muted font-medium">Food &amp; Beverage</span>
+              </div>
+              <h3 class="text-2xl font-bold text-dark mb-2">Noiré Café</h3>
+              <p class="text-sm text-body leading-relaxed mb-6">
+                Website bergaya dark luxury modern untuk specialty coffee dan bistro. Menampilkan menu interaktif, atmosfer tempat, petunjuk arah maps, serta tombol pemesanan meja.
+              </p>
+            </div>
+
+            <!-- Actions -->
+            <div class="flex flex-col sm:flex-row items-center gap-3 pt-4 border-t border-border-card/80">
+              <a href="https://noirecafe.vercel.app" target="_blank" rel="noopener noreferrer" class="w-full sm:flex-1 inline-flex items-center justify-center gap-2 bg-primary text-white font-bold text-sm py-3 px-4 rounded-xl hover:bg-primary-dark transition-colors shadow-sm">
+                <span>Buka Live Website</span>
+                <span class="material-symbols-outlined text-[17px]">open_in_new</span>
+              </a>
+              <button onclick="openPortfolioModal(2)" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-dark font-bold text-sm py-3 px-5 rounded-xl border border-border-card hover:bg-primary-light hover:text-primary transition-colors">
+                <span>Detail</span>
+                <span class="material-symbols-outlined text-[17px]">info</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 3: Velora Drive -->
+          <article class="bg-surface-bg rounded-3xl p-5 sm:p-7 border border-border-card glow-card flex flex-col justify-between">
+            <div>
+              <!-- Browser Mockup Window -->
+              <div class="rounded-2xl overflow-hidden mb-6 border border-border-card bg-white shadow-sm">
+                <!-- Top Browser Bar -->
+                <div class="bg-surface-alt px-4 py-2.5 border-b border-border-card flex items-center justify-between">
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-red-400 inline-block"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-amber-400 inline-block"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-green-400 inline-block"></span>
+                  </div>
+                  <div class="bg-white px-3 py-1 rounded-md text-[11px] text-muted font-medium border border-border-card/60 flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[13px] text-green-600">lock</span>
+                    <span>veloradrive.vercel.app</span>
+                  </div>
+                  <span class="w-6"></span>
+                </div>
+                <!-- Image Container -->
+                <div class="aspect-[16/10] overflow-hidden bg-surface-alt group cursor-pointer" onclick="openPortfolioModal(3)">
+                  <img src="assets/portfolio-rental.jpg" alt="Website Velora Drive - Executive Mobility & Rental Mobil" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="1280" height="800" />
+                </div>
+              </div>
+
+              <!-- Metadata -->
+              <div class="flex items-center justify-between gap-3 mb-2">
+                <span class="text-xs font-bold uppercase tracking-wider text-primary bg-primary-light px-3 py-1 rounded-full border border-primary-border">Rental &amp; Mobility</span>
+                <span class="text-xs text-muted font-medium">Rental &amp; Travel</span>
+              </div>
+              <h3 class="text-2xl font-bold text-dark mb-2">Velora Drive</h3>
+              <p class="text-sm text-body leading-relaxed mb-6">
+                Website jasa rental mobil eksekutif dan private chauffeur. Dilengkapi katalog kendaraan armada premium, rincian tarif sewa transparan, dan reservasi cepat via WhatsApp.
+              </p>
+            </div>
+
+            <!-- Actions -->
+            <div class="flex flex-col sm:flex-row items-center gap-3 pt-4 border-t border-border-card/80">
+              <a href="https://veloradrive.vercel.app" target="_blank" rel="noopener noreferrer" class="w-full sm:flex-1 inline-flex items-center justify-center gap-2 bg-primary text-white font-bold text-sm py-3 px-4 rounded-xl hover:bg-primary-dark transition-colors shadow-sm">
+                <span>Buka Live Website</span>
+                <span class="material-symbols-outlined text-[17px]">open_in_new</span>
+              </a>
+              <button onclick="openPortfolioModal(3)" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-dark font-bold text-sm py-3 px-5 rounded-xl border border-border-card hover:bg-primary-light hover:text-primary transition-colors">
+                <span>Detail</span>
+                <span class="material-symbols-outlined text-[17px]">info</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 4: Citumang Rafting -->
+          <article class="bg-surface-bg rounded-3xl p-5 sm:p-7 border border-border-card glow-card flex flex-col justify-between">
+            <div>
+              <!-- Browser Mockup Window -->
+              <div class="rounded-2xl overflow-hidden mb-6 border border-border-card bg-white shadow-sm">
+                <!-- Top Browser Bar -->
+                <div class="bg-surface-alt px-4 py-2.5 border-b border-border-card flex items-center justify-between">
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-red-400 inline-block"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-amber-400 inline-block"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-green-400 inline-block"></span>
+                  </div>
+                  <div class="bg-white px-3 py-1 rounded-md text-[11px] text-muted font-medium border border-border-card/60 flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[13px] text-green-600">lock</span>
+                    <span>citumangrafting.vercel.app</span>
+                  </div>
+                  <span class="w-6"></span>
+                </div>
+                <!-- Image Container -->
+                <div class="aspect-[16/10] overflow-hidden bg-surface-alt group cursor-pointer" onclick="openPortfolioModal(4)">
+                  <img src="assets/portfolio-citumang.jpg" alt="Website Citumang Rafting - Wisata Alam & Body Rafting Pangandaran" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="1280" height="800" />
+                </div>
+              </div>
+
+              <!-- Metadata -->
+              <div class="flex items-center justify-between gap-3 mb-2">
+                <span class="text-xs font-bold uppercase tracking-wider text-primary bg-primary-light px-3 py-1 rounded-full border border-primary-border">Pariwisata &amp; Outdoor</span>
+                <span class="text-xs text-muted font-medium">Tour &amp; Adventure</span>
+              </div>
+              <h3 class="text-2xl font-bold text-dark mb-2">Citumang Rafting Pangandaran</h3>
+              <p class="text-sm text-body leading-relaxed mb-6">
+                Website paket wisata body rafting di Citumang Pangandaran. Menyajikan rincian fasilitas pemandu, standar keamanan, galeri aktivitas, serta pemesanan tiket rombongan.
+              </p>
+            </div>
+
+            <!-- Actions -->
+            <div class="flex flex-col sm:flex-row items-center gap-3 pt-4 border-t border-border-card/80">
+              <a href="https://citumangrafting.vercel.app" target="_blank" rel="noopener noreferrer" class="w-full sm:flex-1 inline-flex items-center justify-center gap-2 bg-primary text-white font-bold text-sm py-3 px-4 rounded-xl hover:bg-primary-dark transition-colors shadow-sm">
+                <span>Buka Live Website</span>
+                <span class="material-symbols-outlined text-[17px]">open_in_new</span>
+              </a>
+              <button onclick="openPortfolioModal(4)" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-dark font-bold text-sm py-3 px-5 rounded-xl border border-border-card hover:bg-primary-light hover:text-primary transition-colors">
+                <span>Detail</span>
+                <span class="material-symbols-outlined text-[17px]">info</span>
+              </button>
+            </div>
+          </article>
 
         </div>
+
       </div>
     </section>
 
-    <!-- LAYANAN SECTION -->
-    <section id="layanan" class="w-full py-32 px-5 lg:px-20 bg-surface-container">
-      <div class="max-w-7xl mx-auto text-center mb-16">
-        <span class="text-primary font-bold tracking-widest uppercase mb-4 block">Layanan Kami</span>
-        <h2 class="text-4xl font-headline-lg font-bold text-on-surface">Solusi digital untuk setiap tahap bisnis Anda.</h2>
-      </div>
-      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-surface-container-lowest p-8 rounded-3xl hover:bg-primary group transition-colors duration-300 shadow-sm hover:shadow-xl cursor-default">
-          <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center mb-8 group-hover:bg-primary-container transition-colors">
-            <span class="material-symbols-outlined text-primary group-hover:text-white">rocket_launch</span>
-          </div>
-          <h3 class="text-2xl font-bold mb-3 group-hover:text-white transition-colors text-on-surface">Landing Page</h3>
-          <p class="text-on-surface-variant group-hover:text-white/80 transition-colors">Halaman tunggal yang dioptimalkan untuk konversi tinggi, cocok untuk kampanye atau produk spesifik.</p>
-        </div>
-        <div class="bg-surface-container-lowest p-8 rounded-3xl hover:bg-primary group transition-colors duration-300 shadow-sm hover:shadow-xl cursor-default">
-          <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center mb-8 group-hover:bg-primary-container transition-colors">
-            <span class="material-symbols-outlined text-primary group-hover:text-white">storefront</span>
-          </div>
-          <h3 class="text-2xl font-bold mb-3 group-hover:text-white transition-colors text-on-surface">Business Website</h3>
-          <p class="text-on-surface-variant group-hover:text-white/80 transition-colors">Website multi-halaman lengkap untuk merepresentasikan perusahaan dengan profesional.</p>
-        </div>
-        <div class="bg-surface-container-lowest p-8 rounded-3xl hover:bg-primary group transition-colors duration-300 shadow-sm hover:shadow-xl cursor-default">
-          <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center mb-8 group-hover:bg-primary-container transition-colors">
-            <span class="material-symbols-outlined text-primary group-hover:text-white">menu_book</span>
-          </div>
-          <h3 class="text-2xl font-bold mb-3 group-hover:text-white transition-colors text-on-surface">Online Catalog</h3>
-          <p class="text-on-surface-variant group-hover:text-white/80 transition-colors">Tampilkan jajaran produk atau layanan Anda secara menarik layaknya etalase digital interaktif.</p>
-        </div>
-        <div class="bg-surface-container-lowest p-8 rounded-3xl hover:bg-primary group transition-colors duration-300 shadow-sm hover:shadow-xl cursor-default">
-          <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center mb-8 group-hover:bg-primary-container transition-colors">
-            <span class="material-symbols-outlined text-primary group-hover:text-white">palette</span>
-          </div>
-          <h3 class="text-2xl font-bold mb-3 group-hover:text-white transition-colors text-on-surface">Portfolio Website</h3>
-          <p class="text-on-surface-variant group-hover:text-white/80 transition-colors">Wadah elegan untuk memamerkan karya terbaik Anda kepada klien potensial.</p>
-        </div>
-        <div class="bg-surface-container-lowest p-8 rounded-3xl hover:bg-primary group transition-colors duration-300 shadow-sm hover:shadow-xl cursor-default">
-          <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center mb-8 group-hover:bg-primary-container transition-colors">
-            <span class="material-symbols-outlined text-primary group-hover:text-white">code_blocks</span>
-          </div>
-          <h3 class="text-2xl font-bold mb-3 group-hover:text-white transition-colors text-on-surface">Custom Website</h3>
-          <p class="text-on-surface-variant group-hover:text-white/80 transition-colors">Pengembangan fitur khusus dan unik yang dirancang spesifik untuk kebutuhan operasional Anda.</p>
-        </div>
-        <div class="bg-surface-container-lowest p-8 rounded-3xl hover:bg-primary group transition-colors duration-300 shadow-sm hover:shadow-xl cursor-default">
-          <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center mb-8 group-hover:bg-primary-container transition-colors">
-            <span class="material-symbols-outlined text-primary group-hover:text-white">sync</span>
-          </div>
-          <h3 class="text-2xl font-bold mb-3 group-hover:text-white transition-colors text-on-surface">Website Redesign</h3>
-          <p class="text-on-surface-variant group-hover:text-white/80 transition-colors">Perbarui tampilan website lama Anda menjadi lebih modern, cepat, dan mobile-friendly.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROSES PEMESANAN SECTION -->
-    <section class="w-full py-32 px-5 lg:px-20 bg-surface">
+    <!-- -----------------------------------------------------------------
+         SERVICES SECTION (LAYANAN SPESIFIK & REALISTIS)
+         ----------------------------------------------------------------- -->
+    <section id="layanan" class="w-full py-20 lg:py-28 px-5 sm:px-8 lg:px-12 bg-surface-bg border-b border-border-card">
       <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-          <span class="text-primary font-bold tracking-widest uppercase mb-4 block">Alur Kerja</span>
-          <h2 class="text-4xl font-headline-lg font-bold text-on-surface">Proses Pemesanan & Pembayaran</h2>
+        <div class="max-w-3xl mx-auto text-center mb-16">
+          <span class="text-primary font-bold text-xs sm:text-sm tracking-widest uppercase mb-3 block">Layanan Spesifik</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-dark leading-tight mb-4">
+            Solusi Pembuatan Website Sesuai Kebutuhan Nyata Bisnis
+          </h2>
+          <p class="text-base text-body leading-relaxed">
+            Setiap jenis usaha memiliki karakteristik berbeda. Kami merancang arsitektur website yang tepat untuk menjawab target pasar Anda.
+          </p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           
-          <div class="bg-surface-container-low p-8 rounded-3xl relative overflow-hidden group hover:shadow-lg transition-all">
-            <div class="text-6xl font-extrabold text-primary-fixed absolute -top-4 -right-4 opacity-50 group-hover:scale-110 transition-transform">01</div>
-            <h3 class="text-xl font-bold mb-3 text-on-surface relative z-10">Konsultasi Gratis</h3>
-            <p class="text-on-surface-variant relative z-10">Klien menyampaikan kebutuhan, jenis bisnis, referensi desain, dan fitur yang diinginkan.</p>
+          <!-- Service 1 -->
+          <div class="bg-surface-card p-8 rounded-3xl border border-border-card glow-card flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-primary-light flex items-center justify-center text-primary mb-6 border border-primary-border">
+                <span class="material-symbols-outlined text-28px">domain</span>
+              </div>
+              <h3 class="text-xl font-bold text-dark mb-3">Website Company Profile</h3>
+              <p class="text-sm text-body leading-relaxed mb-5">
+                Website multi-halaman untuk memperkenalkan identitas bisnis, rekam jejak, legalitas, serta ragam layanan perusahaan secara terpercaya kepada calon klien dan mitra.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-border-card/60 flex items-center justify-between text-xs font-semibold text-primary">
+              <span>Cocok untuk: PT, CV, Kontraktor, Agensi</span>
+            </div>
           </div>
-          
-          <div class="bg-surface-container-low p-8 rounded-3xl relative overflow-hidden group hover:shadow-lg transition-all">
-            <div class="text-6xl font-extrabold text-primary-fixed absolute -top-4 -right-4 opacity-50 group-hover:scale-110 transition-transform">02</div>
-            <h3 class="text-xl font-bold mb-3 text-on-surface relative z-10">Diskusi & Arah Desain</h3>
-            <p class="text-on-surface-variant relative z-10">Kami mendiskusikan konsep dan arah website. Proses awal desain disesuaikan sampai arah desain yang disepakati tercapai.</p>
+
+          <!-- Service 2 -->
+          <div class="bg-surface-card p-8 rounded-3xl border border-border-card glow-card flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-primary-light flex items-center justify-center text-primary mb-6 border border-primary-border">
+                <span class="material-symbols-outlined text-28px">storefront</span>
+              </div>
+              <h3 class="text-xl font-bold text-dark mb-3">Website UMKM &amp; Bisnis Lokal</h3>
+              <p class="text-sm text-body leading-relaxed mb-5">
+                Solusi praktis untuk cafe, restoran, barbershop, laundry, dan klinik lokal agar mudah ditemukan di pencarian Google saat calon pelanggan berada di sekitar Anda.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-border-card/60 flex items-center justify-between text-xs font-semibold text-primary">
+              <span>Cocok untuk: Kuliner, Retail, Jasa Lokal</span>
+            </div>
           </div>
-          
-          <div class="bg-surface-container-low p-8 rounded-3xl relative overflow-hidden group hover:shadow-lg transition-all">
-            <div class="text-6xl font-extrabold text-primary-fixed absolute -top-4 -right-4 opacity-50 group-hover:scale-110 transition-transform">03</div>
-            <h3 class="text-xl font-bold mb-3 text-on-surface relative z-10">Desain Disetujui</h3>
-            <p class="text-on-surface-variant relative z-10">Setelah konsep dan arah desain sudah cocok dan disetujui oleh klien, proses pengerjaan website dilanjutkan.</p>
+
+          <!-- Service 3 -->
+          <div class="bg-surface-card p-8 rounded-3xl border border-border-card glow-card flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-primary-light flex items-center justify-center text-primary mb-6 border border-primary-border">
+                <span class="material-symbols-outlined text-28px">menu_book</span>
+              </div>
+              <h3 class="text-xl font-bold text-dark mb-3">Katalog Produk &amp; Menu Digital</h3>
+              <p class="text-sm text-body leading-relaxed mb-5">
+                Tampilkan etalase produk barang atau menu makanan secara interaktif tanpa repot sistem transaksi checkout yang rumit, terhubung langsung ke pemesanan WhatsApp.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-border-card/60 flex items-center justify-between text-xs font-semibold text-primary">
+              <span>Cocok untuk: Resto, Bakery, Fashion, Rental</span>
+            </div>
           </div>
-          
-          <div class="bg-surface-container-low p-8 rounded-3xl relative overflow-hidden group hover:shadow-lg transition-all">
-            <div class="text-6xl font-extrabold text-primary-fixed absolute -top-4 -right-4 opacity-50 group-hover:scale-110 transition-transform">04</div>
-            <h3 class="text-xl font-bold mb-3 text-on-surface relative z-10">DP 50%</h3>
-            <p class="text-on-surface-variant relative z-10">Setelah desain atau konsep disetujui, klien melakukan pembayaran DP sebesar 50% dari total harga project.</p>
+
+          <!-- Service 4 -->
+          <div class="bg-surface-card p-8 rounded-3xl border border-border-card glow-card flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-primary-light flex items-center justify-center text-primary mb-6 border border-primary-border">
+                <span class="material-symbols-outlined text-28px">rocket_launch</span>
+              </div>
+              <h3 class="text-xl font-bold text-dark mb-3">Landing Page Promosi</h3>
+              <p class="text-sm text-body leading-relaxed mb-5">
+                Halaman tunggal yang terfokus pada satu penawaran spesifik. Dirancang dengan alur psikologi copywriting kuat untuk memaksimalkan angka klik ke WhatsApp.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-border-card/60 flex items-center justify-between text-xs font-semibold text-primary">
+              <span>Cocok untuk: Iklan Meta, Event, Produk Baru</span>
+            </div>
           </div>
-          
-          <div class="bg-surface-container-low p-8 rounded-3xl relative overflow-hidden group hover:shadow-lg transition-all">
-            <div class="text-6xl font-extrabold text-primary-fixed absolute -top-4 -right-4 opacity-50 group-hover:scale-110 transition-transform">05</div>
-            <h3 class="text-xl font-bold mb-3 text-on-surface relative z-10">Development & Finalisasi</h3>
-            <p class="text-on-surface-variant relative z-10">Website dikerjakan, disesuaikan dengan kebutuhan yang telah disepakati, kemudian dilakukan pengecekan akhir.</p>
+
+          <!-- Service 5 -->
+          <div class="bg-surface-card p-8 rounded-3xl border border-border-card glow-card flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-primary-light flex items-center justify-center text-primary mb-6 border border-primary-border">
+                <span class="material-symbols-outlined text-28px">sync</span>
+              </div>
+              <h3 class="text-xl font-bold text-dark mb-3">Redesign &amp; Modernisasi Website</h3>
+              <p class="text-sm text-body leading-relaxed mb-5">
+                Punya website lama yang terasa kaku, lambat dimuat, atau berantakan saat dibuka di HP? Kami rombak total menjadi tampilan bersih, modern, dan berkecepatan tinggi.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-border-card/60 flex items-center justify-between text-xs font-semibold text-primary">
+              <span>Cocok untuk: Bisnis dengan Web Usang</span>
+            </div>
           </div>
-          
-          <div class="bg-surface-container-low p-8 rounded-3xl relative overflow-hidden group hover:shadow-lg transition-all">
-            <div class="text-6xl font-extrabold text-primary-fixed absolute -top-4 -right-4 opacity-50 group-hover:scale-110 transition-transform">06</div>
-            <h3 class="text-xl font-bold mb-3 text-on-surface relative z-10">Pelunasan & Website Online</h3>
-            <p class="text-on-surface-variant relative z-10">Klien melunasi sisa pembayaran 50% sebelum proses serah-terima final dan publikasi sesuai ketentuan project.</p>
+
+          <!-- Service 6 -->
+          <div class="bg-surface-card p-8 rounded-3xl border border-border-card glow-card flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-primary-light flex items-center justify-center text-primary mb-6 border border-primary-border">
+                <span class="material-symbols-outlined text-28px">code_blocks</span>
+              </div>
+              <h3 class="text-xl font-bold text-dark mb-3">Kustomisasi Khusus Bisnis</h3>
+              <p class="text-sm text-body leading-relaxed mb-5">
+                Penyelarasan tata letak, formulir pemesanan bertahap, atau fitur perhitungan khusus yang disesuaikan dengan alur operasional bisnis Anda.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-border-card/60 flex items-center justify-between text-xs font-semibold text-primary">
+              <span>Cocok untuk: Kebutuhan Fitur Spesifik</span>
+            </div>
           </div>
 
         </div>
       </div>
     </section>
 
-    <!-- HARGA (PRICING) SECTION -->
-    <section id="harga" class="w-full py-32 px-5 lg:px-20 bg-surface-container-low">
+    <!-- -----------------------------------------------------------------
+         WORKFLOW & PAYMENT SECTION (TRANSPARAN TANPA ASUMSI)
+         ----------------------------------------------------------------- -->
+    <section id="alur-kerja" class="w-full py-20 lg:py-28 px-5 sm:px-8 lg:px-12 bg-surface-card border-b border-border-card">
       <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-          <span class="text-primary font-bold tracking-widest uppercase mb-4 block">Paket Harga</span>
-          <h2 class="text-4xl font-headline-lg font-bold text-on-surface">Pilih paket sesuai kebutuhan bisnis Anda.</h2>
+        <div class="max-w-3xl mx-auto text-center mb-16">
+          <span class="text-primary font-bold text-xs sm:text-sm tracking-widest uppercase mb-3 block">Alur Kerja &amp; Pembayaran</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-dark leading-tight mb-4">
+            Proses Terarah, Transparan, &amp; Nyaman Bagi Anda
+          </h2>
+          <p class="text-base text-body leading-relaxed">
+            Kami menjaga kejelasan di setiap tahap agar Anda selalu mengetahui perkembangan proyek tanpa keraguan.
+          </p>
         </div>
 
-        <!-- Grid 4 Kolom untuk Pricing -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          
+          <!-- Step 01 -->
+          <div class="bg-surface-bg p-8 rounded-3xl border border-border-card relative overflow-hidden group">
+            <span class="text-5xl font-black text-primary/10 absolute top-4 right-5 select-none transition-transform group-hover:scale-110">01</span>
+            <div class="w-10 h-10 rounded-xl bg-primary-light flex items-center justify-center text-primary font-bold text-sm mb-4 border border-primary-border">
+              01
+            </div>
+            <h3 class="text-xl font-bold text-dark mb-2.5">Konsultasi Gratis</h3>
+            <p class="text-sm text-body leading-relaxed">
+              Anda menyampaikan kebutuhan bisnis, referensi tampilan yang diinginkan, dan fitur yang dibutuhkan melalui obrolan WhatsApp yang santai.
+            </p>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="bg-surface-bg p-8 rounded-3xl border border-border-card relative overflow-hidden group">
+            <span class="text-5xl font-black text-primary/10 absolute top-4 right-5 select-none transition-transform group-hover:scale-110">02</span>
+            <div class="w-10 h-10 rounded-xl bg-primary-light flex items-center justify-center text-primary font-bold text-sm mb-4 border border-primary-border">
+              02
+            </div>
+            <h3 class="text-xl font-bold text-dark mb-2.5">Diskusi &amp; Arah Desain</h3>
+            <p class="text-sm text-body leading-relaxed">
+              Kami menyusun kerangka visual dan konsep website yang tepat untuk brand Anda, memastikan arah pengerjaan sesuai dengan ekspektasi.
+            </p>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="bg-surface-bg p-8 rounded-3xl border border-border-card relative overflow-hidden group">
+            <span class="text-5xl font-black text-primary/10 absolute top-4 right-5 select-none transition-transform group-hover:scale-110">03</span>
+            <div class="w-10 h-10 rounded-xl bg-primary-light flex items-center justify-center text-primary font-bold text-sm mb-4 border border-primary-border">
+              03
+            </div>
+            <h3 class="text-xl font-bold text-dark mb-2.5">Persetujuan Konsep</h3>
+            <p class="text-sm text-body leading-relaxed">
+              Setelah konsep dan arah visual disepakati bersama oleh klien, proyek siap masuk ke tahap komitmen pengerjaan teknis.
+            </p>
+          </div>
+
+          <!-- Step 04 -->
+          <div class="bg-surface-bg p-8 rounded-3xl border border-border-card relative overflow-hidden group">
+            <span class="text-5xl font-black text-primary/10 absolute top-4 right-5 select-none transition-transform group-hover:scale-110">04</span>
+            <div class="w-10 h-10 rounded-xl bg-primary-light flex items-center justify-center text-primary font-bold text-sm mb-4 border border-primary-border">
+              04
+            </div>
+            <h3 class="text-xl font-bold text-dark mb-2.5">Pembayaran DP 50%</h3>
+            <p class="text-sm text-body leading-relaxed">
+              Klien melakukan pembayaran uang muka (DP) sebesar 50% dari total nilai proyek untuk memulai proses coding dan pengadaan aset domain.
+            </p>
+          </div>
+
+          <!-- Step 05 -->
+          <div class="bg-surface-bg p-8 rounded-3xl border border-border-card relative overflow-hidden group">
+            <span class="text-5xl font-black text-primary/10 absolute top-4 right-5 select-none transition-transform group-hover:scale-110">05</span>
+            <div class="w-10 h-10 rounded-xl bg-primary-light flex items-center justify-center text-primary font-bold text-sm mb-4 border border-primary-border">
+              05
+            </div>
+            <h3 class="text-xl font-bold text-dark mb-2.5">Development &amp; Finalisasi</h3>
+            <p class="text-sm text-body leading-relaxed">
+              Website dikembangkan secara utuh, diuji pada berbagai resolusi perangkat, dan disempurnakan hingga seluruh fungsi bekerja sempurna.
+            </p>
+          </div>
+
+          <!-- Step 06 -->
+          <div class="bg-surface-bg p-8 rounded-3xl border border-border-card relative overflow-hidden group">
+            <span class="text-5xl font-black text-primary/10 absolute top-4 right-5 select-none transition-transform group-hover:scale-110">06</span>
+            <div class="w-10 h-10 rounded-xl bg-primary-light flex items-center justify-center text-primary font-bold text-sm mb-4 border border-primary-border">
+              06
+            </div>
+            <h3 class="text-xl font-bold text-dark mb-2.5">Pelunasan &amp; Go Online</h3>
+            <p class="text-sm text-body leading-relaxed">
+              Klien melunasi sisa 50% setelah website selesai diverifikasi, diikuti penyerahan domain dan peluncuran website aktif ke publik.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------
+         PRICING SECTION (PAKET HARGA TRANSPARAN DARI DATA PROYEK)
+         ----------------------------------------------------------------- -->
+    <section id="harga" class="w-full py-20 lg:py-28 px-5 sm:px-8 lg:px-12 bg-surface-bg border-b border-border-card">
+      <div class="max-w-7xl mx-auto">
+        <div class="max-w-3xl mx-auto text-center mb-16">
+          <span class="text-primary font-bold text-xs sm:text-sm tracking-widest uppercase mb-3 block">Paket Harga Transparan</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-dark leading-tight mb-4">
+            Investasi Terjangkau untuk Pertumbuhan Bisnis Anda
+          </h2>
+          <p class="text-base text-body leading-relaxed">
+            Mulai dari Rp350.000 dengan fasilitas lengkap domain dan hosting. Tanpa biaya tersembunyi.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-7 items-stretch">
           
           <!-- Paket Basic (350k) -->
-          <div class="bg-surface-container-lowest rounded-3xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-all flex flex-col">
-            <h3 class="text-2xl font-bold mb-2 text-on-surface">Basic</h3>
-            <div class="text-3xl font-extrabold text-primary mb-6">Rp350.000</div>
-            <p class="text-on-surface-variant mb-6 text-sm h-16">Landing page ringkas dengan hosting modern dan cepat.</p>
-            <div class="mb-8 flex-1">
-              <ul class="space-y-3 text-sm">
-                <li class="flex items-start gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-[18px]">language</span> Domain <b>sesuai request klien</b></li>
-                <li class="flex items-start gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-[18px]">dns</span> Hosting Vercel / Netlify</li>
-                <li class="flex items-start gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> 1 Halaman (Landing Page)</li>
-                <li class="flex items-start gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> Integrasi WhatsApp</li>
+          <div class="bg-surface-card rounded-3xl p-7 border border-border-card glow-card flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-2xl font-bold text-dark">Basic</h3>
+                <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-surface-alt text-muted">Landing Page</span>
+              </div>
+              <div class="text-3xl font-extrabold text-primary mb-4">Rp350.000</div>
+              <p class="text-xs text-body leading-relaxed mb-6">
+                Cocok untuk promosi satu penawaran spesifik atau usaha rintisan yang ingin langsung online dengan cepat.
+              </p>
+              
+              <ul class="space-y-3 text-xs sm:text-sm text-body mb-8 border-t border-border-card/60 pt-6">
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-primary text-[18px] shrink-0">check_circle</span>
+                  <span>1 Halaman (Landing Page Fokus)</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-primary text-[18px] shrink-0">language</span>
+                  <span>Fasilitas Domain sesuai request</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-primary text-[18px] shrink-0">dns</span>
+                  <span>Hosting Vercel / Netlify Cepat</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-primary text-[18px] shrink-0">chat</span>
+                  <span>Integrasi WhatsApp Langsung</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-primary text-[18px] shrink-0">stay_current_portrait</span>
+                  <span>100% Responsif di Smartphone</span>
+                </li>
               </ul>
             </div>
-            <button onclick="openWhatsApp('Paket Basic seharga Rp350.000')" class="w-full bg-secondary-fixed text-primary font-bold py-3 rounded-xl hover:bg-[#d3ceea] transition-colors">
-              Pilih Paket
+
+            <button onclick="openWhatsApp('Paket Basic seharga Rp350.000')" class="w-full inline-flex items-center justify-center gap-2 bg-surface-alt hover:bg-primary-light text-primary font-bold text-sm py-3 px-4 rounded-xl transition-all border border-primary-border">
+              <span>Pilih Paket Basic</span>
+              <span class="material-symbols-outlined text-[17px]">arrow_forward</span>
             </button>
           </div>
 
           <!-- Paket Starter (500k) -->
-          <div class="bg-surface-container-lowest rounded-3xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-all flex flex-col">
-            <h3 class="text-2xl font-bold mb-2 text-on-surface">Starter</h3>
-            <div class="text-3xl font-extrabold text-primary mb-6">Rp500.000</div>
-            <p class="text-on-surface-variant mb-6 text-sm h-16">Sempurna untuk usaha yang baru merintis kehadiran digitalnya.</p>
-            <div class="mb-8 flex-1">
-              <ul class="space-y-3 text-sm">
-                <li class="flex items-start gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-[18px]">language</span> Domain <b>sesuai request klien</b></li>
-                <li class="flex items-start gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-[18px]">dns</span> Hosting Standard</li>
-                <li class="flex items-start gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> Multi-halaman Dasar</li>
-                <li class="flex items-start gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> Cocok untuk: Cafe, Barbershop</li>
+          <div class="bg-surface-card rounded-3xl p-7 border border-border-card glow-card flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-2xl font-bold text-dark">Starter</h3>
+                <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-surface-alt text-muted">Multi-Halaman</span>
+              </div>
+              <div class="text-3xl font-extrabold text-primary mb-4">Rp500.000</div>
+              <p class="text-xs text-body leading-relaxed mb-6">
+                Solusi tepat untuk cafe, barbershop, salon, atau usaha jasa lokal yang membutuhkan beberapa bagian info teratur.
+              </p>
+              
+              <ul class="space-y-3 text-xs sm:text-sm text-body mb-8 border-t border-border-card/60 pt-6">
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-primary text-[18px] shrink-0">check_circle</span>
+                  <span>Multi-halaman Dasar Terstruktur</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-primary text-[18px] shrink-0">language</span>
+                  <span>Fasilitas Domain sesuai request</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-primary text-[18px] shrink-0">dns</span>
+                  <span>Hosting Standard Cepat</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-primary text-[18px] shrink-0">chat</span>
+                  <span>Integrasi WhatsApp Langsung</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-primary text-[18px] shrink-0">pin_drop</span>
+                  <span>Integrasi Lokasi Google Maps</span>
+                </li>
               </ul>
             </div>
-            <button onclick="openWhatsApp('Paket Starter seharga Rp500.000')" class="w-full bg-secondary-fixed text-primary font-bold py-3 rounded-xl hover:bg-[#d3ceea] transition-colors">
-              Pilih Paket
+
+            <button onclick="openWhatsApp('Paket Starter seharga Rp500.000')" class="w-full inline-flex items-center justify-center gap-2 bg-surface-alt hover:bg-primary-light text-primary font-bold text-sm py-3 px-4 rounded-xl transition-all border border-primary-border">
+              <span>Pilih Paket Starter</span>
+              <span class="material-symbols-outlined text-[17px]">arrow_forward</span>
             </button>
           </div>
 
-          <!-- Paket Professional (800k) -->
-          <div class="bg-primary-fixed rounded-3xl p-8 border border-primary/30 shadow-md hover:shadow-xl transition-all flex flex-col relative overflow-hidden">
-            <div class="absolute top-0 right-0 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">Populer</div>
-            <h3 class="text-2xl font-bold mb-2 text-primary">Professional</h3>
-            <div class="text-3xl font-extrabold text-primary mb-6">Rp800.000</div>
-            <p class="text-on-surface-variant mb-6 text-sm h-16">Tampil lebih kredibel dengan desain dan kustomisasi penuh.</p>
-            <div class="mb-8 flex-1">
-              <ul class="space-y-3 text-sm">
-                <li class="flex items-start gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-[18px]">language</span> Domain <b>sesuai request klien</b></li>
-                <li class="flex items-start gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-[18px]">dns</span> Hosting Premium</li>
-                <li class="flex items-start gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> Desain Kustomisasi Penuh</li>
-                <li class="flex items-start gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> SEO Basic & Kecepatan</li>
+          <!-- Paket Professional (800k) - HIGHLIGHTED -->
+          <div class="bg-surface-card rounded-3xl p-7 border-2 border-primary glow-card flex flex-col justify-between relative shadow-lg">
+            <div class="absolute -top-3.5 right-6 bg-primary text-white text-[11px] font-bold px-3 py-0.5 rounded-full uppercase tracking-wider shadow-sm">
+              Paling Populer
+            </div>
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-2xl font-bold text-dark">Professional</h3>
+                <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-primary-light text-primary border border-primary-border">Bisnis</span>
+              </div>
+              <div class="text-3xl font-extrabold text-primary mb-4">Rp800.000</div>
+              <p class="text-xs text-body leading-relaxed mb-6">
+                Pilihan utama bagi perusahaan dan brand yang menginginkan desain berwibawa dengan kredibilitas maksimal.
+              </p>
+              
+              <ul class="space-y-3 text-xs sm:text-sm text-body mb-8 border-t border-border-card/60 pt-6">
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-primary text-[18px] shrink-0">check_circle</span>
+                  <span>Desain Kustom Penuh &amp; Elegan</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-primary text-[18px] shrink-0">language</span>
+                  <span>Fasilitas Domain sesuai request</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-primary text-[18px] shrink-0">dns</span>
+                  <span>Hosting Premium Berkecepatan Tinggi</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-primary text-[18px] shrink-0">search</span>
+                  <span>Optimasi SEO Dasar Google</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-primary text-[18px] shrink-0">verified</span>
+                  <span>Penyelarasan Desain Sampai Disetujui</span>
+                </li>
               </ul>
             </div>
-            <button onclick="openWhatsApp('Paket Professional seharga Rp800.000')" class="w-full bg-primary text-white font-bold py-3 rounded-xl hover:bg-primary-container transition-colors">
-              Pilih Paket
+
+            <button onclick="openWhatsApp('Paket Professional seharga Rp800.000')" class="w-full inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold text-sm py-3 px-4 rounded-xl transition-all shadow-md hover:shadow-lg">
+              <span>Pilih Professional</span>
+              <span class="material-symbols-outlined text-[17px]">arrow_forward</span>
             </button>
           </div>
 
           <!-- Paket Premium (1.2jt) -->
-          <div class="bg-primary rounded-3xl p-8 border border-primary shadow-xl hover:-translate-y-2 transition-transform flex flex-col text-white">
-            <h3 class="text-2xl font-bold mb-2">Premium</h3>
-            <div class="text-3xl font-extrabold mb-6">Rp1.200.000</div>
-            <p class="text-white/80 mb-6 text-sm h-16">Solusi lengkap untuk bisnis skala menengah dengan fitur kustom.</p>
-            <div class="mb-8 flex-1">
-              <ul class="space-y-3 text-sm">
-                <li class="flex items-start gap-2 text-white"><span class="material-symbols-outlined text-[#d3bbff] text-[18px]">language</span> Domain <b>sesuai request klien</b></li>
-                <li class="flex items-start gap-2 text-white"><span class="material-symbols-outlined text-[#d3bbff] text-[18px]">dns</span> Hosting Premium + Prioritas</li>
-                <li class="flex items-start gap-2 text-white"><span class="material-symbols-outlined text-[#d3bbff] text-[18px]">check_circle</span> Katalog Produk Interaktif</li>
-                <li class="flex items-start gap-2 text-white"><span class="material-symbols-outlined text-[#d3bbff] text-[18px]">check_circle</span> Support Eksklusif 1 Bulan</li>
+          <div class="bg-surface-card rounded-3xl p-7 border border-border-card glow-card flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-2xl font-bold text-dark">Premium</h3>
+                <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-surface-alt text-muted">Fitur Lengkap</span>
+              </div>
+              <div class="text-3xl font-extrabold text-primary mb-4">Rp1.200.000</div>
+              <p class="text-xs text-body leading-relaxed mb-6">
+                Solusi komprehensif untuk bisnis dengan katalog produk interaktif atau kebutuhan fitur kustom.
+              </p>
+              
+              <ul class="space-y-3 text-xs sm:text-sm text-body mb-8 border-t border-border-card/60 pt-6">
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-primary text-[18px] shrink-0">check_circle</span>
+                  <span>Katalog Produk / Menu Interaktif</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-primary text-[18px] shrink-0">language</span>
+                  <span>Fasilitas Domain sesuai request</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-primary text-[18px] shrink-0">dns</span>
+                  <span>Hosting Premium + Prioritas Server</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-primary text-[18px] shrink-0">support_agent</span>
+                  <span>Support Eksklusif 1 Bulan Penuh</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-primary text-[18px] shrink-0">speed</span>
+                  <span>Optimasi Core Web Vitals Maksimal</span>
+                </li>
               </ul>
             </div>
-            <button onclick="openWhatsApp('Paket Premium seharga Rp1.200.000')" class="w-full bg-white text-primary font-bold py-3 rounded-xl hover:bg-gray-100 transition-colors text-primary">
-              Pilih Paket
+
+            <button onclick="openWhatsApp('Paket Premium seharga Rp1.200.000')" class="w-full inline-flex items-center justify-center gap-2 bg-surface-alt hover:bg-primary-light text-primary font-bold text-sm py-3 px-4 rounded-xl transition-all border border-primary-border">
+              <span>Pilih Paket Premium</span>
+              <span class="material-symbols-outlined text-[17px]">arrow_forward</span>
             </button>
           </div>
 
@@ -561,161 +1067,108 @@
       </div>
     </section>
 
-    <!-- KENAPA MEMILIH AURA GLOBAL SECTION -->
-    <section class="w-full py-32 px-5 lg:px-20 bg-surface-container">
-      <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-          <span class="text-primary font-bold tracking-widest uppercase mb-4 block">Keunggulan</span>
-          <h2 class="text-4xl font-headline-lg font-bold text-on-surface">Kenapa Memilih AURA GLOBAL?</h2>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          
-          <div class="bg-surface p-8 rounded-3xl shadow-sm border border-surface-variant">
-            <span class="material-symbols-outlined text-primary text-4xl mb-4 block">design_services</span>
-            <h3 class="font-bold text-xl text-on-surface mb-3">Desain Sesuai Kebutuhan</h3>
-            <p class="text-on-surface-variant">Desain website disesuaikan dengan kebutuhan dan identitas bisnis Anda agar tampil profesional dan relevan.</p>
-          </div>
-
-          <div class="bg-surface p-8 rounded-3xl shadow-sm border border-surface-variant">
-            <span class="material-symbols-outlined text-primary text-4xl mb-4 block">devices</span>
-            <h3 class="font-bold text-xl text-on-surface mb-3">Responsive di Semua Perangkat</h3>
-            <p class="text-on-surface-variant">Tampilan website dioptimalkan untuk diakses dengan lancar melalui HP, tablet, maupun desktop.</p>
-          </div>
-
-          <div class="bg-surface p-8 rounded-3xl shadow-sm border border-surface-variant">
-            <span class="material-symbols-outlined text-primary text-4xl mb-4 block">forum</span>
-            <h3 class="font-bold text-xl text-on-surface mb-3">Konsultasi Sebelum Pengerjaan</h3>
-            <p class="text-on-surface-variant">Kami selalu mendiskusikan konsep dan arah desain secara mendalam sebelum proses pengerjaan dimulai.</p>
-          </div>
-
-          <div class="bg-surface p-8 rounded-3xl shadow-sm border border-surface-variant">
-            <span class="material-symbols-outlined text-primary text-4xl mb-4 block">thumb_up</span>
-            <h3 class="font-bold text-xl text-on-surface mb-3">Arah Desain Sampai Disetujui</h3>
-            <p class="text-on-surface-variant">Proses awal desain akan disesuaikan hingga arah desain benar-benar disetujui oleh klien.</p>
-          </div>
-
-          <div class="bg-surface p-8 rounded-3xl shadow-sm border border-surface-variant">
-            <span class="material-symbols-outlined text-primary text-4xl mb-4 block">language</span>
-            <h3 class="font-bold text-xl text-on-surface mb-3">Domain Sesuai Request</h3>
-            <p class="text-on-surface-variant">Setiap paket sudah mendapatkan fasilitas domain yang bisa direquest sesuai ketersediaan.</p>
-          </div>
-
-          <div class="bg-surface p-8 rounded-3xl shadow-sm border border-surface-variant">
-            <span class="material-symbols-outlined text-primary text-4xl mb-4 block">whatsapp</span>
-            <h3 class="font-bold text-xl text-on-surface mb-3">Integrasi WhatsApp & SEO</h3>
-            <p class="text-on-surface-variant">Permudah klien menghubungi Anda via WhatsApp dan temukan bisnis Anda dengan SEO dasar sesuai paket.</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ SECTION -->
-    <section class="w-full py-32 px-5 lg:px-20 bg-surface">
+    <!-- -----------------------------------------------------------------
+         FAQ SECTION (JUJUR & MENJAWAB KERAGUAN CALON KLIEN)
+         ----------------------------------------------------------------- -->
+    <section id="faq" class="w-full py-20 lg:py-28 px-5 sm:px-8 lg:px-12 bg-surface-card border-b border-border-card">
       <div class="max-w-4xl mx-auto">
         <div class="text-center mb-16">
-          <span class="text-primary font-bold tracking-widest uppercase mb-4 block">FAQ</span>
-          <h2 class="text-4xl font-headline-lg font-bold text-on-surface">Pertanyaan yang Sering Diajukan</h2>
+          <span class="text-primary font-bold text-xs sm:text-sm tracking-widest uppercase mb-3 block">FAQ</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-dark leading-tight mb-4">
+            Pertanyaan yang Sering Diajukan
+          </h2>
+          <p class="text-base text-body leading-relaxed">
+            Jawaban transparan untuk semua hal penting sebelum Anda memulai proyek website.
+          </p>
         </div>
+
         <div class="space-y-4">
           
-          <details class="group bg-surface-container-low p-6 rounded-2xl cursor-pointer [&_summary::-webkit-details-marker]:hidden">
-            <summary class="flex justify-between items-center font-bold text-lg text-on-surface">
-              <span>Bagaimana sistem pembayarannya?</span>
-              <span class="transition-transform group-open:rotate-180 material-symbols-outlined text-primary">expand_more</span>
+          <!-- Q1 -->
+          <details class="group bg-surface-bg p-6 rounded-2xl border border-border-card cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex justify-between items-center font-bold text-base sm:text-lg text-dark">
+              <span>Bagaimana skema pembayaran di AURA GLOBAL?</span>
+              <span class="transition-transform duration-300 group-open:rotate-180 material-symbols-outlined text-primary">expand_more</span>
             </summary>
-            <p class="mt-4 text-on-surface-variant leading-relaxed">
-              Konsultasi dan pembahasan konsep dilakukan terlebih dahulu. Setelah arah desain disetujui, pembayaran DP 50% dilakukan untuk melanjutkan pengerjaan. Sisa 50% dilunasi setelah website selesai sesuai kesepakatan sebelum serah-terima final.
+            <p class="mt-4 text-sm text-body leading-relaxed border-t border-border-card/60 pt-4">
+              Konsultasi dan pembahasan konsep dilakukan terlebih dahulu tanpa dipungut biaya. Setelah arah desain disepakati bersama, pembayaran DP sebesar 50% dilakukan untuk memulai pengerjaan. Sisa 50% dilunasi setelah website selesai, disetujui, dan sebelum serah-terima final.
             </p>
           </details>
 
-          <details class="group bg-surface-container-low p-6 rounded-2xl cursor-pointer [&_summary::-webkit-details-marker]:hidden">
-            <summary class="flex justify-between items-center font-bold text-lg text-on-surface">
-              <span>Apakah harus membayar di awal?</span>
-              <span class="transition-transform group-open:rotate-180 material-symbols-outlined text-primary">expand_more</span>
+          <!-- Q2 -->
+          <details class="group bg-surface-bg p-6 rounded-2xl border border-border-card cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex justify-between items-center font-bold text-base sm:text-lg text-dark">
+              <span>Apakah domain dan hosting sudah termasuk dalam harga paket?</span>
+              <span class="transition-transform duration-300 group-open:rotate-180 material-symbols-outlined text-primary">expand_more</span>
             </summary>
-            <p class="mt-4 text-on-surface-variant leading-relaxed">
-              Konsultasi dan pembahasan konsep dilakukan terlebih dahulu. Setelah arah desain disetujui, pembayaran DP 50% dilakukan untuk melanjutkan pengerjaan. Sisa 50% dilunasi setelah website selesai sesuai kesepakatan sebelum serah-terima final.
+            <p class="mt-4 text-sm text-body leading-relaxed border-t border-border-card/60 pt-4">
+              Ya, seluruh paket pembuatan website di AURA GLOBAL sudah mendapatkan fasilitas nama domain sesuai request klien (menyesuaikan ketersediaan) dan hosting modern berkecepatan tinggi selama 1 tahun pertama.
             </p>
           </details>
 
-          <details class="group bg-surface-container-low p-6 rounded-2xl cursor-pointer [&_summary::-webkit-details-marker]:hidden">
-            <summary class="flex justify-between items-center font-bold text-lg text-on-surface">
-              <span>Berapa besar DP untuk memulai project?</span>
-              <span class="transition-transform group-open:rotate-180 material-symbols-outlined text-primary">expand_more</span>
+          <!-- Q3 -->
+          <details class="group bg-surface-bg p-6 rounded-2xl border border-border-card cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex justify-between items-center font-bold text-base sm:text-lg text-dark">
+              <span>Berapa lama proses pembuatan website hingga selesai?</span>
+              <span class="transition-transform duration-300 group-open:rotate-180 material-symbols-outlined text-primary">expand_more</span>
             </summary>
-            <p class="mt-4 text-on-surface-variant leading-relaxed">
-              Konsultasi dan pembahasan konsep dilakukan terlebih dahulu. Setelah arah desain disetujui, pembayaran DP 50% dilakukan untuk melanjutkan pengerjaan. Sisa 50% dilunasi setelah website selesai sesuai kesepakatan sebelum serah-terima final.
+            <p class="mt-4 text-sm text-body leading-relaxed border-t border-border-card/60 pt-4">
+              Waktu pengerjaan umumnya berkisar antara 3 hingga 14 hari kerja, tergantung pada paket yang dipilih, tingkat kerumitan fitur, dan kecepatan penyediaan materi (seperti foto dan teks deskripsi usaha) dari pihak klien.
             </p>
           </details>
 
-          <details class="group bg-surface-container-low p-6 rounded-2xl cursor-pointer [&_summary::-webkit-details-marker]:hidden">
-            <summary class="flex justify-between items-center font-bold text-lg text-on-surface">
-              <span>Apakah desain bisa disesuaikan dengan keinginan saya?</span>
-              <span class="transition-transform group-open:rotate-180 material-symbols-outlined text-primary">expand_more</span>
+          <!-- Q4 -->
+          <details class="group bg-surface-bg p-6 rounded-2xl border border-border-card cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex justify-between items-center font-bold text-base sm:text-lg text-dark">
+              <span>Apakah website dapat dibuka dengan nyaman di smartphone?</span>
+              <span class="transition-transform duration-300 group-open:rotate-180 material-symbols-outlined text-primary">expand_more</span>
             </summary>
-            <p class="mt-4 text-on-surface-variant leading-relaxed">
-              Ya, desain akan disesuaikan dengan kebutuhan dan identitas bisnis Anda. Proses awal desain disesuaikan sampai arah desain disetujui oleh klien.
+            <p class="mt-4 text-sm text-body leading-relaxed border-t border-border-card/60 pt-4">
+              Tentu saja. Semua website kami bangun dengan prinsip 100% responsif mobile-first, sehingga susunan tata letak otomatis rapi, font mudah dibaca, dan tombol mudah disentuh di semua jenis smartphone, tablet, maupun layar desktop.
             </p>
           </details>
 
-          <details class="group bg-surface-container-low p-6 rounded-2xl cursor-pointer [&_summary::-webkit-details-marker]:hidden">
-            <summary class="flex justify-between items-center font-bold text-lg text-on-surface">
-              <span>Berapa kali revisi yang tersedia?</span>
-              <span class="transition-transform group-open:rotate-180 material-symbols-outlined text-primary">expand_more</span>
+          <!-- Q5 -->
+          <details class="group bg-surface-bg p-6 rounded-2xl border border-border-card cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex justify-between items-center font-bold text-base sm:text-lg text-dark">
+              <span>Bagaimana mekanisme revisi jika ada tampilan yang ingin diubah?</span>
+              <span class="transition-transform duration-300 group-open:rotate-180 material-symbols-outlined text-primary">expand_more</span>
             </summary>
-            <p class="mt-4 text-on-surface-variant leading-relaxed">
-              Proses desain dilakukan dengan konsultasi sejak awal. Revisi akan disesuaikan secara proporsional sampai konsep disetujui sebelum pengembangan dilanjutkan.
+            <p class="mt-4 text-sm text-body leading-relaxed border-t border-border-card/60 pt-4">
+              Proses desain dilakukan secara komunikatif sejak awal. Kami menyesuaikan tata letak dan konten secara proporsional hingga konsep dan arah visual disetujui bersama sebelum tahap peluncuran akhir.
             </p>
           </details>
 
-          <details class="group bg-surface-container-low p-6 rounded-2xl cursor-pointer [&_summary::-webkit-details-marker]:hidden">
-            <summary class="flex justify-between items-center font-bold text-lg text-on-surface">
-              <span>Apakah website bisa dibuka di HP?</span>
-              <span class="transition-transform group-open:rotate-180 material-symbols-outlined text-primary">expand_more</span>
+          <!-- Q6 -->
+          <details class="group bg-surface-bg p-6 rounded-2xl border border-border-card cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex justify-between items-center font-bold text-base sm:text-lg text-dark">
+              <span>Apakah ada biaya perpanjangan di tahun-tahun berikutnya?</span>
+              <span class="transition-transform duration-300 group-open:rotate-180 material-symbols-outlined text-primary">expand_more</span>
             </summary>
-            <p class="mt-4 text-on-surface-variant leading-relaxed">
-              Tentu. Semua website yang kami buat sudah menerapkan desain responsif yang tampil optimal di HP, tablet, maupun desktop.
+            <p class="mt-4 text-sm text-body leading-relaxed border-t border-border-card/60 pt-4">
+              Ya, ada biaya perpanjangan tahunan wajar untuk domain dan server/hosting agar website Anda tetap aktif online di internet. Kami akan menginformasikan jadwal perpanjangan sebelum masa aktif berakhir.
             </p>
           </details>
 
-          <details class="group bg-surface-container-low p-6 rounded-2xl cursor-pointer [&_summary::-webkit-details-marker]:hidden">
-            <summary class="flex justify-between items-center font-bold text-lg text-on-surface">
-              <span>Apakah domain sudah termasuk?</span>
-              <span class="transition-transform group-open:rotate-180 material-symbols-outlined text-primary">expand_more</span>
+          <!-- Q7 -->
+          <details class="group bg-surface-bg p-6 rounded-2xl border border-border-card cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex justify-between items-center font-bold text-base sm:text-lg text-dark">
+              <span>Bisakah saya berkonsultasi terlebih dahulu sebelum memutuskan order?</span>
+              <span class="transition-transform duration-300 group-open:rotate-180 material-symbols-outlined text-primary">expand_more</span>
             </summary>
-            <p class="mt-4 text-on-surface-variant leading-relaxed">
-              Ya, setiap paket sudah mendapatkan fasilitas domain sesuai request klien, menyesuaikan ketersediaan dan ketentuan domain selama 1 tahun pertama.
+            <p class="mt-4 text-sm text-body leading-relaxed border-t border-border-card/60 pt-4">
+              Sangat bisa. Layanan konsultasi di AURA GLOBAL 100% gratis. Anda dapat bertanya mengenai jenis website apa yang paling cocok untuk bisnis Anda, rekomendasi paket, atau referensi desain tanpa kewajiban apapun.
             </p>
           </details>
 
-          <details class="group bg-surface-container-low p-6 rounded-2xl cursor-pointer [&_summary::-webkit-details-marker]:hidden">
-            <summary class="flex justify-between items-center font-bold text-lg text-on-surface">
-              <span>Apakah ada biaya perpanjangan domain dan hosting?</span>
-              <span class="transition-transform group-open:rotate-180 material-symbols-outlined text-primary">expand_more</span>
+          <!-- Q8 -->
+          <details class="group bg-surface-bg p-6 rounded-2xl border border-border-card cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex justify-between items-center font-bold text-base sm:text-lg text-dark">
+              <span>Bagaimana cara memulai pemesanan website?</span>
+              <span class="transition-transform duration-300 group-open:rotate-180 material-symbols-outlined text-primary">expand_more</span>
             </summary>
-            <p class="mt-4 text-on-surface-variant leading-relaxed">
-              Ya, ada biaya perpanjangan tahunan untuk domain dan hosting. Biaya ini bervariasi tergantung ekstensi domain dan kapasitas hosting yang Anda gunakan.
-            </p>
-          </details>
-
-          <details class="group bg-surface-container-low p-6 rounded-2xl cursor-pointer [&_summary::-webkit-details-marker]:hidden">
-            <summary class="flex justify-between items-center font-bold text-lg text-on-surface">
-              <span>Berapa lama proses pengerjaan website?</span>
-              <span class="transition-transform group-open:rotate-180 material-symbols-outlined text-primary">expand_more</span>
-            </summary>
-            <p class="mt-4 text-on-surface-variant leading-relaxed">
-              Waktu pengerjaan bervariasi dari 3 hingga 14 hari kerja tergantung pada kompleksitas fitur dan kesiapan materi dari klien.
-            </p>
-          </details>
-
-          <details class="group bg-surface-container-low p-6 rounded-2xl cursor-pointer [&_summary::-webkit-details-marker]:hidden">
-            <summary class="flex justify-between items-center font-bold text-lg text-on-surface">
-              <span>Apakah saya bisa konsultasi terlebih dahulu?</span>
-              <span class="transition-transform group-open:rotate-180 material-symbols-outlined text-primary">expand_more</span>
-            </summary>
-            <p class="mt-4 text-on-surface-variant leading-relaxed">
-              Sangat bisa. Kami menyediakan layanan konsultasi gratis di awal untuk mendiskusikan kebutuhan bisnis dan arah desain website Anda sebelum melakukan pembayaran apapun.
+            <p class="mt-4 text-sm text-body leading-relaxed border-t border-border-card/60 pt-4">
+              Cukup klik tombol WhatsApp di situs ini atau isi formulir kontak. Ceritakan jenis usaha Anda, dan tim kami akan segera memandu Anda langkah demi langkah.
             </p>
           </details>
 
@@ -723,152 +1176,279 @@
       </div>
     </section>
 
-    <!-- HUBUNGI KAMI / CONTACT SECTION -->
-    <section id="kontak" class="w-full py-32 px-5 lg:px-20 bg-surface-container-lowest relative overflow-hidden">
-      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-[400px] bg-primary/5 rounded-full blur-[100px] pointer-events-none"></div>
-      <div class="relative z-10 max-w-5xl mx-auto bg-surface border border-surface-variant p-8 md:p-16 rounded-[2.5rem] shadow-xl">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div>
-            <span class="text-primary font-bold tracking-widest uppercase mb-4 block">Kontak Kami</span>
-            <h2 class="text-4xl font-headline-lg font-bold text-on-surface mb-6">Siap berdiskusi untuk proyek Anda?</h2>
-            <p class="text-on-surface-variant mb-8 text-lg">
-              Isi formulir ini atau klik tombol WhatsApp untuk mulai berkonsultasi secara gratis dengan tim ahli kami.
-            </p>
-            <div class="space-y-4">
-              <div class="flex items-center gap-4 text-on-surface-variant font-medium">
-                <span class="material-symbols-outlined text-primary text-[24px]">mail</span>
-                info@auraglobal.my.id
+    <!-- -----------------------------------------------------------------
+         CONTACT SECTION (INTERACTIVE FORM + DIRECT WHATSAPP)
+         ----------------------------------------------------------------- -->
+    <section id="kontak" class="w-full py-20 lg:py-28 px-5 sm:px-8 lg:px-12 bg-surface-bg relative overflow-hidden">
+      <!-- Soft ambient backdrop -->
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-[380px] bg-primary/5 rounded-full blur-[100px] pointer-events-none -z-10"></div>
+      
+      <div class="max-w-6xl mx-auto bg-surface-card border border-border-card p-7 sm:p-10 lg:p-14 rounded-3xl shadow-xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14">
+          
+          <!-- Contact Info Column -->
+          <div class="lg:col-span-5 flex flex-col justify-between">
+            <div>
+              <span class="text-primary font-bold text-xs sm:text-sm tracking-widest uppercase mb-3 block">Hubungi Kami</span>
+              <h2 class="text-3xl sm:text-4xl font-extrabold text-dark leading-tight mb-5">
+                Siap Membawa Bisnis Anda Naik Kelas?
+              </h2>
+              <p class="text-sm sm:text-base text-body leading-relaxed mb-8">
+                Diskusikan rencana website Anda secara langsung. Tim kami siap membantu memberikan masukan visual dan estimasi pengerjaan.
+              </p>
+              
+              <div class="space-y-4 mb-8">
+                <a href="https://api.whatsapp.com/send?phone=6285861510159" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3.5 text-body hover:text-primary transition-colors text-sm font-semibold p-2 -ml-2 rounded-xl hover:bg-surface-alt">
+                  <div class="w-10 h-10 rounded-xl bg-primary-light flex items-center justify-center text-primary shrink-0 border border-primary-border">
+                    <span class="material-symbols-outlined text-[20px]">chat</span>
+                  </div>
+                  <div>
+                    <span class="text-xs text-muted block font-medium">WhatsApp Konsultasi</span>
+                    <span>+62 858-6151-0159</span>
+                  </div>
+                </a>
+
+                <a href="mailto:info@auraglobal.my.id" class="flex items-center gap-3.5 text-body hover:text-primary transition-colors text-sm font-semibold p-2 -ml-2 rounded-xl hover:bg-surface-alt">
+                  <div class="w-10 h-10 rounded-xl bg-primary-light flex items-center justify-center text-primary shrink-0 border border-primary-border">
+                    <span class="material-symbols-outlined text-[20px]">mail</span>
+                  </div>
+                  <div>
+                    <span class="text-xs text-muted block font-medium">Email Resmi</span>
+                    <span>info@auraglobal.my.id</span>
+                  </div>
+                </a>
+
+                <div class="flex items-center gap-3.5 text-body text-sm font-semibold p-2 -ml-2 rounded-xl">
+                  <div class="w-10 h-10 rounded-xl bg-primary-light flex items-center justify-center text-primary shrink-0 border border-primary-border">
+                    <span class="material-symbols-outlined text-[20px]">schedule</span>
+                  </div>
+                  <div>
+                    <span class="text-xs text-muted block font-medium">Waktu Respon</span>
+                    <span>Setiap Hari (08.00 - 21.00 WIB)</span>
+                  </div>
+                </div>
               </div>
-              <div class="flex items-center gap-4 text-on-surface-variant font-medium">
-                <span class="material-symbols-outlined text-primary text-[24px]">phone</span>
-                +62 858-6151-0159
-              </div>
             </div>
-          </div>
-          <form onsubmit="event.preventDefault(); alert('Pesan berhasil terkirim! Tim kami akan segera menghubungi Anda.'); this.reset();" class="space-y-4">
-            <div>
-              <label class="block text-sm font-bold text-on-surface mb-2">Nama Lengkap</label>
-              <input type="text" required class="w-full px-4 py-3 rounded-xl border border-surface-variant bg-surface-container-low focus:outline-none focus:border-primary transition-colors text-sm" placeholder="Nama Anda">
-            </div>
-            <div>
-              <label class="block text-sm font-bold text-on-surface mb-2">Email</label>
-              <input type="email" required class="w-full px-4 py-3 rounded-xl border border-surface-variant bg-surface-container-low focus:outline-none focus:border-primary transition-colors text-sm" placeholder="email@contoh.com">
-            </div>
-            <div>
-              <label class="block text-sm font-bold text-on-surface mb-2">Pesan / Rencana Proyek</label>
-              <textarea required rows="4" class="w-full px-4 py-3 rounded-xl border border-surface-variant bg-surface-container-low focus:outline-none focus:border-primary transition-colors text-sm resize-none" placeholder="Ceritakan kebutuhan website Anda..."></textarea>
-            </div>
-            <button type="submit" class="w-full bg-primary hover:bg-primary-container text-white font-bold py-3.5 rounded-xl transition-all shadow-md hover:shadow-lg">
-              Kirim Pesan
+
+            <!-- Instant WA Button -->
+            <button onclick="openWhatsApp('konsultasi cepat via kontak')" class="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white font-bold text-sm py-3.5 px-6 rounded-xl hover:bg-[#20ba59] transition-all shadow-md w-full sm:w-auto">
+              <span class="material-symbols-outlined text-[20px]">chat</span>
+              <span>Hubungi via WhatsApp Langsung</span>
             </button>
-          </form>
+          </div>
+
+          <!-- Interactive Form Column -->
+          <div class="lg:col-span-7 bg-surface-bg p-6 sm:p-8 rounded-2xl border border-border-card">
+            <h3 class="text-xl font-bold text-dark mb-2">Kirim Formulir Permintaan</h3>
+            <p class="text-xs text-body mb-6">
+              Isi data di bawah ini, kami akan langsung merespons dan menyiapkan konsep awal untuk Anda.
+            </p>
+
+            <!-- Alert confirmation box -->
+            <div id="contactAlert" class="hidden mb-6 p-4 rounded-xl bg-green-50 border border-green-200 text-green-800 text-xs sm:text-sm font-medium flex items-center gap-3">
+              <span class="material-symbols-outlined text-green-600">check_circle</span>
+              <span>Pesan terkirim ke WhatsApp! Kami akan segera merespons obrolan Anda.</span>
+            </div>
+
+            <form onsubmit="handleContactForm(event)" class="space-y-4">
+              <div>
+                <label for="contactName" class="block text-xs font-bold uppercase tracking-wider text-dark mb-1.5">Nama Anda</label>
+                <input type="text" id="contactName" required placeholder="Contoh: Budi Pratama" class="w-full px-4 py-3 rounded-xl border border-border-card bg-white focus:outline-none focus:border-primary text-sm text-dark placeholder:text-muted/60 transition-colors" />
+              </div>
+
+              <div>
+                <label for="contactEmail" class="block text-xs font-bold uppercase tracking-wider text-dark mb-1.5">Email / No. HP</label>
+                <input type="text" id="contactEmail" required placeholder="email@contoh.com atau 0812xxxx" class="w-full px-4 py-3 rounded-xl border border-border-card bg-white focus:outline-none focus:border-primary text-sm text-dark placeholder:text-muted/60 transition-colors" />
+              </div>
+
+              <div>
+                <label for="contactService" class="block text-xs font-bold uppercase tracking-wider text-dark mb-1.5">Pilihan Paket / Layanan</label>
+                <select id="contactService" class="w-full px-4 py-3 rounded-xl border border-border-card bg-white focus:outline-none focus:border-primary text-sm text-dark transition-colors">
+                  <option value="Paket Basic (Rp350.000)">Paket Basic (Rp350.000) — Landing Page</option>
+                  <option value="Paket Starter (Rp500.000)">Paket Starter (Rp500.000) — Multi Halaman</option>
+                  <option value="Paket Professional (Rp800.000)" selected>Paket Professional (Rp800.000) — Paling Populer</option>
+                  <option value="Paket Premium (Rp1.200.000)">Paket Premium (Rp1.200.000) — Katalog Lengkap</option>
+                  <option value="Konsultasi Kustom / Redesign">Konsultasi Kustom / Redesign Website</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="contactMessage" class="block text-xs font-bold uppercase tracking-wider text-dark mb-1.5">Rencana Proyek / Deskripsi Bisnis</label>
+                <textarea id="contactMessage" rows="3" required placeholder="Ceritakan bidang usaha Anda dan seperti apa website yang Anda impikan..." class="w-full px-4 py-3 rounded-xl border border-border-card bg-white focus:outline-none focus:border-primary text-sm text-dark placeholder:text-muted/60 transition-colors resize-none"></textarea>
+              </div>
+
+              <button type="submit" class="w-full inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold text-sm py-3.5 rounded-xl transition-all shadow-md hover:shadow-lg">
+                <span>Kirim &amp; Hubungkan ke WhatsApp</span>
+                <span class="material-symbols-outlined text-[18px]">send</span>
+              </button>
+            </form>
+          </div>
+
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- INTERACTIVE PORTFOLIO MODAL / LIGHTBOX -->
-  <div id="portfolioModal" class="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 opacity-0 pointer-events-none transition-opacity duration-300" aria-modal="true" role="dialog">
-    <!-- Dark Overlay Background -->
-    <div class="absolute inset-0 bg-black/85 backdrop-blur-sm cursor-pointer" onclick="closePortfolioModal()" aria-label="Tutup Modal"></div>
+  <!-- -----------------------------------------------------------------
+       INTERACTIVE ACCESSIBLE PORTFOLIO MODAL / LIGHTBOX
+       ----------------------------------------------------------------- -->
+  <div id="portfolioModal" class="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 opacity-0 pointer-events-none transition-opacity duration-300" aria-modal="true" role="dialog" aria-labelledby="modalTitle">
+    <!-- Dark Backdrop -->
+    <div class="absolute inset-0 bg-dark/80 backdrop-blur-sm cursor-pointer" onclick="closePortfolioModal()" aria-label="Tutup Detail Portofolio"></div>
 
-    <!-- Modal Container -->
-    <div id="modalContent" class="relative bg-surface w-full max-w-6xl max-h-[95vh] rounded-[2rem] shadow-2xl overflow-hidden flex flex-col lg:flex-row transform scale-95 transition-transform duration-300">
+    <!-- Modal Box -->
+    <div id="modalContent" class="relative bg-white w-full max-w-5xl max-h-[92vh] rounded-3xl shadow-2xl overflow-hidden flex flex-col lg:flex-row transform scale-95 transition-transform duration-300 z-10 border border-border-card">
       
       <!-- Close Button -->
-      <button onclick="closePortfolioModal()" class="absolute top-4 right-4 z-50 w-12 h-12 bg-surface/50 backdrop-blur text-on-surface hover:bg-primary hover:text-white rounded-full flex items-center justify-center shadow-sm transition-all" aria-label="Close Gallery">
-        <span class="material-symbols-outlined text-2xl">close</span>
+      <button onclick="closePortfolioModal()" class="absolute top-4 right-4 z-50 w-10 h-10 bg-white/90 hover:bg-primary hover:text-white text-dark rounded-full flex items-center justify-center shadow-md transition-all border border-border-card" aria-label="Tutup modal">
+        <span class="material-symbols-outlined text-22px">close</span>
       </button>
 
-      <!-- Left Column: Image Gallery Slider -->
-      <div class="w-full lg:w-[55%] bg-surface-container-highest relative flex flex-col items-center justify-center group h-72 sm:h-96 lg:h-auto overflow-hidden">
-        
-        <!-- Image Element (with Swipe logic in JS) -->
-        <div id="galleryContainer" class="w-full h-full relative touch-pan-y">
-            <img id="modalImg" src="" alt="Portfolio Screenshot" class="w-full h-full object-cover transition-opacity duration-300">
-        </div>
-        
-        <!-- Nav Controls -->
-        <button onclick="changeModalImage(-1)" class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/90 hover:bg-white text-primary rounded-full flex items-center justify-center shadow-lg transition-all z-20" aria-label="Previous Image">
-          <span class="material-symbols-outlined">chevron_left</span>
-        </button>
-        <button onclick="changeModalImage(1)" class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/90 hover:bg-white text-primary rounded-full flex items-center justify-center shadow-lg transition-all z-20" aria-label="Next Image">
-          <span class="material-symbols-outlined">chevron_right</span>
-        </button>
-
-        <!-- Indicator (1 / 4) -->
-        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/60 backdrop-blur-md text-white font-label-md px-4 py-1.5 rounded-full z-20 shadow">
-          <span id="modalCounter">1 / 4</span>
-        </div>
+      <!-- Left Column: Image Preview -->
+      <div class="w-full lg:w-[52%] bg-surface-alt relative flex flex-col items-center justify-center h-64 sm:h-80 lg:h-auto overflow-hidden border-b lg:border-b-0 lg:border-r border-border-card">
+        <img id="modalImg" src="assets/portfolio-company.jpg" alt="Pratinjau Portofolio" class="w-full h-full object-cover transition-opacity duration-300" width="1280" height="800" />
       </div>
 
-      <!-- Right Column: Project Information -->
-      <div class="w-full lg:w-[45%] p-6 md:p-10 overflow-y-auto flex flex-col bg-surface">
+      <!-- Right Column: Project Specifications -->
+      <div class="w-full lg:w-[48%] p-6 sm:p-8 lg:p-10 overflow-y-auto flex flex-col justify-between bg-white">
         <div>
-          <span id="modalCategory" class="text-primary font-bold tracking-widest uppercase text-sm mb-2 block">Kategori</span>
-          <h3 id="modalTitle" class="text-3xl font-headline-lg font-bold text-on-surface mb-4">Memuat Project...</h3>
-          <p id="modalDesc" class="text-on-surface-variant text-base leading-relaxed mb-8">
-            Memuat detail portfolio...
+          <div class="flex items-center gap-2 mb-2">
+            <span id="modalCategory" class="text-primary font-bold tracking-widest uppercase text-xs">Kategori</span>
+          </div>
+          <h3 id="modalTitle" class="text-2xl sm:text-3xl font-extrabold text-dark mb-1">Nama Proyek</h3>
+          <p id="modalSubtitle" class="text-xs sm:text-sm font-semibold text-muted mb-4">Subjudul</p>
+          <p id="modalDesc" class="text-sm text-body leading-relaxed mb-6">
+            Deskripsi lengkap proyek...
           </p>
-        </div>
 
-        <div class="space-y-6 mb-10 flex-1">
-          <!-- Concepts -->
-          <div>
-            <h4 class="font-bold text-on-surface mb-3 flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">design_services</span> Konsep Desain</h4>
-            <div id="modalConcept" class="flex flex-wrap gap-2">
-              <!-- Tags injected via JS -->
+          <!-- Specifications List -->
+          <div class="space-y-4 mb-6">
+            <div>
+              <h4 class="font-bold text-xs uppercase tracking-wider text-dark mb-2 flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-primary text-[17px]">palette</span>
+                <span>Konsep Desain</span>
+              </h4>
+              <div id="modalConcept" class="flex flex-wrap gap-1.5"></div>
+            </div>
+
+            <div>
+              <h4 class="font-bold text-xs uppercase tracking-wider text-dark mb-2 flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-primary text-[17px]">checklist</span>
+                <span>Fitur Utama</span>
+              </h4>
+              <ul id="modalFeatures" class="space-y-1.5 text-xs text-body"></ul>
+            </div>
+
+            <div>
+              <h4 class="font-bold text-xs uppercase tracking-wider text-dark mb-1 flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-primary text-[17px]">link</span>
+                <span>Live Website URL</span>
+              </h4>
+              <a id="modalLiveLink" href="#" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-primary hover:underline break-all inline-flex items-center gap-1">
+                <span>Buka URL</span>
+                <span class="material-symbols-outlined text-[13px]">open_in_new</span>
+              </a>
             </div>
           </div>
-          
-          <!-- Features -->
-          <div>
-            <h4 class="font-bold text-on-surface mb-3 flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">fact_check</span> Fitur Utama</h4>
-            <ul id="modalFeatures" class="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-4 text-on-surface-variant text-sm">
-              <!-- Lists injected via JS -->
-            </ul>
-          </div>
-
-          <!-- Platform -->
-          <div>
-            <h4 class="font-bold text-on-surface mb-2 flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">devices</span> Platform</h4>
-            <p id="modalPlatform" class="text-on-surface-variant text-sm font-medium">Responsive Web</p>
-          </div>
         </div>
 
-        <!-- CTA Button inside Modal -->
-        <button id="modalCTA" onclick="" class="w-full inline-flex items-center justify-center bg-primary text-white font-button px-6 py-4 rounded-xl hover:bg-primary-container transition-all shadow-lg font-bold">
-          Pesan Desain Serupa <span class="material-symbols-outlined ml-2 text-[20px]">arrow_forward</span>
+        <!-- CTA in Modal -->
+        <button id="modalCTA" onclick="" class="w-full inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold text-sm py-3.5 px-6 rounded-xl transition-all shadow-md">
+          <span>Pesan Desain Serupa</span>
+          <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
         </button>
       </div>
 
     </div>
   </div>
 
-  <!-- FOOTER -->
-  <footer class="w-full bg-surface-container-lowest pt-20 pb-10 border-t border-surface-variant px-5 lg:px-20">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-      <div class="text-center md:text-left flex flex-col">
-        <span class="font-headline-md text-2xl tracking-tight text-on-surface font-extrabold uppercase leading-none">AURA GLOBAL</span>
-        <span class="text-xs tracking-[0.25em] text-primary font-bold uppercase mt-1">Digital Web Studio</span>
-        <p class="text-on-surface-variant mt-3 font-medium">Modern websites for modern businesses.</p>
+  <!-- -----------------------------------------------------------------
+       FLOATING WHATSAPP BUTTON (DESKTOP & MOBILE QUICK ACCESS)
+       ----------------------------------------------------------------- -->
+  <aside aria-label="Aksi Cepat WhatsApp">
+    <button onclick="openWhatsApp('konsultasi cepat floating button')" class="fixed bottom-6 right-6 z-40 floating-whatsapp-btn inline-flex items-center gap-2.5 bg-[#25D366] text-white px-4 py-3 sm:px-5 sm:py-3.5 rounded-full font-bold text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-green-600" aria-label="Konsultasi langsung via WhatsApp">
+      <span class="material-symbols-outlined text-[22px]">chat</span>
+      <span class="hidden sm:inline">Konsultasi WhatsApp</span>
+    </button>
+  </aside>
+
+  <!-- -----------------------------------------------------------------
+       FOOTER
+       ----------------------------------------------------------------- -->
+  <footer class="w-full bg-white pt-16 pb-12 border-t border-border-card px-5 sm:px-8 lg:px-12">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-border-card/60">
+        
+        <!-- Brand identity -->
+        <div class="md:col-span-5 flex flex-col items-start">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-9 h-9 rounded-xl bg-primary-light border border-primary-border flex items-center justify-center p-1.5 shadow-xs">
+              <img src="https://cdn.phototourl.com/free/2026-08-20-c9431592-f326-40af-a4d6-a85d5860df0b.png" alt="AURA GLOBAL Logo" class="w-full h-full object-contain" width="36" height="36" />
+            </div>
+            <div class="flex flex-col">
+              <span class="text-xl tracking-tight font-extrabold text-dark uppercase leading-none">AURA GLOBAL</span>
+              <span class="text-[9px] tracking-[0.2em] text-primary font-bold uppercase mt-1">Digital Web Studio</span>
+            </div>
+          </div>
+          <p class="text-sm text-body leading-relaxed max-w-sm mb-6">
+            Studio digital spesialis pembuatan website profesional, cepat, dan responsif untuk membantu UMKM dan bisnis modern tumbuh meyakinkan di internet.
+          </p>
+          <div class="flex items-center gap-3 text-xs font-semibold text-muted">
+            <span class="inline-flex items-center gap-1.5 text-green-700 bg-green-50 px-2.5 py-1 rounded-full border border-green-200">
+              <span class="w-2 h-2 rounded-full bg-green-500"></span>
+              Layanan Aktif &amp; Siap Terima Proyek
+            </span>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="md:col-span-3">
+          <h3 class="text-xs font-bold uppercase tracking-wider text-dark mb-4">Navigasi Halaman</h3>
+          <ul class="space-y-2.5 text-sm text-body">
+            <li><a href="#home" onclick="event.preventDefault(); scrollToSection('home');" class="hover:text-primary transition-colors">Beranda</a></li>
+            <li><a href="#keunggulan" onclick="event.preventDefault(); scrollToSection('keunggulan');" class="hover:text-primary transition-colors">Nilai &amp; Keunggulan</a></li>
+            <li><a href="#portfolio" onclick="event.preventDefault(); scrollToSection('portfolio');" class="hover:text-primary transition-colors">Portofolio Live</a></li>
+            <li><a href="#layanan" onclick="event.preventDefault(); scrollToSection('layanan');" class="hover:text-primary transition-colors">Layanan Pembuatan Website</a></li>
+            <li><a href="#alur-kerja" onclick="event.preventDefault(); scrollToSection('alur-kerja');" class="hover:text-primary transition-colors">Alur Kerja &amp; Pembayaran</a></li>
+            <li><a href="#harga" onclick="event.preventDefault(); scrollToSection('harga');" class="hover:text-primary transition-colors">Paket Harga Transparan</a></li>
+            <li><a href="#faq" onclick="event.preventDefault(); scrollToSection('faq');" class="hover:text-primary transition-colors">Tanya Jawab (FAQ)</a></li>
+          </ul>
+        </div>
+
+        <!-- Official Contacts -->
+        <div class="md:col-span-4">
+          <h3 class="text-xs font-bold uppercase tracking-wider text-dark mb-4">Kontak &amp; Informasi</h3>
+          <ul class="space-y-3 text-sm text-body">
+            <li class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-primary text-[19px]">chat</span>
+              <a href="https://api.whatsapp.com/send?phone=6285861510159" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors font-medium">+62 858-6151-0159</a>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-primary text-[19px]">mail</span>
+              <a href="mailto:info@auraglobal.my.id" class="hover:text-primary transition-colors font-medium">info@auraglobal.my.id</a>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-primary text-[19px]">language</span>
+              <a href="https://auraglobal.my.id" class="hover:text-primary transition-colors font-medium">https://auraglobal.my.id</a>
+            </li>
+          </ul>
+          <div class="mt-6 p-3.5 rounded-xl bg-surface-alt border border-border-card text-xs text-muted leading-relaxed">
+            Paket website mulai dari <strong>Rp350.000</strong> sudah termasuk fasilitas domain &amp; hosting tahun pertama.
+          </div>
+        </div>
+
       </div>
-      <div class="flex flex-wrap gap-6 items-center justify-center md:justify-start">
-        <a href="https://auraglobal.my.id" class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors font-medium">
-          <span class="material-symbols-outlined">language</span>
-          auraglobal.my.id
-        </a>
-        <a href="mailto:info@auraglobal.my.id" class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors font-medium">
-          <span class="material-symbols-outlined">mail</span>
-          info@auraglobal.my.id
-        </a>
+
+      <!-- Copyright Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted">
+        <span>&copy; 2026 AURA GLOBAL. Seluruh hak cipta dilindungi undang-undang.</span>
+        <span>Digital Web Studio • Clean, Fast, High Conversion</span>
       </div>
-      <span class="text-sm text-on-surface-variant font-medium text-center md:text-left">&copy; 2026 AURA GLOBAL. All rights reserved.</span>
     </div>
   </footer>
 
-  <!-- External JS -->
+  <!-- External JavaScript Logic -->
   <script src="script.js"></script>
 </body>
 </html>
