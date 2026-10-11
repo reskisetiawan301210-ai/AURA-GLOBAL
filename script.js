@@ -256,7 +256,9 @@ function populateModalData(data) {
   }
 
   if (modalImg) {
-    modalImg.src = data.image;
+    const rawImage = data.image || "";
+    const cleanSrc = rawImage.startsWith("/") || rawImage.startsWith("http") ? rawImage : "/" + rawImage;
+    modalImg.src = cleanSrc;
     modalImg.alt = data.imageAlt || `${data.title} - Tampilan Website`;
   }
 
