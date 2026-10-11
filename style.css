@@ -1,6 +1,21 @@
-/* style.css — AURA GLOBAL Digital Web Studio Design System */
+/* style.css — AURA GLOBAL Digital Web Studio Multi-Page Design System */
 
 @layer base {
+  :root {
+    --primary: #5300B7;
+    --primary-dark: #430094;
+    --primary-light: #F3EEFC;
+    --primary-border: #EBDDFF;
+    --dark: #0F0C20;
+    --dark-slate: #151128;
+    --body: #4A455A;
+    --muted: #716C82;
+    --surface-bg: #FAFAFC;
+    --surface-card: #FFFFFF;
+    --surface-alt: #F3F2F8;
+    --border-card: #E6E1F0;
+  }
+
   html {
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
@@ -12,28 +27,28 @@
   body {
     margin: 0;
     padding: 0;
-    color: #0f0c20;
-    background-color: #fafafc;
+    color: var(--dark);
+    background-color: var(--surface-bg);
     font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
     overflow-x: hidden;
   }
 }
 
 /* --------------------------------------------------
-   1. ACCESSIBILITY & FOCUS RINGS
+   1. ACCESSIBILITY & FOCUS RINGS (WCAG AA)
    -------------------------------------------------- */
 :focus-visible {
-  outline: 2px solid #5300b7;
+  outline: 2px solid #5300B7;
   outline-offset: 3px;
 }
 
 button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
-  outline: 2px solid #5300b7;
+  outline: 2px solid #5300B7;
   outline-offset: 2px;
 }
 
 /* --------------------------------------------------
-   2. CUSTOM SCROLLBAR (PREMIUM PURPLE)
+   2. CUSTOM SCROLLBAR (ROYAL PURPLE)
    -------------------------------------------------- */
 ::-webkit-scrollbar {
   width: 8px;
@@ -41,13 +56,13 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 }
 
 ::-webkit-scrollbar-track {
-  background: #f4f2f8;
+  background: #F4F2F8;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #5300b7;
+  background: #5300B7;
   border-radius: 9999px;
-  border: 2px solid #f4f2f8;
+  border: 2px solid #F4F2F8;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -105,16 +120,37 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
    -------------------------------------------------- */
 .scrolled-nav {
   box-shadow: 0 4px 24px -2px rgba(83, 0, 183, 0.08);
-  background-color: rgba(255, 255, 255, 0.94) !important;
+  background-color: rgba(255, 255, 255, 0.95) !important;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
 
+.nav-link {
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.nav-link.active {
+  color: #5300B7 !important;
+  font-weight: 700;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #5300B7;
+  border-radius: 2px;
+}
+
 /* --------------------------------------------------
-   5. HERO & SECTION GLOWS
+   5. HERO & SECTION GLOWS (REFERENCE 1 SINTESIS)
    -------------------------------------------------- */
 .hero-glow {
-  background: radial-gradient(circle at 75% 35%, rgba(83, 0, 183, 0.08) 0%, rgba(235, 222, 255, 0.35) 40%, rgba(250, 250, 252, 0) 70%);
+  background: radial-gradient(circle at 75% 35%, rgba(83, 0, 183, 0.09) 0%, rgba(235, 222, 255, 0.4) 40%, rgba(250, 250, 252, 0) 70%);
 }
 
 .glow-card {
@@ -128,7 +164,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 }
 
 /* --------------------------------------------------
-   6. PORTFOLIO TABS (EDITORIAL UNDERLINE STYLE)
+   6. PORTFOLIO TABS (REFERENCE 2 SINTESIS)
    -------------------------------------------------- */
 .portfolio-tab-btn {
   position: relative;
@@ -147,7 +183,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 }
 
 .portfolio-tab-btn.text-primary::after {
-  background-color: #5300b7;
+  background-color: #5300B7;
 }
 
 /* --------------------------------------------------

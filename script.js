@@ -276,12 +276,14 @@ if (modalContainer) {
 function toggleMobileMenu() {
   const mobileMenu = document.getElementById("mobile-menu");
   const menuIcon = document.getElementById("menu-icon");
+  const menuIconPath = document.getElementById("menu-icon-path");
   if (!mobileMenu) return;
 
   if (mobileMenu.classList.contains("hidden")) {
     mobileMenu.classList.remove("hidden");
     mobileMenu.classList.add("flex");
     if (menuIcon) menuIcon.innerText = "close";
+    if (menuIconPath) menuIconPath.setAttribute("d", "M6 18L18 6M6 6l12 12");
   } else {
     closeMobileMenu();
   }
@@ -290,9 +292,12 @@ function toggleMobileMenu() {
 function closeMobileMenu() {
   const mobileMenu = document.getElementById("mobile-menu");
   const menuIcon = document.getElementById("menu-icon");
+  const menuIconPath = document.getElementById("menu-icon-path");
   if (!mobileMenu) return;
 
   mobileMenu.classList.add("hidden");
   mobileMenu.classList.remove("flex");
   if (menuIcon) menuIcon.innerText = "menu";
+  if (menuIconPath) menuIconPath.setAttribute("d", "M4 6h16M4 12h16M4 18h16");
 }
+
