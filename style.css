@@ -1,21 +1,31 @@
 /* ==========================================================================
-   style.css — AURA GLOBAL Digital Web Studio (Versi 2 - Full-Width Editorial)
+   style.css — AURA GLOBAL Digital Web Studio (Redesign Navy-Blue Agency)
    ========================================================================== */
 
 :root {
-  --primary: #5300B7;
-  --primary-dark: #3E008A;
-  --primary-light: #F3EEFC;
-  --primary-border: #E5D7FA;
-  --dark: #0D0B18;
-  --dark-slate: #151126;
-  --body: #4A4657;
-  --muted: #726E80;
+  --navy: #0B1F3F;
+  --navy-dark: #07152B;
+  --navy-surface: #0F2A5C;
+  --blue: #1D6FE8;
+  --blue-hover: #1558C0;
+  --blue-light: #EBF3FE;
+  --blue-border: #D0E3FC;
   --surface-bg: #FFFFFF;
-  --surface-alt: #FAF9FD;
-  --surface-card: #FFFFFF;
-  --border-card: #EAE6F2;
-  --border-subtle: #F0ECF7;
+  --surface-alt: #F3F6FA;
+  --border-card: #E5ECF6;
+  --text-main: #0B1F3F;
+  --text-body: #5A6A85;
+  --text-muted: #64748B;
+
+  /* Backward compatibility for other subpages */
+  --primary: #0B1F3F;
+  --primary-dark: #07152B;
+  --primary-light: #EBF3FE;
+  --primary-border: #D0E3FC;
+  --dark: #0B1F3F;
+  --dark-slate: #07152B;
+  --body: #5A6A85;
+  --muted: #64748B;
 }
 
 html {
@@ -34,64 +44,53 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  color: var(--dark);
+  color: var(--text-main);
   background-color: #FFFFFF;
   font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   overflow-x: hidden;
 }
 
 /* --------------------------------------------------
-   1. FLUID CONTAINER & TYPOGRAPHY SYSTEM
+   1. FLUID CONTAINER SYSTEM
    -------------------------------------------------- */
 .site-container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: clamp(1.25rem, 4vw, 4.5rem);
-  padding-right: clamp(1.25rem, 4vw, 4.5rem);
+  padding-left: clamp(1.25rem, 4vw, 2.5rem);
+  padding-right: clamp(1.25rem, 4vw, 2.5rem);
 }
 
-.site-container-narrow {
+.site-container-wide {
   width: 100%;
-  max-width: 1100px;
+  max-width: 1320px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: clamp(1.25rem, 4vw, 4rem);
-  padding-right: clamp(1.25rem, 4vw, 4rem);
+  padding-left: clamp(1.25rem, 4vw, 3rem);
+  padding-right: clamp(1.25rem, 4vw, 3rem);
 }
 
 h1, h2, h3 {
   text-wrap: balance;
-}
-
-.hero-display-headline {
-  font-size: clamp(2.25rem, 5.2vw, 4.25rem);
-  line-height: 1.12;
-  letter-spacing: -0.03em;
-}
-
-.section-display-headline {
-  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
-  line-height: 1.2;
-  letter-spacing: -0.025em;
+  color: var(--navy);
 }
 
 /* --------------------------------------------------
    2. ACCESSIBILITY & FOCUS RINGS (WCAG AA)
    -------------------------------------------------- */
 :focus-visible {
-  outline: 2px solid #5300B7;
+  outline: 2px solid var(--blue);
   outline-offset: 3px;
 }
 
 button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
-  outline: 2px solid #5300B7;
+  outline: 2px solid var(--blue);
   outline-offset: 2px;
 }
 
 /* --------------------------------------------------
-   3. CUSTOM SCROLLBAR (ROYAL PURPLE)
+   3. CUSTOM SCROLLBAR & PROGRESS BAR
    -------------------------------------------------- */
 ::-webkit-scrollbar {
   width: 8px;
@@ -99,25 +98,36 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 }
 
 ::-webkit-scrollbar-track {
-  background: #F4F2F8;
+  background: #F3F6FA;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #5300B7;
+  background: #CBD5E1;
   border-radius: 9999px;
-  border: 2px solid #F4F2F8;
+  border: 2px solid #F3F6FA;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #3E008A;
+  background: var(--blue);
+}
+
+#scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--blue), #38BDF8);
+  z-index: 999;
+  width: 0%;
+  transition: width 0.1s linear;
 }
 
 /* --------------------------------------------------
-   4. NAVIGATION & HEADER STYLING
+   4. HEADER & NAVIGATION
    -------------------------------------------------- */
 .scrolled-nav {
-  box-shadow: 0 4px 20px -2px rgba(83, 0, 183, 0.06);
-  background-color: rgba(255, 255, 255, 0.96) !important;
+  box-shadow: 0 4px 20px -2px rgba(11, 31, 63, 0.06);
+  background-color: rgba(255, 255, 255, 0.98) !important;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
@@ -125,10 +135,12 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 .nav-link {
   position: relative;
   transition: color 0.2s ease;
+  color: var(--navy);
+  font-weight: 500;
 }
 
-.nav-link.active {
-  color: #5300B7 !important;
+.nav-link:hover, .nav-link.active {
+  color: var(--blue) !important;
   font-weight: 700;
 }
 
@@ -139,343 +151,213 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #5300B7;
+  background-color: var(--blue);
   border-radius: 2px;
 }
 
 /* --------------------------------------------------
-   5. HERO LAVENDER MIST & AMBIENT TRANSITION
+   5. CARDS & BUTTONS
    -------------------------------------------------- */
-.hero-lavender-mist {
-  background: radial-gradient(ellipse 90% 60% at 50% 15%, rgba(235, 224, 255, 0.55) 0%, rgba(248, 245, 253, 0.35) 45%, rgba(255, 255, 255, 1) 85%);
+.card-clean {
+  background: #FFFFFF;
+  border: 1px solid var(--border-card);
+  border-radius: 18px;
+  box-shadow: 0 2px 12px -2px rgba(11, 31, 63, 0.04);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
 }
 
-.hero-wave-curve {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  pointer-events-none;
-}
-
-/* --------------------------------------------------
-   6. SHARP BROWSER MOCKUP (TAJAM, TANPA OVERLAY)
-   -------------------------------------------------- */
-.browser-mockup {
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 20px 50px -12px rgba(83, 0, 183, 0.12), 0 0 0 1px rgba(229, 222, 242, 0.9);
-  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.browser-mockup:hover {
+.card-clean:hover {
   transform: translateY(-3px);
-  box-shadow: 0 28px 65px -12px rgba(83, 0, 183, 0.18), 0 0 0 1px rgba(83, 0, 183, 0.3);
+  box-shadow: 0 12px 28px -6px rgba(11, 31, 63, 0.08);
+  border-color: var(--blue-border);
 }
 
-.glow-card {
-  box-shadow: 0 4px 20px -4px rgba(83, 0, 183, 0.05);
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+.btn-pill-navy {
+  background-color: var(--navy);
+  color: #FFFFFF;
+  border-radius: 9999px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.glow-card:hover {
-  box-shadow: 0 14px 32px -8px rgba(83, 0, 183, 0.12);
-  transform: translateY(-3px);
+.btn-pill-navy:hover {
+  background-color: var(--navy-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px -2px rgba(11, 31, 63, 0.18);
 }
 
-/* --------------------------------------------------
-   7. PORTFOLIO UNDERLINED TABS (REFERENCE 2 SINTESIS)
-   -------------------------------------------------- */
-.portfolio-tab-btn {
-  position: relative;
-  transition: all 0.2s ease;
+.btn-pill-blue {
+  background-color: var(--blue);
+  color: #FFFFFF;
+  border-radius: 9999px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.portfolio-tab-btn::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 100%;
-  height: 2px;
+.btn-pill-blue:hover {
+  background-color: var(--blue-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px -2px rgba(29, 111, 232, 0.3);
+}
+
+.btn-pill-outline {
   background-color: transparent;
-  transition: background-color 0.2s ease;
+  color: var(--navy);
+  border: 1.5px solid var(--navy);
+  border-radius: 9999px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.portfolio-tab-btn.text-primary::after {
-  background-color: #5300B7;
+.btn-pill-outline:hover {
+  background-color: #F8FAFC;
+  border-color: var(--blue);
+  color: var(--blue);
+  transform: translateY(-1px);
 }
 
 /* --------------------------------------------------
-   8. FAQ ACCORDION STYLING
+   6. HERO SOFT AMBIENCE
    -------------------------------------------------- */
-details > summary {
-  list-style: none;
-}
-details > summary::-webkit-details-marker {
-  display: none;
-}
-
-details[open] summary .faq-icon {
-  transform: rotate(180deg);
+.hero-ambient-shape {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  width: 520px;
+  height: 380px;
+  background: radial-gradient(ellipse, rgba(235, 243, 254, 0.85) 0%, rgba(243, 246, 250, 0.4) 60%, rgba(255, 255, 255, 0) 80%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
 }
 
 /* --------------------------------------------------
-   9. MODAL & BODY UTILITIES
+   7. ACCORDION (FAQ)
+   -------------------------------------------------- */
+.faq-item {
+  border: 1px solid var(--border-card);
+  border-radius: 16px;
+  background: #FFFFFF;
+  overflow: hidden;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.faq-item:hover {
+  border-color: var(--blue-border);
+}
+
+.faq-header {
+  width: 100%;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--navy);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.faq-header:hover {
+  color: var(--blue);
+}
+
+.faq-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1), padding 0.35s ease;
+  padding: 0 1.5rem;
+  color: var(--text-body);
+  font-size: 0.9375rem;
+  line-height: 1.65;
+}
+
+.faq-item.is-open {
+  border-color: var(--blue-border);
+  box-shadow: 0 4px 16px -4px rgba(29, 111, 232, 0.08);
+}
+
+.faq-item.is-open .faq-body {
+  max-height: 500px;
+  padding-bottom: 1.25rem;
+}
+
+.faq-item.is-open .faq-icon {
+  transform: rotate(45deg);
+  color: var(--blue);
+}
+
+.faq-icon {
+  transition: transform 0.25s ease, color 0.2s ease;
+}
+
+/* --------------------------------------------------
+   8. MODAL / BOTTOM SHEET (ACCESSIBLE PORTFOLIO DETAIL)
    -------------------------------------------------- */
 body.modal-open {
   overflow: hidden;
 }
 
+#portfolioModal {
+  transition: opacity 0.25s ease;
+}
+
+#modalContent {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (max-width: 640px) {
+  #modalContent {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    max-height: 88vh;
+    transform: translateY(100%);
+  }
+  #portfolioModal.is-active #modalContent {
+    transform: translateY(0);
+  }
+}
+
 /* --------------------------------------------------
-   10. FLOATING QUICK CTA BUTTON
+   9. MOBILE CAROUSEL SNAP SCROLL
    -------------------------------------------------- */
-.floating-whatsapp-btn {
-  box-shadow: 0 8px 28px -4px rgba(37, 211, 102, 0.45), 0 4px 12px -2px rgba(0, 0, 0, 0.12);
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+.snap-carousel {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 
-.floating-whatsapp-btn:hover {
-  transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 12px 32px -4px rgba(37, 211, 102, 0.55), 0 6px 16px -2px rgba(0, 0, 0, 0.15);
-}
-
-/* --------------------------------------------------
-   11. ZYWRA-INSPIRED STORYTELLING & INTERACTIVE COMPONENTS
-   -------------------------------------------------- */
-
-/* Purple Grid Pattern */
-.purple-grid-pattern {
-  background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
-  background-size: 36px 36px;
-}
-
-/* Light Beam Cone */
-.light-beam-cone {
-  background: radial-gradient(ellipse at top, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.05) 55%, transparent 75%);
-}
-
-/* Word Slider in Hero */
-.word-slider-wrapper {
-  display: inline-block;
-  vertical-align: bottom;
-  height: 1.15em;
-  overflow: hidden;
-  position: relative;
-}
-
-.word-slider-track {
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.word-slider-item {
-  height: 1.15em;
-  display: flex;
-  align-items: center;
-  color: #5300B7;
-  font-weight: 800;
-}
-
-/* Clarity Text Selection Highlight */
-.clarity-highlight-wrapper {
-  position: relative;
-  display: inline-block;
-  background-color: #EBDDFF;
-  color: #5300B7;
-  padding: 0.1em 0.35em;
-  border-radius: 8px;
-  line-height: 1.2;
-}
-
-.clarity-cursor {
-  position: absolute;
-  bottom: -18px;
-  right: -12px;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  pointer-events: none;
-}
-
-.clarity-cursor-pill {
-  background-color: #5300B7;
-  color: #FFFFFF;
-  font-size: 10px;
-  font-weight: 700;
-  padding: 2px 7px;
-  border-radius: 9999px;
-  letter-spacing: 0.04em;
-  box-shadow: 0 4px 12px rgba(83, 0, 183, 0.3);
-}
-
-/* Concentric Orbit Animation */
-@keyframes spinClockwise {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-@keyframes spinCounterClockwise {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(-360deg); }
-}
-
-.orbit-ring-1 {
-  animation: spinClockwise 28s linear infinite;
-  transform-origin: center;
-}
-
-.orbit-ring-2 {
-  animation: spinCounterClockwise 42s linear infinite;
-  transform-origin: center;
-}
-
-.orbit-ring-3 {
-  animation: spinClockwise 56s linear infinite;
-  transform-origin: center;
-}
-
-/* Infinite Marquee */
-@keyframes infiniteMarquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-.marquee-container {
-  overflow: hidden;
-  width: 100%;
-  white-space: nowrap;
-}
-
-.marquee-track {
-  display: inline-flex;
-  width: max-content;
-  animation: infiniteMarquee 26s linear infinite;
-  will-change: transform;
-}
-
-.marquee-container:hover .marquee-track {
-  animation-play-state: paused;
-}
-
-/* Word Scrub Reveal */
-.scrub-word {
-  color: #C8C3D4;
-  transition: color 0.35s ease, opacity 0.35s ease;
-  display: inline-block;
-  margin-right: 0.22em;
-}
-
-.scrub-word.is-active {
-  color: #0F0C20;
-}
-
-/* Problem Elimination Card Drop Animation */
-@keyframes cardFloatCycle {
-  0%, 100% { transform: translateY(0px) scale(1); }
-  50% { transform: translateY(-6px) scale(1.01); }
-}
-
-.problem-card-float {
-  animation: cardFloatCycle 4s ease-in-out infinite;
+.snap-item {
+  scroll-snap-align: start;
 }
 
 /* --------------------------------------------------
-   12. PAGE TRANSITIONS & SCROLL PROGRESS
-   -------------------------------------------------- */
-#scroll-progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 3px;
-  width: 0%;
-  background: linear-gradient(90deg, #5300B7, #7C3AED, #A855F7);
-  z-index: 9999;
-  pointer-events: none;
-  transition: width 0.08s ease-out;
-}
-
-.page-curtain-overlay {
-  position: fixed;
-  inset: 0;
-  background-color: #0D0B18;
-  z-index: 10000;
-  pointer-events: none;
-  transform: translateY(100%);
-  transition: transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.page-curtain-overlay.is-active {
-  transform: translateY(0%);
-  pointer-events: auto;
-}
-
-.page-curtain-overlay.is-leaving {
-  transform: translateY(-100%);
-}
-
-/* --------------------------------------------------
-   13. STUDIO ARCHITECTURAL CANVAS (HERO GRAPHIC)
-   -------------------------------------------------- */
-@keyframes floatSubtleLayer1 {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-8px) rotate(0.4deg); }
-}
-
-@keyframes floatSubtleLayer2 {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-12px) rotate(-0.5deg); }
-}
-
-@keyframes pulseGlow {
-  0%, 100% { opacity: 0.4; transform: scale(1); }
-  50% { opacity: 0.75; transform: scale(1.08); }
-}
-
-.studio-float-layer-1 {
-  animation: floatSubtleLayer1 6s ease-in-out infinite;
-}
-
-.studio-float-layer-2 {
-  animation: floatSubtleLayer2 7s ease-in-out infinite 0.5s;
-}
-
-.studio-glow-orb {
-  animation: pulseGlow 5s ease-in-out infinite;
-}
-
-/* --------------------------------------------------
-   14. PREFERS-REDUCED-MOTION
+   10. REDUCED MOTION (ACCESSIBILITY)
    -------------------------------------------------- */
 @media (prefers-reduced-motion: reduce) {
-  *, ::before, ::after {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-  .orbit-ring-1, .orbit-ring-2, .orbit-ring-3, .marquee-track, .problem-card-float, .studio-float-layer-1, .studio-float-layer-2, .studio-glow-orb {
-    animation: none !important;
-  }
-  .scrub-word {
-    color: #0F0C20 !important;
-  }
-  .page-curtain-overlay {
-    transition: opacity 0.15s ease !important;
-    transform: none !important;
-  }
-  .page-curtain-overlay:not(.is-active) {
-    opacity: 0 !important;
-    display: none !important;
-  }
 }
-

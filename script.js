@@ -347,6 +347,73 @@ if (modalContainer) {
   }, { passive: true });
 }
 
+// Click outside modal backdrop to close
+document.addEventListener("click", (e) => {
+  const modal = document.getElementById("portfolioModal");
+  if (modal && !modal.classList.contains("opacity-0") && e.target === modal) {
+    closePortfolioModal();
+  }
+});
+
+// ----------------------------------------------------
+// 5B. ACCESSIBLE FAQ ACCORDION
+// ----------------------------------------------------
+function toggleFAQ(button) {
+  const item = button.closest(".faq-item");
+  if (!item) return;
+  const isOpen = item.classList.contains("is-open");
+
+  // Close all other items for clean single-open accordion behavior
+  document.querySelectorAll(".faq-item").forEach(el => {
+    if (el !== item) {
+      el.classList.remove("is-open");
+      const btn = el.querySelector(".faq-header");
+      if (btn) btn.setAttribute("aria-expanded", "false");
+    }
+  });
+
+  if (isOpen) {
+    item.classList.remove("is-open");
+    button.setAttribute("aria-expanded", "false");
+  } else {
+    item.classList.add("is-open");
+    button.setAttribute("aria-expanded", "true");
+  }
+}
+
+// ----------------------------------------------------
+// 5C. SCROLL SPY FOR ACTIVE NAV LINKS
+// ----------------------------------------------------
+function initNavSpy() {
+  const sections = document.querySelectorAll("section[id]");
+  const navLinks = document.querySelectorAll(".nav-link[href^='#']");
+  if (sections.length === 0 || navLinks.length === 0) return;
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+    const scrollY = window.pageYOffset;
+
+    sections.forEach(section => {
+      const sectionHeight = section.offsetHeight;
+      const sectionTop = section.offsetTop - 140;
+      const sectionId = section.getAttribute("id");
+
+      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+        current = sectionId;
+      }
+    });
+
+    navLinks.forEach(link => {
+      const href = link.getAttribute("href");
+      if (href === `#${current}` || (current === "" && href === "#")) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+  }, { passive: true });
+}
+
 // ----------------------------------------------------
 // 6. MOBILE DRAWER MENU
 // ----------------------------------------------------
@@ -554,6 +621,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initWordScrub();
   initOrbitCycle();
   initScrollVelocityMarquee();
+  initNavSpy();
 });
 
 
