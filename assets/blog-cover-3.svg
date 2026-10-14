@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F2A5C"/>
+      <stop offset="100%" stop-color="#0B1F3F"/>
+    </linearGradient>
+    <linearGradient id="checkGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1D6FE8"/>
+      <stop offset="100%" stop-color="#60A5FA"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bgGrad3)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.08" stroke="#FFFFFF" stroke-width="1">
+    <line x1="0" y1="90" x2="800" y2="90"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="270" x2="800" y2="270"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+  </g>
+
+  <!-- Checklist Clipboard Card -->
+  <rect x="250" y="70" width="300" height="310" rx="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+  <rect x="330" y="55" width="140" height="28" rx="8" fill="#0B1F3F"/>
+  <circle cx="400" cy="69" r="5" fill="#38BDF8"/>
+
+  <!-- Item 1 -->
+  <circle cx="290" cy="125" r="12" fill="#EBF3FE"/>
+  <path d="M285 125 L289 129 L296 120" stroke="#1D6FE8" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <rect x="315" y="118" width="180" height="14" rx="4" fill="#0B1F3F"/>
+
+  <!-- Item 2 -->
+  <circle cx="290" cy="175" r="12" fill="#EBF3FE"/>
+  <path d="M285 175 L289 179 L296 170" stroke="#1D6FE8" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <rect x="315" y="168" width="150" height="14" rx="4" fill="#0B1F3F"/>
+
+  <!-- Item 3 -->
+  <circle cx="290" cy="225" r="12" fill="#EBF3FE"/>
+  <path d="M285 225 L289 229 L296 220" stroke="#1D6FE8" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <rect x="315" y="218" width="200" height="14" rx="4" fill="#0B1F3F"/>
+
+  <!-- Item 4 -->
+  <circle cx="290" cy="275" r="12" fill="#EBF3FE"/>
+  <path d="M285 275 L289 279 L296 270" stroke="#1D6FE8" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <rect x="315" y="268" width="160" height="14" rx="4" fill="#0B1F3F"/>
+
+  <!-- Progress bar in clipboard -->
+  <rect x="290" y="325" width="220" height="12" rx="6" fill="#F1F5F9"/>
+  <rect x="290" y="325" width="176" height="12" rx="6" fill="url(#checkGlow)"/>
+
+  <!-- Left Side Badge -->
+  <rect x="60" y="160" width="150" height="130" rx="16" fill="#1D6FE8" opacity="0.12" stroke="#38BDF8" stroke-width="1.5"/>
+  <text x="135" y="210" text-anchor="middle" fill="#38BDF8" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="800">4 Hal</text>
+  <text x="135" y="235" text-anchor="middle" fill="#CBD5E1" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Persiapan Penting</text>
+  <text x="135" y="265" text-anchor="middle" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700">CHECKLIST UMKM</text>
+
+  <!-- Right Side Badge -->
+  <rect x="590" y="160" width="150" height="130" rx="16" fill="#1D6FE8" opacity="0.12" stroke="#38BDF8" stroke-width="1.5"/>
+  <text x="665" y="210" text-anchor="middle" fill="#38BDF8" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="800">100%</text>
+  <text x="665" y="235" text-anchor="middle" fill="#CBD5E1" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Lebih Terarah</text>
+  <text x="665" y="265" text-anchor="middle" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700">SIAP ONLINE</text>
+</svg>
+

@@ -171,12 +171,13 @@
       </a>
 
       <!-- DESKTOP NAVIGATION -->
-      <nav class="hidden lg:flex items-center gap-7 xl:gap-9" aria-label="Navigasi Utama">
+      <nav class="hidden lg:flex items-center gap-6 xl:gap-8" aria-label="Navigasi Utama">
         <a href="#" class="nav-link active text-sm font-semibold transition-colors py-1">Beranda</a>
         <a href="#layanan" class="nav-link text-sm font-semibold text-navy hover:text-blue-accent transition-colors py-1">Layanan</a>
         <a href="#portofolio" class="nav-link text-sm font-semibold text-navy hover:text-blue-accent transition-colors py-1">Portofolio</a>
         <a href="#harga" class="nav-link text-sm font-semibold text-navy hover:text-blue-accent transition-colors py-1">Harga</a>
-        <a href="#proses" class="nav-link text-sm font-semibold text-navy hover:text-blue-accent transition-colors py-1">Proses</a>
+        <a href="/estimasi/" class="nav-link text-sm font-semibold text-navy hover:text-blue-accent transition-colors py-1">Estimasi</a>
+        <a href="/blog/" class="nav-link text-sm font-semibold text-navy hover:text-blue-accent transition-colors py-1">Blog</a>
         <a href="#faq" class="nav-link text-sm font-semibold text-navy hover:text-blue-accent transition-colors py-1">FAQ</a>
       </nav>
 
@@ -202,7 +203,8 @@
     <a href="#layanan" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">Layanan</a>
     <a href="#portofolio" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">Portofolio</a>
     <a href="#harga" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">Paket Harga</a>
-    <a href="#proses" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">Cara Kerja</a>
+    <a href="/estimasi/" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">Estimasi Harga</a>
+    <a href="/blog/" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">Blog</a>
     <a href="#faq" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">FAQ</a>
     <div class="pt-3">
       <a href="https://wa.me/6285861510159?text=Halo%20AURA%20GLOBAL,%20saya%20ingin%20konsultasi%20pembuatan%20website" target="_blank" rel="noopener noreferrer" class="btn-pill-navy w-full py-3.5 text-sm font-semibold flex items-center justify-center gap-2">
@@ -374,7 +376,7 @@
               <span class="text-[11px] font-extrabold tracking-widest text-[#38BDF8] uppercase block mb-1">PORTOFOLIO</span>
               <h2 class="text-base sm:text-lg font-bold text-white leading-snug">Hasil Website yang Telah Kami Kerjakan</h2>
             </div>
-            <a href="#portofolio-cards" class="flex-shrink-0 bg-white text-navy font-bold text-xs sm:text-sm px-4 py-2.5 rounded-full hover:bg-surface-alt transition-colors inline-flex items-center gap-1 shadow-sm">
+            <a href="/portofolio/" class="flex-shrink-0 bg-white text-navy font-bold text-xs sm:text-sm px-4 py-2.5 rounded-full hover:bg-surface-alt transition-colors inline-flex items-center gap-1 shadow-sm">
               <span>Lihat Semua</span>
               <span class="text-blue-accent font-bold">→</span>
             </a>
@@ -398,7 +400,7 @@
             <h2 class="text-3xl lg:text-4xl font-extrabold text-navy tracking-tight mb-2">Hasil Website yang Telah Kami Kerjakan</h2>
             <p class="text-body-text text-base max-w-2xl">Beberapa contoh website yang sudah kami buat untuk berbagai jenis bisnis.</p>
           </div>
-          <a href="/portfolio/" class="btn-pill-outline px-5 py-2.5 text-sm font-semibold flex items-center gap-2">
+          <a href="/portofolio/" class="btn-pill-outline px-5 py-2.5 text-sm font-semibold flex items-center gap-2">
             <span>Lihat Semua Portofolio</span>
             <span class="text-blue-accent font-bold">→</span>
           </a>
@@ -491,8 +493,14 @@
                 <span class="transition-transform group-hover/btn:translate-x-1 font-bold">→</span>
               </button>
             </div>
-          </div>
+        </div>
 
+        <!-- MOBILE VIEW ALL BUTTON -->
+        <div class="mt-8 text-center lg:hidden">
+          <a href="/portofolio/" class="btn-pill-navy w-full py-3 text-sm font-semibold inline-flex items-center justify-center gap-2">
+            <span>Lihat Semua Portofolio</span>
+            <span>→</span>
+          </a>
         </div>
 
       </div>
@@ -1004,6 +1012,126 @@
     </section>
 
     <!-- ========================================================
+         SECTION 7B: ARTIKEL TERBARU (#blog)
+         ======================================================== -->
+    <section id="blog" class="w-full py-16 lg:py-24 bg-surface-alt border-b border-border-card">
+      <div class="site-container">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 lg:mb-16 gap-6">
+          <div class="max-w-xl">
+            <span class="text-xs font-extrabold uppercase tracking-widest text-blue-accent block mb-2">BLOG &amp; INSIGHT</span>
+            <h2 class="text-3xl lg:text-4xl font-extrabold text-navy tracking-tight mb-3">Artikel &amp; Panduan Terbaru</h2>
+            <p class="text-body-text text-base">Tips praktis, strategi bisnis digital, dan panduan teknis seputar pembuatan website profesional.</p>
+          </div>
+          <div>
+            <a href="/blog/" class="btn-pill-navy text-sm font-semibold inline-flex items-center gap-2">
+              <span>Lihat Semua Artikel</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          
+          <!-- Card 1 -->
+          <article class="card-clean flex flex-col justify-between group overflow-hidden bg-white">
+            <a href="/blog/mengapa-bisnis-perlu-website/" class="block overflow-hidden relative">
+              <img src="/assets/blog-cover-1.svg" alt="Mengapa Bisnis dan UMKM Perlu Memiliki Website Sendiri" class="w-full h-48 sm:h-52 object-cover transition-transform duration-300 group-hover:scale-103" width="800" height="450" loading="lazy" />
+              <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-navy text-[11px] font-bold px-2.5 py-1 rounded-full shadow-xs border border-border-card">
+                Strategi Bisnis
+              </div>
+            </a>
+            <div class="p-5 sm:p-6 flex flex-col flex-grow justify-between">
+              <div>
+                <a href="/blog/mengapa-bisnis-perlu-website/">
+                  <h3 class="text-base sm:text-lg font-bold text-navy mb-2 line-clamp-2 leading-snug group-hover:text-blue-accent transition-colors">
+                    Mengapa Bisnis dan UMKM Perlu Memiliki Website Sendiri?
+                  </h3>
+                </a>
+                <p class="text-xs sm:text-sm text-body-text line-clamp-2 leading-relaxed mb-4">
+                  Pelajari alasan strategis mengapa website resmi memberikan kredibilitas lebih tinggi dibanding hanya mengandalkan media sosial semata.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-border-card flex items-center justify-between text-xs text-muted-text">
+                <div class="flex items-center gap-2">
+                  <div class="w-6 h-6 rounded-full bg-blue-light text-blue-accent font-bold text-[10px] flex items-center justify-center">
+                    AG
+                  </div>
+                  <span class="font-semibold text-navy">Tim AURA GLOBAL</span>
+                </div>
+                <span>14 Okt 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card-clean flex flex-col justify-between group overflow-hidden bg-white">
+            <a href="/blog/cara-mempercepat-website-di-smartphone/" class="block overflow-hidden relative">
+              <img src="/assets/blog-cover-2.svg" alt="Panduan Mempercepat Akses Website agar Nyaman Dibuka di HP" class="w-full h-48 sm:h-52 object-cover transition-transform duration-300 group-hover:scale-103" width="800" height="450" loading="lazy" />
+              <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-navy text-[11px] font-bold px-2.5 py-1 rounded-full shadow-xs border border-border-card">
+                Tips Teknis
+              </div>
+            </a>
+            <div class="p-5 sm:p-6 flex flex-col flex-grow justify-between">
+              <div>
+                <a href="/blog/cara-mempercepat-website-di-smartphone/">
+                  <h3 class="text-base sm:text-lg font-bold text-navy mb-2 line-clamp-2 leading-snug group-hover:text-blue-accent transition-colors">
+                    Panduan Mempercepat Akses Website agar Nyaman Dibuka di HP
+                  </h3>
+                </a>
+                <p class="text-xs sm:text-sm text-body-text line-clamp-2 leading-relaxed mb-4">
+                  Kecepatan akses di layar smartphone sangat menentukan kenyamanan calon pelanggan. Simak teknik praktis optimasi aset dan kode.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-border-card flex items-center justify-between text-xs text-muted-text">
+                <div class="flex items-center gap-2">
+                  <div class="w-6 h-6 rounded-full bg-blue-light text-blue-accent font-bold text-[10px] flex items-center justify-center">
+                    AG
+                  </div>
+                  <span class="font-semibold text-navy">Tim AURA GLOBAL</span>
+                </div>
+                <span>14 Okt 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card-clean flex flex-col justify-between group overflow-hidden bg-white">
+            <a href="/blog/persiapan-sebelum-membuat-website-bisnis/" class="block overflow-hidden relative">
+              <img src="/assets/blog-cover-3.svg" alt="Hal Penting yang Perlu Disiapkan Sebelum Memesan Jasa Website" class="w-full h-48 sm:h-52 object-cover transition-transform duration-300 group-hover:scale-103" width="800" height="450" loading="lazy" />
+              <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-navy text-[11px] font-bold px-2.5 py-1 rounded-full shadow-xs border border-border-card">
+                Panduan Klien
+              </div>
+            </a>
+            <div class="p-5 sm:p-6 flex flex-col flex-grow justify-between">
+              <div>
+                <a href="/blog/persiapan-sebelum-membuat-website-bisnis/">
+                  <h3 class="text-base sm:text-lg font-bold text-navy mb-2 line-clamp-2 leading-snug group-hover:text-blue-accent transition-colors">
+                    Hal Penting yang Perlu Disiapkan Sebelum Memesan Jasa Website
+                  </h3>
+                </a>
+                <p class="text-xs sm:text-sm text-body-text line-clamp-2 leading-relaxed mb-4">
+                  Mempersiapkan materi bisnis sejak awal membuat proses pembuatan website berjalan jauh lebih cepat, rapi, dan terarah.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-border-card flex items-center justify-between text-xs text-muted-text">
+                <div class="flex items-center gap-2">
+                  <div class="w-6 h-6 rounded-full bg-blue-light text-blue-accent font-bold text-[10px] flex items-center justify-center">
+                    AG
+                  </div>
+                  <span class="font-semibold text-navy">Tim AURA GLOBAL</span>
+                </div>
+                <span>14 Okt 2026</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
          SECTION 8: CTA PENUTUP (#kontak) (PERSIS SESUAI REFERENSI DESKTOP)
          ======================================================== -->
     <section id="kontak" class="w-full py-16 lg:py-20 bg-white">
@@ -1080,12 +1208,13 @@
         <div class="lg:col-span-2">
           <h4 class="text-xs font-extrabold uppercase tracking-wider text-white mb-4">Navigasi</h4>
           <ul class="space-y-2 text-xs sm:text-sm text-gray-400">
-            <li><a href="#" class="hover:text-white transition-colors">Beranda</a></li>
-            <li><a href="#layanan" class="hover:text-white transition-colors">Layanan</a></li>
-            <li><a href="#portofolio" class="hover:text-white transition-colors">Portofolio</a></li>
-            <li><a href="#harga" class="hover:text-white transition-colors">Paket Harga</a></li>
-            <li><a href="#proses" class="hover:text-white transition-colors">Cara Kerja</a></li>
-            <li><a href="#faq" class="hover:text-white transition-colors">FAQ</a></li>
+            <li><a href="/" class="hover:text-white transition-colors">Beranda</a></li>
+            <li><a href="/#layanan" class="hover:text-white transition-colors">Layanan</a></li>
+            <li><a href="/portofolio/" class="hover:text-white transition-colors">Portofolio</a></li>
+            <li><a href="/#harga" class="hover:text-white transition-colors">Paket Harga</a></li>
+            <li><a href="/estimasi/" class="hover:text-white transition-colors">Estimasi Harga</a></li>
+            <li><a href="/blog/" class="hover:text-white transition-colors">Blog &amp; Insight</a></li>
+            <li><a href="/#faq" class="hover:text-white transition-colors">FAQ</a></li>
           </ul>
         </div>
 
