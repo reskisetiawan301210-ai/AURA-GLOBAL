@@ -110,7 +110,7 @@ window.addEventListener("scroll", () => {
 // ----------------------------------------------------
 // 2. WHATSAPP CONVERSION HANDLERS
 // ----------------------------------------------------
-const AURA_WA_NUMBER = "6285861510159";
+const AURA_WA_NUMBER = "6285218175984";
 
 function openWhatsApp(topic) {
   let pesan = `Halo AURA GLOBAL, saya ingin konsultasi mengenai pembuatan website untuk bisnis saya (${topic}).`;

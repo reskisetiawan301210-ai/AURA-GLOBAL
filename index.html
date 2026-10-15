@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="google-site-verification" content="oViqkUbsxN28plHUDgn83kyeV_F-84FVXx8FrrPCD6U" />
   
-  <title>AURA GLOBAL — Jasa Pembuatan Website Profesional &amp; Solusi Digital</title>
+  <title>AURA GLOBAL — Jasa Pembuatan Website Profesional Majalengka</title>
   
   <!-- SEO & Primary Meta Tags -->
-  <meta name="description" content="AURA GLOBAL melayani jasa pembuatan website profesional, cepat, modern, dan SEO-friendly untuk company profile, toko online, dan UMKM dengan harga terjangkau." />
+  <meta name="description" content="AURA GLOBAL melayani jasa pembuatan website profesional di Majalengka: company profile, UMKM, dan toko online. Harga mulai Rp350.000 hingga Paket Basic Rp500.000." />
   <meta name="keywords" content="jasa pembuatan website, jasa buat website profesional, jasa bikin website murah, jasa website company profile, jasa website toko online, web developer profesional, jasa website majalengka" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="author" content="AURA GLOBAL" />
@@ -18,7 +18,9 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://auraglobal.my.id/" />
   <meta property="og:title" content="AURA GLOBAL — Jasa Pembuatan Website Profesional &amp; Solusi Digital" />
-  <meta property="og:description" content="Jasa pembuatan website modern, responsif, dan mudah ditemukan di mesin pencari. Cocok untuk perusahaan, UMKM, hingga personal branding. Harga mulai Rp500.000." />
+  <meta property="og:description" content="Jasa pembuatan website profesional di Majalengka. Modern, responsif, cepat, dan SEO-friendly. Harga mulai Rp350.000 hingga Paket Basic Rp500.000." />
+  <meta property="og:image:alt" content="AURA GLOBAL Digital Web Studio Majalengka" />
+  <meta name="twitter:image:alt" content="AURA GLOBAL Digital Web Studio Majalengka" />
   <meta property="og:image" content="https://auraglobal.my.id/assets/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -32,13 +34,11 @@
   <meta property="twitter:description" content="Jasa pembuatan website modern, responsif, dan mudah ditemukan di mesin pencari. Desain rapi dan terhubung ke WhatsApp." />
   <meta property="twitter:image" content="https://auraglobal.my.id/assets/og-image.png" />
 
-  <!-- Favicons Suite -->
-  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
-  <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
-  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+    <!-- Favicon & PWA Suite -->
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
-  
   <!-- Fonts Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -80,35 +80,56 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": ["LocalBusiness", "ProfessionalService"],
+        "@type": "Organization",
         "@id": "https://auraglobal.my.id/#organization",
         "name": "AURA GLOBAL",
         "alternateName": "AURA GLOBAL Digital Web Studio",
         "url": "https://auraglobal.my.id/",
-        "logo": "https://auraglobal.my.id/assets/logo.svg",
-        "description": "Jasa pembuatan website profesional untuk UMKM, toko online, company profile perusahaan, dan bisnis lokal. Desain modern, responsif di semua perangkat, dan terhubung langsung ke WhatsApp.",
-        "telephone": "+6285861510159",
+        "logo": "https://auraglobal.my.id/logo.png",
+        "description": "Studio pembuatan website profesional untuk UMKM, profil perusahaan, toko online, dan aplikasi web di Majalengka, Jawa Barat.",
+        "areaServed": [
+          { "@type": "City", "name": "Majalengka" },
+          { "@type": "AdministrativeArea", "name": "Jawa Barat" },
+          { "@type": "Country", "name": "Indonesia" }
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+6285218175984",
+          "contactType": "customer service",
+          "availableLanguage": ["id"]
+        },
+        "sameAs": [
+          "https://www.tiktok.com/@auraglobal_jasawebsite"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://auraglobal.my.id/#website",
+        "url": "https://auraglobal.my.id/",
+        "name": "AURA GLOBAL Digital Web Studio",
+        "inLanguage": "id-ID",
+        "publisher": {
+          "@id": "https://auraglobal.my.id/#organization"
+        }
+      },
+      {
+        "@type": ["LocalBusiness", "ProfessionalService"],
+        "@id": "https://auraglobal.my.id/#localbusiness",
+        "name": "AURA GLOBAL",
+        "url": "https://auraglobal.my.id/",
+        "image": "https://auraglobal.my.id/assets/og-image.png",
+        "telephone": "+6285218175984",
         "email": "info@auraglobal.my.id",
-        "priceRange": "Rp500.000 - Rp1.800.000",
+        "priceRange": "Rp350.000 - Rp1.800.000",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Majalengka",
           "addressRegion": "Jawa Barat",
-          "postalCode": "45411",
           "addressCountry": "ID"
         },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": -6.8361,
-          "longitude": 108.2274
+        "parentOrganization": {
+          "@id": "https://auraglobal.my.id/#organization"
         },
-        "areaServed": [
-          { "@type": "City", "name": "Majalengka" },
-          { "@type": "City", "name": "Cirebon" },
-          { "@type": "City", "name": "Bandung" },
-          { "@type": "City", "name": "Jakarta" },
-          { "@type": "Country", "name": "Indonesia" }
-        ],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "Paket Pembuatan Website AURA GLOBAL",
@@ -117,8 +138,18 @@
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
+                "name": "Paket Mini",
+                "description": "1 halaman profil ringkas / bio link bisnis responsif, domain & cloud hosting 1 tahun."
+              },
+              "price": "350000",
+              "priceCurrency": "IDR"
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
                 "name": "Paket Basic",
-                "description": "1 halaman landing page responsif, domain & hosting 1 tahun, integrasi WhatsApp cepat."
+                "description": "1 halaman landing page bisnis responsif lengkap, domain & cloud hosting 1 tahun, integrasi WhatsApp cepat."
               },
               "price": "500000",
               "priceCurrency": "IDR"
@@ -128,7 +159,7 @@
               "itemOffered": {
                 "@type": "Service",
                 "name": "Paket Starter",
-                "description": "Hingga 3-4 halaman/seksi lengkap, etalase katalog produk/jasa, domain & hosting 1 tahun."
+                "description": "Hingga 3-4 halaman/seksi terstruktur UMKM, katalog produk/jasa, domain & hosting 1 tahun."
               },
               "price": "800000",
               "priceCurrency": "IDR"
@@ -138,21 +169,12 @@
               "itemOffered": {
                 "@type": "Service",
                 "name": "Paket Professional",
-                "description": "Hingga 5-7 halaman terstruktur, company profile lengkap, SEO Google dasar, form kontak & WhatsApp."
+                "description": "Hingga 5-7 halaman terstruktur rapi, company profile lengkap, SEO Google, form kontak & WhatsApp."
               },
               "price": "1200000",
               "priceCurrency": "IDR"
             }
           ]
-        }
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://auraglobal.my.id/#website",
-        "url": "https://auraglobal.my.id/",
-        "name": "AURA GLOBAL Digital Web Studio",
-        "publisher": {
-          "@id": "https://auraglobal.my.id/#organization"
         }
       }
     ]
@@ -186,7 +208,7 @@
 
       <!-- CTA & MOBILE TOGGLE -->
       <div class="flex items-center gap-3">
-        <a href="https://wa.me/6285861510159?text=Halo%20AURA%20GLOBAL,%20saya%20ingin%20konsultasi%20pembuatan%20website" target="_blank" rel="noopener noreferrer" class="btn-pill-navy hidden sm:inline-flex px-5 py-2.5 text-xs sm:text-sm font-semibold shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-accent">
+        <a href="https://wa.me/6285218175984?text=Halo%20AURA%20GLOBAL,%20saya%20ingin%20konsultasi%20pembuatan%20website" target="_blank" rel="noopener noreferrer" class="btn-pill-navy hidden sm:inline-flex px-5 py-2.5 text-xs sm:text-sm font-semibold shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-accent">
           <span>Konsultasi WhatsApp</span>
           <svg class="w-4 h-4 fill-current text-[#25D366]" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2Z"/></svg>
         </a>
@@ -210,7 +232,7 @@
     <a href="/blog/" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">Blog</a>
     <a href="#faq" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">FAQ</a>
     <div class="pt-3">
-      <a href="https://wa.me/6285861510159?text=Halo%20AURA%20GLOBAL,%20saya%20ingin%20konsultasi%20pembuatan%20website" target="_blank" rel="noopener noreferrer" class="btn-pill-navy w-full py-3.5 text-sm font-semibold flex items-center justify-center gap-2">
+      <a href="https://wa.me/6285218175984?text=Halo%20AURA%20GLOBAL,%20saya%20ingin%20konsultasi%20pembuatan%20website" target="_blank" rel="noopener noreferrer" class="btn-pill-navy w-full py-3.5 text-sm font-semibold flex items-center justify-center gap-2">
         <span>Konsultasi WhatsApp</span>
         <svg class="w-4 h-4 fill-current text-[#25D366]" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2Z"/></svg>
       </a>
@@ -243,12 +265,12 @@
 
             <!-- DESCRIPTION -->
             <p class="text-sm sm:text-base xl:text-lg text-body-text leading-relaxed mb-6 lg:mb-8 max-w-md lg:max-w-xl">
-              AURA GLOBAL membantu bisnis Anda memiliki website yang modern, responsif, dan mudah ditemukan di mesin pencari. Cocok untuk perusahaan, UMKM, hingga personal branding.
+              Berbasis di Majalengka, AURA GLOBAL melayani <a href="/jasa-pembuatan-website-majalengka/" class="text-navy font-bold hover:text-blue-accent underline decoration-blue-accent/40 transition-colors">jasa pembuatan website di Majalengka</a> dan seluruh Indonesia. Desain modern, responsif, dan terhubung langsung ke WhatsApp.
             </p>
 
             <!-- ACTION BUTTONS -->
             <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto mb-8 lg:mb-10">
-              <a href="https://wa.me/6285861510159?text=Halo%20AURA%20GLOBAL,%20saya%20ingin%20konsultasi%20pembuatan%20website" target="_blank" rel="noopener noreferrer" class="btn-pill-navy w-full sm:w-auto px-6 py-3.5 text-xs sm:text-sm xl:text-base font-semibold shadow-md flex items-center justify-center gap-2.5">
+              <a href="https://wa.me/6285218175984?text=Halo%20AURA%20GLOBAL,%20saya%20ingin%20konsultasi%20pembuatan%20website" target="_blank" rel="noopener noreferrer" class="btn-pill-navy w-full sm:w-auto px-6 py-3.5 text-xs sm:text-sm xl:text-base font-semibold shadow-md flex items-center justify-center gap-2.5">
                 <span>Konsultasi Gratis via WhatsApp</span>
                 <svg class="w-4 h-4 sm:w-5 sm:h-5 fill-current text-[#25D366]" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2Z"/></svg>
               </a>
@@ -288,19 +310,17 @@
 
           </div>
 
-          <!-- RIGHT COLUMN: Laptop + Smartphone Mockup -->
+          <!-- RIGHT COLUMN: High-Resolution Device Showcase (Retina Ready) -->
           <div class="lg:col-span-6 relative flex items-center justify-center order-2 mb-8 lg:mb-0">
-            <!-- Soft Ambient Glow Shape -->
-            <div class="hero-ambient-shape"></div>
+            <!-- Soft Purple Ambient Glow (#5300B7) -->
+            <div class="hero-ambient-shape" style="background: radial-gradient(circle, rgba(83,0,183,0.18) 0%, rgba(123,44,191,0.08) 50%, transparent 70%);"></div>
 
-            <!-- Laptop + Smartphone Mockup -->
-            <div class="relative z-10 w-full max-w-[580px] drop-shadow-xl transition-transform duration-500 hover:scale-[1.01]">
-              <img src="/assets/hero-mockup.webp" alt="Tampilan Website Responsif AURA GLOBAL di Laptop dan Smartphone" class="w-full h-auto object-contain" width="1160" height="740" priority="high" />
-              
-              <!-- Handwritten Note with Curved Arrow -->
-              <div class="absolute -bottom-6 -right-2 sm:-bottom-8 sm:right-2 z-20 pointer-events-none drop-shadow-md">
-                <img src="/assets/handwritten-note.webp" alt="Tampilan website responsif di semua perangkat" class="w-44 sm:w-56 h-auto object-contain" width="224" height="64" />
-              </div>
+            <!-- Device Mockup: Laptop & Smartphone (Villa Panorama & Sinar Jaya Motor) -->
+            <div class="relative z-10 w-full max-w-[620px] transition-transform duration-500 hover:scale-[1.01]">
+              <picture>
+                <source srcset="/assets/hero-showcase-1600.webp 1600w, /assets/hero-showcase-1200.webp 1200w, /assets/hero-showcase-800.webp 800w" sizes="(min-width: 1024px) 580px, 100vw" type="image/webp" />
+                <img src="/assets/hero-showcase-1200.webp" alt="Showcase Desain Website Responsif AURA GLOBAL di Laptop dan Smartphone" class="w-full h-auto object-contain drop-shadow-2xl" width="1200" height="780" fetchpriority="high" />
+              </picture>
             </div>
           </div>
 
@@ -348,6 +368,34 @@
 
         </div>
 
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION ENTITAS RESMI: TENTANG AURA GLOBAL (AI & GOOGLE READY)
+         ======================================================== -->
+    <section class="w-full py-12 bg-surface-alt border-b border-border-card">
+      <div class="site-container">
+        <div class="max-w-4xl mx-auto rounded-2xl bg-white border border-border-card p-6 sm:p-8 shadow-xs">
+          <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            <div>
+              <span class="text-xs font-extrabold uppercase tracking-widest text-blue-accent block mb-1">ENTITAS RESMI STUDIO</span>
+              <h2 class="text-xl sm:text-2xl font-extrabold text-navy mb-2">Tentang AURA GLOBAL</h2>
+              <p class="text-xs sm:text-sm text-body-text leading-relaxed max-w-2xl">
+                <strong>AURA GLOBAL</strong> (AURA GLOBAL Digital Web Studio) adalah studio penyedia jasa pembuatan website profesional yang berbasis di <strong>Majalengka, Jawa Barat</strong>. Kami melayani UMKM, profil perusahaan (company profile), toko online katalog WhatsApp, aplikasi web kustom berbasis Laravel, serta solusi IoT (Arduino/ESP32). Paket pembuatan website tersedia mulai dari <strong>Rp350.000</strong> hingga <strong>Paket Basic Rp500.000</strong> lengkap dengan domain dan cloud hosting aktif tahun pertama.
+              </p>
+            </div>
+            <div class="flex-shrink-0 flex flex-col sm:flex-row md:flex-col gap-2.5 w-full md:w-auto">
+              <a href="/tentang/" class="btn-pill-outline px-4 py-2 text-xs font-semibold text-center">
+                <span>Profil Selengkapnya</span>
+                <span>→</span>
+              </a>
+              <a href="/jasa-pembuatan-website-majalengka/" class="text-xs font-bold text-blue-accent hover:text-blue-hover text-center py-1">
+                Layanan di Majalengka →
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -759,8 +807,45 @@
           <p class="text-body-text text-base">Investasi transparan tanpa biaya tersembunyi. Termasuk domain dan cloud hosting 1 tahun pertama.</p>
         </div>
 
-        <!-- 3 MAIN PRICING CARDS -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch mb-12">
+        <!-- 4 MAIN PRICING CARDS (Mulai Rp350.000 & Rp500.000) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch mb-12">
+          
+          <!-- Paket 0: Mini / Hemat (Rp350.000) -->
+          <div class="card-clean p-6 flex flex-col justify-between bg-white border border-border-card">
+            <div>
+              <div class="mb-4">
+                <h3 class="text-lg font-bold text-navy mb-0.5">Paket Mini</h3>
+                <span class="text-xs text-muted-text">Profil ringkas / bio link bisnis</span>
+              </div>
+              <div class="mb-5 pb-5 border-b border-border-card">
+                <span class="text-2xl lg:text-3xl font-extrabold text-navy">Rp350.000</span>
+                <span class="text-[11px] text-muted-text block mt-1">Biaya awal pembuatan lengkap</span>
+              </div>
+              
+              <div class="space-y-2.5 mb-6 text-xs text-body-text">
+                <div class="flex items-start gap-2">
+                  <svg class="w-3.5 h-3.5 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                  <span>1 Halaman Single Section Ringkas</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <svg class="w-3.5 h-3.5 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                  <span>Domain .my.id / .biz.id &amp; Hosting 1 Tahun</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <svg class="w-3.5 h-3.5 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                  <span>Tombol Chat WhatsApp Terhubung</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <svg class="w-3.5 h-3.5 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                  <span>Garansi Pemeliharaan 1 Bulan</span>
+                </div>
+              </div>
+            </div>
+
+            <a href="https://wa.me/6285218175984?text=Halo%20AURA%20GLOBAL,%20saya%20tertarik%20dengan%20Paket%20Mini%20(Rp350.000).%20Boleh%20konsultasi%20langkah%20awalnya?" target="_blank" rel="noopener noreferrer" class="btn-pill-outline w-full py-2.5 text-xs font-semibold text-center">
+              Pesan Paket Mini
+            </a>
+          </div>
           
           <!-- Paket 1: Basic -->
           <div class="card-clean p-6 sm:p-8 flex flex-col justify-between bg-white border border-border-card">
@@ -820,7 +905,7 @@
               </div>
             </div>
 
-            <a href="https://wa.me/6285861510159?text=Halo%20AURA%20GLOBAL,%20saya%20tertarik%20dengan%20Paket%20Basic%20(Rp500.000).%20Boleh%20konsultasi%20langkah%20awalnya?" target="_blank" rel="noopener noreferrer" class="btn-pill-outline w-full py-3 text-sm font-semibold text-center">
+            <a href="https://wa.me/6285218175984?text=Halo%20AURA%20GLOBAL,%20saya%20tertarik%20dengan%20Paket%20Basic%20(Rp500.000).%20Boleh%20konsultasi%20langkah%20awalnya?" target="_blank" rel="noopener noreferrer" class="btn-pill-outline w-full py-3 text-sm font-semibold text-center">
               Pesan Paket Basic
             </a>
           </div>
@@ -883,7 +968,7 @@
               </div>
             </div>
 
-            <a href="https://wa.me/6285861510159?text=Halo%20AURA%20GLOBAL,%20saya%20tertarik%20dengan%20Paket%20Starter%20(Rp800.000).%20Boleh%20konsultasi%20langkah%20awalnya?" target="_blank" rel="noopener noreferrer" class="btn-pill-navy w-full py-3 text-sm font-semibold text-center">
+            <a href="https://wa.me/6285218175984?text=Halo%20AURA%20GLOBAL,%20saya%20tertarik%20dengan%20Paket%20Starter%20(Rp800.000).%20Boleh%20konsultasi%20langkah%20awalnya?" target="_blank" rel="noopener noreferrer" class="btn-pill-navy w-full py-3 text-sm font-semibold text-center">
               Pesan Paket Starter
             </a>
           </div>
@@ -951,7 +1036,7 @@
               </div>
             </div>
 
-            <a href="https://wa.me/6285861510159?text=Halo%20AURA%20GLOBAL,%20saya%20tertarik%20dengan%20Paket%20Professional%20(Rp1.200.000).%20Boleh%20konsultasi%20langkah%20awalnya?" target="_blank" rel="noopener noreferrer" class="btn-pill-blue w-full py-3 text-sm font-semibold text-center">
+            <a href="https://wa.me/6285218175984?text=Halo%20AURA%20GLOBAL,%20saya%20tertarik%20dengan%20Paket%20Professional%20(Rp1.200.000).%20Boleh%20konsultasi%20langkah%20awalnya?" target="_blank" rel="noopener noreferrer" class="btn-pill-blue w-full py-3 text-sm font-semibold text-center">
               Pesan Paket Professional
             </a>
           </div>
@@ -967,7 +1052,7 @@
               Kami juga melayani pengembangan aplikasi web Laravel/PHP, dashboard database custom, sistem IoT mikrokontroler Arduino/ESP32, dan integrasi API khusus dengan skema penawaran transparan sesuai ruang lingkup proyek.
             </p>
           </div>
-          <a href="https://wa.me/6285861510159?text=Halo%20AURA%20GLOBAL,%20saya%20ingin%20konsultasi%20mengenai%20proyek%20custom%20(Aplikasi%20Web%20/%20IoT)" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 btn-pill-blue px-6 py-3.5 text-xs sm:text-sm font-semibold inline-flex items-center gap-2">
+          <a href="https://wa.me/6285218175984?text=Halo%20AURA%20GLOBAL,%20saya%20ingin%20konsultasi%20mengenai%20proyek%20custom%20(Aplikasi%20Web%20/%20IoT)" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 btn-pill-blue px-6 py-3.5 text-xs sm:text-sm font-semibold inline-flex items-center gap-2">
             <span>Konsultasi Proyek Custom</span>
             <span class="font-bold">→</span>
           </a>
@@ -1374,7 +1459,7 @@
               Konsultasikan kebutuhan website bisnis Anda sekarang tanpa biaya komitmen. Tim kami siap membantu merealisasikan website yang profesional, cepat, dan terpercaya.
             </p>
             <div class="flex flex-wrap items-center gap-4">
-              <a href="https://wa.me/6285861510159?text=Halo%20AURA%20GLOBAL,%20saya%20ingin%20konsultasi%20pembuatan%20website" target="_blank" rel="noopener noreferrer" class="btn-pill-blue px-6 py-3.5 text-sm sm:text-base font-semibold shadow-md flex items-center gap-2">
+              <a href="https://wa.me/6285218175984?text=Halo%20AURA%20GLOBAL,%20saya%20ingin%20konsultasi%20pembuatan%20website" target="_blank" rel="noopener noreferrer" class="btn-pill-blue px-6 py-3.5 text-sm sm:text-base font-semibold shadow-md flex items-center gap-2">
                 <span>Konsultasi Sekarang</span>
                 <svg class="w-4 h-4 fill-current text-white" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2Z"/></svg>
               </a>
@@ -1411,7 +1496,7 @@
           <div class="space-y-2.5 text-xs text-gray-300">
             <div class="flex items-center gap-2">
               <span class="font-bold text-white">WhatsApp:</span>
-              <a href="https://wa.me/6285861510159" target="_blank" rel="noopener noreferrer" class="hover:text-blue-accent transition-colors">+62 858-6151-0159</a>
+              <a href="https://wa.me/6285218175984" target="_blank" rel="noopener noreferrer" class="hover:text-blue-accent transition-colors">+62 852-1817-5984</a>
             </div>
             <div class="flex items-center gap-2">
               <span class="font-bold text-white">Email:</span>
@@ -1477,7 +1562,7 @@
   <!-- ========================================================
        FLOATING WHATSAPP BUTTON (POJOK KANAN BAWAH)
        ======================================================== -->
-  <a href="https://wa.me/6285861510159?text=Halo%20AURA%20GLOBAL,%20saya%20ingin%20konsultasi%20pembuatan%20website" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-40 bg-[#25D366] hover:bg-[#20BA5A] text-white px-4 py-3 rounded-full shadow-lg flex items-center gap-2 font-semibold text-sm transition-all hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] shadow-emerald-900/20" aria-label="Konsultasi WhatsApp">
+  <a href="https://wa.me/6285218175984?text=Halo%20AURA%20GLOBAL,%20saya%20ingin%20konsultasi%20pembuatan%20website" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-40 bg-[#25D366] hover:bg-[#20BA5A] text-white px-4 py-3 rounded-full shadow-lg flex items-center gap-2 font-semibold text-sm transition-all hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] shadow-emerald-900/20" aria-label="Konsultasi WhatsApp">
     <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2Z"/></svg>
     <span class="font-bold tracking-wide">Konsultasi</span>
   </a>

@@ -1,5 +1,16 @@
 {
   "cleanUrls": true,
-  "trailingSlash": true
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/portfolio",
+      "destination": "/portofolio/",
+      "permanent": true
+    },
+    {
+      "source": "/portfolio/:path*",
+      "destination": "/portofolio/:path*",
+      "permanent": true
+    }
+  ]
 }
-

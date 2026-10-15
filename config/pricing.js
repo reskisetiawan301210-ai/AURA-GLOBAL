@@ -14,6 +14,14 @@
 const pricingConfig = {
   types: [
     {
+      id: "mini-page",
+      name: "Paket Mini / Profil Ringkas",
+      desc: "Bio link bisnis, kontak ringkas, atau kartu nama digital satu seksi.",
+      basePriceMin: 350000,
+      basePriceMax: 450000,
+      suggestedPackage: "Paket Mini (Rp350.000)"
+    },
+    {
       id: "landing-page",
       name: "Landing Page / Satu Halaman",
       desc: "Promosi produk tunggal, event, atau profil ringkas bisnis.",

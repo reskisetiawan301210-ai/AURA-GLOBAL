@@ -26,7 +26,7 @@ Situs telah dimigrasikan sepenuhnya ke sistem desain modern bernuansa *editorial
 1. **Zero External CDN Dependencies**: Seluruh gambar, logo SVG, favicon, mockup WebP, dan fotografi artikel Unsplash disimpan secara lokal di direktori `/assets/`.
 2. **Zero Emoji**: Tidak ada emoji hiasan di seluruh teks, heading, badge, tombol, maupun footer. Seluruh indikator visual menggunakan SVG terukur.
 3. **Data Provenance & Kredibilitas Transparan**:
-   - Nomor WhatsApp Resmi: `+62 858-6151-0159` (`https://wa.me/6285861510159`).
+   - Nomor WhatsApp Resmi: `+62 852-1817-5984` (`https://wa.me/6285218175984`).
    - Email Resmi: `info@auraglobal.my.id`.
    - Lokasi Terverifikasi: Majalengka, Jawa Barat, Indonesia.
    - Paket Harga Resmi:
@@ -110,11 +110,27 @@ Situs telah dimigrasikan sepenuhnya ke sistem desain modern bernuansa *editorial
 ## 4. Konfigurasi Deployment & SEO
 
 - `robots.txt`: Mengizinkan perayapan bot mesin pencari ke seluruh direktori publik dan merujuk ke sitemap.
-- `sitemap.xml`: Memuat seluruh URL resmi dengan prioritas terukur dan `lastmod: 2026-10-15`.
+- `sitemap.xml`: Memuat seluruh URL kanonikal resmi dengan prioritas terukur (duplikasi `/portfolio/` telah dihapus dan dialihkan ke `/portofolio/`).
 - `vercel.json`:
   ```json
   {
     "cleanUrls": true,
-    "trailingSlash": true
+    "trailingSlash": true,
+    "redirects": [
+      {
+        "source": "/portfolio",
+        "destination": "/portofolio/",
+        "permanent": true
+      },
+      {
+        "source": "/portfolio/:path*",
+        "destination": "/portofolio/:path*",
+        "permanent": true
+      }
+    ]
   }
   ```
+- `llms.txt`: Dokumentasi entitas dan arsitektur web untuk AI Google dan LLM Crawler.
+- `JSON-LD`: Graph linked entities `@id` (`#organization`, `#website`, `#localbusiness`, `#services`) dengan nomor resmi WhatsApp `+62 852-1817-5984` dan TikTok `sameAs`.
+- `Hero Showcase`: Responsive picture WebP (1600w, 1200w, 800w) dengan mockup laptop + smartphone beresolusi tinggi, aksen ambient glow Royal Purple `#5300B7`, tanpa overlay tulisan tangan.
+

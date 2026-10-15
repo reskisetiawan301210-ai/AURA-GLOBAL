@@ -1,11 +1,11 @@
 {
-  "name": "AURA GLOBAL Digital Web Studio",
+  "name": "AURA GLOBAL",
   "short_name": "AURA GLOBAL",
-  "description": "Studio pembuatan website profesional untuk UMKM, profil perusahaan, dan toko online.",
+  "description": "Jasa Pembuatan Website Profesional & Solusi Digital Majalengka",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0B1F3F",
-  "theme_color": "#0B1F3F",
+  "background_color": "#FFFFFF",
+  "theme_color": "#5300B7",
   "icons": [
     {
       "src": "/favicon-48x48.png",
@@ -23,10 +23,9 @@
       "type": "image/png"
     },
     {
-      "src": "/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
     }
   ]
 }

@@ -1,0 +1,42 @@
+# AURA GLOBAL Digital Web Studio
+
+> Studio pembuatan website profesional, responsif, dan SEO-friendly untuk UMKM, profil perusahaan, toko online, aplikasi web, dan solusi digital berbasis di Majalengka, Jawa Barat, Indonesia.
+
+## Informasi Entitas & Kontak Resmi
+- Nama Brand: AURA GLOBAL
+- Nama Lengkap: AURA GLOBAL Digital Web Studio
+- Website Resmi: https://auraglobal.my.id/
+- WhatsApp Resmi: +62 852-1817-5984 (https://wa.me/6285218175984)
+- Email: info@auraglobal.my.id
+- Lokasi: Majalengka, Jawa Barat, Indonesia
+- Wilayah Layanan: Majalengka, Cirebon, Sumedang, Bandung, Jakarta, dan seluruh Indonesia
+- Media Sosial Resmi: TikTok https://www.tiktok.com/@auraglobal_jasawebsite
+
+## Layanan Utama
+1. **Website Company Profile**: Profil representatif korporasi dan institusi bisnis untuk membangun reputasi dan kredibilitas resmi.
+2. **Website UMKM & Bisnis Lokal**: Website cepat dan ramah biaya yang dioptimasi agar bisnis lokal mudah ditemukan di pencarian Google lokal.
+3. **Toko Online & Katalog Digital**: Etalase produk dengan integrasi pemesanan langsung ke chat WhatsApp admin.
+4. **Landing Page Iklan**: Halaman satu fokus dengan konversi tinggi untuk promosi produk atau kampanye iklan digital.
+5. **Redesign Website**: Pembaruan website lama yang lambat agar modern, mobile-friendly, dan berkecepatan tinggi.
+6. **Aplikasi Web & Sistem Informasi Custom**: Pengembangan dashboard admin, sistem kasir, inventaris, dan portal data internal berbasis Laravel & PHP.
+7. **Jasa IoT (Arduino & ESP32)**: Integrasi mikrokontroler hardware dengan dashboard pemantauan data sensor real-time via web.
+8. **Undangan Digital Pernikahan**: Website undangan mobile-first elegan dengan personalisasi nama tamu (?to=Nama-Tamu), RSVP WhatsApp, dan amplop digital.
+
+## Paket Investasi & Harga Resmi
+- **Paket Mini / Hemat**: Mulai Rp350.000 (Profil ringkas / kartu nama digital / bio link bisnis responsif)
+- **Paket Basic**: Rp500.000 (1 Halaman Landing Page bisnis lengkap, domain & hosting 1 tahun)
+- **Paket Starter**: Rp800.000 (3-4 Halaman terstruktur UMKM, katalog produk, domain & hosting 1 tahun)
+- **Paket Professional**: Rp1.200.000 (5-7 Halaman terstruktur rapi company profile resmi, SEO lengkap)
+- **Paket Custom / Premium**: Mulai Rp1.800.000 (Aplikasi web sistem informasi, IoT, dan fitur kustom)
+- Sistem Pembayaran: DP 50% di awal pengerjaan, pelunasan 50% setelah website selesai diuji dan disetujui. Seluruh paket sudah termasuk domain dan cloud hosting aktif pada tahun pertama.
+
+## Struktur Halaman Penting
+- Beranda: https://auraglobal.my.id/
+- Layanan: https://auraglobal.my.id/layanan/
+- Portofolio: https://auraglobal.my.id/portofolio/
+- Paket Harga: https://auraglobal.my.id/harga/
+- Estimasi Biaya: https://auraglobal.my.id/estimasi/
+- Blog & Insight: https://auraglobal.my.id/blog/
+- Jasa Website Majalengka: https://auraglobal.my.id/jasa-pembuatan-website-majalengka/
+- Tentang Kami: https://auraglobal.my.id/tentang/
+- Kontak: https://auraglobal.my.id/kontak/
