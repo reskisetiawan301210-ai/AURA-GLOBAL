@@ -3,36 +3,44 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="google-site-verification" content="oViqkUbsxN28plHUDgn83kyeV_F-84FVXx8FrrPCD6U" />
   
   <title>Blog &amp; Edukasi Website Bisnis | AURA GLOBAL</title>
   
   <!-- SEO & Primary Meta Tags -->
-  <meta name="description" content="Tips, strategi, dan wawasan seputar website bisnis, optimasi performa smartphone, dan panduan persiapan pembuatan website dari AURA GLOBAL." />
-  <meta name="keywords" content="blog website, tips website bisnis, optimasi website hp, panduan bikin website, jasa website majalengka" />
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-  <meta name="author" content="AURA GLOBAL" />
+  <meta name="description" content="Pusat wawasan, panduan strategi web, tips percepatan website di smartphone, dan edukasi SEO praktis untuk UMKM dan pemilik usaha di Indonesia." />
+  <meta name="keywords" content="blog website bisnis, tips website umkm, cara mempercepat web di hp, panduan seo lokal, biaya bikin web, aura global blog" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="canonical" href="https://auraglobal.my.id/blog/" />
 
-  <!-- Open Graph / Facebook -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://auraglobal.my.id/blog/" />
   <meta property="og:title" content="Blog &amp; Edukasi Website Bisnis | AURA GLOBAL" />
-  <meta property="og:description" content="Tips, strategi, dan wawasan seputar website bisnis dan optimasi performa digital dari AURA GLOBAL." />
-  <meta property="og:image" content="https://auraglobal.my.id/assets/hero-mockup.png" />
+  <meta property="og:description" content="Koleksi artikel panduan strategi web, tips teknis, dan SEO dasar untuk kemajuan bisnis Anda." />
+  <meta property="og:image" content="https://auraglobal.my.id/assets/og-image.png" />
   <meta property="og:site_name" content="AURA GLOBAL" />
   <meta property="og:locale" content="id_ID" />
 
+  <!-- Twitter Card -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://auraglobal.my.id/blog/" />
+  <meta property="twitter:title" content="Blog &amp; Edukasi Website Bisnis | AURA GLOBAL" />
+  <meta property="twitter:description" content="Koleksi artikel panduan strategi web dan tips digital untuk UMKM." />
+  <meta property="twitter:image" content="https://auraglobal.my.id/assets/og-image.png" />
+
   <!-- Favicons -->
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
-  <link rel="apple-touch-icon" href="/assets/favicon.svg" />
-  
-  <!-- Fonts Preconnect -->
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#0B1F3F" />
+
+  <!-- Fonts & Stylesheet -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&display=swap" rel="stylesheet" />
-  
-  <!-- Tailwind CSS Engine -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -59,9 +67,6 @@
     }
   </script>
 
-  <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="/style.css" />
-
   <!-- Structured Data JSON-LD Schema -->
   <script type="application/ld+json">
   {
@@ -75,13 +80,15 @@
         ]
       },
       {
-        "@type": "Blog",
-        "@id": "https://auraglobal.my.id/blog/#blog",
-        "name": "Blog & Edukasi Website AURA GLOBAL",
-        "description": "Tips, strategi, dan wawasan seputar website bisnis dan optimasi performa digital.",
+        "@type": "CollectionPage",
+        "@id": "https://auraglobal.my.id/blog/#webpage",
+        "url": "https://auraglobal.my.id/blog/",
+        "name": "Blog & Edukasi Website Bisnis | AURA GLOBAL",
+        "description": "Koleksi artikel panduan strategi web, optimasi performa, dan SEO lokal.",
         "publisher": {
           "@type": "Organization",
           "name": "AURA GLOBAL",
+          "url": "https://auraglobal.my.id/",
           "logo": "https://auraglobal.my.id/assets/logo.svg"
         }
       }
@@ -89,39 +96,34 @@
   }
   </script>
 </head>
-<body class="bg-surface-alt text-navy font-sans antialiased selection:bg-blue-light selection:text-blue-accent min-h-screen flex flex-col justify-between">
-
-  <!-- SCROLL PROGRESS INDICATOR -->
-  <div id="scroll-progress-bar" aria-hidden="true"></div>
+<body class="bg-white text-navy font-sans antialiased selection:bg-blue-light selection:text-blue-accent min-h-screen flex flex-col">
 
   <!-- HEADER / NAVBAR -->
   <header id="navbar" class="sticky top-0 left-0 w-full z-40 bg-white/95 backdrop-blur-md border-b border-border-card transition-all duration-300">
     <div class="site-container h-20 flex items-center justify-between">
       
-      <!-- BRAND LOGO -->
       <a href="/" class="flex items-center group focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-accent rounded-lg p-0.5" aria-label="AURA GLOBAL Beranda">
         <img src="/assets/logo.svg" alt="AURA GLOBAL" class="h-9 sm:h-10 w-auto object-contain transition-transform group-hover:scale-102" width="180" height="40" />
       </a>
 
-      <!-- DESKTOP NAVIGATION -->
-      <nav class="hidden lg:flex items-center gap-7 xl:gap-9" aria-label="Navigasi Utama">
+      <nav class="hidden lg:flex items-center gap-6 xl:gap-8" aria-label="Navigasi Utama">
         <a href="/" class="nav-link text-sm font-semibold text-navy hover:text-blue-accent transition-colors py-1">Beranda</a>
-        <a href="/#layanan" class="nav-link text-sm font-semibold text-navy hover:text-blue-accent transition-colors py-1">Layanan</a>
+        <a href="/layanan/" class="nav-link text-sm font-semibold text-navy hover:text-blue-accent transition-colors py-1">Layanan</a>
         <a href="/portofolio/" class="nav-link text-sm font-semibold text-navy hover:text-blue-accent transition-colors py-1">Portofolio</a>
         <a href="/#harga" class="nav-link text-sm font-semibold text-navy hover:text-blue-accent transition-colors py-1">Harga</a>
         <a href="/estimasi/" class="nav-link text-sm font-semibold text-navy hover:text-blue-accent transition-colors py-1">Estimasi</a>
-        <a href="/blog/" class="nav-link active text-sm font-semibold transition-colors py-1">Blog</a>
+        <a href="/blog/" class="nav-link active text-sm font-bold text-blue-accent transition-colors py-1">Blog</a>
+        <a href="/tentang/" class="nav-link text-sm font-semibold text-navy hover:text-blue-accent transition-colors py-1">Tentang Kami</a>
         <a href="/#faq" class="nav-link text-sm font-semibold text-navy hover:text-blue-accent transition-colors py-1">FAQ</a>
       </nav>
 
-      <!-- CTA & MOBILE TOGGLE -->
       <div class="flex items-center gap-3">
         <a href="https://wa.me/6285861510159?text=Halo%20AURA%20GLOBAL,%20saya%20ingin%20konsultasi%20pembuatan%20website" target="_blank" rel="noopener noreferrer" class="btn-pill-navy hidden sm:inline-flex px-5 py-2.5 text-xs sm:text-sm font-semibold shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-accent">
           <span>Konsultasi WhatsApp</span>
           <svg class="w-4 h-4 fill-current text-[#25D366]" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2Z"/></svg>
         </a>
         
-        <button onclick="toggleMobileMenu()" class="lg:hidden text-navy hover:text-blue-accent p-2 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-accent flex items-center justify-center" aria-label="Buka menu navigasi" aria-expanded="false">
+        <button onclick="toggleMobileMenu()" class="lg:hidden text-navy hover:text-blue-accent p-2 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-accent flex items-center justify-center" aria-label="Buka menu navigasi" aria-expanded="false" id="menuToggleBtn">
           <svg class="w-7 h-7 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path id="menu-icon-path" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
@@ -133,11 +135,12 @@
   <!-- MOBILE MENU DRAWER -->
   <div id="mobile-menu" class="fixed top-20 left-0 w-full bg-white border-b border-border-card z-30 hidden flex-col px-6 py-6 gap-3 shadow-xl lg:hidden transition-all duration-300">
     <a href="/" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">Beranda</a>
-    <a href="/#layanan" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">Layanan</a>
+    <a href="/layanan/" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">Layanan</a>
     <a href="/portofolio/" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">Portofolio</a>
     <a href="/#harga" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">Paket Harga</a>
     <a href="/estimasi/" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">Estimasi Harga</a>
     <a href="/blog/" onclick="closeMobileMenu()" class="text-base font-bold text-blue-accent py-2.5 border-b border-surface-alt">Blog</a>
+    <a href="/tentang/" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">Tentang Kami</a>
     <a href="/#faq" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">FAQ</a>
     <div class="pt-3">
       <a href="https://wa.me/6285861510159?text=Halo%20AURA%20GLOBAL,%20saya%20ingin%20konsultasi%20pembuatan%20website" target="_blank" rel="noopener noreferrer" class="btn-pill-navy w-full py-3.5 text-sm font-semibold flex items-center justify-center gap-2">
@@ -149,116 +152,212 @@
 
   <main class="w-full flex-grow">
 
-    <!-- HERO HEADER (PERSIS SESUAI REFERENSI BLOG LIST) -->
+    <!-- HERO HEADER -->
     <section class="w-full pt-12 pb-12 lg:pt-16 lg:pb-16 bg-white border-b border-border-card">
       <div class="site-container text-center max-w-3xl mx-auto">
-        <h1 class="text-4xl sm:text-5xl font-extrabold text-navy tracking-tight mb-4">
-          Blog
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-light text-blue-accent text-xs font-bold tracking-wide uppercase mb-4 border border-blue-border">
+          <span>Wawasan &amp; Edukasi Digital</span>
+        </div>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-navy tracking-tight mb-4">
+          Artikel &amp; Panduan Website Bisnis
         </h1>
         <p class="text-base sm:text-lg text-body-text leading-relaxed">
-          Tips, strategi, dan insight seputar website untuk mengembangkan bisnis Anda.
+          Kumpulan panduan praktis, strategi kehadiran online, optimasi kecepatan seluler, dan wawasan teknis untuk memajukan bisnis dan UMKM Anda.
         </p>
       </div>
     </section>
 
-    <!-- ARTICLE GRID SECTION (2 COLS HP / 3 COLS DESKTOP PERSIS REFERENSI) -->
-    <section class="w-full py-12 lg:py-20 bg-surface-alt">
+    <!-- ARTICLE GRID SECTION (6 ARTICLES) -->
+    <section class="w-full py-12 lg:py-20 bg-surface-alt border-b border-border-card">
       <div class="site-container">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          
-          <!-- Artikel 1 -->
-          <article class="card-clean flex flex-col justify-between group overflow-hidden bg-white">
-            <a href="/blog/mengapa-bisnis-perlu-website/" class="block overflow-hidden relative">
-              <img src="/assets/blog-cover-1.svg" alt="Mengapa Bisnis dan UMKM Perlu Memiliki Website Sendiri" class="w-full h-48 sm:h-52 object-cover transition-transform duration-300 group-hover:scale-103" width="800" height="450" loading="lazy" />
-              <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-navy text-[11px] font-bold px-2.5 py-1 rounded-full shadow-xs border border-border-card">
-                Strategi Bisnis
-              </div>
-            </a>
-            <div class="p-5 sm:p-6 flex flex-col flex-grow justify-between">
-              <div>
-                <a href="/blog/mengapa-bisnis-perlu-website/">
-                  <h2 class="text-base sm:text-lg font-bold text-navy mb-2 line-clamp-2 leading-snug group-hover:text-blue-accent transition-colors">
-                    Mengapa Bisnis dan UMKM Perlu Memiliki Website Sendiri?
-                  </h2>
-                </a>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+
+          <!-- Card 1: Mengapa Bisnis dan UMKM Perlu Memiliki Website Sendiri? -->
+          <article class="card-clean flex flex-col justify-between group overflow-hidden bg-white hover:border-blue-accent transition-all">
+            <div>
+              <a href="/blog/mengapa-bisnis-perlu-website/" class="block w-full bg-[#EBF3FE] overflow-hidden relative" aria-label="Mengapa Bisnis dan UMKM Perlu Memiliki Website Sendiri?">
+                <img src="/assets/blog/blog-1-cover.webp" alt="Pemilik usaha kecil dan tim kerja sedang mendiskusikan strategi digital di ruang kerja modern" class="w-full h-48 sm:h-52 object-cover transition-transform duration-300 group-hover:scale-103" width="600" height="340" loading="lazy" />
+                <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-navy text-[11px] font-bold px-2.5 py-1 rounded-full shadow-xs border border-border-card">
+                  Strategi Bisnis
+                </div>
+              </a>
+              <div class="p-6">
+                <div class="flex items-center gap-2 mb-2 text-xs font-semibold text-muted-text">
+                  <span class="text-blue-accent font-bold">Strategi Bisnis</span>
+                  <span>•</span>
+                  <span>7 menit baca</span>
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold text-navy mb-3 group-hover:text-blue-accent transition-colors line-clamp-2 leading-snug">
+                  <a href="/blog/mengapa-bisnis-perlu-website/">Mengapa Bisnis dan UMKM Perlu Memiliki Website Sendiri?</a>
+                </h3>
                 <p class="text-xs sm:text-sm text-body-text line-clamp-2 leading-relaxed mb-4">
-                  Pelajari alasan strategis mengapa website resmi memberikan kredibilitas lebih tinggi dibanding hanya mengandalkan media sosial semata.
+                  Memiliki akun media sosial saja tidak lagi cukup di tahun 2026. Pelajari mengapa website resmi berdomain sendiri menjadi fondasi reputasi, aset kendali penuh, dan magnet pelanggan baru bagi bisnis Anda.
                 </p>
               </div>
-              <div class="pt-4 border-t border-border-card flex items-center justify-between text-xs text-muted-text">
-                <div class="flex items-center gap-2">
-                  <div class="w-6 h-6 rounded-full bg-blue-light text-blue-accent font-bold text-[10px] flex items-center justify-center">
-                    AG
-                  </div>
-                  <span class="font-semibold text-navy">Tim AURA GLOBAL</span>
-                </div>
-                <span>14 Okt 2026</span>
-              </div>
+            </div>
+            <div class="px-6 pb-6 pt-0 flex items-center justify-between border-t border-border-card/60 pt-4">
+              <span class="text-xs text-muted-text font-medium">15 Oktober 2026</span>
+              <a href="/blog/mengapa-bisnis-perlu-website/" class="text-xs sm:text-sm font-bold text-blue-accent hover:text-blue-hover inline-flex items-center gap-1 group-hover:gap-1.5 transition-all">
+                <span>Baca Selengkapnya</span>
+                <span>→</span>
+              </a>
             </div>
           </article>
-
-          <!-- Artikel 2 -->
-          <article class="card-clean flex flex-col justify-between group overflow-hidden bg-white">
-            <a href="/blog/cara-mempercepat-website-di-smartphone/" class="block overflow-hidden relative">
-              <img src="/assets/blog-cover-2.svg" alt="Panduan Mempercepat Akses Website agar Nyaman Dibuka di HP" class="w-full h-48 sm:h-52 object-cover transition-transform duration-300 group-hover:scale-103" width="800" height="450" loading="lazy" />
-              <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-navy text-[11px] font-bold px-2.5 py-1 rounded-full shadow-xs border border-border-card">
-                Tips Teknis
-              </div>
-            </a>
-            <div class="p-5 sm:p-6 flex flex-col flex-grow justify-between">
-              <div>
-                <a href="/blog/cara-mempercepat-website-di-smartphone/">
-                  <h2 class="text-base sm:text-lg font-bold text-navy mb-2 line-clamp-2 leading-snug group-hover:text-blue-accent transition-colors">
-                    Panduan Mempercepat Akses Website agar Nyaman Dibuka di HP
-                  </h2>
-                </a>
+          <!-- Card 2: Panduan Mempercepat Akses Website agar Nyaman Dibuka di HP -->
+          <article class="card-clean flex flex-col justify-between group overflow-hidden bg-white hover:border-blue-accent transition-all">
+            <div>
+              <a href="/blog/cara-mempercepat-website-di-smartphone/" class="block w-full bg-[#EBF3FE] overflow-hidden relative" aria-label="Panduan Mempercepat Akses Website agar Nyaman Dibuka di HP">
+                <img src="/assets/blog/blog-2-cover.webp" alt="Seseorang sedang mengoperasikan smartphone dengan tampilan antarmuka web modern dan responsif" class="w-full h-48 sm:h-52 object-cover transition-transform duration-300 group-hover:scale-103" width="600" height="340" loading="lazy" />
+                <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-navy text-[11px] font-bold px-2.5 py-1 rounded-full shadow-xs border border-border-card">
+                  Tips Teknis
+                </div>
+              </a>
+              <div class="p-6">
+                <div class="flex items-center gap-2 mb-2 text-xs font-semibold text-muted-text">
+                  <span class="text-blue-accent font-bold">Tips Teknis</span>
+                  <span>•</span>
+                  <span>8 menit baca</span>
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold text-navy mb-3 group-hover:text-blue-accent transition-colors line-clamp-2 leading-snug">
+                  <a href="/blog/cara-mempercepat-website-di-smartphone/">Panduan Mempercepat Akses Website agar Nyaman Dibuka di HP</a>
+                </h3>
                 <p class="text-xs sm:text-sm text-body-text line-clamp-2 leading-relaxed mb-4">
-                  Kecepatan akses di layar smartphone sangat menentukan kenyamanan calon pelanggan. Simak teknik praktis optimasi aset dan kode.
+                  Lebih dari 80% pengunjung web di Indonesia mengakses melalui layar ponsel. Pelajari teknik kompresi WebP, eliminasi beban plugin, font swap, dan Core Web Vitals agar website terbuka seketika.
                 </p>
               </div>
-              <div class="pt-4 border-t border-border-card flex items-center justify-between text-xs text-muted-text">
-                <div class="flex items-center gap-2">
-                  <div class="w-6 h-6 rounded-full bg-blue-light text-blue-accent font-bold text-[10px] flex items-center justify-center">
-                    AG
-                  </div>
-                  <span class="font-semibold text-navy">Tim AURA GLOBAL</span>
-                </div>
-                <span>14 Okt 2026</span>
-              </div>
+            </div>
+            <div class="px-6 pb-6 pt-0 flex items-center justify-between border-t border-border-card/60 pt-4">
+              <span class="text-xs text-muted-text font-medium">15 Oktober 2026</span>
+              <a href="/blog/cara-mempercepat-website-di-smartphone/" class="text-xs sm:text-sm font-bold text-blue-accent hover:text-blue-hover inline-flex items-center gap-1 group-hover:gap-1.5 transition-all">
+                <span>Baca Selengkapnya</span>
+                <span>→</span>
+              </a>
             </div>
           </article>
-
-          <!-- Artikel 3 -->
-          <article class="card-clean flex flex-col justify-between group overflow-hidden bg-white">
-            <a href="/blog/persiapan-sebelum-membuat-website-bisnis/" class="block overflow-hidden relative">
-              <img src="/assets/blog-cover-3.svg" alt="Hal Penting yang Perlu Disiapkan Sebelum Memesan Jasa Website" class="w-full h-48 sm:h-52 object-cover transition-transform duration-300 group-hover:scale-103" width="800" height="450" loading="lazy" />
-              <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-navy text-[11px] font-bold px-2.5 py-1 rounded-full shadow-xs border border-border-card">
-                Panduan Klien
-              </div>
-            </a>
-            <div class="p-5 sm:p-6 flex flex-col flex-grow justify-between">
-              <div>
-                <a href="/blog/persiapan-sebelum-membuat-website-bisnis/">
-                  <h2 class="text-base sm:text-lg font-bold text-navy mb-2 line-clamp-2 leading-snug group-hover:text-blue-accent transition-colors">
-                    Hal Penting yang Perlu Disiapkan Sebelum Memesan Jasa Website
-                  </h2>
-                </a>
+          <!-- Card 3: Hal Penting yang Perlu Disiapkan Sebelum Memesan Jasa Website -->
+          <article class="card-clean flex flex-col justify-between group overflow-hidden bg-white hover:border-blue-accent transition-all">
+            <div>
+              <a href="/blog/persiapan-sebelum-membuat-website-bisnis/" class="block w-full bg-[#EBF3FE] overflow-hidden relative" aria-label="Hal Penting yang Perlu Disiapkan Sebelum Memesan Jasa Website">
+                <img src="/assets/blog/blog-3-cover.webp" alt="Rencana kerja dan proposal bisnis yang sedang ditinjau bersama di meja kerja profesional" class="w-full h-48 sm:h-52 object-cover transition-transform duration-300 group-hover:scale-103" width="600" height="340" loading="lazy" />
+                <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-navy text-[11px] font-bold px-2.5 py-1 rounded-full shadow-xs border border-border-card">
+                  Panduan Klien
+                </div>
+              </a>
+              <div class="p-6">
+                <div class="flex items-center gap-2 mb-2 text-xs font-semibold text-muted-text">
+                  <span class="text-blue-accent font-bold">Panduan Klien</span>
+                  <span>•</span>
+                  <span>7 menit baca</span>
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold text-navy mb-3 group-hover:text-blue-accent transition-colors line-clamp-2 leading-snug">
+                  <a href="/blog/persiapan-sebelum-membuat-website-bisnis/">Hal Penting yang Perlu Disiapkan Sebelum Memesan Jasa Website</a>
+                </h3>
                 <p class="text-xs sm:text-sm text-body-text line-clamp-2 leading-relaxed mb-4">
-                  Mempersiapkan materi bisnis sejak awal membuat proses pembuatan website berjalan jauh lebih cepat, rapi, dan terarah.
+                  Mempersiapkan materi sejak awal membuat proyek website berjalan cepat, hemat waktu revisi, dan tepat sasaran. Simak 6 persiapan wajib sebelum menghubungi web developer.
                 </p>
               </div>
-              <div class="pt-4 border-t border-border-card flex items-center justify-between text-xs text-muted-text">
-                <div class="flex items-center gap-2">
-                  <div class="w-6 h-6 rounded-full bg-blue-light text-blue-accent font-bold text-[10px] flex items-center justify-center">
-                    AG
-                  </div>
-                  <span class="font-semibold text-navy">Tim AURA GLOBAL</span>
-                </div>
-                <span>14 Okt 2026</span>
-              </div>
+            </div>
+            <div class="px-6 pb-6 pt-0 flex items-center justify-between border-t border-border-card/60 pt-4">
+              <span class="text-xs text-muted-text font-medium">14 Oktober 2026</span>
+              <a href="/blog/persiapan-sebelum-membuat-website-bisnis/" class="text-xs sm:text-sm font-bold text-blue-accent hover:text-blue-hover inline-flex items-center gap-1 group-hover:gap-1.5 transition-all">
+                <span>Baca Selengkapnya</span>
+                <span>→</span>
+              </a>
             </div>
           </article>
-
+          <!-- Card 4: Faktor yang Memengaruhi Biaya Pembuatan Website untuk Bisnis -->
+          <article class="card-clean flex flex-col justify-between group overflow-hidden bg-white hover:border-blue-accent transition-all">
+            <div>
+              <a href="/blog/faktor-biaya-pembuatan-website/" class="block w-full bg-[#EBF3FE] overflow-hidden relative" aria-label="Faktor yang Memengaruhi Biaya Pembuatan Website untuk Bisnis">
+                <img src="/assets/blog/blog-4-cover.webp" alt="Kalkulator, kacamata, dan laporan finansial biaya investasi bisnis di meja kantor" class="w-full h-48 sm:h-52 object-cover transition-transform duration-300 group-hover:scale-103" width="600" height="340" loading="lazy" />
+                <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-navy text-[11px] font-bold px-2.5 py-1 rounded-full shadow-xs border border-border-card">
+                  Estimasi Biaya
+                </div>
+              </a>
+              <div class="p-6">
+                <div class="flex items-center gap-2 mb-2 text-xs font-semibold text-muted-text">
+                  <span class="text-blue-accent font-bold">Estimasi Biaya</span>
+                  <span>•</span>
+                  <span>8 menit baca</span>
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold text-navy mb-3 group-hover:text-blue-accent transition-colors line-clamp-2 leading-snug">
+                  <a href="/blog/faktor-biaya-pembuatan-website/">Faktor yang Memengaruhi Biaya Pembuatan Website untuk Bisnis</a>
+                </h3>
+                <p class="text-xs sm:text-sm text-body-text line-clamp-2 leading-relaxed mb-4">
+                  Mengapa harga jasa bikin website bisa berbeda-beda mulai Rp500 ribu hingga jutaan rupiah? Simak bedah komponen domain, hosting cloud, jumlah halaman, dan fitur khusus secara transparan.
+                </p>
+              </div>
+            </div>
+            <div class="px-6 pb-6 pt-0 flex items-center justify-between border-t border-border-card/60 pt-4">
+              <span class="text-xs text-muted-text font-medium">15 Oktober 2026</span>
+              <a href="/blog/faktor-biaya-pembuatan-website/" class="text-xs sm:text-sm font-bold text-blue-accent hover:text-blue-hover inline-flex items-center gap-1 group-hover:gap-1.5 transition-all">
+                <span>Baca Selengkapnya</span>
+                <span>→</span>
+              </a>
+            </div>
+          </article>
+          <!-- Card 5: Cara Memilih Nama Domain dan Hosting untuk Bisnis Anda -->
+          <article class="card-clean flex flex-col justify-between group overflow-hidden bg-white hover:border-blue-accent transition-all">
+            <div>
+              <a href="/blog/cara-memilih-domain-dan-hosting/" class="block w-full bg-[#EBF3FE] overflow-hidden relative" aria-label="Cara Memilih Nama Domain dan Hosting untuk Bisnis Anda">
+                <img src="/assets/blog/blog-5-cover.webp" alt="Deretan rak server cloud hosting modern dengan lampu indikator jaringan aktif" class="w-full h-48 sm:h-52 object-cover transition-transform duration-300 group-hover:scale-103" width="600" height="340" loading="lazy" />
+                <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-navy text-[11px] font-bold px-2.5 py-1 rounded-full shadow-xs border border-border-card">
+                  Infrastruktur Web
+                </div>
+              </a>
+              <div class="p-6">
+                <div class="flex items-center gap-2 mb-2 text-xs font-semibold text-muted-text">
+                  <span class="text-blue-accent font-bold">Infrastruktur Web</span>
+                  <span>•</span>
+                  <span>8 menit baca</span>
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold text-navy mb-3 group-hover:text-blue-accent transition-colors line-clamp-2 leading-snug">
+                  <a href="/blog/cara-memilih-domain-dan-hosting/">Cara Memilih Nama Domain dan Hosting untuk Bisnis Anda</a>
+                </h3>
+                <p class="text-xs sm:text-sm text-body-text line-clamp-2 leading-relaxed mb-4">
+                  Domain dan hosting adalah pondasi tak terlihat dari website bisnis Anda. Pelajari cara memilih ekstensi domain yang tepat (.com vs .id), tipe hosting cloud cepat, dan pentingnya sertifikat SSL.
+                </p>
+              </div>
+            </div>
+            <div class="px-6 pb-6 pt-0 flex items-center justify-between border-t border-border-card/60 pt-4">
+              <span class="text-xs text-muted-text font-medium">15 Oktober 2026</span>
+              <a href="/blog/cara-memilih-domain-dan-hosting/" class="text-xs sm:text-sm font-bold text-blue-accent hover:text-blue-hover inline-flex items-center gap-1 group-hover:gap-1.5 transition-all">
+                <span>Baca Selengkapnya</span>
+                <span>→</span>
+              </a>
+            </div>
+          </article>
+          <!-- Card 6: SEO Dasar untuk UMKM: Langkah Praktis agar Website Muncul di Google -->
+          <article class="card-clean flex flex-col justify-between group overflow-hidden bg-white hover:border-blue-accent transition-all">
+            <div>
+              <a href="/blog/panduan-seo-dasar-umkm/" class="block w-full bg-[#EBF3FE] overflow-hidden relative" aria-label="SEO Dasar untuk UMKM: Langkah Praktis agar Website Muncul di Google">
+                <img src="/assets/blog/blog-6-cover.webp" alt="Layar laptop menampilkan halaman pencarian Google dan grafik kenaikan pengunjung organik" class="w-full h-48 sm:h-52 object-cover transition-transform duration-300 group-hover:scale-103" width="600" height="340" loading="lazy" />
+                <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-navy text-[11px] font-bold px-2.5 py-1 rounded-full shadow-xs border border-border-card">
+                  Optimasi Mesin Pencari
+                </div>
+              </a>
+              <div class="p-6">
+                <div class="flex items-center gap-2 mb-2 text-xs font-semibold text-muted-text">
+                  <span class="text-blue-accent font-bold">Optimasi Mesin Pencari</span>
+                  <span>•</span>
+                  <span>9 menit baca</span>
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold text-navy mb-3 group-hover:text-blue-accent transition-colors line-clamp-2 leading-snug">
+                  <a href="/blog/panduan-seo-dasar-umkm/">SEO Dasar untuk UMKM: Langkah Praktis agar Website Muncul di Google</a>
+                </h3>
+                <p class="text-xs sm:text-sm text-body-text line-clamp-2 leading-relaxed mb-4">
+                  Tidak perlu trik manipulasi rumit. Pelajari langkah-langkah SEO dasar yang realistis dan terbukti: struktur judul, konten bermanfaat, mobile-friendly, Google Business Profile, dan Search Console.
+                </p>
+              </div>
+            </div>
+            <div class="px-6 pb-6 pt-0 flex items-center justify-between border-t border-border-card/60 pt-4">
+              <span class="text-xs text-muted-text font-medium">15 Oktober 2026</span>
+              <a href="/blog/panduan-seo-dasar-umkm/" class="text-xs sm:text-sm font-bold text-blue-accent hover:text-blue-hover inline-flex items-center gap-1 group-hover:gap-1.5 transition-all">
+                <span>Baca Selengkapnya</span>
+                <span>→</span>
+              </a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -266,17 +365,16 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="w-full bg-navy-dark text-white pt-16 pb-12 border-t border-navy-surface">
+  <footer class="w-full bg-navy text-white pt-16 pb-12 border-t border-navy-dark">
     <div class="site-container">
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-12 border-b border-white/10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 pb-12 border-b border-white/10">
         
         <div class="lg:col-span-5">
-          <a href="/" class="inline-block mb-4" aria-label="AURA GLOBAL">
+          <a href="/" class="inline-block mb-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-accent rounded-lg p-0.5" aria-label="AURA GLOBAL Beranda">
             <img src="/assets/logo.svg" alt="AURA GLOBAL" class="h-9 w-auto object-contain brightness-0 invert" width="180" height="40" />
           </a>
           <p class="text-xs sm:text-sm text-gray-400 leading-relaxed mb-6 max-w-sm">
-            Studio pembuatan website profesional untuk UMKM, profil perusahaan, dan toko online. Fokus pada desain modern, kecepatan akses di ponsel, dan kemudahan konversi penjualan.
+            Studio pembuatan website profesional untuk UMKM, profil perusahaan, dan toko online di Majalengka dan seluruh Indonesia.
           </p>
           <div class="space-y-2.5 text-xs text-gray-300">
             <div class="flex items-center gap-2">
@@ -298,11 +396,12 @@
           <h4 class="text-xs font-extrabold uppercase tracking-wider text-white mb-4">Navigasi</h4>
           <ul class="space-y-2 text-xs sm:text-sm text-gray-400">
             <li><a href="/" class="hover:text-white transition-colors">Beranda</a></li>
-            <li><a href="/#layanan" class="hover:text-white transition-colors">Layanan</a></li>
+            <li><a href="/layanan/" class="hover:text-white transition-colors">Layanan</a></li>
             <li><a href="/portofolio/" class="hover:text-white transition-colors">Portofolio</a></li>
             <li><a href="/#harga" class="hover:text-white transition-colors">Paket Harga</a></li>
-            <li><a href="/estimasi/" class="hover:text-white transition-colors">Estimasi</a></li>
-            <li><a href="/blog/" class="hover:text-white transition-colors text-white font-semibold">Blog</a></li>
+            <li><a href="/estimasi/" class="hover:text-white transition-colors">Estimasi Harga</a></li>
+            <li><a href="/blog/" class="hover:text-white transition-colors text-white font-semibold">Blog &amp; Insight</a></li>
+            <li><a href="/tentang/" class="hover:text-white transition-colors">Tentang Kami</a></li>
             <li><a href="/#faq" class="hover:text-white transition-colors">FAQ</a></li>
           </ul>
         </div>
@@ -310,12 +409,13 @@
         <div class="lg:col-span-3">
           <h4 class="text-xs font-extrabold uppercase tracking-wider text-white mb-4">Layanan Kami</h4>
           <ul class="space-y-2 text-xs sm:text-sm text-gray-400">
-            <li><a href="/#layanan" class="hover:text-white transition-colors">Company Profile</a></li>
-            <li><a href="/#layanan" class="hover:text-white transition-colors">Website UMKM &amp; Bisnis Lokal</a></li>
-            <li><a href="/#layanan" class="hover:text-white transition-colors">Toko Online &amp; Katalog Digital</a></li>
-            <li><a href="/#layanan" class="hover:text-white transition-colors">Landing Page Iklan</a></li>
-            <li><a href="/#layanan" class="hover:text-white transition-colors">Redesign Website Lama</a></li>
-            <li><a href="/#layanan" class="hover:text-white transition-colors">Pemeliharaan &amp; Optimasi SEO</a></li>
+            <li><a href="/layanan/" class="hover:text-white transition-colors">Company Profile</a></li>
+            <li><a href="/layanan/" class="hover:text-white transition-colors">Website UMKM &amp; Bisnis Lokal</a></li>
+            <li><a href="/layanan/" class="hover:text-white transition-colors">Toko Online &amp; Katalog Digital</a></li>
+            <li><a href="/layanan/" class="hover:text-white transition-colors">Landing Page Iklan</a></li>
+            <li><a href="/layanan/aplikasi-web-sistem-informasi/" class="hover:text-white transition-colors">Aplikasi Web &amp; Sistem Informasi</a></li>
+            <li><a href="/layanan/jasa-iot-arduino-esp/" class="hover:text-white transition-colors">Jasa IoT Arduino &amp; ESP</a></li>
+            <li><a href="/layanan/undangan-digital-pernikahan/" class="hover:text-white transition-colors">Undangan Digital Pernikahan</a></li>
           </ul>
         </div>
 
@@ -346,9 +446,6 @@
     <span class="font-bold tracking-wide">Konsultasi</span>
   </a>
 
-  <!-- SCRIPTS -->
   <script src="/script.js"></script>
-
 </body>
 </html>
-

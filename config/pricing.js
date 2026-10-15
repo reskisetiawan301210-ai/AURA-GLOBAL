@@ -44,6 +44,30 @@ const pricingConfig = {
       basePriceMin: 1200000,
       basePriceMax: 1800000,
       suggestedPackage: "Paket Professional atau Premium"
+    },
+    {
+      id: "aplikasi-web",
+      name: "Aplikasi Web & Sistem Informasi (Laravel / PHP)",
+      desc: "Sistem inventaris, kasir, keanggotaan, atau portal database internal.",
+      basePriceMin: 2500000,
+      basePriceMax: 6000000,
+      suggestedPackage: "Proyek Custom (Konsultasi Spesifikasi)"
+    },
+    {
+      id: "iot-system",
+      name: "Sistem IoT & Monitoring Realtime (Arduino / ESP32)",
+      desc: "Integrasi sensor fisik, mikrokontroler, dan dashboard web real-time.",
+      basePriceMin: 3000000,
+      basePriceMax: 8000000,
+      suggestedPackage: "Proyek IoT Khusus (Konsultasi Teknis)"
+    },
+    {
+      id: "undangan-digital",
+      name: "Undangan Digital & Website Pernikahan",
+      desc: "Undangan mobile-first dengan nama tamu personal, RSVP, dan amplop digital.",
+      basePriceMin: 150000,
+      basePriceMax: 450000,
+      suggestedPackage: "Paket Undangan Digital (Mulai Rp150.000)"
     }
   ],
   pages: [

@@ -19,7 +19,7 @@
   <meta property="og:url" content="https://auraglobal.my.id/" />
   <meta property="og:title" content="AURA GLOBAL — Jasa Pembuatan Website Profesional &amp; Solusi Digital" />
   <meta property="og:description" content="Jasa pembuatan website modern, responsif, dan mudah ditemukan di mesin pencari. Cocok untuk perusahaan, UMKM, hingga personal branding. Harga mulai Rp500.000." />
-  <meta property="og:image" content="https://auraglobal.my.id/assets/hero-mockup.png" />
+  <meta property="og:image" content="https://auraglobal.my.id/assets/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:site_name" content="AURA GLOBAL" />
@@ -30,11 +30,14 @@
   <meta property="twitter:url" content="https://auraglobal.my.id/" />
   <meta property="twitter:title" content="AURA GLOBAL — Jasa Pembuatan Website Profesional" />
   <meta property="twitter:description" content="Jasa pembuatan website modern, responsif, dan mudah ditemukan di mesin pencari. Desain rapi dan terhubung ke WhatsApp." />
-  <meta property="twitter:image" content="https://auraglobal.my.id/assets/hero-mockup.png" />
+  <meta property="twitter:image" content="https://auraglobal.my.id/assets/og-image.png" />
 
-  <!-- Favicons -->
+  <!-- Favicons Suite -->
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
-  <link rel="apple-touch-icon" href="/assets/favicon.svg" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
   
   <!-- Fonts Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -172,7 +175,7 @@
 
       <!-- DESKTOP NAVIGATION -->
       <nav class="hidden lg:flex items-center gap-6 xl:gap-8" aria-label="Navigasi Utama">
-        <a href="#" class="nav-link active text-sm font-semibold transition-colors py-1">Beranda</a>
+        <a href="/" class="nav-link active text-sm font-semibold transition-colors py-1">Beranda</a>
         <a href="#layanan" class="nav-link text-sm font-semibold text-navy hover:text-blue-accent transition-colors py-1">Layanan</a>
         <a href="#portofolio" class="nav-link text-sm font-semibold text-navy hover:text-blue-accent transition-colors py-1">Portofolio</a>
         <a href="#harga" class="nav-link text-sm font-semibold text-navy hover:text-blue-accent transition-colors py-1">Harga</a>
@@ -199,7 +202,7 @@
 
   <!-- MOBILE MENU DRAWER -->
   <div id="mobile-menu" class="fixed top-20 left-0 w-full bg-white border-b border-border-card z-30 hidden flex-col px-6 py-6 gap-3 shadow-xl lg:hidden transition-all duration-300">
-    <a href="#" onclick="closeMobileMenu()" class="text-base font-bold text-blue-accent py-2.5 border-b border-surface-alt">Beranda</a>
+    <a href="/" onclick="closeMobileMenu()" class="text-base font-bold text-blue-accent py-2.5 border-b border-surface-alt">Beranda</a>
     <a href="#layanan" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">Layanan</a>
     <a href="#portofolio" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">Portofolio</a>
     <a href="#harga" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">Paket Harga</a>
@@ -217,68 +220,64 @@
   <main class="w-full">
 
     <!-- ========================================================
-         SECTION 1: HERO (DESKTOP & MOBILE SPESIFIK SESUAI REFERENSI)
+         SECTION 1: HERO (SINGLE RESPONSIVE H1 IN DOM)
          ======================================================== -->
     <section id="beranda" class="w-full pt-10 pb-16 lg:pt-16 lg:pb-24 bg-white relative overflow-hidden border-b border-border-card">
       <div class="site-container relative z-10">
 
-        <!-- DESKTOP 2-COLUMN HERO (lg:flex) -->
-        <div class="hidden lg:grid lg:grid-cols-12 lg:gap-12 lg:items-center">
+        <!-- SINGLE RESPONSIVE GRID -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 lg:gap-12 lg:items-center">
           
-          <!-- LEFT COLUMN (TEXT ±45%) -->
-          <div class="lg:col-span-6 xl:col-span-6 flex flex-col items-start text-left">
+          <!-- LEFT COLUMN: Headline, Intro, Buttons & Desktop Features -->
+          <div class="lg:col-span-6 flex flex-col items-center lg:items-start text-center lg:text-left order-1">
             
             <!-- BADGE PILL -->
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-light text-blue-accent text-xs font-bold tracking-wide uppercase mb-6 border border-blue-border">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-light text-blue-accent text-xs font-bold tracking-wide uppercase mb-5 lg:mb-6 border border-blue-border">
               <span>Jasa Pembuatan Website Profesional</span>
             </div>
 
-            <!-- H1 HEADLINE -->
-            <h1 class="text-4xl xl:text-[52px] font-extrabold text-navy leading-[1.12] tracking-tight mb-5">
+            <!-- SINGLE RESPONSIVE H1 -->
+            <h1 class="text-3xl sm:text-4xl xl:text-[52px] font-extrabold text-navy leading-[1.16] lg:leading-[1.12] tracking-tight mb-4 lg:mb-5">
               Website Profesional untuk Mengembangkan <span class="text-blue-accent">Bisnis Anda.</span>
             </h1>
 
             <!-- DESCRIPTION -->
-            <p class="text-base xl:text-lg text-body-text leading-relaxed mb-8 max-w-xl">
+            <p class="text-sm sm:text-base xl:text-lg text-body-text leading-relaxed mb-6 lg:mb-8 max-w-md lg:max-w-xl">
               AURA GLOBAL membantu bisnis Anda memiliki website yang modern, responsif, dan mudah ditemukan di mesin pencari. Cocok untuk perusahaan, UMKM, hingga personal branding.
             </p>
 
             <!-- ACTION BUTTONS -->
-            <div class="flex flex-wrap items-center gap-4 mb-12">
-              <a href="https://wa.me/6285861510159?text=Halo%20AURA%20GLOBAL,%20saya%20ingin%20konsultasi%20pembuatan%20website" target="_blank" rel="noopener noreferrer" class="btn-pill-navy px-6 py-3.5 text-sm xl:text-base font-semibold shadow-md flex items-center gap-2.5">
+            <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto mb-8 lg:mb-10">
+              <a href="https://wa.me/6285861510159?text=Halo%20AURA%20GLOBAL,%20saya%20ingin%20konsultasi%20pembuatan%20website" target="_blank" rel="noopener noreferrer" class="btn-pill-navy w-full sm:w-auto px-6 py-3.5 text-xs sm:text-sm xl:text-base font-semibold shadow-md flex items-center justify-center gap-2.5">
                 <span>Konsultasi Gratis via WhatsApp</span>
-                <svg class="w-5 h-5 fill-current text-[#25D366]" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2Z"/></svg>
+                <svg class="w-4 h-4 sm:w-5 sm:h-5 fill-current text-[#25D366]" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2Z"/></svg>
               </a>
-              <a href="#portofolio" class="btn-pill-outline px-6 py-3.5 text-sm xl:text-base font-semibold flex items-center gap-2">
+              <a href="#portofolio" class="btn-pill-outline w-full sm:w-auto px-6 py-3.5 text-xs sm:text-sm xl:text-base font-semibold flex items-center justify-center gap-2">
                 <span>Lihat Portofolio</span>
                 <span class="text-blue-accent font-bold">→</span>
               </a>
             </div>
 
-            <!-- 4 KEUNGGULAN (GRID 2x2) -->
-            <div class="grid grid-cols-2 gap-x-6 gap-y-4 pt-4 border-t border-border-card w-full">
-              <!-- Item 1 -->
+            <!-- 4 KEUNGGULAN (DESKTOP VERSION) -->
+            <div class="hidden lg:grid grid-cols-2 gap-x-6 gap-y-4 pt-6 border-t border-border-card w-full">
               <div class="flex items-center gap-3">
                 <div class="w-10 h-10 rounded-full bg-surface-alt border border-border-card flex items-center justify-center flex-shrink-0 text-blue-accent">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                 </div>
                 <span class="text-sm font-bold text-navy">Desain Modern &amp; Responsif</span>
               </div>
-              <!-- Item 2 -->
               <div class="flex items-center gap-3">
                 <div class="w-10 h-10 rounded-full bg-surface-alt border border-border-card flex items-center justify-center flex-shrink-0 text-blue-accent">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                 </div>
                 <span class="text-sm font-bold text-navy">SEO Friendly (Optimasi Dasar)</span>
               </div>
-              <!-- Item 3 -->
               <div class="flex items-center gap-3">
                 <div class="w-10 h-10 rounded-full bg-surface-alt border border-border-card flex items-center justify-center flex-shrink-0 text-blue-accent">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 </div>
                 <span class="text-sm font-bold text-navy">Proses Jelas &amp; Transparan</span>
               </div>
-              <!-- Item 4 -->
               <div class="flex items-center gap-3">
                 <div class="w-10 h-10 rounded-full bg-surface-alt border border-border-card flex items-center justify-center flex-shrink-0 text-blue-accent">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
@@ -289,8 +288,8 @@
 
           </div>
 
-          <!-- RIGHT COLUMN (VISUAL MOCKUP ±55%) -->
-          <div class="lg:col-span-6 xl:col-span-6 relative flex items-center justify-center">
+          <!-- RIGHT COLUMN: Laptop + Smartphone Mockup -->
+          <div class="lg:col-span-6 relative flex items-center justify-center order-2 mb-8 lg:mb-0">
             <!-- Soft Ambient Glow Shape -->
             <div class="hero-ambient-shape"></div>
 
@@ -305,81 +304,46 @@
             </div>
           </div>
 
-        </div>
-
-        <!-- MOBILE SPECIFIC 1-COLUMN HERO (< lg) SESUAI REFERENSI MOBILE -->
-        <div class="lg:hidden flex flex-col items-center text-center px-1">
-          
-          <!-- BADGE PILL -->
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-light text-blue-accent text-xs font-bold tracking-wide uppercase mb-5 border border-blue-border">
-            <span>Jasa Pembuatan Website Profesional</span>
-          </div>
-
-          <!-- H1 HEADLINE (3 Baris Elegan, ~36-40px) -->
-          <h1 class="text-3xl sm:text-4xl font-extrabold text-navy leading-[1.18] tracking-tight mb-4">
-            Website Profesional untuk Mengembangkan <span class="text-blue-accent">Bisnis Anda.</span>
-          </h1>
-
-          <!-- DESCRIPTION -->
-          <p class="text-sm sm:text-base text-body-text leading-relaxed mb-6 max-w-md">
-            AURA GLOBAL membantu bisnis Anda memiliki website yang modern, responsif, dan mudah ditemukan di mesin pencari. Cocok untuk perusahaan, UMKM, hingga personal branding.
-          </p>
-
-          <!-- TWO BUTTONS (BERDAMPINGAN / STACKED) -->
-          <div class="flex flex-col sm:flex-row items-center gap-3 w-full sm:w-auto mb-8">
-            <a href="https://wa.me/6285861510159?text=Halo%20AURA%20GLOBAL,%20saya%20ingin%20konsultasi%20pembuatan%20website" target="_blank" rel="noopener noreferrer" class="btn-pill-navy w-full sm:w-auto px-5 py-3.5 text-xs sm:text-sm font-semibold shadow-md flex items-center justify-center gap-2">
-              <span>Konsultasi Gratis via WhatsApp</span>
-              <svg class="w-4 h-4 fill-current text-[#25D366]" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2Z"/></svg>
-            </a>
-            <a href="#portofolio" class="btn-pill-outline w-full sm:w-auto px-5 py-3.5 text-xs sm:text-sm font-semibold flex items-center justify-center gap-1.5">
-              <span>Lihat Portofolio</span>
-              <span class="text-blue-accent font-bold">→</span>
-            </a>
-          </div>
-
-          <!-- MOCKUP LAPTOP + SMARTPHONE -->
-          <div class="relative w-full max-w-md mx-auto mb-8">
-            <img src="/assets/hero-mockup.webp" alt="Tampilan Website Responsif AURA GLOBAL" class="w-full h-auto object-contain drop-shadow-lg" width="800" height="510" priority="high" />
-          </div>
-
-          <!-- 4 KEUNGGULAN (GRID 2x2 MOBILE DENGAN IKON DI KIRI TEKS) -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 w-full text-left mb-8 max-w-md">
-            <div class="flex items-center gap-3 p-2.5 rounded-xl bg-surface-alt border border-border-card">
-              <div class="w-9 h-9 rounded-full bg-white border border-border-card flex items-center justify-center flex-shrink-0 text-blue-accent">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+          <!-- MOBILE ONLY: 4 Keunggulan & Navy Portfolio Card (order-3) -->
+          <div class="lg:hidden col-span-1 order-3 flex flex-col items-center w-full">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 w-full text-left mb-8 max-w-md">
+              <div class="flex items-center gap-3 p-2.5 rounded-xl bg-surface-alt border border-border-card">
+                <div class="w-9 h-9 rounded-full bg-white border border-border-card flex items-center justify-center flex-shrink-0 text-blue-accent">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                </div>
+                <span class="text-xs sm:text-sm font-bold text-navy">Desain Modern &amp; Responsif</span>
               </div>
-              <span class="text-xs sm:text-sm font-bold text-navy">Desain Modern &amp; Responsif</span>
-            </div>
-            <div class="flex items-center gap-3 p-2.5 rounded-xl bg-surface-alt border border-border-card">
-              <div class="w-9 h-9 rounded-full bg-white border border-border-card flex items-center justify-center flex-shrink-0 text-blue-accent">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+              <div class="flex items-center gap-3 p-2.5 rounded-xl bg-surface-alt border border-border-card">
+                <div class="w-9 h-9 rounded-full bg-white border border-border-card flex items-center justify-center flex-shrink-0 text-blue-accent">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                </div>
+                <span class="text-xs sm:text-sm font-bold text-navy">SEO Friendly (Optimasi Dasar)</span>
               </div>
-              <span class="text-xs sm:text-sm font-bold text-navy">SEO Friendly (Optimasi Dasar)</span>
-            </div>
-            <div class="flex items-center gap-3 p-2.5 rounded-xl bg-surface-alt border border-border-card">
-              <div class="w-9 h-9 rounded-full bg-white border border-border-card flex items-center justify-center flex-shrink-0 text-blue-accent">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <div class="flex items-center gap-3 p-2.5 rounded-xl bg-surface-alt border border-border-card">
+                <div class="w-9 h-9 rounded-full bg-white border border-border-card flex items-center justify-center flex-shrink-0 text-blue-accent">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <span class="text-xs sm:text-sm font-bold text-navy">Proses Jelas &amp; Transparan</span>
               </div>
-              <span class="text-xs sm:text-sm font-bold text-navy">Proses Jelas &amp; Transparan</span>
-            </div>
-            <div class="flex items-center gap-3 p-2.5 rounded-xl bg-surface-alt border border-border-card">
-              <div class="w-9 h-9 rounded-full bg-white border border-border-card flex items-center justify-center flex-shrink-0 text-blue-accent">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+              <div class="flex items-center gap-3 p-2.5 rounded-xl bg-surface-alt border border-border-card">
+                <div class="w-9 h-9 rounded-full bg-white border border-border-card flex items-center justify-center flex-shrink-0 text-blue-accent">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                </div>
+                <span class="text-xs sm:text-sm font-bold text-navy">Support Setelah Website Jadi</span>
               </div>
-              <span class="text-xs sm:text-sm font-bold text-navy">Support Setelah Website Jadi</span>
             </div>
-          </div>
 
-          <!-- KARTU NAVY MOBILE "PORTOFOLIO" PERSIS SESUAI REFERENSI MOBILE -->
-          <div class="w-full max-w-md bg-navy text-white rounded-2xl p-5 sm:p-6 text-left shadow-lg flex items-center justify-between gap-4">
-            <div>
-              <span class="text-[11px] font-extrabold tracking-widest text-[#38BDF8] uppercase block mb-1">PORTOFOLIO</span>
-              <h2 class="text-base sm:text-lg font-bold text-white leading-snug">Hasil Website yang Telah Kami Kerjakan</h2>
+            <!-- KARTU NAVY MOBILE "PORTOFOLIO" -->
+            <div class="w-full max-w-md bg-navy text-white rounded-2xl p-5 sm:p-6 text-left shadow-lg flex items-center justify-between gap-4">
+              <div>
+                <span class="text-[11px] font-extrabold tracking-widest text-[#38BDF8] uppercase block mb-1">PORTOFOLIO</span>
+                <h2 class="text-base sm:text-lg font-bold text-white leading-snug">Hasil Website yang Telah Kami Kerjakan</h2>
+              </div>
+              <a href="/portofolio/" class="flex-shrink-0 bg-white text-navy font-bold text-xs sm:text-sm px-4 py-2.5 rounded-full hover:bg-surface-alt transition-colors inline-flex items-center gap-1 shadow-sm">
+                <span>Lihat Semua</span>
+                <span class="text-blue-accent font-bold">→</span>
+              </a>
             </div>
-            <a href="/portofolio/" class="flex-shrink-0 bg-white text-navy font-bold text-xs sm:text-sm px-4 py-2.5 rounded-full hover:bg-surface-alt transition-colors inline-flex items-center gap-1 shadow-sm">
-              <span>Lihat Semua</span>
-              <span class="text-blue-accent font-bold">→</span>
-            </a>
           </div>
 
         </div>
@@ -408,8 +372,8 @@
 
         <!-- MOBILE SECTION TITLE (SUBTLE) -->
         <div class="lg:hidden mb-6 text-center" id="portofolio-cards">
-          <span class="text-xs font-extrabold uppercase tracking-widest text-blue-accent block mb-1">CONTOH DESAIN</span>
-          <p class="text-xs text-body-text">Ketuk kartu untuk melihat rincian fitur dan teknologi yang digunakan.</p>
+          <span class="text-xs font-extrabold uppercase tracking-widest text-blue-accent block mb-1">PORTOFOLIO</span>
+          <p class="text-xs text-body-text">Beberapa contoh website yang sudah kami buat untuk berbagai jenis bisnis.</p>
         </div>
 
         <!-- 4 PORTFOLIO CARDS GRID -->
@@ -428,10 +392,10 @@
               </div>
             </div>
             <div class="px-5 pb-5 pt-0">
-              <button onclick="openPortfolioModal(1, this)" class="text-xs sm:text-sm font-bold text-blue-accent hover:text-blue-hover inline-flex items-center gap-1 group/btn focus:outline-none" aria-label="Lihat detail Toko Serba Ada">
+              <a href="/portofolio/toko-serba-ada/" class="text-xs sm:text-sm font-bold text-blue-accent hover:text-blue-hover inline-flex items-center gap-1 group/btn focus:outline-none" aria-label="Lihat detail Toko Serba Ada">
                 <span>Lihat Detail</span>
                 <span class="transition-transform group-hover/btn:translate-x-1 font-bold">→</span>
-              </button>
+              </a>
             </div>
           </div>
 
@@ -448,10 +412,10 @@
               </div>
             </div>
             <div class="px-5 pb-5 pt-0">
-              <button onclick="openPortfolioModal(2, this)" class="text-xs sm:text-sm font-bold text-blue-accent hover:text-blue-hover inline-flex items-center gap-1 group/btn focus:outline-none" aria-label="Lihat detail Villa Panorama">
+              <a href="/portofolio/villa-panorama/" class="text-xs sm:text-sm font-bold text-blue-accent hover:text-blue-hover inline-flex items-center gap-1 group/btn focus:outline-none" aria-label="Lihat detail Villa Panorama">
                 <span>Lihat Detail</span>
                 <span class="transition-transform group-hover/btn:translate-x-1 font-bold">→</span>
-              </button>
+              </a>
             </div>
           </div>
 
@@ -468,10 +432,10 @@
               </div>
             </div>
             <div class="px-5 pb-5 pt-0">
-              <button onclick="openPortfolioModal(3, this)" class="text-xs sm:text-sm font-bold text-blue-accent hover:text-blue-hover inline-flex items-center gap-1 group/btn focus:outline-none" aria-label="Lihat detail Sinar Jaya Motor">
+              <a href="/portofolio/sinar-jaya-motor/" class="text-xs sm:text-sm font-bold text-blue-accent hover:text-blue-hover inline-flex items-center gap-1 group/btn focus:outline-none" aria-label="Lihat detail Sinar Jaya Motor">
                 <span>Lihat Detail</span>
                 <span class="transition-transform group-hover/btn:translate-x-1 font-bold">→</span>
-              </button>
+              </a>
             </div>
           </div>
 
@@ -488,10 +452,10 @@
               </div>
             </div>
             <div class="px-5 pb-5 pt-0">
-              <button onclick="openPortfolioModal(4, this)" class="text-xs sm:text-sm font-bold text-blue-accent hover:text-blue-hover inline-flex items-center gap-1 group/btn focus:outline-none" aria-label="Lihat detail Rumah Sehat">
+              <a href="/portofolio/rumah-sehat/" class="text-xs sm:text-sm font-bold text-blue-accent hover:text-blue-hover inline-flex items-center gap-1 group/btn focus:outline-none" aria-label="Lihat detail Rumah Sehat">
                 <span>Lihat Detail</span>
                 <span class="transition-transform group-hover/btn:translate-x-1 font-bold">→</span>
-              </button>
+              </a>
             </div>
         </div>
 
@@ -586,6 +550,54 @@
             </div>
           </div>
 
+          <!-- Layanan 7: Aplikasi Web & Sistem Informasi Custom -->
+          <div class="card-clean p-6 lg:p-7 flex flex-col justify-between hover:border-blue-accent/50 transition-all">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-blue-light border border-blue-border flex items-center justify-center text-blue-accent mb-5">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+              </div>
+              <div class="inline-block px-2.5 py-0.5 rounded-full bg-blue-light text-blue-accent text-[11px] font-bold uppercase mb-2">Sistem Custom</div>
+              <h3 class="text-lg font-bold text-navy mb-2">Aplikasi Web &amp; Sistem Informasi</h3>
+              <p class="text-sm text-body-text leading-relaxed mb-4">Pengembangan sistem informasi inventaris, dashboard manajemen, kasir, dan portal data internal dengan Laravel PHP dan MySQL/PostgreSQL.</p>
+            </div>
+            <a href="/layanan/aplikasi-web-sistem-informasi/" class="text-xs sm:text-sm font-bold text-blue-accent hover:text-blue-hover inline-flex items-center gap-1 group/btn">
+              <span>Pelajari Rincian</span>
+              <span class="transition-transform group-hover/btn:translate-x-1 font-bold">→</span>
+            </a>
+          </div>
+
+          <!-- Layanan 8: Jasa IoT (Arduino & ESP32) -->
+          <div class="card-clean p-6 lg:p-7 flex flex-col justify-between hover:border-blue-accent/50 transition-all">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-blue-light border border-blue-border flex items-center justify-center text-blue-accent mb-5">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+              </div>
+              <div class="inline-block px-2.5 py-0.5 rounded-full bg-blue-light text-blue-accent text-[11px] font-bold uppercase mb-2">Hardware &amp; Web</div>
+              <h3 class="text-lg font-bold text-navy mb-2">Jasa IoT (Arduino &amp; ESP32)</h3>
+              <p class="text-sm text-body-text leading-relaxed mb-4">Integrasi mikrokontroler hardware fisik dengan cloud dashboard monitoring real-time via MQTT/HTTP untuk automasi cerdas dan telemetri.</p>
+            </div>
+            <a href="/layanan/jasa-iot-arduino-esp/" class="text-xs sm:text-sm font-bold text-blue-accent hover:text-blue-hover inline-flex items-center gap-1 group/btn">
+              <span>Pelajari Rincian</span>
+              <span class="transition-transform group-hover/btn:translate-x-1 font-bold">→</span>
+            </a>
+          </div>
+
+          <!-- Layanan 9: Undangan Digital & Pernikahan -->
+          <div class="card-clean p-6 lg:p-7 flex flex-col justify-between hover:border-blue-accent/50 transition-all">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-blue-light border border-blue-border flex items-center justify-center text-blue-accent mb-5">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+              </div>
+              <div class="inline-block px-2.5 py-0.5 rounded-full bg-blue-light text-blue-accent text-[11px] font-bold uppercase mb-2">Mobile-First</div>
+              <h3 class="text-lg font-bold text-navy mb-2">Undangan Digital Pernikahan</h3>
+              <p class="text-sm text-body-text leading-relaxed mb-4">Website undangan pernikahan mobile elegan dengan personalisasi nama tamu, countdown acara, RSVP WhatsApp terhubung, dan amplop digital.</p>
+            </div>
+            <a href="/layanan/undangan-digital-pernikahan/" class="text-xs sm:text-sm font-bold text-blue-accent hover:text-blue-hover inline-flex items-center gap-1 group/btn">
+              <span>Pelajari Rincian &amp; Demo</span>
+              <span class="transition-transform group-hover/btn:translate-x-1 font-bold">→</span>
+            </a>
+          </div>
+
         </div>
 
       </div>
@@ -600,7 +612,7 @@
         <div class="text-center max-w-2xl mx-auto mb-12 lg:mb-16">
           <span class="text-xs font-extrabold uppercase tracking-widest text-blue-accent block mb-2">TESTIMONI</span>
           <h2 class="text-3xl lg:text-4xl font-extrabold text-navy tracking-tight mb-3">Apa Kata Klien Kami</h2>
-          <p class="text-body-text text-base">Pengalaman nyata para pelaku usaha yang mempercayakan kehadiran digital mereka kepada AURA GLOBAL.</p>
+          <p class="text-body-text text-base">Gambaran pengalaman bekerja sama dengan AURA GLOBAL.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
@@ -742,15 +754,16 @@
       <div class="site-container">
         
         <div class="text-center max-w-2xl mx-auto mb-12 lg:mb-16">
-          <span class="text-xs font-extrabold uppercase tracking-widest text-blue-accent block mb-2">HARGA</span>
-          <h2 class="text-3xl lg:text-4xl font-extrabold text-navy tracking-tight mb-3">Paket Harga Terbaik</h2>
-          <p class="text-body-text text-base">Pilih paket yang paling sesuai dengan skala dan kebutuhan bisnis Anda.</p>
+          <span class="text-xs font-extrabold uppercase tracking-widest text-blue-accent block mb-2">PAKET HARGA TRANSPARAN</span>
+          <h2 class="text-3xl lg:text-4xl font-extrabold text-navy tracking-tight mb-3">Pilihan Paket Terbaik untuk Bisnis Anda</h2>
+          <p class="text-body-text text-base">Investasi transparan tanpa biaya tersembunyi. Termasuk domain dan cloud hosting 1 tahun pertama.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch mb-10">
+        <!-- 3 MAIN PRICING CARDS -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch mb-12">
           
           <!-- Paket 1: Basic -->
-          <div class="card-clean p-6 sm:p-8 flex flex-col justify-between bg-white">
+          <div class="card-clean p-6 sm:p-8 flex flex-col justify-between bg-white border border-border-card">
             <div>
               <div class="mb-5">
                 <h3 class="text-xl font-bold text-navy mb-1">Paket Basic</h3>
@@ -760,36 +773,60 @@
                 <span class="text-3xl lg:text-4xl font-extrabold text-navy">Rp500.000</span>
                 <span class="text-xs text-muted-text block mt-1">Biaya awal pembuatan lengkap</span>
               </div>
-              <ul class="space-y-3 mb-8">
-                <li class="flex items-start gap-2.5 text-xs sm:text-sm text-body-text">
-                  <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
-                  <span>1 Halaman Landing Page Responsif</span>
-                </li>
-                <li class="flex items-start gap-2.5 text-xs sm:text-sm text-body-text">
-                  <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
-                  <span>Domain .my.id / .biz.id &amp; Hosting 1 Tahun</span>
-                </li>
-                <li class="flex items-start gap-2.5 text-xs sm:text-sm text-body-text">
-                  <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
-                  <span>Integrasi Tombol WhatsApp Cepat</span>
-                </li>
-                <li class="flex items-start gap-2.5 text-xs sm:text-sm text-body-text">
-                  <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
-                  <span>Desain Ringan &amp; Cepat di Ponsel</span>
-                </li>
-                <li class="flex items-start gap-2.5 text-xs sm:text-sm text-body-text">
-                  <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
-                  <span>Garansi Pemeliharaan 1 Bulan</span>
-                </li>
-              </ul>
+              
+              <!-- Grouped Checklist -->
+              <div class="space-y-4 mb-8 text-xs sm:text-sm">
+                <div>
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-muted-text block mb-2">Desain &amp; Struktur</span>
+                  <ul class="space-y-2">
+                    <li class="flex items-start gap-2 text-body-text">
+                      <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                      <span>1 Halaman Landing Page Responsif</span>
+                    </li>
+                    <li class="flex items-start gap-2 text-body-text">
+                      <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                      <span>Desain Mobile-First Ringan</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-muted-text block mb-2">Domain &amp; Server</span>
+                  <ul class="space-y-2">
+                    <li class="flex items-start gap-2 text-body-text">
+                      <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                      <span>Domain .my.id / .biz.id (1 Tahun)</span>
+                    </li>
+                    <li class="flex items-start gap-2 text-body-text">
+                      <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                      <span>Cloud Hosting Cepat &amp; Aman (1 Tahun)</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-muted-text block mb-2">Fitur &amp; Garansi</span>
+                  <ul class="space-y-2">
+                    <li class="flex items-start gap-2 text-body-text">
+                      <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                      <span>Integrasi Tombol WhatsApp Cepat</span>
+                    </li>
+                    <li class="flex items-start gap-2 text-body-text">
+                      <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                      <span>Garansi Pemeliharaan 1 Bulan</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
+
             <a href="https://wa.me/6285861510159?text=Halo%20AURA%20GLOBAL,%20saya%20tertarik%20dengan%20Paket%20Basic%20(Rp500.000).%20Boleh%20konsultasi%20langkah%20awalnya?" target="_blank" rel="noopener noreferrer" class="btn-pill-outline w-full py-3 text-sm font-semibold text-center">
               Pesan Paket Basic
             </a>
           </div>
 
           <!-- Paket 2: Starter -->
-          <div class="card-clean p-6 sm:p-8 flex flex-col justify-between bg-white">
+          <div class="card-clean p-6 sm:p-8 flex flex-col justify-between bg-white border border-border-card">
             <div>
               <div class="mb-5">
                 <h3 class="text-xl font-bold text-navy mb-1">Paket Starter</h3>
@@ -799,78 +836,228 @@
                 <span class="text-3xl lg:text-4xl font-extrabold text-navy">Rp800.000</span>
                 <span class="text-xs text-muted-text block mt-1">Biaya awal pembuatan lengkap</span>
               </div>
-              <ul class="space-y-3 mb-8">
-                <li class="flex items-start gap-2.5 text-xs sm:text-sm text-body-text">
-                  <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
-                  <span>Hingga 3-4 Halaman / Seksi Terstruktur</span>
-                </li>
-                <li class="flex items-start gap-2.5 text-xs sm:text-sm text-body-text">
-                  <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
-                  <span>Domain .com / .my.id &amp; Cloud Hosting 1 Tahun</span>
-                </li>
-                <li class="flex items-start gap-2.5 text-xs sm:text-sm text-body-text">
-                  <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
-                  <span>Integrasi WhatsApp &amp; Peta Google Maps</span>
-                </li>
-                <li class="flex items-start gap-2.5 text-xs sm:text-sm text-body-text">
-                  <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
-                  <span>Optimasi SEO Dasar &amp; Kecepatan Akses</span>
-                </li>
-                <li class="flex items-start gap-2.5 text-xs sm:text-sm text-body-text">
-                  <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
-                  <span>Revisi Desain 2 Kali &amp; Garansi 2 Bulan</span>
-                </li>
-              </ul>
+              
+              <!-- Grouped Checklist -->
+              <div class="space-y-4 mb-8 text-xs sm:text-sm">
+                <div>
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-muted-text block mb-2">Desain &amp; Struktur</span>
+                  <ul class="space-y-2">
+                    <li class="flex items-start gap-2 text-body-text">
+                      <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                      <span>Hingga 3-4 Halaman / Seksi Terstruktur</span>
+                    </li>
+                    <li class="flex items-start gap-2 text-body-text">
+                      <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                      <span>Katalog Produk / Daftar Layanan Jelas</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-muted-text block mb-2">Domain &amp; Server</span>
+                  <ul class="space-y-2">
+                    <li class="flex items-start gap-2 text-body-text">
+                      <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                      <span>Domain .com / .my.id (1 Tahun)</span>
+                    </li>
+                    <li class="flex items-start gap-2 text-body-text">
+                      <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                      <span>Cloud Hosting Berkecepatan Tinggi (1 Tahun)</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-muted-text block mb-2">Fitur &amp; Garansi</span>
+                  <ul class="space-y-2">
+                    <li class="flex items-start gap-2 text-body-text">
+                      <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                      <span>Peta Google Maps &amp; WhatsApp Chat</span>
+                    </li>
+                    <li class="flex items-start gap-2 text-body-text">
+                      <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                      <span>Optimasi SEO Dasar &amp; Garansi 2 Bulan</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
+
             <a href="https://wa.me/6285861510159?text=Halo%20AURA%20GLOBAL,%20saya%20tertarik%20dengan%20Paket%20Starter%20(Rp800.000).%20Boleh%20konsultasi%20langkah%20awalnya?" target="_blank" rel="noopener noreferrer" class="btn-pill-navy w-full py-3 text-sm font-semibold text-center">
               Pesan Paket Starter
             </a>
           </div>
 
           <!-- Paket 3: Professional (Unggulan / Paling Populer) -->
-          <div class="card-clean p-6 sm:p-8 flex flex-col justify-between bg-white relative border-2 border-blue-accent shadow-lg">
+          <div class="card-clean p-6 sm:p-8 flex flex-col justify-between bg-white relative border-2 border-blue-accent shadow-xl">
             <!-- Badge Paling Populer -->
-            <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-blue-accent text-white text-[11px] font-extrabold uppercase tracking-wider px-3.5 py-1 rounded-full shadow-sm">
+            <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-blue-accent text-white text-[11px] font-extrabold uppercase tracking-wider px-4 py-1 rounded-full shadow-sm">
               Paling Populer
             </div>
 
             <div>
               <div class="mb-5 mt-1">
                 <h3 class="text-xl font-bold text-navy mb-1">Paket Professional</h3>
-                <span class="text-xs text-muted-text">Company profile resmi &amp; katalog toko</span>
+                <span class="text-xs text-muted-text">Company profile resmi &amp; katalog lengkap</span>
               </div>
               <div class="mb-6 pb-6 border-b border-border-card">
                 <span class="text-3xl lg:text-4xl font-extrabold text-navy">Rp1.200.000</span>
                 <span class="text-xs text-muted-text block mt-1">Biaya awal pembuatan lengkap</span>
               </div>
-              <ul class="space-y-3 mb-8">
-                <li class="flex items-start gap-2.5 text-xs sm:text-sm text-body-text">
-                  <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
-                  <span>Hingga 5-7 Halaman Terstruktur Rapi</span>
-                </li>
-                <li class="flex items-start gap-2.5 text-xs sm:text-sm text-body-text">
-                  <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
-                  <span>Domain .com &amp; Cloud Hosting Cepat 1 Tahun</span>
-                </li>
-                <li class="flex items-start gap-2.5 text-xs sm:text-sm text-body-text">
-                  <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
-                  <span>Form Kontak &amp; Integrasi WhatsApp Multi-Admin</span>
-                </li>
-                <li class="flex items-start gap-2.5 text-xs sm:text-sm text-body-text">
-                  <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
-                  <span>Optimasi SEO Lengkap &amp; Terdaftar di Google</span>
-                </li>
-                <li class="flex items-start gap-2.5 text-xs sm:text-sm text-body-text">
-                  <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
-                  <span>Revisi Desain 3 Kali &amp; Prioritas Garansi 3 Bulan</span>
-                </li>
-              </ul>
+              
+              <!-- Grouped Checklist -->
+              <div class="space-y-4 mb-8 text-xs sm:text-sm">
+                <div>
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-muted-text block mb-2">Desain &amp; Struktur</span>
+                  <ul class="space-y-2">
+                    <li class="flex items-start gap-2 text-body-text">
+                      <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                      <span>Hingga 5-7 Halaman Terstruktur Rapi</span>
+                    </li>
+                    <li class="flex items-start gap-2 text-body-text">
+                      <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                      <span>Showcase Portofolio &amp; Layanan Lengkap</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-muted-text block mb-2">Domain &amp; Server</span>
+                  <ul class="space-y-2">
+                    <li class="flex items-start gap-2 text-body-text">
+                      <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                      <span>Domain Populer .com (1 Tahun)</span>
+                    </li>
+                    <li class="flex items-start gap-2 text-body-text">
+                      <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                      <span>Cloud Hosting Berkecepatan Tinggi (1 Tahun)</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-muted-text block mb-2">Fitur &amp; Garansi</span>
+                  <ul class="space-y-2">
+                    <li class="flex items-start gap-2 text-body-text">
+                      <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                      <span>Form Kontak &amp; Multi-Admin WhatsApp</span>
+                    </li>
+                    <li class="flex items-start gap-2 text-body-text">
+                      <svg class="w-4 h-4 text-blue-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                      <span>Optimasi SEO Lengkap &amp; Garansi 3 Bulan</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
+
             <a href="https://wa.me/6285861510159?text=Halo%20AURA%20GLOBAL,%20saya%20tertarik%20dengan%20Paket%20Professional%20(Rp1.200.000).%20Boleh%20konsultasi%20langkah%20awalnya?" target="_blank" rel="noopener noreferrer" class="btn-pill-blue w-full py-3 text-sm font-semibold text-center">
               Pesan Paket Professional
             </a>
           </div>
 
+        </div>
+
+        <!-- PAKET CUSTOM BANNER -->
+        <div class="w-full bg-navy text-white rounded-2xl sm:rounded-3xl p-6 sm:p-10 mb-12 shadow-lg flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="max-w-2xl text-left">
+            <span class="text-[11px] font-extrabold tracking-widest text-[#38BDF8] uppercase block mb-1">PROYEK KUSTOM &amp; SISTEM KHUSUS</span>
+            <h3 class="text-xl sm:text-2xl font-bold text-white mb-2">Punya Kebutuhan Sistem Informasi, Web App, atau IoT?</h3>
+            <p class="text-xs sm:text-sm text-gray-300 leading-relaxed">
+              Kami juga melayani pengembangan aplikasi web Laravel/PHP, dashboard database custom, sistem IoT mikrokontroler Arduino/ESP32, dan integrasi API khusus dengan skema penawaran transparan sesuai ruang lingkup proyek.
+            </p>
+          </div>
+          <a href="https://wa.me/6285861510159?text=Halo%20AURA%20GLOBAL,%20saya%20ingin%20konsultasi%20mengenai%20proyek%20custom%20(Aplikasi%20Web%20/%20IoT)" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 btn-pill-blue px-6 py-3.5 text-xs sm:text-sm font-semibold inline-flex items-center gap-2">
+            <span>Konsultasi Proyek Custom</span>
+            <span class="font-bold">→</span>
+          </a>
+        </div>
+
+        <!-- FITUR COMPARISON TABLE -->
+        <div class="bg-white rounded-2xl sm:rounded-3xl border border-border-card p-6 sm:p-8 shadow-sm mb-10 overflow-hidden">
+          <div class="text-center mb-6">
+            <h3 class="text-xl sm:text-2xl font-bold text-navy mb-1">Bandingkan Semua Fitur Paket</h3>
+            <p class="text-xs sm:text-sm text-body-text">Rincian perbandingan spesifikasi dan layanan di setiap tingkat paket.</p>
+          </div>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs sm:text-sm">
+              <thead>
+                <tr class="border-b border-border-card text-navy">
+                  <th class="py-3 px-4 font-bold">Fitur &amp; Spesifikasi</th>
+                  <th class="py-3 px-4 font-bold text-center">Basic (500rb)</th>
+                  <th class="py-3 px-4 font-bold text-center">Starter (800rb)</th>
+                  <th class="py-3 px-4 font-bold text-center text-blue-accent">Professional (1.2jt)</th>
+                  <th class="py-3 px-4 font-bold text-center">Custom / IoT</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-border-card text-body-text">
+                <tr>
+                  <td class="py-3 px-4 font-medium text-navy">Estimasi Halaman</td>
+                  <td class="py-3 px-4 text-center">1 Halaman</td>
+                  <td class="py-3 px-4 text-center">3 – 4 Halaman</td>
+                  <td class="py-3 px-4 text-center font-semibold text-navy">5 – 7 Halaman</td>
+                  <td class="py-3 px-4 text-center">Sesuai Kebutuhan</td>
+                </tr>
+                <tr>
+                  <td class="py-3 px-4 font-medium text-navy">Domain Termasuk (1 Tahun)</td>
+                  <td class="py-3 px-4 text-center">.my.id / .biz.id</td>
+                  <td class="py-3 px-4 text-center">.com / .my.id</td>
+                  <td class="py-3 px-4 text-center font-semibold text-blue-accent">.com Resmi</td>
+                  <td class="py-3 px-4 text-center">Bebas Pilih</td>
+                </tr>
+                <tr>
+                  <td class="py-3 px-4 font-medium text-navy">Cloud Hosting Cepat (1 Tahun)</td>
+                  <td class="py-3 px-4 text-center text-emerald-600 font-bold">✓</td>
+                  <td class="py-3 px-4 text-center text-emerald-600 font-bold">✓</td>
+                  <td class="py-3 px-4 text-center text-emerald-600 font-bold">✓</td>
+                  <td class="py-3 px-4 text-center text-emerald-600 font-bold">✓</td>
+                </tr>
+                <tr>
+                  <td class="py-3 px-4 font-medium text-navy">Desain Responsif Ponsel &amp; PC</td>
+                  <td class="py-3 px-4 text-center text-emerald-600 font-bold">✓</td>
+                  <td class="py-3 px-4 text-center text-emerald-600 font-bold">✓</td>
+                  <td class="py-3 px-4 text-center text-emerald-600 font-bold">✓</td>
+                  <td class="py-3 px-4 text-center text-emerald-600 font-bold">✓</td>
+                </tr>
+                <tr>
+                  <td class="py-3 px-4 font-medium text-navy">Integrasi Tombol WhatsApp</td>
+                  <td class="py-3 px-4 text-center text-emerald-600 font-bold">✓</td>
+                  <td class="py-3 px-4 text-center text-emerald-600 font-bold">✓</td>
+                  <td class="py-3 px-4 text-center text-emerald-600 font-bold">✓ Multi-Admin</td>
+                  <td class="py-3 px-4 text-center text-emerald-600 font-bold">✓ Custom Format</td>
+                </tr>
+                <tr>
+                  <td class="py-3 px-4 font-medium text-navy">Optimasi SEO &amp; Google Console</td>
+                  <td class="py-3 px-4 text-center text-muted-text">Struktur Dasar</td>
+                  <td class="py-3 px-4 text-center text-emerald-600 font-bold">✓ Standar</td>
+                  <td class="py-3 px-4 text-center text-emerald-600 font-bold">✓ Lengkap &amp; Terindeks</td>
+                  <td class="py-3 px-4 text-center text-emerald-600 font-bold">✓ Sesuai Kebutuhan</td>
+                </tr>
+                <tr>
+                  <td class="py-3 px-4 font-medium text-navy">Formulir Kontak Otomatis</td>
+                  <td class="py-3 px-4 text-center text-muted-text">—</td>
+                  <td class="py-3 px-4 text-center text-muted-text">—</td>
+                  <td class="py-3 px-4 text-center text-emerald-600 font-bold">✓ Termasuk</td>
+                  <td class="py-3 px-4 text-center text-emerald-600 font-bold">✓ Termasuk</td>
+                </tr>
+                <tr>
+                  <td class="py-3 px-4 font-medium text-navy">Kesempatan Revisi</td>
+                  <td class="py-3 px-4 text-center">1 Kali</td>
+                  <td class="py-3 px-4 text-center">2 Kali</td>
+                  <td class="py-3 px-4 text-center font-semibold text-navy">3 Kali</td>
+                  <td class="py-3 px-4 text-center">Fleksibel / Sesuai SOW</td>
+                </tr>
+                <tr>
+                  <td class="py-3 px-4 font-medium text-navy">Garansi Pemeliharaan</td>
+                  <td class="py-3 px-4 text-center">1 Bulan</td>
+                  <td class="py-3 px-4 text-center">2 Bulan</td>
+                  <td class="py-3 px-4 text-center font-semibold text-blue-accent">3 Bulan Prioritas</td>
+                  <td class="py-3 px-4 text-center">SLA Kontrak</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
         <!-- TRANSPARENT NOTES -->
@@ -1006,6 +1193,39 @@
             </div>
           </div>
 
+          <!-- FAQ 11: Aplikasi Web Custom -->
+          <div class="faq-item">
+            <button class="faq-header" onclick="toggleFAQ(this)" aria-expanded="false">
+              <span>Apakah AURA GLOBAL melayani pembuatan aplikasi web dan sistem informasi custom?</span>
+              <span class="faq-icon text-xl font-bold">+</span>
+            </button>
+            <div class="faq-body">
+              Ya. Kami melayani perancangan aplikasi web kustom berbasis Laravel / PHP dengan database MySQL atau PostgreSQL, seperti sistem manajemen inventaris, kasir/POS, portal keanggotaan, dashboard administrasi, hingga sistem laporan internal. Silakan kunjungi halaman <a href="/layanan/aplikasi-web-sistem-informasi/" class="text-blue-accent font-semibold underline">Layanan Aplikasi Web</a> untuk rincian selengkapnya.
+            </div>
+          </div>
+
+          <!-- FAQ 12: IoT -->
+          <div class="faq-item">
+            <button class="faq-header" onclick="toggleFAQ(this)" aria-expanded="false">
+              <span>Apakah AURA GLOBAL melayani pengerjaan proyek IoT (Internet of Things)?</span>
+              <span class="faq-icon text-xl font-bold">+</span>
+            </button>
+            <div class="faq-body">
+              Ya, kami menyediakan jasa perakitan dan pemrograman mikrokontroler berbasis Arduino dan ESP32/ESP8266 yang terhubung dengan sensor fisik (suhu, kelembapan, arus, ultrasonik, dsb.) serta dashboard visual monitoring real-time berbasis web melalui protokol MQTT dan HTTP REST.
+            </div>
+          </div>
+
+          <!-- FAQ 13: Undangan Digital -->
+          <div class="faq-item">
+            <button class="faq-header" onclick="toggleFAQ(this)" aria-expanded="false">
+              <span>Apakah tersedia jasa pembuatan undangan digital dan website pernikahan?</span>
+              <span class="faq-icon text-xl font-bold">+</span>
+            </button>
+            <div class="faq-body">
+              Tentu. Kami menyediakan website undangan digital mobile-first dengan tampilan elegan dan minimalis, personalisasi nama tamu undangan (?to=Nama-Tamu), countdown hitung mundur hari bahagia, peta navigasi Google Maps, buku tamu WhatsApp, dan amplop digital transfer bank / e-wallet. Anda dapat melihat demo interaktifnya di halaman layanan kami.
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -1036,7 +1256,7 @@
           <!-- Card 1 -->
           <article class="card-clean flex flex-col justify-between group overflow-hidden bg-white">
             <a href="/blog/mengapa-bisnis-perlu-website/" class="block overflow-hidden relative">
-              <img src="/assets/blog-cover-1.svg" alt="Mengapa Bisnis dan UMKM Perlu Memiliki Website Sendiri" class="w-full h-48 sm:h-52 object-cover transition-transform duration-300 group-hover:scale-103" width="800" height="450" loading="lazy" />
+              <img src="/assets/blog/blog-1-cover.webp" alt="Mengapa Bisnis dan UMKM Perlu Memiliki Website Sendiri" class="w-full h-48 sm:h-52 object-cover transition-transform duration-300 group-hover:scale-103" width="800" height="450" loading="lazy" />
               <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-navy text-[11px] font-bold px-2.5 py-1 rounded-full shadow-xs border border-border-card">
                 Strategi Bisnis
               </div>
@@ -1067,7 +1287,7 @@
           <!-- Card 2 -->
           <article class="card-clean flex flex-col justify-between group overflow-hidden bg-white">
             <a href="/blog/cara-mempercepat-website-di-smartphone/" class="block overflow-hidden relative">
-              <img src="/assets/blog-cover-2.svg" alt="Panduan Mempercepat Akses Website agar Nyaman Dibuka di HP" class="w-full h-48 sm:h-52 object-cover transition-transform duration-300 group-hover:scale-103" width="800" height="450" loading="lazy" />
+              <img src="/assets/blog/blog-2-cover.webp" alt="Panduan Mempercepat Akses Website agar Nyaman Dibuka di HP" class="w-full h-48 sm:h-52 object-cover transition-transform duration-300 group-hover:scale-103" width="800" height="450" loading="lazy" />
               <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-navy text-[11px] font-bold px-2.5 py-1 rounded-full shadow-xs border border-border-card">
                 Tips Teknis
               </div>
@@ -1098,7 +1318,7 @@
           <!-- Card 3 -->
           <article class="card-clean flex flex-col justify-between group overflow-hidden bg-white">
             <a href="/blog/persiapan-sebelum-membuat-website-bisnis/" class="block overflow-hidden relative">
-              <img src="/assets/blog-cover-3.svg" alt="Hal Penting yang Perlu Disiapkan Sebelum Memesan Jasa Website" class="w-full h-48 sm:h-52 object-cover transition-transform duration-300 group-hover:scale-103" width="800" height="450" loading="lazy" />
+              <img src="/assets/blog/blog-3-cover.webp" alt="Hal Penting yang Perlu Disiapkan Sebelum Memesan Jasa Website" class="w-full h-48 sm:h-52 object-cover transition-transform duration-300 group-hover:scale-103" width="800" height="450" loading="lazy" />
               <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-navy text-[11px] font-bold px-2.5 py-1 rounded-full shadow-xs border border-border-card">
                 Panduan Klien
               </div>
@@ -1222,12 +1442,12 @@
         <div class="lg:col-span-3">
           <h4 class="text-xs font-extrabold uppercase tracking-wider text-white mb-4">Layanan Kami</h4>
           <ul class="space-y-2 text-xs sm:text-sm text-gray-400">
-            <li><a href="#layanan" class="hover:text-white transition-colors">Company Profile</a></li>
-            <li><a href="#layanan" class="hover:text-white transition-colors">Website UMKM &amp; Bisnis Lokal</a></li>
-            <li><a href="#layanan" class="hover:text-white transition-colors">Toko Online &amp; Katalog Digital</a></li>
-            <li><a href="#layanan" class="hover:text-white transition-colors">Landing Page Iklan</a></li>
-            <li><a href="#layanan" class="hover:text-white transition-colors">Redesign Website Lama</a></li>
-            <li><a href="#layanan" class="hover:text-white transition-colors">Pemeliharaan &amp; Optimasi SEO</a></li>
+            <li><a href="/layanan/#service-01" class="hover:text-white transition-colors">Company Profile</a></li>
+            <li><a href="/layanan/#service-02" class="hover:text-white transition-colors">Website UMKM &amp; Bisnis Lokal</a></li>
+            <li><a href="/layanan/#service-03" class="hover:text-white transition-colors">Toko Online &amp; Katalog Digital</a></li>
+            <li><a href="/layanan/aplikasi-web-sistem-informasi/" class="hover:text-white transition-colors text-blue-300">Aplikasi Web &amp; Sistem Informasi</a></li>
+            <li><a href="/layanan/jasa-iot-arduino-esp/" class="hover:text-white transition-colors text-blue-300">Jasa IoT (Arduino &amp; ESP32)</a></li>
+            <li><a href="/layanan/undangan-digital-pernikahan/" class="hover:text-white transition-colors text-blue-300">Undangan Digital Pernikahan</a></li>
           </ul>
         </div>
 
@@ -1261,65 +1481,6 @@
     <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2Z"/></svg>
     <span class="font-bold tracking-wide">Konsultasi</span>
   </a>
-
-  <!-- ========================================================
-       ACCESSIBLE MODAL / BOTTOM SHEET (DETAIL PORTOFOLIO INTERNAL)
-       ======================================================== -->
-  <div id="portfolioModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-navy/60 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-200" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
-    <div id="modalContent" class="bg-white w-full max-w-2xl rounded-2xl sm:rounded-3xl shadow-2xl border border-border-card overflow-hidden flex flex-col max-h-[90vh] scale-95 transition-transform duration-200">
-      
-      <!-- Modal Header -->
-      <div class="p-5 sm:p-6 border-b border-border-card flex items-center justify-between">
-        <div>
-          <span id="modalCategory" class="text-xs font-bold uppercase tracking-wider text-blue-accent block mb-0.5">Kategori</span>
-          <h3 id="modalTitle" class="text-xl sm:text-2xl font-bold text-navy">Judul Proyek</h3>
-        </div>
-        <button id="modalCloseBtn" onclick="closePortfolioModal()" class="w-10 h-10 rounded-full bg-surface-alt hover:bg-border-card text-navy flex items-center justify-center transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-accent" aria-label="Tutup detail proyek">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M6 18L18 6M6 6l12 12"></path></svg>
-        </button>
-      </div>
-
-      <!-- Modal Body (Scrollable) -->
-      <div class="p-5 sm:p-6 overflow-y-auto space-y-6">
-        
-        <!-- Large Mockup Image -->
-        <div class="rounded-xl overflow-hidden bg-surface-alt border border-border-card flex items-center justify-center p-2">
-          <img id="modalImg" src="/assets/portfolio-toko-mockup.webp" alt="Preview Proyek" class="w-full h-auto max-h-[300px] object-contain rounded-lg" />
-        </div>
-
-        <!-- Description -->
-        <div>
-          <h4 class="text-xs font-bold uppercase tracking-wider text-muted-text mb-2">Tentang Proyek</h4>
-          <p id="modalDesc" class="text-body-text text-sm sm:text-base leading-relaxed"></p>
-        </div>
-
-        <!-- Features List -->
-        <div>
-          <h4 class="text-xs font-bold uppercase tracking-wider text-muted-text mb-2.5">Fitur &amp; Rincian Halaman</h4>
-          <ul id="modalFeatures" class="grid grid-cols-1 sm:grid-cols-2 gap-2"></ul>
-        </div>
-
-        <!-- Tech Stack -->
-        <div>
-          <h4 class="text-xs font-bold uppercase tracking-wider text-muted-text mb-2">Teknologi &amp; Pondasi Kode</h4>
-          <div id="modalTech" class="flex flex-wrap gap-2"></div>
-        </div>
-
-      </div>
-
-      <!-- Modal Footer -->
-      <div class="p-5 sm:p-6 bg-surface-alt border-t border-border-card flex flex-col sm:flex-row items-center justify-between gap-3">
-        <button onclick="closePortfolioModal()" class="btn-pill-outline w-full sm:w-auto px-5 py-2.5 text-xs sm:text-sm font-semibold">
-          Tutup
-        </button>
-        <a id="modalCTA" href="https://wa.me/6285861510159" target="_blank" rel="noopener noreferrer" class="btn-pill-navy w-full sm:w-auto px-6 py-2.5 text-xs sm:text-sm font-semibold flex items-center justify-center gap-2">
-          <span>Konsultasi Proyek Serupa via WhatsApp</span>
-          <svg class="w-4 h-4 fill-current text-[#25D366]" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2Z"/></svg>
-        </a>
-      </div>
-
-    </div>
-  </div>
 
   <!-- JAVASCRIPT LIBRARIES & SCRIPTS -->
   <script src="/portfolio-data.js"></script>

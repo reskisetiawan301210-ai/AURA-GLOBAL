@@ -8,20 +8,50 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- Halaman Layanan & Solusi -->
+  <!-- Halaman Layanan & Sub-Layanan -->
   <url>
     <loc>https://auraglobal.my.id/layanan/</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://auraglobal.my.id/layanan/aplikasi-web-sistem-informasi/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
+  <url>
+    <loc>https://auraglobal.my.id/layanan/jasa-iot-arduino-esp/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://auraglobal.my.id/layanan/undangan-digital-pernikahan/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://auraglobal.my.id/undangan-digital/demo/elegan/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://auraglobal.my.id/undangan-digital/demo/minimalis/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
 
-  <!-- Halaman Portofolio Proyek -->
+  <!-- Halaman Portofolio Proyek & Detail Standalone -->
   <url>
     <loc>https://auraglobal.my.id/portofolio/</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
+    <priority>0.95</priority>
   </url>
   <url>
     <loc>https://auraglobal.my.id/portfolio/</loc>
@@ -29,16 +59,68 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
+  <url>
+    <loc>https://auraglobal.my.id/portofolio/toko-serba-ada/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://auraglobal.my.id/portofolio/segar-mart/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://auraglobal.my.id/portofolio/villa-panorama/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://auraglobal.my.id/portofolio/sinar-jaya-motor/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://auraglobal.my.id/portofolio/rumah-sehat/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://auraglobal.my.id/portofolio/danih-konstruksi/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://auraglobal.my.id/portofolio/noire-cafe/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://auraglobal.my.id/portofolio/velora-drive/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://auraglobal.my.id/portofolio/citumang-rafting/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
 
-  <!-- Halaman Estimasi Biaya Interaktif -->
+  <!-- Halaman Estimasi Biaya & Paket Harga -->
   <url>
     <loc>https://auraglobal.my.id/estimasi/</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
-
-  <!-- Halaman Paket Harga Transparan -->
   <url>
     <loc>https://auraglobal.my.id/harga/</loc>
     <lastmod>2026-10-15</lastmod>
@@ -46,41 +128,57 @@
     <priority>0.90</priority>
   </url>
 
-  <!-- Blog & Insight -->
+  <!-- Blog & 6 Artikel Panduan Mendalam -->
   <url>
     <loc>https://auraglobal.my.id/blog/</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://auraglobal.my.id/blog/mengapa-bisnis-perlu-website/</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://auraglobal.my.id/blog/cara-mempercepat-website-di-smartphone/</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://auraglobal.my.id/blog/persiapan-sebelum-membuat-website-bisnis/</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://auraglobal.my.id/blog/faktor-biaya-pembuatan-website/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://auraglobal.my.id/blog/cara-memilih-domain-dan-hosting/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://auraglobal.my.id/blog/panduan-seo-dasar-umkm/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
 
-  <!-- Halaman Khusus SEO Lokal Majalengka -->
+  <!-- Halaman Khusus SEO Lokal & Edukasi -->
   <url>
     <loc>https://auraglobal.my.id/jasa-pembuatan-website-majalengka/</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
-
-  <!-- Hub Edukasi & Panduan SEO -->
   <url>
     <loc>https://auraglobal.my.id/panduan/</loc>
     <lastmod>2026-10-15</lastmod>
@@ -88,39 +186,11 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://auraglobal.my.id/panduan/berapa-harga-pembuatan-website-umkm/</loc>
-    <lastmod>2026-10-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://auraglobal.my.id/panduan/manfaat-website-bisnis-lokal-majalengka/</loc>
-    <lastmod>2026-10-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://auraglobal.my.id/panduan/perbedaan-landing-page-dan-company-profile/</loc>
-    <lastmod>2026-10-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://auraglobal.my.id/panduan/cara-memilih-jasa-pembuatan-website-bisnis/</loc>
-    <lastmod>2026-10-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-
-  <!-- Halaman Profil Studio & Prinsip Kerja -->
-  <url>
     <loc>https://auraglobal.my.id/tentang/</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
-
-  <!-- Halaman Saluran Kontak & Konsultasi -->
   <url>
     <loc>https://auraglobal.my.id/kontak/</loc>
     <lastmod>2026-10-15</lastmod>
