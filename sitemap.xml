@@ -3,31 +3,37 @@
   <!-- Halaman Utama & Beranda -->
   <url>
     <loc>https://auraglobal.my.id/</loc>
-    <lastmod>2026-10-11</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
-  </url>
-
-  <!-- Halaman Khusus SEO Lokal Majalengka -->
-  <url>
-    <loc>https://auraglobal.my.id/jasa-pembuatan-website-majalengka/</loc>
-    <lastmod>2026-10-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
   </url>
 
   <!-- Halaman Layanan & Solusi -->
   <url>
     <loc>https://auraglobal.my.id/layanan/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <!-- Halaman Portofolio Proyek -->
   <url>
+    <loc>https://auraglobal.my.id/portofolio/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
     <loc>https://auraglobal.my.id/portfolio/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Halaman Estimasi Biaya Interaktif -->
+  <url>
+    <loc>https://auraglobal.my.id/estimasi/</loc>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
@@ -35,55 +41,81 @@
   <!-- Halaman Paket Harga Transparan -->
   <url>
     <loc>https://auraglobal.my.id/harga/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
+  </url>
+
+  <!-- Blog & Insight -->
+  <url>
+    <loc>https://auraglobal.my.id/blog/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://auraglobal.my.id/blog/mengapa-bisnis-perlu-website/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://auraglobal.my.id/blog/cara-mempercepat-website-di-smartphone/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://auraglobal.my.id/blog/persiapan-sebelum-membuat-website-bisnis/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Halaman Khusus SEO Lokal Majalengka -->
+  <url>
+    <loc>https://auraglobal.my.id/jasa-pembuatan-website-majalengka/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
   </url>
 
   <!-- Hub Edukasi & Panduan SEO -->
   <url>
     <loc>https://auraglobal.my.id/panduan/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
   </url>
-
-  <!-- Artikel Edukasi 1: Biaya Website UMKM -->
   <url>
     <loc>https://auraglobal.my.id/panduan/berapa-harga-pembuatan-website-umkm/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
-
-  <!-- Artikel Edukasi 2: Manfaat Website Bisnis Majalengka -->
   <url>
     <loc>https://auraglobal.my.id/panduan/manfaat-website-bisnis-lokal-majalengka/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
-
-  <!-- Artikel Edukasi 3: Perbedaan Landing Page vs Company Profile -->
   <url>
     <loc>https://auraglobal.my.id/panduan/perbedaan-landing-page-dan-company-profile/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
-
-  <!-- Artikel Edukasi 4: Cara Memilih Jasa Pembuatan Website -->
   <url>
     <loc>https://auraglobal.my.id/panduan/cara-memilih-jasa-pembuatan-website-bisnis/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
 
   <!-- Halaman Profil Studio & Prinsip Kerja -->
   <url>
     <loc>https://auraglobal.my.id/tentang/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -91,7 +123,7 @@
   <!-- Halaman Saluran Kontak & Konsultasi -->
   <url>
     <loc>https://auraglobal.my.id/kontak/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>

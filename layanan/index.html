@@ -18,7 +18,7 @@
   <meta property="og:url" content="https://auraglobal.my.id/layanan/" />
   <meta property="og:title" content="Layanan Pembuatan Website Majalengka &amp; Solusi Digital Bisnis | AURA GLOBAL" />
   <meta property="og:description" content="Layanan jasa pembuatan website profesional di Majalengka, Cirebon, Sumedang &amp; seluruh Indonesia: Company Profile, Website UMKM, Katalog Produk, Landing Page &amp; Redesign." />
-  <meta property="og:image" content="https://cdn.phototourl.com/free/2026-08-20-2597676d-4a65-4bc2-b8e1-049865d5f224.png" />
+  <meta property="og:image" content="https://auraglobal.my.id/assets/hero-mockup.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:site_name" content="AURA GLOBAL" />
@@ -29,11 +29,10 @@
   <meta property="twitter:url" content="https://auraglobal.my.id/layanan/" />
   <meta property="twitter:title" content="Layanan Pembuatan Website Majalengka &amp; Solusi Digital Bisnis | AURA GLOBAL" />
   <meta property="twitter:description" content="Layanan jasa pembuatan website profesional di Majalengka, Cirebon, Sumedang &amp; seluruh Indonesia: Company Profile, Website UMKM, Katalog Produk, Landing Page &amp; Redesign." />
-  <meta property="twitter:image" content="https://cdn.phototourl.com/free/2026-08-20-2597676d-4a65-4bc2-b8e1-049865d5f224.png" />
+  <meta property="twitter:image" content="https://auraglobal.my.id/assets/hero-mockup.png" />
 
   <!-- Favicons -->
-  <link rel="icon" type="image/png" href="https://cdn.phototourl.com/free/2026-08-20-c9431592-f326-40af-a4d6-a85d5860df0b.png" />
-  <link rel="apple-touch-icon" href="https://cdn.phototourl.com/free/2026-08-20-c9431592-f326-40af-a4d6-a85d5860df0b.png" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   
   <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -49,21 +48,31 @@
       theme: {
         extend: {
           colors: {
-            "primary": "#5300B7",
-            "primary-dark": "#430094",
-            "primary-light": "#F3EEFC",
-            "primary-border": "#EBDDFF",
-            "dark": "#0F0C20",
-            "dark-slate": "#151128",
-            "body": "#4A455A",
-            "muted": "#716C82",
-            "surface-bg": "#FAFAFC",
-            "surface-card": "#FFFFFF",
-            "surface-alt": "#F3F2F8",
-            "border-card": "#E6E1F0"
+            "navy": "#0B1F3F",
+            "navy-dark": "#07152B",
+            "navy-surface": "#0F2A5C",
+            "blue-accent": "#1D6FE8",
+            "blue-hover": "#1558C0",
+            "blue-light": "#EBF3FE",
+            "blue-border": "#D0E3FC",
+            "surface-alt": "#F3F6FA",
+            "border-card": "#E5ECF6",
+            "body-text": "#5A6A85",
+            "muted-text": "#64748B",
+            // Aliases to seamlessly update legacy utility classes
+            "primary": "#0B1F3F",
+            "primary-dark": "#07152B",
+            "primary-light": "#EBF3FE",
+            "primary-border": "#D0E3FC",
+            "dark": "#0B1F3F",
+            "dark-slate": "#07152B",
+            "body": "#5A6A85",
+            "muted": "#64748B",
+            "surface-bg": "#FFFFFF",
+            "surface-card": "#FFFFFF"
           },
           fontFamily: {
-            sans: ["Plus Jakarta Sans", "sans-serif"]
+            sans: ["Plus Jakarta Sans", "system-ui", "-apple-system", "sans-serif"]
           }
         }
       }
@@ -116,44 +125,36 @@
   <!-- SCROLL PROGRESS INDICATOR -->
   <div id="scroll-progress-bar" aria-hidden="true"></div>
 
-  <!-- SEAMLESS PAGE TRANSITION OVERLAY -->
-  <div id="page-curtain" class="page-curtain-overlay" aria-hidden="true">
-    <div class="flex items-center gap-3">
-      <img src="/assets/logo-icon.png" alt="" class="w-10 h-10 object-contain animate-pulse" />
-      <span class="text-white font-extrabold text-lg uppercase tracking-wider">AURA GLOBAL</span>
-    </div>
-  </div>
-
   <!-- HEADER / NAVBAR -->
-  <header id="navbar" class="sticky top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-border-card transition-all duration-300">
+  <header id="navbar" class="sticky top-0 left-0 w-full z-40 bg-white/95 backdrop-blur-md border-b border-border-card transition-all duration-300">
     <div class="site-container h-20 flex items-center justify-between">
       
-      <!-- LOGO BRAND (ASLI TANPA KOTAK / LINGKARAN TAMBAHAN) -->
-      <a href="/" class="flex items-center group cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-xl p-1" aria-label="AURA GLOBAL Beranda">
-        <img src="/assets/logo-full.png" alt="AURA GLOBAL Digital Web Studio" class="h-8 sm:h-9 w-auto object-contain transition-transform group-hover:scale-102" />
+      <!-- BRAND LOGO -->
+      <a href="/" class="flex items-center group focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-accent rounded-lg p-0.5" aria-label="AURA GLOBAL Beranda">
+        <img src="/assets/logo.svg" alt="AURA GLOBAL" class="h-9 sm:h-10 w-auto object-contain transition-transform group-hover:scale-102" width="180" height="40" />
       </a>
 
-      <!-- MULTI-PAGE DESKTOP NAVIGATION -->
+      <!-- DESKTOP NAVIGATION -->
       <nav class="hidden lg:flex items-center gap-6 xl:gap-8" aria-label="Navigasi Utama">
-        <a href="/" class="nav-link text-sm font-semibold text-body hover:text-primary transition-colors py-1">Beranda</a>
-        <a href="/layanan/" class="nav-link active text-sm font-bold text-primary transition-colors py-1">Layanan</a>
-        <a href="/portfolio/" class="nav-link text-sm font-semibold text-body hover:text-primary transition-colors py-1">Portofolio</a>
-        <a href="/harga/" class="nav-link text-sm font-semibold text-body hover:text-primary transition-colors py-1">Harga</a>
-        <a href="/jasa-pembuatan-website-majalengka/" class="nav-link text-sm font-semibold text-body hover:text-primary transition-colors py-1">Majalengka</a>
-        <a href="/panduan/" class="nav-link text-sm font-semibold text-body hover:text-primary transition-colors py-1">Panduan</a>
-        <a href="/tentang/" class="nav-link text-sm font-semibold text-body hover:text-primary transition-colors py-1">Tentang Kami</a>
-        <a href="/kontak/" class="nav-link text-sm font-semibold text-body hover:text-primary transition-colors py-1">Kontak</a>
+        <a href="/" class="nav-link text-sm font-semibold text-navy hover:text-blue-accent transition-colors py-1">Beranda</a>
+        <a href="/layanan/" class="nav-link active text-sm font-semibold transition-colors py-1">Layanan</a>
+        <a href="/portofolio/" class="nav-link text-sm font-semibold text-navy hover:text-blue-accent transition-colors py-1">Portofolio</a>
+        <a href="/#harga" class="nav-link text-sm font-semibold text-navy hover:text-blue-accent transition-colors py-1">Harga</a>
+        <a href="/estimasi/" class="nav-link text-sm font-semibold text-navy hover:text-blue-accent transition-colors py-1">Estimasi</a>
+        <a href="/blog/" class="nav-link text-sm font-semibold text-navy hover:text-blue-accent transition-colors py-1">Blog</a>
+        <a href="/tentang/" class="nav-link text-sm font-semibold text-navy hover:text-blue-accent transition-colors py-1">Tentang Kami</a>
+        <a href="/#faq" class="nav-link text-sm font-semibold text-navy hover:text-blue-accent transition-colors py-1">FAQ</a>
       </nav>
 
       <!-- CTA & MOBILE TOGGLE -->
       <div class="flex items-center gap-3">
-        <button onclick="openWhatsApp('konsultasi dari halaman layanan')" class="hidden sm:inline-flex items-center gap-2 bg-dark hover:bg-primary text-white font-bold text-xs px-6 py-2.5 rounded-full transition-all shadow-sm hover:-translate-y-0.5">
-          <span>Konsultasi Gratis</span>
-          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-        </button>
+        <a href="https://wa.me/6285861510159?text=Halo%20AURA%20GLOBAL,%20saya%20ingin%20konsultasi%20layanan%20pembuatan%20website" target="_blank" rel="noopener noreferrer" class="btn-pill-navy hidden sm:inline-flex px-5 py-2.5 text-xs sm:text-sm font-semibold shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-accent">
+          <span>Konsultasi WhatsApp</span>
+          <svg class="w-4 h-4 fill-current text-[#25D366]" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2Z"/></svg>
+        </a>
         
-        <button onclick="toggleMobileMenu()" class="lg:hidden text-dark hover:text-primary p-2 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-primary flex items-center justify-center" aria-label="Buka menu navigasi">
-          <svg class="w-7 h-7 text-dark hover:text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <button onclick="toggleMobileMenu()" class="lg:hidden text-navy hover:text-blue-accent p-2 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-accent flex items-center justify-center" aria-label="Buka menu navigasi" aria-expanded="false">
+          <svg class="w-7 h-7 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path id="menu-icon-path" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
         </button>
@@ -161,20 +162,22 @@
     </div>
   </header>
 
-  <!-- MOBILE MENU -->
-  <div id="mobile-menu" class="fixed top-20 left-0 w-full bg-white border-b border-border-card z-40 hidden flex-col px-6 py-6 gap-3 shadow-xl lg:hidden transition-all duration-300">
-    <a href="/" class="text-base font-bold text-dark hover:text-primary transition-colors py-2 border-b border-surface-alt">Beranda</a>
-    <a href="/layanan/" class="text-base font-bold text-primary py-2 border-b border-surface-alt">Layanan</a>
-    <a href="/portfolio/" class="text-base font-bold text-dark hover:text-primary transition-colors py-2 border-b border-surface-alt">Portofolio</a>
-    <a href="/harga/" class="text-base font-bold text-dark hover:text-primary transition-colors py-2 border-b border-surface-alt">Paket Harga</a>
-    <a href="/jasa-pembuatan-website-majalengka/" class="text-base font-bold text-dark hover:text-primary transition-colors py-2 border-b border-surface-alt">Website Majalengka</a>
-    <a href="/panduan/" class="text-base font-bold text-dark hover:text-primary transition-colors py-2 border-b border-surface-alt">Panduan &amp; Edukasi</a>
-    <a href="/tentang/" class="text-base font-bold text-dark hover:text-primary transition-colors py-2 border-b border-surface-alt">Tentang Kami</a>
-    <a href="/kontak/" class="text-base font-bold text-dark hover:text-primary transition-colors py-2 border-b border-surface-alt">Kontak</a>
-    <button onclick="closeMobileMenu(); openWhatsApp('konsultasi via mobile menu layanan');" class="w-full mt-3 inline-flex items-center justify-center gap-2 bg-primary text-white font-bold py-3.5 rounded-xl hover:bg-primary-dark transition-all shadow-md">
-      <span>Konsultasi WhatsApp</span>
-      <span class="material-symbols-outlined text-[18px]">chat</span>
-    </button>
+  <!-- MOBILE MENU DRAWER -->
+  <div id="mobile-menu" class="fixed top-20 left-0 w-full bg-white border-b border-border-card z-30 hidden flex-col px-6 py-6 gap-3 shadow-xl lg:hidden transition-all duration-300">
+    <a href="/" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">Beranda</a>
+    <a href="/layanan/" onclick="closeMobileMenu()" class="text-base font-bold text-blue-accent py-2.5 border-b border-surface-alt">Layanan</a>
+    <a href="/portofolio/" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">Portofolio</a>
+    <a href="/#harga" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">Paket Harga</a>
+    <a href="/estimasi/" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">Estimasi Harga</a>
+    <a href="/blog/" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">Blog</a>
+    <a href="/tentang/" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">Tentang Kami</a>
+    <a href="/#faq" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">FAQ</a>
+    <div class="pt-3">
+      <a href="https://wa.me/6285861510159?text=Halo%20AURA%20GLOBAL,%20saya%20ingin%20konsultasi%20pembuatan%20website" target="_blank" rel="noopener noreferrer" class="btn-pill-navy w-full py-3.5 text-sm font-semibold flex items-center justify-center gap-2">
+        <span>Konsultasi WhatsApp</span>
+        <svg class="w-4 h-4 fill-current text-[#25D366]" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2Z"/></svg>
+      </a>
+    </div>
   </div>
 
   <main class="w-full">
@@ -501,109 +504,109 @@
     </section>
 
     <!-- PRE-FOOTER CTA -->
-    <section class="w-full py-16 lg:py-20 bg-dark-slate text-white relative overflow-hidden">
+    <section class="w-full py-16 lg:py-20 bg-navy text-white relative overflow-hidden">
       <div class="site-container text-center relative z-10">
-        <span class="text-primary-border font-bold text-xs tracking-widest uppercase mb-3 block">Mulai Bersama Kami</span>
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-[#38BDF8] text-xs font-bold uppercase tracking-wider mb-4">Mulai Bersama Kami</span>
         <h2 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-4">
           Konsultasikan Kebutuhan Website Bisnis Anda
         </h2>
         <p class="text-sm sm:text-base text-gray-300 max-w-2xl mx-auto mb-8 leading-relaxed">
           Diskusikan konsep, struktur konten, dan paket yang paling tepat untuk bisnis Anda. Tim kami siap memberikan estimasi jelas tanpa biaya konsultasi.
         </p>
-        <button onclick="openWhatsApp('CTA Layanan Page')" class="inline-flex items-center justify-center gap-2.5 bg-primary hover:bg-primary-dark text-white font-bold text-sm sm:text-base px-8 py-4 rounded-xl transition-all shadow-[0_8px_24px_rgba(83,0,183,0.4)] hover:-translate-y-0.5">
+        <a href="https://wa.me/6285861510159?text=Halo%20AURA%20GLOBAL,%20saya%20tertarik%20konsultasi%20pembuatan%20website%20setelah%20melihat%20halaman%20Layanan." target="_blank" rel="noopener noreferrer" class="btn-pill-blue px-8 py-3.5 text-sm sm:text-base font-semibold inline-flex items-center gap-2">
           <span>Hubungi Tim AURA GLOBAL</span>
-          <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
-        </button>
+          <svg class="w-4 h-4 fill-current text-white" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2Z"/></svg>
+        </a>
       </div>
     </section>
 
   </main>
 
-  <!-- FLOATING WA BUTTON -->
-  <aside aria-label="Aksi Cepat WhatsApp">
-    <button onclick="openWhatsApp('konsultasi cepat floating button')" class="fixed bottom-6 right-6 z-40 floating-whatsapp-btn inline-flex items-center gap-2.5 bg-[#25D366] text-white px-4 py-3 sm:px-5 sm:py-3.5 rounded-full font-bold text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-green-600 shadow-lg hover:shadow-xl hover:scale-105 transition-all" aria-label="Hubungi kami di WhatsApp">
-      <span class="material-symbols-outlined text-[22px]">chat</span>
-      <span class="hidden sm:inline">Konsultasi WhatsApp</span>
-    </button>
-  </aside>
-
   <!-- FOOTER -->
-  <footer class="w-full bg-primary text-white pt-16 pb-12 border-t border-primary-dark">
+  <footer class="w-full bg-navy-dark text-white pt-16 pb-12 border-t border-navy-surface">
     <div class="site-container">
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-white/15">
-        <div class="md:col-span-5 flex flex-col items-start">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center p-2 shadow-xs">
-              <span class="w-3.5 h-3.5 rounded-full bg-primary"></span>
-            </div>
-            <div class="flex flex-col">
-              <span class="text-2xl tracking-tight font-extrabold text-white uppercase leading-none">AURA GLOBAL</span>
-              <span class="text-[10px] tracking-[0.2em] text-[#d6bbfb] font-bold uppercase mt-1">Digital Web Studio</span>
-            </div>
-          </div>
-          <p class="text-sm text-white/80 leading-relaxed max-w-sm mb-6">
-            Studio pembuatan website profesional berbasis performa tinggi, struktur kode semantik, dan integrasi WhatsApp untuk percepatan transaksi bisnis.
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-12 border-b border-white/10">
+        
+        <!-- Col 1: Brand & Contact -->
+        <div class="lg:col-span-5">
+          <a href="/" class="inline-block mb-4" aria-label="AURA GLOBAL">
+            <img src="/assets/logo.svg" alt="AURA GLOBAL" class="h-9 w-auto object-contain brightness-0 invert" width="180" height="40" />
+          </a>
+          <p class="text-xs sm:text-sm text-gray-400 leading-relaxed mb-6 max-w-sm">
+            Studio pembuatan website profesional untuk UMKM, profil perusahaan, dan toko online. Fokus pada desain modern, kecepatan akses di ponsel, dan kemudahan konversi penjualan.
           </p>
-          <div class="text-xs text-white/75 space-y-1">
-            <p><strong class="text-white">Alamat Terverifikasi:</strong> Majalengka, Jawa Barat, Indonesia (Layanan Digital Online)</p>
-            <p><strong class="text-white">Wilayah Utama:</strong> Majalengka, Cirebon, Sumedang, Kuningan</p>
-            <p><strong class="text-white">Estimasi Pengerjaan:</strong> 3 &ndash; 14 hari kerja sesuai skala paket</p>
+          <div class="space-y-2.5 text-xs text-gray-300">
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-white">WhatsApp:</span>
+              <a href="https://wa.me/6285861510159" target="_blank" rel="noopener noreferrer" class="hover:text-blue-accent transition-colors">+62 858-6151-0159</a>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-white">Email:</span>
+              <a href="mailto:info@auraglobal.my.id" class="hover:text-blue-accent transition-colors">info@auraglobal.my.id</a>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-white">Lokasi:</span>
+              <span>Majalengka, Jawa Barat, Indonesia</span>
+            </div>
           </div>
         </div>
 
-        <div class="md:col-span-2">
-          <h3 class="text-xs font-bold uppercase tracking-wider text-[#d6bbfb] mb-4">Navigasi Situs</h3>
-          <ul class="space-y-2.5 text-sm text-white/85">
+        <!-- Col 2: Navigasi -->
+        <div class="lg:col-span-2">
+          <h4 class="text-xs font-extrabold uppercase tracking-wider text-white mb-4">Navigasi</h4>
+          <ul class="space-y-2 text-xs sm:text-sm text-gray-400">
             <li><a href="/" class="hover:text-white transition-colors">Beranda</a></li>
-            <li><a href="/layanan/" class="hover:text-white transition-colors">Layanan</a></li>
-            <li><a href="/portfolio/" class="hover:text-white transition-colors">Portofolio</a></li>
-            <li><a href="/harga/" class="hover:text-white transition-colors">Paket Harga</a></li>
-            <li><a href="/jasa-pembuatan-website-majalengka/" class="hover:text-white transition-colors font-semibold">Website Majalengka</a></li>
-            <li><a href="/panduan/" class="hover:text-white transition-colors">Panduan</a></li>
+            <li><a href="/layanan/" class="hover:text-white transition-colors text-white font-semibold">Layanan</a></li>
+            <li><a href="/portofolio/" class="hover:text-white transition-colors">Portofolio</a></li>
+            <li><a href="/#harga" class="hover:text-white transition-colors">Paket Harga</a></li>
+            <li><a href="/estimasi/" class="hover:text-white transition-colors">Estimasi Harga</a></li>
+            <li><a href="/blog/" class="hover:text-white transition-colors">Blog &amp; Insight</a></li>
             <li><a href="/tentang/" class="hover:text-white transition-colors">Tentang Kami</a></li>
-            <li><a href="/kontak/" class="hover:text-white transition-colors">Kontak</a></li>
+            <li><a href="/#faq" class="hover:text-white transition-colors">FAQ</a></li>
           </ul>
         </div>
 
-        <div class="md:col-span-2">
-          <h3 class="text-xs font-bold uppercase tracking-wider text-[#d6bbfb] mb-4">Panduan &amp; Layanan</h3>
-          <ul class="space-y-2.5 text-sm text-white/85">
-            <li><a href="/layanan/" class="hover:text-white transition-colors">Company Profile</a></li>
-            <li><a href="/layanan/" class="hover:text-white transition-colors">Website UMKM</a></li>
-            <li><a href="/panduan/berapa-harga-pembuatan-website-umkm/" class="hover:text-white transition-colors">Biaya Web UMKM</a></li>
-            <li><a href="/panduan/manfaat-website-bisnis-lokal-majalengka/" class="hover:text-white transition-colors">Web Bisnis Majalengka</a></li>
-            <li><a href="/panduan/cara-memilih-jasa-pembuatan-website-bisnis/" class="hover:text-white transition-colors">Tips Memilih Web Dev</a></li>
+        <!-- Col 3: Layanan Kami -->
+        <div class="lg:col-span-3">
+          <h4 class="text-xs font-extrabold uppercase tracking-wider text-white mb-4">Layanan Kami</h4>
+          <ul class="space-y-2 text-xs sm:text-sm text-gray-400">
+            <li><a href="/layanan/#service-01" class="hover:text-white transition-colors">Company Profile</a></li>
+            <li><a href="/layanan/#service-02" class="hover:text-white transition-colors">Website UMKM &amp; Bisnis Lokal</a></li>
+            <li><a href="/layanan/#service-03" class="hover:text-white transition-colors">Toko Online &amp; Katalog Digital</a></li>
+            <li><a href="/layanan/#service-04" class="hover:text-white transition-colors">Landing Page Iklan</a></li>
+            <li><a href="/jasa-pembuatan-website-majalengka/" class="hover:text-white transition-colors">Jasa Web Majalengka</a></li>
           </ul>
         </div>
 
-        <div class="md:col-span-3">
-          <h3 class="text-xs font-bold uppercase tracking-wider text-[#d6bbfb] mb-4">Kontak &amp; Dukungan</h3>
-          <ul class="space-y-3 text-sm text-white/85">
-            <li class="flex items-center gap-2.5">
-              <span class="material-symbols-outlined text-[#d6bbfb] text-[19px]">chat</span>
-              <a href="https://api.whatsapp.com/send?phone=6285861510159" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors font-medium">+62 858-6151-0159</a>
-            </li>
-            <li class="flex items-center gap-2.5">
-              <span class="material-symbols-outlined text-[#d6bbfb] text-[19px]">mail</span>
-              <a href="mailto:info@auraglobal.my.id" class="hover:text-white transition-colors font-medium">info@auraglobal.my.id</a>
-            </li>
-            <li class="flex items-center gap-2.5">
-              <span class="material-symbols-outlined text-[#d6bbfb] text-[19px]">language</span>
-              <a href="https://auraglobal.my.id/" class="hover:text-white transition-colors font-medium">https://auraglobal.my.id/</a>
-            </li>
+        <!-- Col 4: Keunggulan -->
+        <div class="lg:col-span-2">
+          <h4 class="text-xs font-extrabold uppercase tracking-wider text-white mb-4">Keunggulan</h4>
+          <ul class="space-y-2 text-xs text-gray-400">
+            <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-blue-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg><span>Desain Responsif &amp; Modern</span></li>
+            <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-blue-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg><span>Kode Ringan Tanpa Beban</span></li>
+            <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-blue-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg><span>Domain &amp; Hosting Termasuk</span></li>
+            <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-blue-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg><span>Dukungan Purna Jual</span></li>
+            <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-blue-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg><span>Transparan Tanpa Biaya Gelap</span></li>
           </ul>
-          <div class="mt-6 p-3.5 rounded-xl bg-white/10 border border-white/15 text-xs text-white/80 leading-relaxed">
-            Paket website mulai dari <strong>Rp500.000</strong> dengan fasilitas domain dan hosting aktif 1 tahun pertama.
-          </div>
         </div>
+
       </div>
 
-      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/70">
-        <span>&copy; 2026 AURA GLOBAL. Seluruh hak cipta dilindungi undang-undang.</span>
-        <span>Studio Web Bisnis &amp; Solusi Digital Indonesia</span>
+      <!-- Bottom Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
+        <p>© 2026 AURA GLOBAL. Hak cipta dilindungi undang-undang.</p>
+        <p>Web Development &amp; Digital Solutions</p>
       </div>
+
     </div>
   </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/6285861510159?text=Halo%20AURA%20GLOBAL,%20saya%20ingin%20konsultasi%20pembuatan%20website" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-40 bg-[#25D366] hover:bg-[#20BA5A] text-white px-4 py-3 rounded-full shadow-lg flex items-center gap-2 font-semibold text-sm transition-all hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] shadow-emerald-900/20" aria-label="Konsultasi WhatsApp">
+    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2Z"/></svg>
+    <span class="font-bold tracking-wide">Konsultasi</span>
+  </a>
 
   <script src="/script.js"></script>
 </body>
