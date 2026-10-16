@@ -1,6 +1,6 @@
 # AURA GLOBAL Digital Web Studio
 
-> Studio pembuatan website profesional, responsif, dan SEO-friendly untuk UMKM, profil perusahaan, toko online, aplikasi web, dan solusi digital berbasis di Majalengka, Jawa Barat, Indonesia.
+> Studio pembuatan website profesional, agensi teknologi kreatif, dan pengembang solusi digital berstandar global. Berbasis di Majalengka, Jawa Barat, dengan jangkauan kolaborasi remote ke seluruh Indonesia hingga mancanegara.
 
 ## Informasi Entitas & Kontak Resmi
 - Nama Brand: AURA GLOBAL
@@ -8,8 +8,10 @@
 - Website Resmi: https://auraglobal.my.id/
 - WhatsApp Resmi: +62 852-1817-5984 (https://wa.me/6285218175984)
 - Email: info@auraglobal.my.id
-- Lokasi: Majalengka, Jawa Barat, Indonesia
-- Wilayah Layanan: Majalengka, Cirebon, Sumedang, Bandung, Jakarta, dan seluruh Indonesia
+- Lokasi Kantor / Studio: Majalengka, Jawa Barat, Indonesia
+- Wilayah Layanan: Majalengka, Cirebon, Bandung, Jakarta, seluruh Indonesia, serta klien internasional / global (Worldwide Remote Services)
+- Tim Pengembang: Tim AURA GLOBAL (Spesialis UI/UX, Web Engineering, SEO, & IoT)
+- Founder & Head of Technology: Reski Setiawan
 - Media Sosial Resmi: TikTok https://www.tiktok.com/@auraglobal_jasawebsite
 
 ## Layanan Utama
