@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>AURA GLOBAL — Professional Web Development &amp; Digital Solutions Studio</title>
+  
+  <!-- SEO & Primary Meta Tags -->
+  <meta name="description" content="AURA GLOBAL is a digital web studio crafting high-performance company profiles, modern e-commerce stores, custom web applications, and IoT solutions for global clients." />
+  <meta name="keywords" content="web development agency, hire web developer, custom website design, company profile website, e-commerce development, iot dashboard, laravel developer, international web design studio" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="author" content="AURA GLOBAL" />
+  <link rel="canonical" href="https://auraglobal.my.id/en/" />
+
+  <!-- Multi-language Hreflang Tags -->
+  <link rel="alternate" hreflang="id" href="https://auraglobal.my.id/" />
+  <link rel="alternate" hreflang="en" href="https://auraglobal.my.id/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://auraglobal.my.id/" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://auraglobal.my.id/en/" />
+  <meta property="og:title" content="AURA GLOBAL — Professional Web Development &amp; Digital Solutions Studio" />
+  <meta property="og:description" content="High-performance websites, custom web apps, and IoT hardware integration. 100% remote delivery worldwide with transparent pricing." />
+  <meta property="og:image" content="https://auraglobal.my.id/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="AURA GLOBAL" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://auraglobal.my.id/en/" />
+  <meta property="twitter:title" content="AURA GLOBAL — Global Web Development Studio" />
+  <meta property="twitter:description" content="Modern, responsive, and SEO-optimized web development for businesses worldwide." />
+  <meta property="twitter:image" content="https://auraglobal.my.id/assets/og-image.png" />
+
+  <!-- Favicon & PWA Suite -->
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#0B1F3F" />
+
+  <!-- Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&display=swap" rel="stylesheet" />
+  
+  <!-- Tailwind CSS Engine -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "navy": "#0B1F3F",
+            "navy-dark": "#07152B",
+            "navy-surface": "#0F2A5C",
+            "blue-accent": "#1D6FE8",
+            "blue-hover": "#1558C0",
+            "blue-light": "#EBF3FE",
+            "blue-border": "#D0E3FC",
+            "surface-alt": "#F3F6FA",
+            "border-card": "#E5ECF6",
+            "body-text": "#5A6A85",
+            "muted-text": "#64748B"
+          },
+          fontFamily: {
+            sans: ["Plus Jakarta Sans", "system-ui", "-apple-system", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="/style.css" />
+
+  <!-- Structured Data JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://auraglobal.my.id/#organization",
+        "name": "AURA GLOBAL",
+        "alternateName": [
+          "AURA GLOBAL Digital Web Studio",
+          "AURA GLOBAL Creative Tech Agency"
+        ],
+        "url": "https://auraglobal.my.id/en/",
+        "logo": "https://auraglobal.my.id/logo.png",
+        "description": "Professional web development studio and digital technology agency serving global clients with custom websites, e-commerce, cloud dashboards, and IoT systems.",
+        "founder": {
+          "@type": "Person",
+          "name": "Reski Setiawan",
+          "jobTitle": "Founder & Head of Technology"
+        },
+        "employee": [
+          {
+            "@type": "Person",
+            "name": "Reski Setiawan",
+            "jobTitle": "Lead Technical Architect & Founder"
+          }
+        ],
+        "areaServed": [
+          { "@type": "GeoShape", "name": "Worldwide / Global Remote Web Development" }
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+6285218175984",
+          "contactType": "customer service",
+          "availableLanguage": ["en", "id"]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://auraglobal.my.id/en/#website",
+        "url": "https://auraglobal.my.id/en/",
+        "name": "AURA GLOBAL Digital Web Studio (International)",
+        "inLanguage": "en-US",
+        "publisher": {
+          "@id": "https://auraglobal.my.id/#organization"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-white text-navy font-sans antialiased selection:bg-blue-light selection:text-blue-accent min-h-screen">
+
+  <!-- SCROLL PROGRESS INDICATOR -->
+  <div id="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- HEADER / NAVBAR -->
+  <header id="navbar" class="sticky top-0 left-0 w-full z-40 bg-white/95 backdrop-blur-md border-b border-border-card transition-all duration-300">
+    <div class="site-container h-20 flex items-center justify-between">
+      
+      <!-- BRAND LOGO -->
+      <a href="/en/" class="flex items-center group focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-accent rounded-lg p-0.5" aria-label="AURA GLOBAL Home">
+        <img src="/assets/logo.svg" alt="AURA GLOBAL" class="h-9 sm:h-10 w-auto object-contain transition-transform group-hover:scale-102" width="180" height="40" />
+      </a>
+
+      <!-- DESKTOP NAVIGATION -->
+      <nav class="hidden lg:flex items-center gap-6 xl:gap-8" aria-label="Main Navigation">
+        <a href="/en/" class="nav-link active text-sm font-semibold transition-colors py-1">Home</a>
+        <a href="#services" class="nav-link text-sm font-semibold text-navy hover:text-blue-accent transition-colors py-1">Services</a>
+        <a href="#portfolio" class="nav-link text-sm font-semibold text-navy hover:text-blue-accent transition-colors py-1">Portfolio</a>
+        <a href="#pricing" class="nav-link text-sm font-semibold text-navy hover:text-blue-accent transition-colors py-1">Pricing</a>
+        <a href="#workflow" class="nav-link text-sm font-semibold text-navy hover:text-blue-accent transition-colors py-1">Process</a>
+        <a href="#faq" class="nav-link text-sm font-semibold text-navy hover:text-blue-accent transition-colors py-1">FAQ</a>
+      </nav>
+
+      <!-- LANGUAGE TOGGLE & CTA -->
+      <div class="flex items-center gap-3">
+        <!-- LANGUAGE SWITCHER -->
+        <div class="inline-flex items-center text-xs font-semibold rounded-full border border-border-card bg-surface-alt p-0.5">
+          <a href="/" class="px-2.5 py-1 rounded-full text-navy hover:text-blue-accent text-[11px] font-bold transition-colors" title="Versi Bahasa Indonesia">ID</a>
+          <span class="px-2.5 py-1 rounded-full bg-navy text-white text-[11px] font-bold shadow-xs">EN</span>
+        </div>
+
+        <a href="https://wa.me/6285218175984?text=Hello%20AURA%20GLOBAL,%20I%20would%20like%20to%20discuss%20a%20web%20development%20project" target="_blank" rel="noopener noreferrer" class="btn-pill-navy hidden sm:inline-flex px-5 py-2.5 text-xs sm:text-sm font-semibold shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-accent">
+          <span>Start Project</span>
+          <svg class="w-4 h-4 fill-current text-[#25D366]" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2Z"/></svg>
+        </a>
+        
+        <button onclick="toggleMobileMenu()" class="lg:hidden text-navy hover:text-blue-accent p-2 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-accent flex items-center justify-center" aria-label="Toggle navigation menu" aria-expanded="false" id="menuToggleBtn">
+          <svg class="w-7 h-7 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path id="menu-icon-path" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU DRAWER -->
+  <div id="mobile-menu" class="fixed top-20 left-0 w-full bg-white border-b border-border-card z-30 hidden flex-col px-6 py-6 gap-3 shadow-xl lg:hidden transition-all duration-300">
+    <div class="flex items-center justify-between pb-3 border-b border-surface-alt">
+      <span class="text-xs font-bold text-muted-text uppercase tracking-wider">Select Language</span>
+      <div class="inline-flex items-center text-xs font-semibold rounded-full border border-border-card bg-surface-alt p-0.5">
+        <a href="/" class="px-3 py-1 rounded-full text-navy hover:text-blue-accent text-xs font-bold">Bahasa Indonesia (ID)</a>
+        <span class="px-3 py-1 rounded-full bg-navy text-white text-xs font-bold">English (EN)</span>
+      </div>
+    </div>
+    <a href="/en/" onclick="closeMobileMenu()" class="text-base font-bold text-blue-accent py-2.5 border-b border-surface-alt">Home</a>
+    <a href="#services" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">Services</a>
+    <a href="#portfolio" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">Portfolio</a>
+    <a href="#pricing" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">Pricing (USD)</a>
+    <a href="#workflow" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">Workflow</a>
+    <a href="#faq" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">FAQ</a>
+    <div class="pt-3">
+      <a href="https://wa.me/6285218175984?text=Hello%20AURA%20GLOBAL,%20I%20would%20like%20to%20discuss%20a%20web%20development%20project" target="_blank" rel="noopener noreferrer" class="btn-pill-navy w-full py-3.5 text-sm font-semibold flex items-center justify-center gap-2">
+        <span>Start Project via WhatsApp</span>
+        <svg class="w-4 h-4 fill-current text-[#25D366]" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2Z"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <main class="w-full flex-grow">
+
+    <!-- HERO SECTION -->
+    <section class="w-full pt-12 pb-16 lg:pt-20 lg:pb-24 bg-gradient-to-b from-[#F8FAFC] to-white border-b border-border-card">
+      <div class="site-container">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-7 text-left">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-light border border-blue-border text-blue-accent text-xs font-bold uppercase tracking-wide mb-6">
+              <span class="w-2 h-2 rounded-full bg-blue-accent animate-pulse"></span>
+              <span>Global Remote Web Studio &amp; Tech Lab</span>
+            </div>
+            
+            <h1 class="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl font-extrabold text-navy tracking-tight leading-[1.15] mb-6">
+              Crafting High-Speed Websites &amp; Smart Digital Solutions for <span class="text-blue-accent">Global Brands</span>
+            </h1>
+            
+            <p class="text-base sm:text-lg text-body-text leading-relaxed mb-8 max-w-2xl">
+              From sleek corporate company profiles and high-converting e-commerce storefronts to custom web dashboards and IoT hardware integration. Built with clean code, modern UX, and lightning-fast loading speeds.
+            </p>
+
+            <!-- KEY PILLARS -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+              <div class="p-3 bg-white rounded-xl border border-border-card shadow-xs">
+                <span class="block text-lg font-extrabold text-navy">100%</span>
+                <span class="text-xs text-muted-text font-medium">Remote Delivery</span>
+              </div>
+              <div class="p-3 bg-white rounded-xl border border-border-card shadow-xs">
+                <span class="block text-lg font-extrabold text-navy">&lt; 1.5s</span>
+                <span class="text-xs text-muted-text font-medium">Load Speed</span>
+              </div>
+              <div class="p-3 bg-white rounded-xl border border-border-card shadow-xs">
+                <span class="block text-lg font-extrabold text-navy">95+</span>
+                <span class="text-xs text-muted-text font-medium">PageSpeed Score</span>
+              </div>
+              <div class="p-3 bg-white rounded-xl border border-border-card shadow-xs">
+                <span class="block text-lg font-extrabold text-navy">PayPal/Wise</span>
+                <span class="text-xs text-muted-text font-medium">Global Payments</span>
+              </div>
+            </div>
+
+            <!-- ACTION BUTTONS -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+              <a href="https://wa.me/6285218175984?text=Hello%20AURA%20GLOBAL,%20I%20would%20like%20to%20discuss%20a%20web%20development%20project" target="_blank" rel="noopener noreferrer" class="btn-pill-navy px-8 py-4 text-sm font-bold flex items-center justify-center gap-2 shadow-md">
+                <span>Start Your Project</span>
+                <svg class="w-4 h-4 fill-current text-[#25D366]" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2Z"/></svg>
+              </a>
+              <a href="#pricing" class="px-7 py-4 rounded-full text-sm font-bold text-navy bg-white border border-border-card hover:border-blue-accent hover:text-blue-accent transition-all flex items-center justify-center">
+                <span>View International Pricing ($)</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- HERO VISUAL MOCKUP -->
+          <div class="lg:col-span-5 relative">
+            <div class="relative rounded-2xl overflow-hidden bg-white border border-border-card shadow-xl p-2 sm:p-3">
+              <img src="/assets/hero-mockup.webp" alt="AURA GLOBAL Multi-device Web Design Showcase" class="w-full h-auto rounded-xl object-cover" width="800" height="500" priority="high" />
+              <div class="absolute bottom-6 left-6 right-6 bg-navy/90 backdrop-blur-md rounded-xl p-3.5 text-white flex items-center justify-between border border-white/10 shadow-lg">
+                <div class="flex items-center gap-2.5">
+                  <span class="w-3 h-3 rounded-full bg-emerald-400 animate-ping"></span>
+                  <span class="text-xs font-semibold">Ready for Global Client Bookings</span>
+                </div>
+                <span class="text-[11px] font-bold text-blue-light uppercase tracking-wider">Fast Turnaround</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="w-full py-16 lg:py-24 bg-white border-b border-border-card">
+      <div class="site-container">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-light text-blue-accent text-xs font-bold uppercase tracking-wider mb-4 border border-blue-border">
+            <span>Specialized Capabilities</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-navy tracking-tight mb-4">
+            Comprehensive Digital Engineering &amp; Design
+          </h2>
+          <p class="text-base text-body-text leading-relaxed">
+            We build end-to-end web products designed to establish market credibility, convert inbound visitors, and streamline business operations.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- 1. Corporate Profile -->
+          <div class="card-clean p-8 bg-surface-alt rounded-2xl border border-border-card hover:border-blue-accent transition-all">
+            <div class="w-12 h-12 rounded-xl bg-blue-light text-blue-accent flex items-center justify-center font-bold text-xl mb-6">
+              💼
+            </div>
+            <h3 class="text-xl font-bold text-navy mb-3">Corporate Company Profile</h3>
+            <p class="text-sm text-body-text leading-relaxed mb-4">
+              Prestigious, mobile-optimized business websites built to showcase corporate services, leadership, credentials, and capture enterprise inquiries.
+            </p>
+            <ul class="text-xs text-muted-text space-y-2 font-medium">
+              <li class="flex items-center gap-2">✓ Executive branding &amp; typography</li>
+              <li class="flex items-center gap-2">✓ Contact forms &amp; interactive maps</li>
+              <li class="flex items-center gap-2">✓ High-speed cloud hosting setup</li>
+            </ul>
+          </div>
+
+          <!-- 2. E-Commerce & WhatsApp Stores -->
+          <div class="card-clean p-8 bg-surface-alt rounded-2xl border border-border-card hover:border-blue-accent transition-all">
+            <div class="w-12 h-12 rounded-xl bg-blue-light text-blue-accent flex items-center justify-center font-bold text-xl mb-6">
+              🛍️
+            </div>
+            <h3 class="text-xl font-bold text-navy mb-3">E-Commerce &amp; Product Catalogs</h3>
+            <p class="text-sm text-body-text leading-relaxed mb-4">
+              Modern online stores and digital catalogs with zero-friction checkout, category filtering, and direct customer communication channels.
+            </p>
+            <ul class="text-xs text-muted-text space-y-2 font-medium">
+              <li class="flex items-center gap-2">✓ Fast product showcase &amp; filters</li>
+              <li class="flex items-center gap-2">✓ Direct order button via WhatsApp / Chat</li>
+              <li class="flex items-center gap-2">✓ Mobile-first shopping experience</li>
+            </ul>
+          </div>
+
+          <!-- 3. Custom Web Apps -->
+          <div class="card-clean p-8 bg-surface-alt rounded-2xl border border-border-card hover:border-blue-accent transition-all">
+            <div class="w-12 h-12 rounded-xl bg-blue-light text-blue-accent flex items-center justify-center font-bold text-xl mb-6">
+              ⚡
+            </div>
+            <h3 class="text-xl font-bold text-navy mb-3">Custom Web Apps &amp; Portals</h3>
+            <p class="text-sm text-body-text leading-relaxed mb-4">
+              Tailored back-office systems, admin dashboards, point of sale, inventory managers, and custom business logic built on robust frameworks (Laravel/PHP).
+            </p>
+            <ul class="text-xs text-muted-text space-y-2 font-medium">
+              <li class="flex items-center gap-2">✓ Role-based access control &amp; auth</li>
+              <li class="flex items-center gap-2">✓ Secure relational database architecture</li>
+              <li class="flex items-center gap-2">✓ RESTful API integrations</li>
+            </ul>
+          </div>
+
+          <!-- 4. IoT Hardware & Web Integration -->
+          <div class="card-clean p-8 bg-surface-alt rounded-2xl border border-border-card hover:border-blue-accent transition-all">
+            <div class="w-12 h-12 rounded-xl bg-blue-light text-blue-accent flex items-center justify-center font-bold text-xl mb-6">
+              🔌
+            </div>
+            <h3 class="text-xl font-bold text-navy mb-3">IoT Hardware &amp; Web Dashboards</h3>
+            <p class="text-sm text-body-text leading-relaxed mb-4">
+              Bridging authentic microcontrollers (Arduino Uno, ESP32, ESP8266) with cloud databases and live web monitoring via MQTT and HTTP REST.
+            </p>
+            <ul class="text-xs text-muted-text space-y-2 font-medium">
+              <li class="flex items-center gap-2">✓ Real-time sensor telemetry &amp; graphs</li>
+              <li class="flex items-center gap-2">✓ Remote actuator &amp; relay triggers</li>
+              <li class="flex items-center gap-2">✓ Hardware firmware &amp; web cloud sync</li>
+            </ul>
+          </div>
+
+          <!-- 5. High-Conversion Landing Pages -->
+          <div class="card-clean p-8 bg-surface-alt rounded-2xl border border-border-card hover:border-blue-accent transition-all">
+            <div class="w-12 h-12 rounded-xl bg-blue-light text-blue-accent flex items-center justify-center font-bold text-xl mb-6">
+              🎯
+            </div>
+            <h3 class="text-xl font-bold text-navy mb-3">Ad Landing Pages &amp; Funnels</h3>
+            <p class="text-sm text-body-text leading-relaxed mb-4">
+              Single-purpose, laser-focused landing pages engineered for high conversion rates from Google Ads, Meta Ads, or influencer campaigns.
+            </p>
+            <ul class="text-xs text-muted-text space-y-2 font-medium">
+              <li class="flex items-center gap-2">✓ Compelling visual hierarchy &amp; CTA</li>
+              <li class="flex items-center gap-2">✓ Conversion tracking &amp; analytics ready</li>
+              <li class="flex items-center gap-2">✓ Under 1-second load performance</li>
+            </ul>
+          </div>
+
+          <!-- 6. Website Redesign & SEO -->
+          <div class="card-clean p-8 bg-surface-alt rounded-2xl border border-border-card hover:border-blue-accent transition-all">
+            <div class="w-12 h-12 rounded-xl bg-blue-light text-blue-accent flex items-center justify-center font-bold text-xl mb-6">
+              🚀
+            </div>
+            <h3 class="text-xl font-bold text-navy mb-3">Redesign &amp; Performance Boost</h3>
+            <p class="text-sm text-body-text leading-relaxed mb-4">
+              Transform outdated, sluggish websites into modern, ultra-responsive digital storefronts that rank higher on search engines and convert better.
+            </p>
+            <ul class="text-xs text-muted-text space-y-2 font-medium">
+              <li class="flex items-center gap-2">✓ Complete UI/UX modernization</li>
+              <li class="flex items-center gap-2">✓ Core Web Vitals optimization</li>
+              <li class="flex items-center gap-2">✓ Rich Schema JSON-LD indexing</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- INFOGRAPHIC SHOWCASE -->
+        <div class="mt-16 bg-navy rounded-2xl p-6 sm:p-10 text-white border border-navy-surface shadow-xl">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-5">
+              <span class="inline-block px-3 py-1 rounded-full bg-blue-accent text-white text-xs font-bold uppercase tracking-wider mb-4">Quality Standard</span>
+              <h3 class="text-2xl sm:text-3xl font-extrabold mb-4">Global Engineering Standards</h3>
+              <p class="text-sm text-gray-300 leading-relaxed mb-6">
+                Every project built by the AURA GLOBAL engineering team follows strict architectural guidelines: modular components, semantic HTML5, zero unnecessary bloat, and automated search engine meta-tagging.
+              </p>
+              <div class="flex items-center gap-4 text-xs font-semibold text-blue-light">
+                <span class="flex items-center gap-1.5">✓ W3C Validated</span>
+                <span class="flex items-center gap-1.5">✓ Mobile-First</span>
+                <span class="flex items-center gap-1.5">✓ SSL Secured</span>
+              </div>
+            </div>
+            <div class="lg:col-span-7">
+              <img src="/assets/standar-kualitas-global.webp" alt="AURA GLOBAL Global Quality Standards Infographic" class="w-full h-auto rounded-xl border border-white/10 shadow-lg object-cover" width="1200" height="675" loading="lazy" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PORTFOLIO SHOWCASE -->
+    <section id="portfolio" class="w-full py-16 lg:py-24 bg-surface-alt border-b border-border-card">
+      <div class="site-container">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-light text-blue-accent text-xs font-bold uppercase tracking-wider mb-4 border border-blue-border">
+            <span>Selected Works</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-navy tracking-tight mb-4">
+            Real Craftsmanship &amp; Proven Prototypes
+          </h2>
+          <p class="text-base text-body-text leading-relaxed">
+            Explore our curated work across e-commerce, hospitality, automotive rental, and smart hardware labs.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Card 1 -->
+          <div class="card-clean bg-white rounded-2xl overflow-hidden border border-border-card hover:border-blue-accent transition-all group">
+            <div class="overflow-hidden bg-blue-light">
+              <img src="/assets/portfolio-toko-mockup.webp" alt="SegarMart E-Commerce Store Mockup" class="w-full h-52 object-cover object-top transition-transform duration-300 group-hover:scale-103" width="560" height="360" loading="lazy" />
+            </div>
+            <div class="p-6">
+              <span class="text-xs font-bold text-blue-accent uppercase tracking-wider block mb-2">E-Commerce &amp; Retail</span>
+              <h3 class="text-lg font-bold text-navy mb-2">SegarMart Retail Storefront</h3>
+              <p class="text-xs text-body-text leading-relaxed mb-4">
+                Dynamic product catalog with instant ordering and automated order messaging for fast retail checkout.
+              </p>
+              <span class="text-xs font-bold text-navy flex items-center gap-1 group-hover:text-blue-accent transition-colors">
+                <span>Fast Loading • Clean UI</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card-clean bg-white rounded-2xl overflow-hidden border border-border-card hover:border-blue-accent transition-all group">
+            <div class="overflow-hidden bg-blue-light">
+              <img src="/assets/portfolio-villa-mockup.webp" alt="Villa Panorama Resort Profile Mockup" class="w-full h-52 object-cover object-top transition-transform duration-300 group-hover:scale-103" width="560" height="360" loading="lazy" />
+            </div>
+            <div class="p-6">
+              <span class="text-xs font-bold text-blue-accent uppercase tracking-wider block mb-2">Hospitality &amp; Travel</span>
+              <h3 class="text-lg font-bold text-navy mb-2">Villa Panorama Eco Resort</h3>
+              <p class="text-xs text-body-text leading-relaxed mb-4">
+                Immersive landscape visuals, room availability showcase, and direct reservation flow.
+              </p>
+              <span class="text-xs font-bold text-navy flex items-center gap-1 group-hover:text-blue-accent transition-colors">
+                <span>High Engagement • Visual Rich</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Card 3 (IoT Hardware) -->
+          <div class="card-clean bg-white rounded-2xl overflow-hidden border border-border-card hover:border-blue-accent transition-all group">
+            <div class="overflow-hidden bg-blue-light">
+              <img src="/assets/services/service-iot-arduino.webp" alt="Arduino Uno R3 and ESP32 Microcontroller IoT Lab" class="w-full h-52 object-cover transition-transform duration-300 group-hover:scale-103" width="560" height="360" loading="lazy" />
+            </div>
+            <div class="p-6">
+              <span class="text-xs font-bold text-blue-accent uppercase tracking-wider block mb-2">Hardware &amp; Cloud IoT</span>
+              <h3 class="text-lg font-bold text-navy mb-2">IoT Sensor Telemetry System</h3>
+              <p class="text-xs text-body-text leading-relaxed mb-4">
+                Arduino Uno R3 &amp; ESP32 Wi-Fi firmware integrated with real-time web telemetry and live relay control.
+              </p>
+              <span class="text-xs font-bold text-navy flex items-center gap-1 group-hover:text-blue-accent transition-colors">
+                <span>MQTT • HTTP REST • WebSockets</span>
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TRANSPARENT INTERNATIONAL PRICING (USD) -->
+    <section id="pricing" class="w-full py-16 lg:py-24 bg-white border-b border-border-card">
+      <div class="site-container">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-light text-blue-accent text-xs font-bold uppercase tracking-wider mb-4 border border-blue-border">
+            <span>Transparent Investment</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-navy tracking-tight mb-4">
+            International Pricing Packages (USD)
+          </h2>
+          <p class="text-base text-body-text leading-relaxed">
+            No hidden costs. 50% deposit upfront, 50% upon final sign-off. Secure payments accepted via PayPal, Wise, and International Bank Transfer.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Package 1: Micro / Bio -->
+          <div class="card-clean p-6 bg-surface-alt rounded-2xl border border-border-card flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-muted-text uppercase tracking-wider block mb-2">Micro Site</span>
+              <h3 class="text-xl font-bold text-navy mb-1">Starter Bio</h3>
+              <p class="text-xs text-body-text mb-4">Compact single-page profile for creators, freelancers, and direct bio links.</p>
+              <div class="mb-6">
+                <span class="text-3xl font-extrabold text-navy">$29</span>
+                <span class="text-xs text-muted-text">/ one-time</span>
+              </div>
+              <ul class="text-xs text-body-text space-y-2.5 mb-6">
+                <li class="flex items-center gap-2">✓ 1 Responsive Bio Page</li>
+                <li class="flex items-center gap-2">✓ Free Cloud Hosting (1st Year)</li>
+                <li class="flex items-center gap-2">✓ WhatsApp &amp; Social Links</li>
+                <li class="flex items-center gap-2">✓ SSL Security Certificate</li>
+                <li class="flex items-center gap-2">✓ 2-Day Fast Turnaround</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/6285218175984?text=Hello%20AURA%20GLOBAL,%20I%20am%20interested%20in%20the%20Starter%20Bio%20Package%20($29)" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-full text-xs font-bold text-navy bg-white border border-border-card hover:border-blue-accent text-center transition-all">
+              Choose Starter
+            </a>
+          </div>
+
+          <!-- Package 2: Business Landing (POPULAR) -->
+          <div class="card-clean p-6 bg-white rounded-2xl border-2 border-blue-accent shadow-md flex flex-col justify-between relative">
+            <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-blue-accent text-white text-[10px] font-extrabold uppercase px-3 py-1 rounded-full shadow-xs">
+              Most Popular
+            </div>
+            <div>
+              <span class="text-xs font-bold text-blue-accent uppercase tracking-wider block mb-2">Full Landing</span>
+              <h3 class="text-xl font-bold text-navy mb-1">Business Landing</h3>
+              <p class="text-xs text-body-text mb-4">Complete one-page corporate landing page optimized for lead capture and advertising.</p>
+              <div class="mb-6">
+                <span class="text-3xl font-extrabold text-navy">$49</span>
+                <span class="text-xs text-muted-text">/ one-time</span>
+              </div>
+              <ul class="text-xs text-body-text space-y-2.5 mb-6">
+                <li class="flex items-center gap-2 font-semibold text-navy">✓ Full Structured Landing Page</li>
+                <li class="flex items-center gap-2">✓ Custom Domain &amp; Fast Hosting</li>
+                <li class="flex items-center gap-2">✓ WhatsApp &amp; Contact Form</li>
+                <li class="flex items-center gap-2">✓ Google Search Engine Indexing</li>
+                <li class="flex items-center gap-2">✓ 3-5 Days Delivery Time</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/6285218175984?text=Hello%20AURA%20GLOBAL,%20I%20am%20interested%20in%20the%20Business%20Landing%20Package%20($49)" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-full text-xs font-bold text-white bg-blue-accent hover:bg-blue-hover text-center transition-all shadow-sm">
+              Choose Business
+            </a>
+          </div>
+
+          <!-- Package 3: Growth Store / Multi-page -->
+          <div class="card-clean p-6 bg-surface-alt rounded-2xl border border-border-card flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-muted-text uppercase tracking-wider block mb-2">Multi-Page</span>
+              <h3 class="text-xl font-bold text-navy mb-1">Growth &amp; Catalog</h3>
+              <p class="text-xs text-body-text mb-4">Multi-section website with interactive product showcase, services, and blog.</p>
+              <div class="mb-6">
+                <span class="text-3xl font-extrabold text-navy">$89</span>
+                <span class="text-xs text-muted-text">/ one-time</span>
+              </div>
+              <ul class="text-xs text-body-text space-y-2.5 mb-6">
+                <li class="flex items-center gap-2">✓ Up to 5 Custom Pages</li>
+                <li class="flex items-center gap-2">✓ Product / Portfolio Catalog</li>
+                <li class="flex items-center gap-2">✓ Advanced On-Page SEO</li>
+                <li class="flex items-center gap-2">✓ Google Analytics &amp; Meta Pixel</li>
+                <li class="flex items-center gap-2">✓ 5-7 Days Delivery Time</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/6285218175984?text=Hello%20AURA%20GLOBAL,%20I%20am%20interested%20in%20the%20Growth%20Package%20($89)" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-full text-xs font-bold text-navy bg-white border border-border-card hover:border-blue-accent text-center transition-all">
+              Choose Growth
+            </a>
+          </div>
+
+          <!-- Package 4: Custom Web / IoT -->
+          <div class="card-clean p-6 bg-surface-alt rounded-2xl border border-border-card flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-muted-text uppercase tracking-wider block mb-2">Bespoke Tech</span>
+              <h3 class="text-xl font-bold text-navy mb-1">Custom App / IoT</h3>
+              <p class="text-xs text-body-text mb-4">Custom web applications, dashboards, API systems, or IoT hardware cloud monitoring.</p>
+              <div class="mb-6">
+                <span class="text-3xl font-extrabold text-navy">From $149</span>
+                <span class="text-xs text-muted-text">/ custom quote</span>
+              </div>
+              <ul class="text-xs text-body-text space-y-2.5 mb-6">
+                <li class="flex items-center gap-2">✓ Laravel / Custom Backend</li>
+                <li class="flex items-center gap-2">✓ Admin Dashboard &amp; Database</li>
+                <li class="flex items-center gap-2">✓ Arduino / ESP32 Hardware Lab</li>
+                <li class="flex items-center gap-2">✓ Full Source Code &amp; Repo</li>
+                <li class="flex items-center gap-2">✓ Dedicated Engineering Support</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/6285218175984?text=Hello%20AURA%20GLOBAL,%20I%20would%20like%20a%20custom%20quote%20for%20Custom%20App%20or%20IoT" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-full text-xs font-bold text-navy bg-white border border-border-card hover:border-blue-accent text-center transition-all">
+              Request Custom Quote
+            </a>
+          </div>
+
+        </div>
+
+        <!-- PAYMENT METHODS ACCEPTED -->
+        <div class="mt-12 p-6 bg-surface-alt rounded-2xl border border-border-card flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="flex items-center gap-3">
+            <span class="text-2xl">💳</span>
+            <div>
+              <span class="text-sm font-bold text-navy block">Accepted Global Payment Methods</span>
+              <span class="text-xs text-muted-text">PayPal, Wise, International SWIFT Wire Transfer, and Major Credit Cards</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 text-xs font-bold text-blue-accent">
+            <span>50% Down Payment • 50% After Approval</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- REMOTE WORKFLOW PROCESS -->
+    <section id="workflow" class="w-full py-16 lg:py-24 bg-surface-alt border-b border-border-card">
+      <div class="site-container">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-light text-blue-accent text-xs font-bold uppercase tracking-wider mb-4 border border-blue-border">
+            <span>Seamless Remote Collaboration</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-navy tracking-tight mb-4">
+            How We Work With Global Clients
+          </h2>
+          <p class="text-base text-body-text leading-relaxed">
+            Our transparent 4-stage delivery process keeps you in total control from initial consultation to production launch.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          
+          <div class="p-6 bg-white rounded-2xl border border-border-card shadow-xs">
+            <span class="w-8 h-8 rounded-full bg-blue-light text-blue-accent flex items-center justify-center font-extrabold text-sm mb-4">1</span>
+            <h3 class="text-base font-bold text-navy mb-2">Consult &amp; Scope</h3>
+            <p class="text-xs text-body-text leading-relaxed">We discuss your business objectives, target audience, brand aesthetic, and technical requirements via WhatsApp or Email.</p>
+          </div>
+
+          <div class="p-6 bg-white rounded-2xl border border-border-card shadow-xs">
+            <span class="w-8 h-8 rounded-full bg-blue-light text-blue-accent flex items-center justify-center font-extrabold text-sm mb-4">2</span>
+            <h3 class="text-base font-bold text-navy mb-2">Wireframe &amp; Layout</h3>
+            <p class="text-xs text-body-text leading-relaxed">We craft clean wireframes and visual design mockups tailored for high mobile engagement and conversion.</p>
+          </div>
+
+          <div class="p-6 bg-white rounded-2xl border border-border-card shadow-xs">
+            <span class="w-8 h-8 rounded-full bg-blue-light text-blue-accent flex items-center justify-center font-extrabold text-sm mb-4">3</span>
+            <h3 class="text-base font-bold text-navy mb-2">Clean Engineering</h3>
+            <p class="text-xs text-body-text leading-relaxed">We code your website with semantic HTML, Tailwind CSS, high-speed CDN assets, and comprehensive responsive testing.</p>
+          </div>
+
+          <div class="p-6 bg-white rounded-2xl border border-border-card shadow-xs">
+            <span class="w-8 h-8 rounded-full bg-blue-light text-blue-accent flex items-center justify-center font-extrabold text-sm mb-4">4</span>
+            <h3 class="text-base font-bold text-navy mb-2">Review &amp; Launch</h3>
+            <p class="text-xs text-body-text leading-relaxed">You test the live demo. Once approved, final balance is settled and domain DNS is linked to your production server.</p>
+          </div>
+
+        </div>
+
+        <div class="rounded-2xl overflow-hidden border border-border-card shadow-md">
+          <img src="/assets/alur-kerja-studio.webp" alt="AURA GLOBAL 4-Stage Remote Workflow Infographic" class="w-full h-auto object-cover" width="1200" height="675" loading="lazy" />
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ SECTION (ENGLISH) -->
+    <section id="faq" class="w-full py-16 lg:py-24 bg-white border-b border-border-card">
+      <div class="site-container max-w-4xl mx-auto">
+        
+        <div class="text-center mb-16">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-light text-blue-accent text-xs font-bold uppercase tracking-wider mb-4 border border-blue-border">
+            <span>Got Questions?</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-navy tracking-tight mb-4">
+            Frequently Asked Questions
+          </h2>
+          <p class="text-base text-body-text leading-relaxed">
+            Everything you need to know about hiring AURA GLOBAL for your remote web project.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          
+          <details class="group bg-surface-alt rounded-2xl p-6 border border-border-card open:bg-white open:shadow-sm transition-all">
+            <summary class="font-bold text-navy text-base cursor-pointer list-none flex items-center justify-between">
+              <span>Can I hire AURA GLOBAL if I am located outside Indonesia?</span>
+              <span class="text-blue-accent transition-transform group-open:rotate-180">↓</span>
+            </summary>
+            <p class="text-sm text-body-text leading-relaxed mt-4 pt-4 border-t border-border-card">
+              Yes, absolutely. A significant portion of our clients work with us 100% remotely. We communicate efficiently across international time zones via WhatsApp, Telegram, or Email, and share staging links for regular milestone reviews.
+            </p>
+          </details>
+
+          <details class="group bg-surface-alt rounded-2xl p-6 border border-border-card open:bg-white open:shadow-sm transition-all">
+            <summary class="font-bold text-navy text-base cursor-pointer list-none flex items-center justify-between">
+              <span>How long does it take to deliver a completed website?</span>
+              <span class="text-blue-accent transition-transform group-open:rotate-180">↓</span>
+            </summary>
+            <p class="text-sm text-body-text leading-relaxed mt-4 pt-4 border-t border-border-card">
+              Starter Bio and single-page landing pages typically take 2 to 4 business days. Multi-page business websites usually take 5 to 7 business days once your brand materials and content guidelines are received.
+            </p>
+          </details>
+
+          <details class="group bg-surface-alt rounded-2xl p-6 border border-border-card open:bg-white open:shadow-sm transition-all">
+            <summary class="font-bold text-navy text-base cursor-pointer list-none flex items-center justify-between">
+              <span>What payment methods do you accept for international clients?</span>
+              <span class="text-blue-accent transition-transform group-open:rotate-180">↓</span>
+            </summary>
+            <p class="text-sm text-body-text leading-relaxed mt-4 pt-4 border-t border-border-card">
+              We accept payments via <strong>PayPal</strong>, <strong>Wise (formerly TransferWise)</strong>, and <strong>International SWIFT Bank Wire</strong>. We work on a 50% deposit to initiate work and 50% final payment after you inspect and approve the completed staging website.
+            </p>
+          </details>
+
+          <details class="group bg-surface-alt rounded-2xl p-6 border border-border-card open:bg-white open:shadow-sm transition-all">
+            <summary class="font-bold text-navy text-base cursor-pointer list-none flex items-center justify-between">
+              <span>Who owns the website and source code once completed?</span>
+              <span class="text-blue-accent transition-transform group-open:rotate-180">↓</span>
+            </summary>
+            <p class="text-sm text-body-text leading-relaxed mt-4 pt-4 border-t border-border-card">
+              You maintain 100% full ownership of your domain, web assets, and source code. There are no proprietary lock-ins or hidden retention clauses.
+            </p>
+          </details>
+
+          <details class="group bg-surface-alt rounded-2xl p-6 border border-border-card open:bg-white open:shadow-sm transition-all">
+            <summary class="font-bold text-navy text-base cursor-pointer list-none flex items-center justify-between">
+              <span>Do you provide maintenance and ongoing support?</span>
+              <span class="text-blue-accent transition-transform group-open:rotate-180">↓</span>
+            </summary>
+            <p class="text-sm text-body-text leading-relaxed mt-4 pt-4 border-t border-border-card">
+              Yes, all packages include 30 days of complimentary post-launch technical warranty. Ongoing monthly maintenance and server monitoring packages are also available upon request.
+            </p>
+          </details>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FINAL CALL TO ACTION -->
+    <section class="w-full py-20 bg-navy text-white text-center">
+      <div class="site-container max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-6">
+          Ready to Launch Your High-Performance Web Project?
+        </h2>
+        <p class="text-base sm:text-lg text-gray-300 leading-relaxed mb-8">
+          Contact the AURA GLOBAL engineering team today for an obligation-free consultation. We will analyze your requirements and provide an exact quote and delivery roadmap.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="https://wa.me/6285218175984?text=Hello%20AURA%20GLOBAL,%20I%20would%20like%20to%20discuss%20a%20web%20development%20project" target="_blank" rel="noopener noreferrer" class="btn-pill-navy bg-blue-accent hover:bg-blue-hover text-white px-8 py-4 text-sm font-bold flex items-center justify-center gap-2 shadow-lg w-full sm:w-auto">
+            <span>Consult on WhatsApp</span>
+            <svg class="w-4 h-4 fill-current text-white" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2Z"/></svg>
+          </a>
+          <a href="mailto:info@auraglobal.my.id?subject=Web%20Development%20Inquiry%20-%20AURA%20GLOBAL" class="px-8 py-4 rounded-full text-sm font-bold text-white bg-navy-surface hover:bg-navy-dark border border-white/20 transition-all w-full sm:w-auto">
+            <span>Send Email Inquiry</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="w-full bg-[#07152B] text-gray-400 text-xs py-12 border-t border-navy-surface">
+    <div class="site-container">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div class="md:col-span-2">
+          <img src="/assets/logo-light.svg" alt="AURA GLOBAL" class="h-8 w-auto mb-4" width="160" height="36" />
+          <p class="text-gray-400 text-xs leading-relaxed max-w-sm mb-4">
+            AURA GLOBAL Digital Web Studio is an international digital agency providing high-speed web design, e-commerce development, custom web applications, and smart IoT systems.
+          </p>
+          <span class="text-[11px] text-gray-500 block">Headquarters: Majalengka, West Java, Indonesia • Serving Global Remote Clients</span>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-sm mb-4">International Navigation</h4>
+          <ul class="space-y-2">
+            <li><a href="/en/" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+            <li><a href="#portfolio" class="hover:text-white transition-colors">Portfolio</a></li>
+            <li><a href="#pricing" class="hover:text-white transition-colors">Pricing ($ USD)</a></li>
+            <li><a href="#faq" class="hover:text-white transition-colors">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-sm mb-4">Direct Contact</h4>
+          <ul class="space-y-2">
+            <li><span class="text-gray-500">Email:</span> <a href="mailto:info@auraglobal.my.id" class="text-blue-light hover:underline">info@auraglobal.my.id</a></li>
+            <li><span class="text-gray-500">WhatsApp:</span> <a href="https://wa.me/6285218175984" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline">+62 852-1817-5984</a></li>
+            <li><span class="text-gray-500">Language:</span> <a href="/" class="text-blue-light hover:underline font-bold">Bahasa Indonesia (ID)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px]">
+        <p>&copy; 2026 AURA GLOBAL Digital Web Studio. All rights reserved.</p>
+        <div class="flex items-center gap-4">
+          <a href="/syarat-ketentuan/" class="hover:text-white transition-colors">Terms of Service</a>
+          <a href="/kebijakan-privasi/" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="/" class="text-blue-accent hover:underline font-bold">Versi Bahasa Indonesia</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE MENU SCRIPT -->
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const isHidden = menu.classList.contains('hidden');
+      if (isHidden) {
+        menu.classList.remove('hidden');
+        menu.classList.add('flex');
+      } else {
+        menu.classList.add('hidden');
+        menu.classList.remove('flex');
+      }
+    }
+    function closeMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      if (menu) {
+        menu.classList.add('hidden');
+        menu.classList.remove('flex');
+      }
+    }
+
+    // Scroll progress bar
+    window.addEventListener('scroll', () => {
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      const bar = document.getElementById('scroll-progress-bar');
+      if (bar) bar.style.width = scrolled + '%';
+    });
+  </script>
+</body>
+</html>

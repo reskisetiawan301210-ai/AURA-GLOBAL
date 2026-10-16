@@ -14,6 +14,11 @@
   <meta name="author" content="AURA GLOBAL" />
   <link rel="canonical" href="https://auraglobal.my.id/" />
 
+  <!-- Multi-language Hreflang Tags -->
+  <link rel="alternate" hreflang="id" href="https://auraglobal.my.id/" />
+  <link rel="alternate" hreflang="en" href="https://auraglobal.my.id/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://auraglobal.my.id/" />
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://auraglobal.my.id/" />
@@ -226,8 +231,14 @@
         <a href="#faq" class="nav-link text-sm font-semibold text-navy hover:text-blue-accent transition-colors py-1">FAQ</a>
       </nav>
 
-      <!-- CTA & MOBILE TOGGLE -->
+      <!-- LANGUAGE & CTA & MOBILE TOGGLE -->
       <div class="flex items-center gap-3">
+        <!-- LANGUAGE SWITCHER -->
+        <div class="inline-flex items-center text-xs font-semibold rounded-full border border-border-card bg-surface-alt p-0.5">
+          <span class="px-2.5 py-1 rounded-full bg-navy text-white text-[11px] font-bold shadow-xs">ID</span>
+          <a href="/en/" class="px-2.5 py-1 rounded-full text-navy hover:text-blue-accent text-[11px] font-bold transition-colors" title="English / International Version">EN</a>
+        </div>
+
         <a href="https://wa.me/6285218175984?text=Halo%20AURA%20GLOBAL,%20saya%20ingin%20konsultasi%20pembuatan%20website" target="_blank" rel="noopener noreferrer" class="btn-pill-navy hidden sm:inline-flex px-5 py-2.5 text-xs sm:text-sm font-semibold shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-accent">
           <span>Konsultasi WhatsApp</span>
           <svg class="w-4 h-4 fill-current text-[#25D366]" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2Z"/></svg>
@@ -244,6 +255,13 @@
 
   <!-- MOBILE MENU DRAWER -->
   <div id="mobile-menu" class="fixed top-20 left-0 w-full bg-white border-b border-border-card z-30 hidden flex-col px-6 py-6 gap-3 shadow-xl lg:hidden transition-all duration-300">
+    <div class="flex items-center justify-between pb-3 border-b border-surface-alt">
+      <span class="text-xs font-bold text-muted-text uppercase tracking-wider">Pilih Bahasa</span>
+      <div class="inline-flex items-center text-xs font-semibold rounded-full border border-border-card bg-surface-alt p-0.5">
+        <span class="px-3 py-1 rounded-full bg-navy text-white text-xs font-bold">Indonesia (ID)</span>
+        <a href="/en/" class="px-3 py-1 rounded-full text-navy hover:text-blue-accent text-xs font-bold">English (EN)</a>
+      </div>
+    </div>
     <a href="/" onclick="closeMobileMenu()" class="text-base font-bold text-blue-accent py-2.5 border-b border-surface-alt">Beranda</a>
     <a href="#layanan" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">Layanan</a>
     <a href="#portofolio" onclick="closeMobileMenu()" class="text-base font-semibold text-navy hover:text-blue-accent py-2.5 border-b border-surface-alt">Portofolio</a>
