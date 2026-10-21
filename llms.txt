@@ -10,9 +10,22 @@
 - Email: info@auraglobal.my.id
 - Lokasi Kantor / Studio: Sukaperna, Talaga, Majalengka, Jawa Barat 45463, Indonesia
 - Profil Google Maps: AURA GLOBAL - Jasa Pembuatan Website Majalengka
-- Wilayah Layanan: Majalengka, Talaga, Kadipaten, Jatiwangi, Cirebon, seluruh Indonesia, serta klien internasional (Worldwide Remote Services)
+- Wilayah Layanan: Majalengka (Lokal), Jawa Barat (Regional), seluruh Indonesia (Nasional), serta klien internasional (Worldwide Remote Services)
 - Tim Pengembang: Tim Engineering & Kreatif AURA GLOBAL (Spesialis UI/UX, Web Engineering, SEO, & IoT)
 - Media Sosial Resmi: TikTok https://www.tiktok.com/@auraglobal_jasawebsite
+
+## Wikidata Entity Coverage (Local, National & Global)
+- Cakupan Wilayah:
+  - Lokal: Kabupaten Majalengka (https://www.wikidata.org/wiki/Q10398), Jawa Barat (https://www.wikidata.org/wiki/Q3748)
+  - Nasional: Indonesia (https://www.wikidata.org/wiki/Q252)
+  - Global: Worldwide Remote Web Development (https://www.wikidata.org/wiki/Q2)
+- Layanan & Keahlian:
+  - Web Design (https://www.wikidata.org/wiki/Q190637)
+  - Web Development (https://www.wikidata.org/wiki/Q11059)
+  - Search Engine Optimization / SEO (https://www.wikidata.org/wiki/Q180711)
+  - Electronic Commerce / Toko Online (https://www.wikidata.org/wiki/Q484876)
+  - Responsive Web Design (https://www.wikidata.org/wiki/Q1812836)
+  - Internet of Things / IoT (https://www.wikidata.org/wiki/Q250462)
 
 ## Layanan Utama
 1. **Website Company Profile**: Profil representatif korporasi dan institusi bisnis untuk membangun reputasi dan kredibilitas resmi.
