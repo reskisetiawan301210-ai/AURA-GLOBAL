@@ -14,13 +14,23 @@
       "permanent": true
     },
     {
+      "source": "/portfolio/",
+      "destination": "/portofolio/",
+      "permanent": true
+    },
+    {
       "source": "/portfolio",
       "destination": "/portofolio/",
       "permanent": true
     },
     {
-      "source": "/portfolio/:path*",
-      "destination": "/portofolio/:path*",
+      "source": "/portfolio/(.*)",
+      "destination": "/portofolio/$1",
+      "permanent": true
+    },
+    {
+      "source": "/portofolio/segar-mart/",
+      "destination": "/portofolio/toko-serba-ada/",
       "permanent": true
     },
     {
@@ -29,7 +39,7 @@
       "permanent": true
     },
     {
-      "source": "/portofolio/segar-mart/:path*",
+      "source": "/portofolio/segar-mart/(.*)",
       "destination": "/portofolio/toko-serba-ada/",
       "permanent": true
     }
