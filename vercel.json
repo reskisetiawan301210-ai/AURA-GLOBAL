@@ -3,6 +3,17 @@
   "trailingSlash": true,
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.auraglobal.my.id"
+        }
+      ],
+      "destination": "https://auraglobal.my.id/:path*",
+      "permanent": true
+    },
+    {
       "source": "/portfolio",
       "destination": "/portofolio/",
       "permanent": true
@@ -10,6 +21,16 @@
     {
       "source": "/portfolio/:path*",
       "destination": "/portofolio/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/portofolio/segar-mart",
+      "destination": "/portofolio/toko-serba-ada/",
+      "permanent": true
+    },
+    {
+      "source": "/portofolio/segar-mart/:path*",
+      "destination": "/portofolio/toko-serba-ada/",
       "permanent": true
     }
   ]
